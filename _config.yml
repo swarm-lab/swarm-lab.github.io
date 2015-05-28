@@ -2,14 +2,14 @@
 #baseurl: /agency-jekyll-theme/
 
 # Site settings
-title: The Swarm Lab @ NJIT
-email: your-email@domain.com
+title: Swarm Lab
+email: garnier@njit.edu
 description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary: fed136
-  secondary: fec503  
+  primary: ed564b
+  secondary: f96b61  
   secondary-dark: 333
 
 # Team names, titles and social links
