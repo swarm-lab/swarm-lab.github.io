@@ -4,7 +4,20 @@
 }
 
 .navbar-default .nav li a {
+    font-size: 90%;
+    padding-left: 12px;
+    padding-right: 12px;
     color: #{{ site.color.secondary-dark }};
+}
+
+@media(min-width:768px) {
+    header .intro-text {
+        padding-top: 200px;
+    }
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
 }
 
 .lab-name {

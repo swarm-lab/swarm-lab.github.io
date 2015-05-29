@@ -875,7 +875,20 @@ body {
 }
 
 .navbar-default .nav li a {
+    font-size: 90%;
+    padding-left: 12px;
+    padding-right: 12px;
     color: #333;
+}
+
+@media(min-width:768px) {
+    header .intro-text {
+        padding-top: 200px;
+    }
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
 }
 
 .lab-name {
