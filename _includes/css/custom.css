@@ -1,5 +1,5 @@
 .navbar-default .navbar-brand {
-    font-family: "Avenir Next", "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Ubuntu", "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #{{ site.color.primary }};
 }
 
@@ -21,10 +21,10 @@
 }
 
 .lab-name {
-    font-family: "Avenir Next", "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Ubuntu", "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-style: normal;
     text-transform: capitalize;
-    font-weight: 600;
+    font-weight: 500;
     color: #{{ site.color.secondary-dark }};
 }
 

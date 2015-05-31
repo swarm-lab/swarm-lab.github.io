@@ -307,7 +307,7 @@ header .intro-text .intro-heading {
 @media(min-width:768px) {
     header .intro-text {
         padding-top: 300px;
-        padding-bottom: 200px;
+        padding-bottom: 300px;
     }
 
     header .intro-text .intro-lead-in {
@@ -870,7 +870,7 @@ body {
     webkit-tap-highlight-color: #ed564b;
 }
 .navbar-default .navbar-brand {
-    font-family: "Avenir Next", "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Ubuntu", "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #ed564b;
 }
 
@@ -892,10 +892,10 @@ body {
 }
 
 .lab-name {
-    font-family: "Avenir Next", "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Ubuntu", "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-style: normal;
     text-transform: capitalize;
-    font-weight: 600;
+    font-weight: 500;
     color: #333;
 }
 
