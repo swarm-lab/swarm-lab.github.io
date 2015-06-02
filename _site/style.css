@@ -891,6 +891,14 @@ body {
     display: block;
 }
 
+.entry {
+    width: 90%;
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+}
+
 .lab-name {
     font-family: "Ubuntu", "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-style: normal;
@@ -901,4 +909,38 @@ body {
 
 .intro-lead-in {
     color: #333;
+}
+
+@media(min-width:768px) {
+    #blog .intro-text {
+        padding-top: 160px;
+        padding-bottom: 100px;
+    }
+}
+
+section.blog {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+div.bg-light-gray {
+    background-color: #f7f7f7;
+}
+
+div.bg-white {
+    background-color: #ffffff;
+}
+
+div.bg-darkest-gray {
+    background-color: #222;
+}
+
+img.wrap-around-left {
+    float: left;
+    padding: 5px 10px 5px 0px;
+}
+
+img.wrap-around-right {
+    float: right;
+    padding: 5px 0px 5px 10px;
 }
