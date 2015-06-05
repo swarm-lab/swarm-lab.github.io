@@ -7,14 +7,27 @@
 
 {% include nav_nofront.html %}
 
-<section class="bg-white">
+<section class="bg-white post">
 
     <div class="entry">
 
         <h2>{{ page.title }}</h2>
         <h3>{{ page.subtitle }}</h3>
 
+        <p>Written by {{ page.author}} on {{ page.date | date: "%B %-d, %Y" }}</p>
+
+        <hr>
+
         {{ content }}
+
+        <hr>
+
+        <p>Categories:
+            {% for category in page.categories %}
+                <a href="/{{category}}/">{{ category }}</a> &bull;
+            {% endfor %}
+        </p>
+
 
     </div>
 

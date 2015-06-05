@@ -24,8 +24,8 @@ layout: blog
                 <a href="{{ post.url }}">Read more.</a>
 
                 <p style="padding-top: 3em;">
-                    Date: {{ post.date | date_to_string }} |
-                    Categories: {{ post.categories | join: ', ' }}
+                    Date: {{ post.date | date: "%B %-d, %Y" }} |
+                    Categories: {% for category in post.categories %}<a href="/{{category}}/">{{ category }}</a> &bull; {% endfor %}
                 </p>
 
             </div>

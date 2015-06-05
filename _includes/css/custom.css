@@ -52,6 +52,10 @@ section.blog {
     padding-bottom: 50px;
 }
 
+section.post {
+    padding-bottom: 10px;
+}
+
 div.bg-light-gray {
     background-color: #f7f7f7;
 }

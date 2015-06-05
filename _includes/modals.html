@@ -12,11 +12,11 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>{{ post.title }}</h2>
+                            <h3>{{ post.title }}</h3>
                             <hr class="star-primary">
                             <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
-                            <p>{{ post.description }}</p>
-                            <ul class="list-inline item-details">
+                            <p style="text-align: justify">{{ post.description }}</p>
+                            <!--<ul class="list-inline item-details">
                                 <li>Client:
                                     <strong><a href="http://startbootstrap.com">{{ post.client }}</a>
                                     </strong>
@@ -29,7 +29,7 @@
                                     <strong><a href="http://startbootstrap.com">{{ post.category }}</a>
                                     </strong>
                                 </li>
-                            </ul>
+                            </ul>-->
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
