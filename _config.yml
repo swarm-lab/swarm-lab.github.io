@@ -14,67 +14,99 @@ color:
 
 # Team names, titles and social links
 people:
-- name: Kay Garland
-  pic: 1
-  position: Lead Designer
+- name: Simon Garnier
+  pic: simon
+  position: Assistant Professor
   social:
     - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: stack-overflow
-      url: #
-
-- name: Larry Parker
-  pic: 2
-  position: Lead Marketer
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
+      url: https://twitter.com/sjmgarnier
+    - title: google-plus
+      url: https://plus.google.com/u/0/+SimonGarnier
+    - title: github
+      url: https://github.com/sjmgarnier
     - title: linkedin
-      url: #
+      url: https://www.linkedin.com/in/simongarnier
 
-- name: Diana Petersen
-  pic: 3
-  position: Lead Developer
+- name: Jason Graham
+  pic: jason
+  position: Visiting Scholar (<a href="http://www.scranton.edu/">U. of Scranton</a>)
+  social:
+    - title: link
+      url: https://sites.google.com/site/jasonmgrahamus/
+
+- name: Lisa O'Bryan
+  pic: lisa
+  position: Postdoctoral Fellow
   social:
     - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: google-plus
-      url: #
+      url: https://twitter.com/Project_Grunt
 
-- name: Diana Petersen
-  pic: 3
-  position: Lead Developer
+- name: Courtney Rockenbach
+  pic: courtney
+  position: Graduate Student
   social:
     - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: google-plus
-      url: #
+      url: https://twitter.com/CourtRockenbach
+
+- name: Subash Ray
+  pic: subash
+  position: Research Assistant
+  social:
+    - title: twitter
+      url: https://twitter.com/skrRay
+
+- name: Daniel Chen
+  pic: default
+  position: Undergraduate Student
+  social:
+
+- name: Nilanjan Haldar
+  pic: default
+  position: Undergraduate Student
+
+- name: Anna Wisniewski
+  pic: default
+  position: Undergraduate Student
+
+- name: Leslie Seby
+  pic: default
+  position: Undergraduate Student
+
+- name: Suraj Rajesh
+  pic: default
+  position: Undergraduate Student
+
+- name: Abid Haque
+  pic: default
+  position: Undergraduate Student
+
+people_old:
+- name: Chris Reid
+  pic: chris
+  position: Postdoctoral Fellow & Australian Extraordinaire
+  social:
+    - title: twitter
+      url: https://twitter.com/ChrisRReid1
+    - title: link
+      url: https://sites.google.com/site/chrisreidbiologist/home
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: twitter
-    url: http://twitter.com/jekyllrb
-  - title: facebook
-    url:
-  - title: stack-overflow
-    url: http://stackoverflow.com/questions/tagged/jekyll
-  - title: bitbucket 
-    url: http://bitbucket.org/jekyll
+    url: https://twitter.com/sjmgarnier
+  - title: google-plus
+    url: https://plus.google.com/u/0/+SimonGarnier
   - title: github
-    url: http://github.com/jekyll
+    url: https://github.com/sjmgarnier
+  - title: stack-overflow
+    url: http://stackoverflow.com/users/3161863/simon-garnier
+  - title: linkedin
+    url: https://www.linkedin.com/in/simongarnier
 
 # Postal address (add as many lines as necessary)
 address:
-  - line: 3481 Melrose Place
-  - line: Beverly Hills, CA 90210
+  - line: Central King Building, New Jersey Institute of Technology
+  - line: Newark, NJ 07102, USA
 
 # Build settings
 markdown: kramdown
