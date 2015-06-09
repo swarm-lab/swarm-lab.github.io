@@ -68,7 +68,7 @@
                         Research<i class="fa fa-angle-down"></i></a>
                     <ul class="dropdown-menu">
                         <li><a class="page-scroll" href="#research">Current research</a></li>
-                        <li><a href="#">Publication list</a></li>
+                        <li><a href="/publications">Publication list</a></li>
                         <li><a href="#">In the media</a></li>
                     </ul>
                 </li>
@@ -79,8 +79,14 @@
                 <li>
                     <a class="page-scroll" href="#dev">Dev</a>
                 </li>
-                <li>
-                    <a class="page-scroll" href="#team">Team</a>
+                <li class="dropdown">
+                    <a class="dropdown-toggle keep-open" data-toggle="dropdown" data-hover="dropdown" href="#team">
+                        Team<i class="fa fa-angle-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="page-scroll" href="#team">Current members</a></li>
+                        <li><a href="/previous_members">Previous members</a></li>
+                        <li><a href="/join">Join the lab</a></li>
+                    </ul>
                 </li>
                 <li>
                     <a class="page-scroll" href="#contact">Contact</a>
@@ -153,6 +159,12 @@
                 <ul class="posts">
                     
                     <li style="text-align: justify;">
+                        <span>15 Jul 2015</span> &raquo;
+                        <a href="/blog/2015/07/15/test/">
+                            Your title is a very, very, very, very long title</a>
+                    </li>
+                    
+                    <li style="text-align: justify;">
                         <span>15 Jul 2014</span> &raquo;
                         <a href="/blog/test/2014/07/15/test2/">
                             Your title</a>
@@ -162,12 +174,6 @@
                         <span>15 Jul 2014</span> &raquo;
                         <a href="/blog/2014/07/15/test1/">
                             Your title</a>
-                    </li>
-                    
-                    <li style="text-align: justify;">
-                        <span>15 Jul 2014</span> &raquo;
-                        <a href="/blog/2014/07/15/test/">
-                            Your title is a very, very, very, very long title</a>
                     </li>
                     
                 </ul>
@@ -279,7 +285,7 @@
                     <div class="team-member">
                         <img src="img/team/simon.jpg" class="img-responsive img-circle" alt="">
                         <h4>Simon Garnier</h4>
-                        <p class="text-muted">Assistant Professor</p>
+                        <p class="text-muted">PI / Assistant Professor</p>
                         <ul class="list-inline social-buttons">
                             
                                 
@@ -355,6 +361,34 @@
                                 
                                     <li><a href="https://twitter.com/skrRay"><i class="fa fa-twitter"></i></a></li>
                                 
+                            
+
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/team/default.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Oswaldo Gil</h4>
+                        <p class="text-muted">Master Student</p>
+                        <ul class="list-inline social-buttons">
+                            
+                                <li><a href="#" class="fa-fw"><i class="fa fa-fw"></i></a></li>
+                            
+
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/team/default.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Nidhi Dharithreesan</h4>
+                        <p class="text-muted">Master Student</p>
+                        <ul class="list-inline social-buttons">
+                            
+                                <li><a href="#" class="fa-fw"><i class="fa fa-fw"></i></a></li>
                             
 
                         </ul>
@@ -449,9 +483,11 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <p class="large text-muted" style="text-align: justify;">Our group is constantly evolving with new
-                        students, researchers and visitors joining/leaving all year round. </p>
-                    <p class="large text-muted" style="text-align: justify;"><a href="/previous_members">Previous lab members.</a></p>
-
+                        students, researchers and visitors joining/leaving all year round (here is
+                        <a href="/previous_members">a list of our previous lab members</a>). If you would like to join us
+                        (for a visit, an internship, or a PhD/postdoctoral position), please check out <a href="/join">this information</a>
+                        and use <a class="page-scroll" href="#contact">the contact form</a> below to reach out to us.
+                    </p>
                 </div>
             </div>
         </div>
@@ -517,9 +553,6 @@
                         <li><a href="https://github.com/sjmgarnier"><i class="fa fa-github"></i></a>
                         </li>
                         
-                        <li><a href="http://stackoverflow.com/users/3161863/simon-garnier"><i class="fa fa-stack-overflow"></i></a>
-                        </li>
-                        
                         <li><a href="https://www.linkedin.com/in/simongarnier"><i class="fa fa-linkedin"></i></a>
                         </li>
                         
@@ -527,10 +560,10 @@
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline quicklinks">
-                        <li><a href="#">Privacy Policy</a>
+                        <!--<li><a href="#">Privacy Policy</a>
                         </li>
                         <li><a href="#">Terms of Use</a>
-                        </li>
+                        </li>-->
                     </ul>
                 </div>
             </div>
@@ -538,6 +571,44 @@
     </footer>
  <!-- Portfolio Modals -->
  
+    <div class="portfolio-modal modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h3>Your title is a very, very, very, very long title</h3>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/" class="img-responsive img-centered" alt="">
+                            <p style="text-align: justify"></p>
+                            <!--<ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Blog</a>
+                                    </strong>
+                                </li>
+                            </ul>-->
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -717,158 +788,6 @@
                                 </li>
                                 <li>Service:
                                     <strong><a href="http://startbootstrap.com">Blog</a>
-                                    </strong>
-                                </li>
-                            </ul>-->
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="portfolio-modal modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h3>Your title is a very, very, very, very long title</h3>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/" class="img-responsive img-centered" alt="">
-                            <p style="text-align: justify"></p>
-                            <!--<ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com"></a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com"></a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Blog</a>
-                                    </strong>
-                                </li>
-                            </ul>-->
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h3>Round Icons</h3>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/roundicons.png" class="img-responsive img-centered" alt="image-alt">
-                            <p style="text-align: justify">Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.</p>
-                            <!--<ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>-->
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h3>Treehouse</h3>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/treehouse.png" class="img-responsive img-centered" alt="image-alt">
-                            <p style="text-align: justify">Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.</p>
-                            <!--<ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>-->
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h3>Startup Framework</h3>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/startup-framework.png" class="img-responsive img-centered" alt="image-alt">
-                            <p style="text-align: justify">Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.</p>
-                            <!--<ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
                                     </strong>
                                 </li>
                             </ul>-->
