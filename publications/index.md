@@ -4,7 +4,7 @@ title: Publication list
 
 ---
 
-#### Papers submitted or in preparation 
+#### <a id="1"></a>Papers submitted or in preparation
 
 1. Reid C, Lutz M, Powell S, Couzin ID, **Garnier S** (2015) Self-organized shortcuts in army ants. In preparation. 
 
@@ -26,7 +26,7 @@ emerging trail networks in the Argentine ant (*Linepithema humile*). In preparat
 
 ---
 
-#### Published Refereed Journal Papers 
+#### <a id="2"></a>Published Refereed Journal Papers 
 
 1. Vela-Pérez M, Fontelos MA, **Garnier S** (2015) From Individual to Collective Dynamics in Argentine Ants (*Linepithema 
 humile*). Math Biosci 262: 56-64. 
@@ -130,7 +130,7 @@ pdf
 
 ---
 
-### Published Refereed Conference Papers 
+#### Published Refereed Conference Papers 
 
 1. **Garnier S**, Tache F, Combe M, Grimal A, Theraulaz G (2007) Alice in Pheromone Land: An Experimental Setup for the 
 Study of Ant-like Robots. 2007 IEEE Swarm Intelligence Symposium. pp. 37–44. 
@@ -149,7 +149,7 @@ pdf
 
 ---
 
-### Published Refereed Conference Abstracts 
+#### Published Refereed Conference Abstracts 
 
 1. Reid C, Lutz M, **Garnier S**. Investigating the self-organized living architectures of Eciton army ants. In 2014 
 Meeting of the Entomological Society of America, Portland, OR, November 18, 2014.
