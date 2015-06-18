@@ -927,6 +927,11 @@ section.post {
     padding-bottom: 10px;
 }
 
+section.map {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 div.bg-light-gray {
     background-color: #f7f7f7;
 }

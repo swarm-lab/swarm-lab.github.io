@@ -4,7 +4,7 @@ title: Publication list
 
 ---
 
-#### <a id="1"></a>Papers submitted or in preparation
+#### Papers submitted or in preparation
 
 1. Reid C, Lutz M, Powell S, Couzin ID, **Garnier S** (2015) Self-organized shortcuts in army ants. In preparation. 
 
@@ -26,7 +26,7 @@ emerging trail networks in the Argentine ant (*Linepithema humile*). In preparat
 
 ---
 
-#### <a id="2"></a>Published Refereed Journal Papers 
+#### Published Refereed Journal Papers 
 
 1. Vela-Pérez M, Fontelos MA, **Garnier S** (2015) From Individual to Collective Dynamics in Argentine Ants (*Linepithema 
 humile*). Math Biosci 262: 56-64. 
