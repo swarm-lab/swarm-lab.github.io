@@ -96,3 +96,19 @@ ul.social-buttons li a.fa-fw {
     pointer-events: none;
     cursor: default;
 }
+
+code.language-r:before {
+    content: 'R code \A';
+    color: #8A0606;
+    font-weight: bold;
+}
+
+code.language-python:before {
+    content: 'Python code \A';
+    color: #068A06;
+    font-weight: bold;
+}
+
+code.language-r, code.language-python {
+    font-size: smaller;
+}
