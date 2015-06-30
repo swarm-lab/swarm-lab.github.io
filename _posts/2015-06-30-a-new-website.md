@@ -12,7 +12,7 @@ published: true
 
 The Swarm Lab will be 3 year old tomorrow, July 1st, 2015. To celebrate the event, I decided to redo our website from scratch. It has now a new interface and, more importantly, a new backend. 
 
-**Goodbye [Wordpress](https://wordpress.org/), and welcome [Jekyll](http://jekyllrb.com/)!!!** 
+**Goodbye [Wordpress](https://wordpress.org/), and hello [Jekyll](http://jekyllrb.com/)!!!** 
 
 <br>
 
