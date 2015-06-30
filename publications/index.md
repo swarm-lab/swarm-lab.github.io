@@ -28,6 +28,10 @@ emerging trail networks in the Argentine ant (*Linepithema humile*). In preparat
 
 #### Published Refereed Journal Papers 
 
+1. Dorigo M, Birattari M, **Garnier S**, Hamann H, de Oca MAM, Solnon C, Stützle, T (2015) ANTS 2014 special issue: Editorial. Swarm Intell (in press). 
+[link](http://link.springer.com/article/10.1007/s11721-015-0111-0/fulltext.html) | 
+pdf
+
 1. Vela-Pérez M, Fontelos MA, **Garnier S** (2015) From Individual to Collective Dynamics in Argentine Ants (*Linepithema 
 humile*). Math Biosci 262: 56-64. 
 [link](http://www.sciencedirect.com/science/article/pii/S0025556415000097) |

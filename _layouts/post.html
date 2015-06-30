@@ -24,10 +24,17 @@
 
         <p>Categories:
             {% for category in page.categories %}
-                <a href="/{{category}}/">{{ category }}</a> &bull;
+                {% if category == "blog"%}
+                    <a href="/blog/">blog</a> &bull;
+                {% else %}
+                    <a href="/category/{{category}}/">{{ category }}</a> &bull;
+                {% endif %}
             {% endfor %}
         </p>
 
+        <hr>
+
+        {% include comments.html %}
 
     </div>
 
