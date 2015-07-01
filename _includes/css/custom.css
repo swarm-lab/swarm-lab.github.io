@@ -83,6 +83,10 @@ img.wrap-around-right {
     padding: 5px 0px 5px 10px;
 }
 
+img.full {
+    width: 100%;
+}
+
 .dropdown-menu a {
     color: #000 !important;
 }
@@ -111,4 +115,29 @@ code.language-python:before {
 
 code.language-r, code.language-python {
     font-size: smaller;
+}
+
+header .cat-heading {
+    margin-bottom: 25px;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+@media(min-width:768px) {
+    header .cat-heading {
+        margin-bottom: 50px;
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 75px;
+    }
+}
+
+.cat-name {
+    font-family: "Ubuntu", "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    color: #333;
 }

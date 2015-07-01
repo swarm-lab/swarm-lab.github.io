@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>R vs Python - Round 3</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Welcome to the Swarm Lab where we study Swarm Intelligence in natural and artificial systems.">
+    <link rel="canonical" href="http://www.theswarmlab.com/blog/rvspython/2014/02/05/r-vs-python-round-3/">
+
+    <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Google Analytics -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-2260031-8', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/img/favicon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/img/favicon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/img/favicon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/favicon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/img/favicon/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/img/favicon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/img/favicon/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/img/favicon/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="/img/favicon/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="/img/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="/img/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/img/favicon/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="/img/favicon/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="/img/favicon/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="/img/favicon/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="/img/favicon/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="/img/favicon/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="/img/favicon/mstile-310x310.png" />
+
+</head>
+
+
+<body id="nofront" class="index">
+
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!--<a class="navbar-brand page-scroll" href="#page-top">Swarm Lab</a>-->
+            <a class="navbar-brand page-scroll" href="/">
+                <img src="/img/logos/swarmlab.png" alt=Swarm Lab style="height:250%; position: relative; top: -75%;">
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="/#about">About</a>
+                </li>
+                <!--<li>
+                    <a class="page-scroll" href="#research">Research</a>
+                </li>-->
+
+                <li class="dropdown">
+                    <a class="dropdown-toggle keep-open" data-toggle="dropdown" data-hover="dropdown" href="/#research">
+                        Research<i class="fa fa-angle-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="page-scroll" href="/#research">Current research</a></li>
+                        <li><a href="/publications">Publication list</a></li>
+                        <li><a href="/media">In the media</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a class="page-scroll" href="/#teaching">Teaching</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="/#dev">Dev</a>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle keep-open" data-toggle="dropdown" data-hover="dropdown" href="/#team">
+                        Team<i class="fa fa-angle-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/#team">Current members</a></li>
+                        <li><a href="/previous_members">Previous members</a></li>
+                        <li><a href="/join">Join the lab</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="page-scroll" href="/#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+<section class="bg-white post">
+
+    <div class="entry">
+
+        <h2>R vs Python - Round 3</h2>
+        <h3></h3>
+
+        <p>Written by Simon Garnier on February 5, 2014</p>
+
+        <hr>
+
+        <p><strong>Text by:</strong> Simon Garnier (<a href="http://www.theswarmlab.com">www.theswarmlab.com</a> / <a href="http://twitter.com/sjmgarnier">@sjmgarnier</a>)</p>
+
+<p><strong>R code by:</strong> Simon Garnier (<a href="http://www.theswarmlab.com">www.theswarmlab.com</a> / <a href="http://twitter.com/sjmgarnier">@sjmgarnier</a>)</p>
+
+<p><strong>Python code by:</strong> Randy Olson (<a href="http://www.randalolson.com">www.randalolson.com</a> / <a href="http://twitter.com/randal_olson">@randal_olson</a>)</p>
+
+<p>Document generated with <a href="http://www.rstudio.com">RStudio</a>, <a href="http://yihui.name/knitr/">knitr</a>, and <a href="http://johnmacfarlane.net/pandoc/">pandoc</a>. Python figures generated with <a href="http://ipython.org/notebook.html">iPython Notebook</a>.</p>
+
+<hr />
+
+<h4 id="foreword">Foreword</h4>
+
+<p>My friend Randy Olson and I got into the habit to argue about the relative qualities of our favorite languages for data analysis and visualization. I am an enthusiastic R user (<a href="http://www.r-project.org">www.r-project.org</a>) while Randy is a fan of Python (<a href="http://www.python.org">www.python.org</a>). One thing we agree on however is that our discussions are meaningless unless we actually put R and Python to a series of tests to showcase their relative strengths and weaknesses. Essentially we will set a common goal (<em>e.g.</em>, perform a particular type of data analysis or draw a particular type of graph) and create the R and Python codes to achieve this goal. And since Randy and I are all about sharing, open source and open access, we decided to make public the results of our friendly challenges so that you can help us decide between R and Python and, hopefully, also learn something along the way.</p>
+
+<hr />
+
+<h4 id="todays-challenge-walk-the-line">Today’s challenge: walk the line</h4>
+
+<h5 id="introduction">1 - Introduction</h5>
+
+<p>Linear regression is one of the most popular statistical tools, in particular when it comes to detect and measure the strength of trends in time-series (but not only). Today we will show you how to perform a linear regression in R and Python, how to run basic diagnostic tests to make sure the linear regression went well, and how to nicely plot the final result.</p>
+
+<p>The data we will use today are provided by <a href="http://www.quandl.com/">Quandl</a>. Quandl is a company that collects and organizes time-series datasets from hundred’s of public sources, and can even host your datasets for free. It is like the YouTube of time-series data. Besides having a huge collection of datasets, the nice thing about Quandl is that it provides packages for <a href="http://www.quandl.com/help/packages/r">R</a> and <a href="http://www.quandl.com/help/packages/python">Python</a> (and <a href="http://www.quandl.com/help/packages">other languages as well</a>) that make it very easy - one line of code! - to retrieve time-series datasets directly from your favorite data analysis tool. Yeah Quandl!</p>
+
+<p>The dataset that we will explore contains information about the average contributions of individuals and corporations to the income taxes, expressed as a fraction of the <a href="http://en.wikipedia.org/wiki/Gross_domestic_product">Gross Domestic Produce (GDP)</a>. We will use linear regression to estimate the variation of these contributions from 1945 to 2013.</p>
+
+<p>In the following, we will detail the different steps of the process and provide for each step the corresponding code (red boxes for R, green boxes for Python). You will also find the entire codes at the end of this document.</p>
+
+<p>If you think there’s a better way to code this in either language, leave a pull request on our <a href="https://github.com/morpionZ/R-vs-Python/tree/master/Deadliest%20movies%20scrape/code">GitHub repository</a> or leave a note with suggestions in the comments below.</p>
+
+<h5 id="step-by-step-process">2 - Step by step process</h5>
+
+<p>First things first, let’s set up our working environment by loading some necessary libraries.</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Load libraries
+</span><span class="n">require</span><span class="p">(</span><span class="s2">"Quandl"</span><span class="p">)</span>         <span class="c1"># Functions to access Quandl's database
+</span><span class="n">require</span><span class="p">(</span><span class="s2">"lattice"</span><span class="p">)</span>        <span class="c1"># Base graph functions
+</span><span class="n">require</span><span class="p">(</span><span class="s2">"latticeExtra"</span><span class="p">)</span>   <span class="err">#</span> <span class="n">Layer</span> <span class="n">graph</span> <span class="n">functions</span></code></pre></div>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">Quandl</span></code></pre></div>
+
+<p>Now, let’s load the dataset from Quandl. You can find it on Quandl’s website <a href="http://www.quandl.com/TPC/HIST_RECEIPT-Historical-Source-of-Revenue-as-Share-of-GDP">here</a>. Among other things, this dataset contains the contributions of individuals and corporations to the income taxes, expressed as a fraction of the GDP. Its original source is the <a href="http://www.taxpolicycenter.org/">Tax Policy Center</a>. The dataset code at Quandl is “TPC/HIST_RECEIPT” and we will retrieve data from December 31, 1945, to December 31, 2013.</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Load data from Quandl
+</span><span class="n">my.data</span> <span class="o">&lt;-</span> <span class="n">Quandl</span><span class="p">(</span><span class="s2">"TPC/HIST_RECEIPT"</span><span class="p">,</span> 
+                  <span class="n">start_date</span> <span class="o">=</span> <span class="s2">"1945-12-31"</span><span class="p">,</span> 
+                  <span class="n">end_date</span> <span class="o">=</span> <span class="s2">"2013-12-31"</span><span class="p">)</span>
+
+<span class="c1"># Display first lines of the data frame
+</span><span class="n">head</span><span class="p">(</span><span class="n">my.data</span><span class="p">)</span></code></pre></div>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">quandl_data</span> <span class="o">=</span> <span class="n">Quandl</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">"TPC/HIST_RECEIPT"</span><span class="p">,</span>
+                         <span class="n">trim_start</span><span class="o">=</span><span class="s">"1945-12-31"</span><span class="p">,</span>
+                         <span class="n">trim_end</span><span class="o">=</span><span class="s">"2013-12-31"</span><span class="p">)</span>
+
+<span class="n">quandl_data</span><span class="o">.</span><span class="n">head</span><span class="p">()</span></code></pre></div>
+
+<p>The column names from Quandl’s data frame contain spaces. We need to correct that before we can proceed with the rest of the analysis. </p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># The columns' names contain spaces, make them syntactically valid
+</span><span class="n">names</span><span class="p">(</span><span class="n">my.data</span><span class="p">)</span> <span class="o">&lt;-</span> <span class="n">make.names</span><span class="p">(</span><span class="n">names</span><span class="p">(</span><span class="n">my.data</span><span class="p">))</span></code></pre></div>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+
+<span class="c"># Rename the columns we're using with underscores -- required for the linear regression</span>
+<span class="n">quandl_data</span><span class="p">[</span><span class="s">"Individual_Income_Taxes"</span><span class="p">]</span> <span class="o">=</span> <span class="n">quandl_data</span><span class="p">[</span><span class="s">"Individual Income Taxes"</span><span class="p">]</span>
+<span class="n">quandl_data</span><span class="p">[</span><span class="s">"Corporation_Income_Taxes"</span><span class="p">]</span> <span class="o">=</span> <span class="n">quandl_data</span><span class="p">[</span><span class="s">"Corporation Income Taxes"</span><span class="p">]</span>
+<span class="n">quandl_data</span><span class="p">[</span><span class="s">"Fiscal_Year"</span><span class="p">]</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">quandl_data</span><span class="o">.</span><span class="n">index</span><span class="p">))</span></code></pre></div>
+
+<p>The dataset contains three columns of interest for us: individuals’ and corporations’ income taxes as a fraction of the GDP, and fiscal year. We will first plot the individuals’ and corporations’ income taxes as a function of the fiscal year to see what the data look like.</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Create graph object
+</span><span class="n">graph</span> <span class="o">&lt;-</span> <span class="n">xyplot</span><span class="p">(</span><span class="n">Individual.Income.Taxes</span> <span class="o">~</span> <span class="n">Fiscal.Year</span><span class="p">,</span> 
+                <span class="n">data</span> <span class="o">=</span> <span class="n">my.data</span><span class="p">,</span>
+                <span class="n">type</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="s2">"g"</span><span class="p">,</span> <span class="s2">"b"</span><span class="p">),</span>
+                <span class="n">col</span> <span class="o">=</span> <span class="s2">"#00526D"</span><span class="p">)</span>
+
+<span class="n">graph</span> <span class="o">&lt;-</span> <span class="n">graph</span> <span class="o">+</span> <span class="n">xyplot</span><span class="p">(</span><span class="n">Corporation.Income.Taxes</span> <span class="o">~</span> <span class="n">Fiscal.Year</span><span class="p">,</span> 
+                        <span class="n">data</span> <span class="o">=</span> <span class="n">my.data</span><span class="p">,</span>
+                        <span class="n">type</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="s2">"b"</span><span class="p">),</span>
+                        <span class="n">col</span> <span class="o">=</span> <span class="s2">"#AD3333"</span><span class="p">)</span>
+
+<span class="c1"># Create pretty theme, because who doesn't like a nice looking graph :-)
+</span><span class="n">my.theme</span> <span class="o">&lt;-</span> <span class="n">within</span><span class="p">(</span><span class="n">trellis.par.get</span><span class="p">(),</span> <span class="p">{</span>           
+  <span class="n">plot.line</span> <span class="o">&lt;-</span> <span class="n">within</span><span class="p">(</span><span class="n">plot.line</span><span class="p">,</span> <span class="p">{</span>
+    <span class="n">lwd</span> <span class="o">&lt;-</span> <span class="m">3</span>
+  <span class="p">})</span>
+  
+  <span class="n">axis.text</span> <span class="o">&lt;-</span> <span class="n">within</span><span class="p">(</span><span class="n">axis.text</span><span class="p">,</span> <span class="p">{</span>
+    <span class="n">cex</span> <span class="o">&lt;-</span> <span class="m">1.25</span>
+  <span class="p">})</span>
+  
+  <span class="n">par.xlab.text</span> <span class="o">&lt;-</span> <span class="n">within</span><span class="p">(</span><span class="n">par.xlab.text</span><span class="p">,</span> <span class="p">{</span>
+    <span class="n">cex</span> <span class="o">&lt;-</span> <span class="m">1.5</span>
+  <span class="p">})</span>
+  
+  <span class="n">par.ylab.text</span> <span class="o">&lt;-</span> <span class="n">within</span><span class="p">(</span><span class="n">par.ylab.text</span><span class="p">,</span> <span class="p">{</span>
+    <span class="n">cex</span> <span class="o">&lt;-</span> <span class="m">1.5</span>
+  <span class="p">})</span>
+  
+  <span class="n">add.text</span> <span class="o">&lt;-</span> <span class="n">within</span><span class="p">(</span><span class="n">add.text</span><span class="p">,</span> <span class="p">{</span>
+    <span class="n">cex</span> <span class="o">&lt;-</span> <span class="m">1.25</span>
+  <span class="p">})</span>
+  
+  <span class="n">superpose.line</span> <span class="o">&lt;-</span> <span class="n">within</span><span class="p">(</span><span class="n">superpose.line</span><span class="p">,</span> <span class="p">{</span>
+    <span class="n">col</span> <span class="o">&lt;-</span> <span class="n">c</span><span class="p">(</span><span class="s2">"#00526D"</span><span class="p">,</span> <span class="s2">"#AD3333"</span><span class="p">)</span>
+    <span class="n">lwd</span> <span class="o">&lt;-</span> <span class="m">3</span>
+  <span class="p">})</span>
+<span class="p">})</span>
+
+<span class="c1"># Compute upper and lower limits of the y axes
+</span><span class="n">max.val</span> <span class="o">&lt;-</span> <span class="n">max</span><span class="p">(</span><span class="n">my.data</span><span class="o">$</span><span class="n">Corporation.Income.Taxes</span><span class="p">,</span> <span class="n">my.data</span><span class="o">$</span><span class="n">Individual.Income.Taxes</span><span class="p">)</span>
+<span class="n">ylim</span> <span class="o">&lt;-</span> <span class="n">c</span><span class="p">(</span><span class="m">0</span> <span class="o">-</span> <span class="m">0.05</span> <span class="o">*</span> <span class="n">max.val</span><span class="p">,</span> <span class="n">max.val</span> <span class="o">*</span> <span class="m">1.15</span><span class="p">)</span>
+
+<span class="c1"># Prepare a legend
+</span><span class="n">key</span> <span class="o">&lt;-</span> <span class="n">within</span><span class="p">(</span><span class="n">list</span><span class="p">(),</span> <span class="p">{</span>
+  <span class="n">text</span> <span class="o">&lt;-</span> <span class="n">c</span><span class="p">(</span><span class="s2">"Individuals"</span><span class="p">,</span> <span class="s2">"Corporations"</span><span class="p">)</span>
+  <span class="n">corner</span> <span class="o">&lt;-</span> <span class="n">c</span><span class="p">(</span><span class="m">0.05</span><span class="p">,</span> <span class="m">.95</span><span class="p">)</span>
+  <span class="n">lines</span> <span class="o">&lt;-</span> <span class="n">TRUE</span>
+  <span class="n">points</span> <span class="o">=</span> <span class="n">FALSE</span>
+<span class="p">})</span>
+
+<span class="c1"># Update graph object 
+</span><span class="n">graph</span> <span class="o">&lt;-</span> <span class="n">update</span><span class="p">(</span><span class="n">graph</span><span class="p">,</span> 
+                <span class="n">xlab</span> <span class="o">=</span> <span class="s2">"Fiscal year"</span><span class="p">,</span> <span class="n">ylab</span> <span class="o">=</span> <span class="s2">"Income taxes (% of GDP)"</span><span class="p">,</span>
+                <span class="n">ylim</span> <span class="o">=</span> <span class="n">ylim</span><span class="p">,</span>
+                <span class="n">par.settings</span> <span class="o">=</span> <span class="n">my.theme</span><span class="p">,</span>
+                <span class="n">auto.key</span> <span class="o">=</span> <span class="n">key</span><span class="p">)</span>
+
+<span class="c1"># Print graph object
+</span><span class="n">print</span><span class="p">(</span><span class="n">graph</span><span class="p">)</span></code></pre></div>
+
+<p><img src="/img/posts/2014-02-05-r-vs-python-round-3/R/graphBaseR.png" alt="Base R graph" class="full" /></p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">7</span><span class="p">))</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">quandl_data</span><span class="p">[</span><span class="s">"Fiscal_Year"</span><span class="p">],</span> <span class="n">quandl_data</span><span class="p">[</span><span class="s">"Individual_Income_Taxes"</span><span class="p">],</span> <span class="n">marker</span><span class="o">=</span><span class="s">"o"</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s">"#00526D"</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">"Individuals"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">quandl_data</span><span class="p">[</span><span class="s">"Fiscal_Year"</span><span class="p">],</span> <span class="n">quandl_data</span><span class="p">[</span><span class="s">"Corporation_Income_Taxes"</span><span class="p">],</span> <span class="n">marker</span><span class="o">=</span><span class="s">"o"</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s">"#AD3333"</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">"Corporations"</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">"Fiscal Year"</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">"Income taxes (</span><span class="si">% </span><span class="s">of GDP)"</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">69</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">quandl_data</span><span class="p">[</span><span class="s">"Fiscal_Year"</span><span class="p">][</span><span class="mi">5</span><span class="p">::</span><span class="mi">10</span><span class="p">],</span> <span class="n">quandl_data</span><span class="o">.</span><span class="n">index</span><span class="p">[</span><span class="mi">5</span><span class="p">::</span><span class="mi">10</span><span class="p">]</span><span class="o">.</span><span class="n">year</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s">"upper left"</span><span class="p">);</span></code></pre></div>
+
+<p><img src="/img/posts/2014-02-05-r-vs-python-round-3/Py/graphBasePy.png" alt="Base Python graph" class="full" /></p>
+
+<p>The first thing one can notice in this graph is the clear decreasing trend of the corporations’ income taxes: since 1945, they have dropped from about 7% of the GDP to less than 2\%. On the contrary, the individuals’ contribution to the income taxes seems to have remained stable around 8% of the GDP, with maybe a slight general increase over time. Also there seems to be correlated fluctuations, with several successive years of increase or decrease probably due to the prolonged action of successive governments. The intensity of these fluctuations seems uneven along the considered time period. Finally the corporations’ income taxes seem to decrease linearly (more or less) until the mid-80’s but do not seem to change much after that. These three elements (autocorrelation, heteroscedasticity and change in slope) will certainly raise flags in diagnostic tests but we will deal with them in another challenge. Today we want to focus on making and plotting simple linear regressions instead.</p>
+
+<p>First, let’s fit a linear model to the individual and corporation income taxes data.</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Fit individuals' income taxes data
+</span><span class="n">model.ind</span> <span class="o">&lt;-</span> <span class="n">lm</span><span class="p">(</span><span class="n">Individual.Income.Taxes</span> <span class="o">~</span> <span class="n">Fiscal.Year</span><span class="p">,</span> <span class="n">data</span> <span class="o">=</span> <span class="n">my.data</span><span class="p">)</span>
+
+<span class="c1"># Fit corporations' income taxes data
+</span><span class="n">model.corp</span> <span class="o">&lt;-</span> <span class="n">lm</span><span class="p">(</span><span class="n">Corporation.Income.Taxes</span> <span class="o">~</span> <span class="n">Fiscal.Year</span><span class="p">,</span> <span class="n">data</span> <span class="o">=</span> <span class="n">my.data</span><span class="p">)</span></code></pre></div>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="c"># Fit a linear regression to the individual income taxes time series</span>
+<span class="n">individual_regression</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">OLS</span><span class="o">.</span><span class="n">from_formula</span><span class="p">(</span><span class="s">"Individual_Income_Taxes ~ Fiscal_Year"</span><span class="p">,</span> <span class="n">quandl_data</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
+
+<span class="c"># Fit a linear regression to the corporation income taxes time series</span>
+<span class="n">corporation_regression</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">OLS</span><span class="o">.</span><span class="n">from_formula</span><span class="p">(</span><span class="s">"Corporation_Income_Taxes ~ Fiscal_Year"</span><span class="p">,</span> <span class="n">quandl_data</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span></code></pre></div>
+
+<p>Now let’s have a look to the summary statistics of each fitted model. We will
+display the R output only to keep things simple. However if you decide to 
+look at the Python output, the result of the regression might look a bit 
+different. Randy had to transform the dates into years because the fitting
+function did not seem capable of handling dates like the fitting function in
+R does (it converts the dates in days in this case).</p>
+
+<p>First, the model for individuals’ income taxes:</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Summary statistics for individual income taxes model
+</span><span class="n">summary</span><span class="p">(</span><span class="n">model.ind</span><span class="p">)</span>
+
+<span class="c1">## 
+## Call:
+## lm(formula = Individual.Income.Taxes ~ Fiscal.Year, data = my.data)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -1.9522 -0.3065  0.0217  0.3101  2.0674 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept) 7.84e+00   1.09e-01   72.18   &lt;2e-16 ***
+## Fiscal.Year 2.58e-05   1.33e-05    1.93    0.058 .  
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 0.806 on 67 degrees of freedom
+## Multiple R-squared:  0.0528,	Adjusted R-squared:  0.0387 
+## F-statistic: 3.73 on 1 and 67 DF,  p-value: 0.0575
+</span><span class="err">##</span></code></pre></div>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">print</span> <span class="n">individual_regression</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span></code></pre></div>
+
+<p>Then, the model for corporations’ income taxes:</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Summary statistics for corporation income taxes model
+</span><span class="n">summary</span><span class="p">(</span><span class="n">model.corp</span><span class="p">)</span>
+
+<span class="c1">## 
+## Call:
+## lm(formula = Corporation.Income.Taxes ~ Fiscal.Year, data = my.data)
+## 
+## Residuals:
+##    Min     1Q Median     3Q    Max 
+## -1.535 -0.478 -0.150  0.394  2.394 
+## 
+## Coefficients:
+##              Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)  3.43e+00   9.93e-02    34.6   &lt;2e-16 ***
+## Fiscal.Year -1.56e-04   1.22e-05   -12.8   &lt;2e-16 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 0.737 on 67 degrees of freedom
+## Multiple R-squared:  0.711,	Adjusted R-squared:  0.706 
+## F-statistic:  164 on 1 and 67 DF,  p-value: &lt;2e-16
+</span><span class="err">##</span></code></pre></div>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">print</span> <span class="n">corporation_regression</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span></code></pre></div>
+
+<p>What do we see? For the individual income taxes, we see a small, positive increase of +2.579e-05% of GDP per day (R treats dates as days). Over the whole 1945 to 2013 period, this corresponds to a total increase of +0.64% of GDP, <em>i.e.</em> a +8.4% global increase in the contribution of individuals to income taxes. However this increase is only marginally significant (p = 0.0575), therefore we can consider that the contribution of individuals to the income taxes has remained fairly stable during the 7 decades since WWII.</p>
+
+<p>We have a very different story for the corporation income taxes. The linear model shows a strongly significant (p &lt; 2e-16) decrease of -1.564e-04% of GDP per day. Over the 1945-2013 period, this corresponds to a total decrease of -3.88% of GDP, <em>i.e.</em> a -80.1% global decrease in the contribution of corporations to income taxes.</p>
+
+<p>Of course, we need to be very cautious in the interpretation of these results because the linear models we have fitted to the data do not take into account the potential sources of error that we have identified earlier. We will see next time how we can evaluate them, and correct them if necessary.</p>
+
+<p>For now, we will assume that everything is good and we will focus on plotting the two linear models and their confidence interval over the data.</p>
+
+<p>To do this, we will first compute the value and confidence interval as predicted by each model for different dates. We will choose dates that cover the whole studied period (1945-2013), plus a little extra on both ends (10%) to make the graph more aesthetically pleasing (<em>i.e.</em>, the models’ predictions will cover a larger time period than the x-axis limits of the graph). </p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Create new dates for model predictions
+</span><span class="n">difference</span> <span class="o">&lt;-</span> <span class="n">as.Date</span><span class="p">(</span><span class="s2">"2013-12-31"</span><span class="p">)</span> <span class="o">-</span> <span class="n">as.Date</span><span class="p">(</span><span class="s2">"1945-12-31"</span><span class="p">)</span>
+<span class="n">new.data</span> <span class="o">&lt;-</span> <span class="n">data.frame</span><span class="p">(</span><span class="n">Fiscal.Year</span> <span class="o">=</span> <span class="n">seq.Date</span><span class="p">(</span><span class="n">from</span> <span class="o">=</span> <span class="n">as.Date</span><span class="p">(</span><span class="s2">"1945-12-31"</span><span class="p">)</span> <span class="o">-</span> <span class="m">0.1</span> <span class="o">*</span> <span class="n">difference</span><span class="p">,</span> 
+                                              <span class="n">to</span> <span class="o">=</span> <span class="n">as.Date</span><span class="p">(</span><span class="s2">"2013-12-31"</span><span class="p">)</span> <span class="o">+</span> <span class="m">0.1</span> <span class="o">*</span> <span class="n">difference</span><span class="p">,</span>
+                                              <span class="n">by</span> <span class="o">=</span> <span class="s2">"years"</span><span class="p">))</span>
+
+<span class="c1"># Compute model predictions (values + confidence intervals) for new dates
+# Model of individual income taxes
+</span><span class="n">predict.ind</span> <span class="o">&lt;-</span> <span class="n">within</span><span class="p">(</span><span class="n">new.data</span><span class="p">,</span> <span class="p">{</span>
+  <span class="n">Predictions</span> <span class="o">&lt;-</span> <span class="n">as.data.frame</span><span class="p">(</span><span class="n">predict</span><span class="p">(</span><span class="n">model.ind</span><span class="p">,</span> 
+                                       <span class="n">newdata</span> <span class="o">=</span> <span class="n">new.data</span><span class="p">,</span>
+                                       <span class="n">interval</span> <span class="o">=</span> <span class="s2">"confidence"</span><span class="p">))</span>
+<span class="p">})</span>
+
+<span class="c1"># Model of corporation income taxes
+</span><span class="n">predict.corp</span> <span class="o">&lt;-</span> <span class="n">within</span><span class="p">(</span><span class="n">new.data</span><span class="p">,</span> <span class="p">{</span>
+  <span class="n">Predictions</span> <span class="o">&lt;-</span> <span class="n">as.data.frame</span><span class="p">(</span><span class="n">predict</span><span class="p">(</span><span class="n">model.corp</span><span class="p">,</span> 
+                                       <span class="n">newdata</span> <span class="o">=</span> <span class="n">new.data</span><span class="p">,</span>
+                                       <span class="n">interval</span> <span class="o">=</span> <span class="s2">"confidence"</span><span class="p">))</span>
+<span class="p">})</span></code></pre></div>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="c"># Predict the 95% confidence bands for the regression</span>
+<span class="n">individual_prstd</span><span class="p">,</span> <span class="n">individual_iv_l</span><span class="p">,</span> <span class="n">individual_iv_u</span> <span class="o">=</span> <span class="n">wls_prediction_std</span><span class="p">(</span><span class="n">individual_regression</span><span class="p">)</span>
+<span class="n">individual_st</span><span class="p">,</span> <span class="n">individual_data</span><span class="p">,</span> <span class="n">individual_ss2</span> <span class="o">=</span> <span class="n">summary_table</span><span class="p">(</span><span class="n">individual_regression</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.05</span><span class="p">)</span>
+
+<span class="n">individual_fitted_values</span> <span class="o">=</span> <span class="n">individual_data</span><span class="p">[:,</span> <span class="mi">2</span><span class="p">]</span>
+<span class="n">individual_predict_mean_ci_low</span><span class="p">,</span> <span class="n">individual_predict_mean_ci_upper</span> <span class="o">=</span> <span class="n">individual_data</span><span class="p">[:,</span> <span class="mi">4</span><span class="p">:</span><span class="mi">6</span><span class="p">]</span><span class="o">.</span><span class="n">T</span>
+
+<span class="c"># Predict the 95% confidence bands for the regression</span>
+<span class="n">corporation_prstd</span><span class="p">,</span> <span class="n">corporation_iv_l</span><span class="p">,</span> <span class="n">corporation_iv_u</span> <span class="o">=</span> <span class="n">wls_prediction_std</span><span class="p">(</span><span class="n">corporation_regression</span><span class="p">)</span>
+<span class="n">corporation_st</span><span class="p">,</span> <span class="n">corporation_data</span><span class="p">,</span> <span class="n">corporation_ss2</span> <span class="o">=</span> <span class="n">summary_table</span><span class="p">(</span><span class="n">corporation_regression</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.05</span><span class="p">)</span>
+
+<span class="n">corporation_fitted_values</span> <span class="o">=</span> <span class="n">corporation_data</span><span class="p">[:,</span> <span class="mi">2</span><span class="p">]</span>
+<span class="n">corporation_predict_mean_ci_low</span><span class="p">,</span> <span class="n">corporation_predict_mean_ci_upper</span> <span class="o">=</span> <span class="n">corporation_data</span><span class="p">[:,</span> <span class="mi">4</span><span class="p">:</span><span class="mi">6</span><span class="p">]</span><span class="o">.</span><span class="n">T</span></code></pre></div>
+
+<p>And finally, we will add to the data plot the predicted values as a line and the confidence intervals of the predicted values as a polygon.</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Add predicted values for model of individual income taxes 
+</span><span class="n">graph</span> <span class="o">&lt;-</span> <span class="n">graph</span> <span class="o">+</span> <span class="n">xyplot</span><span class="p">(</span><span class="n">Predictions</span><span class="o">$</span><span class="n">fit</span> <span class="o">~</span> <span class="n">Fiscal.Year</span><span class="p">,</span> 
+                        <span class="n">data</span> <span class="o">=</span> <span class="n">predict.ind</span><span class="p">,</span>
+                        <span class="n">type</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="s2">"l"</span><span class="p">),</span>
+                        <span class="n">col</span> <span class="o">=</span> <span class="s2">"#00526D"</span><span class="p">)</span>
+
+<span class="c1"># Add predicted values for model of corporation income taxes 
+</span><span class="n">graph</span> <span class="o">&lt;-</span> <span class="n">graph</span> <span class="o">+</span> <span class="n">xyplot</span><span class="p">(</span><span class="n">Predictions</span><span class="o">$</span><span class="n">fit</span> <span class="o">~</span> <span class="n">Fiscal.Year</span><span class="p">,</span> 
+                        <span class="n">data</span> <span class="o">=</span> <span class="n">predict.corp</span><span class="p">,</span>
+                        <span class="n">type</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="s2">"l"</span><span class="p">),</span>
+                        <span class="n">col</span> <span class="o">=</span> <span class="s2">"#AD3333"</span><span class="p">)</span>
+
+<span class="c1"># Add confidence polygon for model of individual income taxes 
+</span><span class="n">graph</span> <span class="o">&lt;-</span> <span class="n">graph</span> <span class="o">+</span> <span class="n">layer_</span><span class="p">(</span><span class="n">lpolygon</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="n">predict.ind</span><span class="o">$</span><span class="n">Fiscal.Year</span><span class="p">,</span> 
+                                       <span class="n">rev</span><span class="p">(</span><span class="n">predict.ind</span><span class="o">$</span><span class="n">Fiscal.Year</span><span class="p">)),</span>
+                                 <span class="n">y</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="n">predict.ind</span><span class="o">$</span><span class="n">Predictions</span><span class="o">$</span><span class="n">upr</span><span class="p">,</span> 
+                                       <span class="n">rev</span><span class="p">(</span><span class="n">predict.ind</span><span class="o">$</span><span class="n">Predictions</span><span class="o">$</span><span class="n">lwr</span><span class="p">)),</span>
+                                 <span class="n">col</span> <span class="o">=</span> <span class="s2">"#00526D25"</span><span class="p">,</span> 
+                                 <span class="n">border</span> <span class="o">=</span> <span class="s2">"#00526D75"</span><span class="p">))</span>
+
+<span class="c1"># Add confidence polygon for model of corporation income taxes 
+</span><span class="n">graph</span> <span class="o">&lt;-</span> <span class="n">graph</span> <span class="o">+</span> <span class="n">layer_</span><span class="p">(</span><span class="n">lpolygon</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="n">predict.corp</span><span class="o">$</span><span class="n">Fiscal.Year</span><span class="p">,</span> 
+                                       <span class="n">rev</span><span class="p">(</span><span class="n">predict.corp</span><span class="o">$</span><span class="n">Fiscal.Year</span><span class="p">)),</span>
+                                 <span class="n">y</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="n">predict.corp</span><span class="o">$</span><span class="n">Predictions</span><span class="o">$</span><span class="n">upr</span><span class="p">,</span> 
+                                       <span class="n">rev</span><span class="p">(</span><span class="n">predict.corp</span><span class="o">$</span><span class="n">Predictions</span><span class="o">$</span><span class="n">lwr</span><span class="p">)),</span>
+                                 <span class="n">col</span> <span class="o">=</span> <span class="s2">"#AD333325"</span><span class="p">,</span> 
+                                 <span class="n">border</span> <span class="o">=</span> <span class="s2">"#AD333375"</span><span class="p">))</span>
+                                 
+<span class="c1"># Reprint graph object
+</span><span class="n">print</span><span class="p">(</span><span class="n">graph</span><span class="p">)</span></code></pre></div>
+
+<p><img src="/img/posts/2014-02-05-r-vs-python-round-3/R/graphPredictR1.png" alt="Predict + CI R graph" class="full" /></p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">quandl_data</span><span class="p">[</span><span class="s">"Fiscal_Year"</span><span class="p">],</span>
+         <span class="n">individual_fitted_values</span><span class="p">,</span>
+         <span class="n">color</span><span class="o">=</span><span class="s">"#00526D"</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">fill_between</span><span class="p">(</span><span class="n">quandl_data</span><span class="p">[</span><span class="s">"Fiscal_Year"</span><span class="p">],</span>
+                 <span class="n">individual_predict_mean_ci_low</span><span class="p">,</span>
+                 <span class="n">individual_predict_mean_ci_upper</span><span class="p">,</span>
+                 <span class="n">color</span><span class="o">=</span><span class="s">"#00526D"</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">quandl_data</span><span class="p">[</span><span class="s">"Fiscal_Year"</span><span class="p">],</span>
+         <span class="n">corporation_fitted_values</span><span class="p">,</span>
+         <span class="n">color</span><span class="o">=</span><span class="s">"#AD3333"</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">fill_between</span><span class="p">(</span><span class="n">quandl_data</span><span class="p">[</span><span class="s">"Fiscal_Year"</span><span class="p">],</span>
+                 <span class="n">corporation_predict_mean_ci_low</span><span class="p">,</span>
+                 <span class="n">corporation_predict_mean_ci_upper</span><span class="p">,</span>
+                 <span class="n">color</span><span class="o">=</span><span class="s">"#AD3333"</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s">"upper left"</span><span class="p">);</span></code></pre></div>
+
+<p><img src="/img/posts/2014-02-05-r-vs-python-round-3/Py/graphPredictPy.png" alt="Predict + CI Python graph" class="full" /></p>
+
+<p>And that’s it for today! We hope that you enjoyed it and that you’ll come back next time to find out more about running diagnotic tests and correcting potential errors on today’s linear models. </p>
+
+<hr />
+
+<h4 id="source-code">3 - Source code</h4>
+
+<p>R and Python source codes are available 
+<a href="https://github.com/morpionZ/R-vs-Python/tree/master/Linear%20regression/code">here</a>.</p>
+
+
+        <hr>
+
+        <p>Categories:
+            
+                
+                    <a href="/blog/">blog</a> &bull;
+                
+            
+                
+                    <a href="/category/rvspython/">rvspython</a> &bull;
+                
+            
+        </p>
+
+        <hr>
+
+        <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'theswarmlab';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+    </div>
+
+</section>
+
+<footer class="bg-darkest-gray">
+    <div class="container">
+        <span style="color: white">Subscribe <a href="/feed.xml">via RSS</a></span>
+    </div>
+</footer>
+
+  <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; Swarm Lab 2015</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        
+                        <li><a href="https://twitter.com/sjmgarnier"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        
+                        <li><a href="https://plus.google.com/u/0/+SimonGarnier"><i class="fa fa-google-plus"></i></a>
+                        </li>
+                        
+                        <li><a href="https://github.com/swarm-lab"><i class="fa fa-github"></i></a>
+                        </li>
+                        
+                        <li><a href="https://www.linkedin.com/in/simongarnier"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <!--<li><a href="#">Privacy Policy</a>
+                        </li>
+                        <li><a href="#">Terms of Use</a>
+                        </li>-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+ <!-- jQuery Version 1.11.0 -->
+    <script src="/js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="/js/jquery.easing.min.js"></script>
+    <script src="/js/classie.js"></script>
+    <script src="/js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="/js/jqBootstrapValidation.js"></script>
+    <script src="/js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="/js/agency.js"></script>
+
+
+</body>
+</html>

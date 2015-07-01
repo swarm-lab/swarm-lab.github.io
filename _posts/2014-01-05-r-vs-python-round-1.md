@@ -1,9 +1,12 @@
 ---
 title: R vs Python - Round 1
 date: 2014-01-05
+author: Simon Garnier
 layout: post
 type: post
-category: Blog
+category: 
+    - blog
+    - rvspython
 published: true
 
 ---
@@ -14,20 +17,13 @@ published: true
 
 **Python code by:** Randy Olson ([www.randalolson.com](http://www.randalolson.com) / [@randal_olson](http://twitter.com/randal_olson))
 
-Document generated with [RStudio](http://www.rstudio.com), [knitr](http://yihui.name/knitr/), and [pandoc](http://johnmacfarlane.net/pandoc/)). Python figures generated with [iPython Notebook](http://ipython.org/notebook.html)).
+Document generated with [RStudio](http://www.rstudio.com), [knitr](http://yihui.name/knitr/), and [pandoc](http://johnmacfarlane.net/pandoc/). Python figures generated with [iPython Notebook](http://ipython.org/notebook.html).
 
 ---
 
 #### Foreword ####
 
-My friend Randy Olson and I got into the habit to argue about the relative qualities of our favorite languages for data 
-analysis and visualization. I am an enthusiastic R user ([www.r-project.org](http://www.r-project.org)) while Randy is a 
-fan of Python ([www.python.org](http://www.python.org)). One thing we agree on however is that our discussions are 
-meaningless unless we actually put R and Python to a series of tests to showcase their relative strengths and weaknesses. 
-Essentially we will set a common goal (*e.g.*, perform a particular type of data analysis or draw a particular type of
-graph) and create the R and Python codes to achieve this goal. And since Randy and I are all about sharing, open source 
-and open access, we decided to make public the results of our friendly challenges so that you can help us decide between 
-R and Python and, hopefully, also learn something along the way.
+My friend Randy Olson and I got into the habit to argue about the relative qualities of our favorite languages for data analysis and visualization. I am an enthusiastic R user ([www.r-project.org](http://www.r-project.org)) while Randy is a fan of Python ([www.python.org](http://www.python.org)). One thing we agree on however is that our discussions are meaningless unless we actually put R and Python to a series of tests to showcase their relative strengths and weaknesses. Essentially we will set a common goal (*e.g.*, perform a particular type of data analysis or draw a particular type of graph) and create the R and Python codes to achieve this goal. And since Randy and I are all about sharing, open source and open access, we decided to make public the results of our friendly challenges so that you can help us decide between R and Python and, hopefully, also learn something along the way.
 
 ___
 
@@ -151,7 +147,7 @@ graph <- barchart(Full_Title ~ Deaths_Per_Minute, data = body.count.data)
 print(graph)
 {% endhighlight %}
 
-<img src="figure/baseGraphR.png" title="plot of chunk baseGraphR" alt="plot of chunk baseGraphR" style="display: block; margin: auto;" />
+![Base R graph](/img/posts/2014-01-05-r-vs-python-round-1/R/baseGraphR.png){: .full }
 
 {% highlight python %}
 # plot the bars
@@ -169,8 +165,7 @@ rects = plt.barh(range(len(body_count_data["Deaths_Per_Minute"])),
 yticks(range(len(body_count_data["Full_Title"])), body_count_data["Full_Title"].values, fontsize=14)xticks(arange(0, 5, 1), [""])
 {% endhighlight %}
 
-
-<center> ![](figurePy/basePy.png) </center>
+![Base Python graph](/img/posts/2014-01-05-r-vs-python-round-1/Py/basePy.png){: .full }
 
 Ok, now let's make this pretty. 
 
@@ -203,7 +198,7 @@ graph <- update(
 print(graph)
 {% endhighlight %}
 
-<img src="figure/prettyR.png" title="plot of chunk prettyR" alt="plot of chunk prettyR" style="display: block; margin: auto;" />
+![Pretty R graph](/img/posts/2014-01-05-r-vs-python-round-1/R/prettyR.png){: .full }
 
 {% highlight python %}
 # Don't have any x tick labels
@@ -225,8 +220,7 @@ ax.tick_params(axis="x", color="white")
 ax.xaxis.grid(color="white", linestyle="-")
 {% endhighlight %}
 
-
-<center> ![](figurePy/prettyPy.png) </center>
+![Pretty Python graph](/img/posts/2014-01-05-r-vs-python-round-1/Py/prettyPy.png){: .full }
 
 Finally, the last thing we want to add to our graph is the number of deaths per minute and the duration of each movie on 
 the right of the graph.
@@ -249,7 +243,7 @@ graph <- graph + layer(with(body.count.data,
 print(graph)
 {% endhighlight %}
 
-<img src="figure/rightLabelsR.png" title="plot of chunk rightLabelsR" alt="plot of chunk rightLabelsR" style="display: block; margin: auto;" />
+![Right labels R graph](/img/posts/2014-01-05-r-vs-python-round-1/R/rightLabelsR.png){: .full }
 
 {% highlight python %}
 # This function adds the deaths per minute label to the right of the bars
@@ -270,8 +264,7 @@ plt.text(width + 0.25,
 autolabel(rects)
 {% endhighlight %}
 
-
-<center> ![](figurePy/finalPy.png) </center>
+![Right labels R graph](/img/posts/2014-01-05-r-vs-python-round-1/Py/finalPy.png){: .full }
 
 ___
 
@@ -305,7 +298,7 @@ graph <- graph + layer_(
 print(graph)
 {% endhighlight %}
 
-<img src="figure/gunR.png" title="plot of chunk gunR" alt="plot of chunk gunR" style="display: block; margin: auto;" />
+![Gun R graph](/img/posts/2014-01-05-r-vs-python-round-1/R/gunR.png){: .full }
 
 ___
 
@@ -318,6 +311,6 @@ For F# fan, [Terje Tyldum](http://terjetyl.ghost.io/) has written his version of
 
 Randy and I also recommend that you check out 
 [this post](http://nbviewer.ipython.org/github/yaph/ipython-notebooks/blob/master/Exploring%20Movie%20Body%20Counts.ipynb)
-by [Ramiro Gómez](http://ramiro.org/) ([\@yaph](https://twitter.com/yaph)) where he does a more in-depth analysis of the 
+by [Ramiro Gómez](http://ramiro.org/) ([@yaph](https://twitter.com/yaph)) where he does a more in-depth analysis of the 
 data set we used for today’s challenge.
 
