@@ -18,8 +18,11 @@ title: In the media
     <param name="swLiveConnect" value="true" />
     <param name="allowScriptAccess" value="always" />
     <embed src="http://c.brightcove.com/services/viewer/federated_f9?isVid=1&isUI=1" bgcolor="#FFFFFF" flashVars="videoId=2260588361001&playerID=4298174096001&playerKey=AQ~~,AAAAAFNl7zk~,OmXvgxJOvrFlNNcISwb5HS0SrUe6qS3Q&domain=embed&dynamicStreaming=true" base="http://admin.brightcove.com" name="flashObj" width="100%" height="400" seamlesstabbing="false" type="application/x-shockwave-flash" allowFullScreen="true" allowScriptAccess="always" swLiveConnect="true" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></embed></object>
+<<<<<<< HEAD
     
     <br>
+=======
+>>>>>>> ba8699efb578130ab0155c9c5aea221afbfd6216
 
 1. "Robot ants: mini-machines mimic insect colony", by Victoria Gill for BBC News
 
