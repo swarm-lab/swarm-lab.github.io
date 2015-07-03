@@ -1,6 +1,6 @@
 ---
 title: Brainless intelligence
-subtitle: Problem solving in the slime mold
+subtitle: Problem solving in slime mold
 layout: default
 modal-id: 2
 date: 2015-06-02
