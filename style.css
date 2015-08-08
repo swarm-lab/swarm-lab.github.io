@@ -1090,6 +1090,10 @@ header .cat-heading {
         margin: 0 0 30px;
     }
 }
+
+blockquote {
+    text-align: justify;
+}
 .highlight table td { padding: 5px; }
 .highlight table pre { margin: 0; }
 .highlight .cm {
