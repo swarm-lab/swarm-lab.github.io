@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>videoplayR v0.3 is out!</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Welcome to the Swarm Lab where we study Swarm Intelligence in natural and artificial systems.">
+    <link rel="canonical" href="http://www.theswarmlab.com/blog/2015/09/10/videoplayR-v0.3-is-out/">
+
+    <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Google Analytics -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-2260031-8', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/img/favicon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/img/favicon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/img/favicon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/favicon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/img/favicon/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/img/favicon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/img/favicon/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/img/favicon/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="/img/favicon/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="/img/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="/img/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/img/favicon/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="/img/favicon/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="/img/favicon/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="/img/favicon/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="/img/favicon/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="/img/favicon/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="/img/favicon/mstile-310x310.png" />
+
+</head>
+
+
+<body id="nofront" class="index">
+
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!--<a class="navbar-brand page-scroll" href="#page-top">Swarm Lab</a>-->
+            <a class="navbar-brand page-scroll" href="/">
+                <img src="/img/logos/swarmlab.png" alt=Swarm Lab style="height:250%; position: relative; top: -75%;">
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="/#about">About</a>
+                </li>
+                <!--<li>
+                    <a class="page-scroll" href="#research">Research</a>
+                </li>-->
+
+                <li class="dropdown">
+                    <a class="dropdown-toggle keep-open" data-toggle="dropdown" data-hover="dropdown" href="/#research">
+                        Research<i class="fa fa-angle-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="page-scroll" href="/#research">Current research</a></li>
+                        <li><a href="/publications/">Publication list</a></li>
+                        <li><a href="/media/">In the media</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a class="page-scroll" href="/#teaching">Teaching</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="/#dev">Dev</a>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle keep-open" data-toggle="dropdown" data-hover="dropdown" href="/#team">
+                        Team<i class="fa fa-angle-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/#team">Current members</a></li>
+                        <li><a href="/previous_members/">Previous members</a></li>
+                        <li><a href="/join/">Join the lab</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="page-scroll" href="/#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+<section class="bg-white post">
+
+    <div class="entry">
+
+        <h2>videoplayR v0.3 is out!</h2>
+        <h3></h3>
+
+        <p>Written by Simon Garnier on September 10, 2015</p>
+
+        <hr>
+
+        <p>The people who know me a bit are very much aware of the fact that I am an avid <a href="http://www.r-project.org">R</a> user AND proselyte. I perform all my data processing and visualization in R; I write reports and presentations in R; I even write R packages just for the pleasure of doing it (for instance, I created the <a href="https://github.com/swarm-lab/editR"><code class="highlighter-rouge">editR</code></a> package essentially to see how easy it would be to build a complete web-application with R. Hint: it’s not as hard as I thought it would be).</p>
+
+<p>While R is serving me very well, it always had one big limitation: it cannot process videos. This forced me to use Matlab (ew!) to develop computer vision scripts and applications for processing the videos from our behavioral experiments. Now, I do not have anything against Matlab in particular (besides the fact that it is ridiculously expensive), but I would rather keep my entire data processing workflow within R as much as possible, which meant that I had to either wait for someone to finally develop a computer vision library for R, or develop it myself. And so, this is how <a href="https://github.com/swarm-lab/videoplayR"><code class="highlighter-rouge">videoplayR</code></a> came to be.</p>
+
+<p><img src="/img/posts/2015-09-10-videoplayR-v0.3-is-out/tracks.png" alt="Trajectories of three ants tracked with `videoplayR`" class="wrap-around-right" /></p>
+
+<p><code class="highlighter-rouge">videoplayR</code> is an embryo of a computer vision library for R. It is built upon a powerful C++ image and video processing library called <a href="http://opencv.org/">OpenCV</a>. I used the fantastic <a href="http://www.rcpp.org/"><code class="highlighter-rouge">Rcpp</code></a> suite of R packages to interface <code class="highlighter-rouge">OpenCV</code> with R. And it’s working! For instance, I managed to create and run successfully a basic particle tracker on one of our ant videos. You can see the result in the screen capture on the right. The software detected and tracked the three ants in the video (technically, there are 5 ants in this video, but 2 of them never moved). It’s all done with a few lines of R code thanks to <code class="highlighter-rouge">videoplayR</code>. If you want to see for yourself how easy it is to use <code class="highlighter-rouge">videoplayR</code>, you can play with the different examples in the package vignette that I made available on <a href="http://rpubs.com/">Rpubs</a> at: <a href="http://rpubs.com/sjmgarnier/videoplayR">http://rpubs.com/sjmgarnier/videoplayR</a>.</p>
+
+<p>It is not perfect yet. It’s lacking a lot of basic and advanced features that are normally found in a full-fledged computer vision library. It requires the installation of OpenCV, which is fairly standardized on Mac (thanks to <a href="http://brew.sh/">Homebrew</a> and <a href="https://www.macports.org/">MacPorts</a>) and Linux, but not so much on Windows. Because of that, <code class="highlighter-rouge">videoplayR</code> is not (yet) available on Windows, and is unlikely to end up on <a href="https://cran.r-project.org/">CRAN</a> anytime soon, unless someone with a lot more experience than me can figure out how to ship OpenCV alongside <code class="highlighter-rouge">videoplayR</code> in a way that can compile (I tried, I failed). All the functions could probably be more optimized, but that too will require the help of a C++ guru.</p>
+
+<p>However what is currently available in the package works, and it works pretty well. I believe that it is intuitive enough for most people to get started with image and video processing with R. And it is fairly fast; I have created a basic particle detector that ran at about 21 images per second on my laptop with HD videos. This number can certainly be improved, but it is not bad at all for a first try. I will keep improving it over time following the needs of my laboratory, but I welcome comments, bug reports and feature requests - or, better, pull requests - that can be made directly on the <a href="https://github.com/">Github</a> repository of the package at <a href="https://github.com/swarm-lab/videoplayR">https://github.com/swarm-lab/videoplayR</a>.</p>
+
+<hr />
+
+<p><small>I should mention that I am certainly not the only R user who is desperate enough to have developed a computer vision library for his favorite language. A number of packages have been created to read, process and write images with R. For instance, you can find the  <a href="http://bioconductor.org/packages/release/bioc/html/EBImage.html"><code class="highlighter-rouge">EBImage</code></a> package on BioConductor, or the <a href="https://cran.r-project.org/web/packages/ripa/ripa.pdf"><code class="highlighter-rouge">ripa</code></a> package on CRAN. However good these two packages are at processing images (they are very good), they cannot read videos, which is deal breaker for me.</small></p>
+
+<p><small>Very recently, a new package called <a href="http://dahtah.github.io/imager/"><code class="highlighter-rouge">imager</code></a> has been released that is capable of reading videos. It is a fantastic package with a lot of very well thought out functions that I recommend you try. However it has the big disadvantage of loading all the frames of a video directly in R’s memory, making it virtually unusable with the large HD videos that we are used to handle in the laboratory. The same developer also released an experimental package called <a href="https://github.com/dahtah/imagerstreams"><code class="highlighter-rouge">imagerstreams</code></a> that is capable of performing “out-of-R-memory” video processing using OpenCV, like <code class="highlighter-rouge">videoplayR</code>. But a few tests showed that it was not capable of very high processing speeds with HD videos (about 4.5 times slower than <code class="highlighter-rouge">videoplayR</code>). However I am in contact with the developer to find a way to make <code class="highlighter-rouge">videoplayR</code> and <code class="highlighter-rouge">imager</code> talk to each other in order to offer R users the best experience possible when developing computer vision software with R.</small></p>
+
+
+        <hr>
+
+        <p>Categories:
+            
+                
+                    <a href="/blog/">blog</a> &bull;
+                
+            
+        </p>
+
+        <hr>
+
+        <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'theswarmlab';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+    </div>
+
+</section>
+
+<footer class="bg-darkest-gray">
+    <div class="container">
+        <span style="color: white">Subscribe <a href="/feed.xml">via RSS</a></span>
+    </div>
+</footer>
+
+  <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; Swarm Lab 2015</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        
+                        <li><a href="https://twitter.com/sjmgarnier"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        
+                        <li><a href="https://plus.google.com/u/0/+SimonGarnier"><i class="fa fa-google-plus"></i></a>
+                        </li>
+                        
+                        <li><a href="https://github.com/swarm-lab"><i class="fa fa-github"></i></a>
+                        </li>
+                        
+                        <li><a href="https://www.linkedin.com/in/simongarnier"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <!--<li><a href="#">Privacy Policy</a>
+                        </li>
+                        <li><a href="#">Terms of Use</a>
+                        </li>-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+ <!-- jQuery Version 1.11.0 -->
+    <script src="/js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="/js/jquery.easing.min.js"></script>
+    <script src="/js/classie.js"></script>
+    <script src="/js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="/js/jqBootstrapValidation.js"></script>
+    <script src="/js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="/js/agency.js"></script>
+
+
+</body>
+</html>
