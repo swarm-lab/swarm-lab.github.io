@@ -7,7 +7,7 @@
     <title>R vs Python - Round 3</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Welcome to the Swarm Lab where we study Swarm Intelligence in natural and artificial systems.">
-    <link rel="canonical" href="http://www.theswarmlab.com/blog/rvspython/2014/02/05/r-vs-python-round-3/">
+    <link rel="canonical" href="http://www.theswarmlab.com/blog/rvspython/r/2014/02/05/r-vs-python-round-3/">
 
     <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
     <link rel="stylesheet" href="/style.css">
@@ -188,8 +188,8 @@
 <p>Now, let’s load the dataset from Quandl. You can find it on Quandl’s website <a href="http://www.quandl.com/TPC/HIST_RECEIPT-Historical-Source-of-Revenue-as-Share-of-GDP">here</a>. Among other things, this dataset contains the contributions of individuals and corporations to the income taxes, expressed as a fraction of the GDP. Its original source is the <a href="http://www.taxpolicycenter.org/">Tax Policy Center</a>. The dataset code at Quandl is “TPC/HIST_RECEIPT” and we will retrieve data from December 31, 1945, to December 31, 2013.</p>
 
 <div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Load data from Quandl
-</span><span class="n">my.data</span> <span class="o">&lt;-</span> <span class="n">Quandl</span><span class="p">(</span><span class="s2">"TPC/HIST_RECEIPT"</span><span class="p">,</span> 
-                  <span class="n">start_date</span> <span class="o">=</span> <span class="s2">"1945-12-31"</span><span class="p">,</span> 
+</span><span class="n">my.data</span> <span class="o">&lt;-</span> <span class="n">Quandl</span><span class="p">(</span><span class="s2">"TPC/HIST_RECEIPT"</span><span class="p">,</span>
+                  <span class="n">start_date</span> <span class="o">=</span> <span class="s2">"1945-12-31"</span><span class="p">,</span>
                   <span class="n">end_date</span> <span class="o">=</span> <span class="s2">"2013-12-31"</span><span class="p">)</span>
 
 <span class="c1"># Display first lines of the data frame
@@ -201,7 +201,7 @@
 
 <span class="n">quandl_data</span><span class="o">.</span><span class="n">head</span><span class="p">()</span></code></pre></div>
 
-<p>The column names from Quandl’s data frame contain spaces. We need to correct that before we can proceed with the rest of the analysis. </p>
+<p>The column names from Quandl’s data frame contain spaces. We need to correct that before we can proceed with the rest of the analysis.</p>
 
 <div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># The columns' names contain spaces, make them syntactically valid
 </span><span class="n">names</span><span class="p">(</span><span class="n">my.data</span><span class="p">)</span> <span class="o">&lt;-</span> <span class="n">make.names</span><span class="p">(</span><span class="n">names</span><span class="p">(</span><span class="n">my.data</span><span class="p">))</span></code></pre></div>
@@ -217,12 +217,12 @@
 <p>The dataset contains three columns of interest for us: individuals’ and corporations’ income taxes as a fraction of the GDP, and fiscal year. We will first plot the individuals’ and corporations’ income taxes as a function of the fiscal year to see what the data look like.</p>
 
 <div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Create graph object
-</span><span class="n">graph</span> <span class="o">&lt;-</span> <span class="n">xyplot</span><span class="p">(</span><span class="n">Individual.Income.Taxes</span> <span class="o">~</span> <span class="n">Fiscal.Year</span><span class="p">,</span> 
+</span><span class="n">graph</span> <span class="o">&lt;-</span> <span class="n">xyplot</span><span class="p">(</span><span class="n">Individual.Income.Taxes</span> <span class="o">~</span> <span class="n">Fiscal.Year</span><span class="p">,</span>
                 <span class="n">data</span> <span class="o">=</span> <span class="n">my.data</span><span class="p">,</span>
                 <span class="n">type</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="s2">"g"</span><span class="p">,</span> <span class="s2">"b"</span><span class="p">),</span>
                 <span class="n">col</span> <span class="o">=</span> <span class="s2">"#00526D"</span><span class="p">)</span>
 
-<span class="n">graph</span> <span class="o">&lt;-</span> <span class="n">graph</span> <span class="o">+</span> <span class="n">xyplot</span><span class="p">(</span><span class="n">Corporation.Income.Taxes</span> <span class="o">~</span> <span class="n">Fiscal.Year</span><span class="p">,</span> 
+<span class="n">graph</span> <span class="o">&lt;-</span> <span class="n">graph</span> <span class="o">+</span> <span class="n">xyplot</span><span class="p">(</span><span class="n">Corporation.Income.Taxes</span> <span class="o">~</span> <span class="n">Fiscal.Year</span><span class="p">,</span>
                         <span class="n">data</span> <span class="o">=</span> <span class="n">my.data</span><span class="p">,</span>
                         <span class="n">type</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="s2">"b"</span><span class="p">),</span>
                         <span class="n">col</span> <span class="o">=</span> <span class="s2">"#AD3333"</span><span class="p">)</span>
@@ -232,23 +232,23 @@
   <span class="n">plot.line</span> <span class="o">&lt;-</span> <span class="n">within</span><span class="p">(</span><span class="n">plot.line</span><span class="p">,</span> <span class="p">{</span>
     <span class="n">lwd</span> <span class="o">&lt;-</span> <span class="m">3</span>
   <span class="p">})</span>
-  
+
   <span class="n">axis.text</span> <span class="o">&lt;-</span> <span class="n">within</span><span class="p">(</span><span class="n">axis.text</span><span class="p">,</span> <span class="p">{</span>
     <span class="n">cex</span> <span class="o">&lt;-</span> <span class="m">1.25</span>
   <span class="p">})</span>
-  
+
   <span class="n">par.xlab.text</span> <span class="o">&lt;-</span> <span class="n">within</span><span class="p">(</span><span class="n">par.xlab.text</span><span class="p">,</span> <span class="p">{</span>
     <span class="n">cex</span> <span class="o">&lt;-</span> <span class="m">1.5</span>
   <span class="p">})</span>
-  
+
   <span class="n">par.ylab.text</span> <span class="o">&lt;-</span> <span class="n">within</span><span class="p">(</span><span class="n">par.ylab.text</span><span class="p">,</span> <span class="p">{</span>
     <span class="n">cex</span> <span class="o">&lt;-</span> <span class="m">1.5</span>
   <span class="p">})</span>
-  
+
   <span class="n">add.text</span> <span class="o">&lt;-</span> <span class="n">within</span><span class="p">(</span><span class="n">add.text</span><span class="p">,</span> <span class="p">{</span>
     <span class="n">cex</span> <span class="o">&lt;-</span> <span class="m">1.25</span>
   <span class="p">})</span>
-  
+
   <span class="n">superpose.line</span> <span class="o">&lt;-</span> <span class="n">within</span><span class="p">(</span><span class="n">superpose.line</span><span class="p">,</span> <span class="p">{</span>
     <span class="n">col</span> <span class="o">&lt;-</span> <span class="n">c</span><span class="p">(</span><span class="s2">"#00526D"</span><span class="p">,</span> <span class="s2">"#AD3333"</span><span class="p">)</span>
     <span class="n">lwd</span> <span class="o">&lt;-</span> <span class="m">3</span>
@@ -267,8 +267,8 @@
   <span class="n">points</span> <span class="o">=</span> <span class="n">FALSE</span>
 <span class="p">})</span>
 
-<span class="c1"># Update graph object 
-</span><span class="n">graph</span> <span class="o">&lt;-</span> <span class="n">update</span><span class="p">(</span><span class="n">graph</span><span class="p">,</span> 
+<span class="c1"># Update graph object
+</span><span class="n">graph</span> <span class="o">&lt;-</span> <span class="n">update</span><span class="p">(</span><span class="n">graph</span><span class="p">,</span>
                 <span class="n">xlab</span> <span class="o">=</span> <span class="s2">"Fiscal year"</span><span class="p">,</span> <span class="n">ylab</span> <span class="o">=</span> <span class="s2">"Income taxes (% of GDP)"</span><span class="p">,</span>
                 <span class="n">ylim</span> <span class="o">=</span> <span class="n">ylim</span><span class="p">,</span>
                 <span class="n">par.settings</span> <span class="o">=</span> <span class="n">my.theme</span><span class="p">,</span>
@@ -313,8 +313,8 @@
 <span class="n">corporation_regression</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">OLS</span><span class="o">.</span><span class="n">from_formula</span><span class="p">(</span><span class="s">"Corporation_Income_Taxes ~ Fiscal_Year"</span><span class="p">,</span> <span class="n">quandl_data</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span></code></pre></div>
 
 <p>Now let’s have a look to the summary statistics of each fitted model. We will
-display the R output only to keep things simple. However if you decide to 
-look at the Python output, the result of the regression might look a bit 
+display the R output only to keep things simple. However if you decide to
+look at the Python output, the result of the regression might look a bit
 different. Randy had to transform the dates into years because the fitting
 function did not seem capable of handling dates like the fitting function in
 R does (it converts the dates in days in this case).</p>
@@ -324,23 +324,23 @@ R does (it converts the dates in days in this case).</p>
 <div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Summary statistics for individual income taxes model
 </span><span class="n">summary</span><span class="p">(</span><span class="n">model.ind</span><span class="p">)</span>
 
-<span class="c1">## 
+<span class="c1">##
 ## Call:
 ## lm(formula = Individual.Income.Taxes ~ Fiscal.Year, data = my.data)
-## 
+##
 ## Residuals:
-##     Min      1Q  Median      3Q     Max 
-## -1.9522 -0.3065  0.0217  0.3101  2.0674 
-## 
+##     Min      1Q  Median      3Q     Max
+## -1.9522 -0.3065  0.0217  0.3101  2.0674
+##
 ## Coefficients:
 ##             Estimate Std. Error t value Pr(&gt;|t|)    
 ## (Intercept) 7.84e+00   1.09e-01   72.18   &lt;2e-16 ***
 ## Fiscal.Year 2.58e-05   1.33e-05    1.93    0.058 .  
 ## ---
 ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-## 
+##
 ## Residual standard error: 0.806 on 67 degrees of freedom
-## Multiple R-squared:  0.0528,	Adjusted R-squared:  0.0387 
+## Multiple R-squared:  0.0528,	Adjusted R-squared:  0.0387
 ## F-statistic: 3.73 on 1 and 67 DF,  p-value: 0.0575
 </span><span class="err">##</span></code></pre></div>
 
@@ -351,23 +351,23 @@ R does (it converts the dates in days in this case).</p>
 <div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Summary statistics for corporation income taxes model
 </span><span class="n">summary</span><span class="p">(</span><span class="n">model.corp</span><span class="p">)</span>
 
-<span class="c1">## 
+<span class="c1">##
 ## Call:
 ## lm(formula = Corporation.Income.Taxes ~ Fiscal.Year, data = my.data)
-## 
+##
 ## Residuals:
-##    Min     1Q Median     3Q    Max 
-## -1.535 -0.478 -0.150  0.394  2.394 
-## 
+##    Min     1Q Median     3Q    Max
+## -1.535 -0.478 -0.150  0.394  2.394
+##
 ## Coefficients:
 ##              Estimate Std. Error t value Pr(&gt;|t|)    
 ## (Intercept)  3.43e+00   9.93e-02    34.6   &lt;2e-16 ***
 ## Fiscal.Year -1.56e-04   1.22e-05   -12.8   &lt;2e-16 ***
 ## ---
 ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-## 
+##
 ## Residual standard error: 0.737 on 67 degrees of freedom
-## Multiple R-squared:  0.711,	Adjusted R-squared:  0.706 
+## Multiple R-squared:  0.711,	Adjusted R-squared:  0.706
 ## F-statistic:  164 on 1 and 67 DF,  p-value: &lt;2e-16
 </span><span class="err">##</span></code></pre></div>
 
@@ -381,25 +381,25 @@ R does (it converts the dates in days in this case).</p>
 
 <p>For now, we will assume that everything is good and we will focus on plotting the two linear models and their confidence interval over the data.</p>
 
-<p>To do this, we will first compute the value and confidence interval as predicted by each model for different dates. We will choose dates that cover the whole studied period (1945-2013), plus a little extra on both ends (10%) to make the graph more aesthetically pleasing (<em>i.e.</em>, the models’ predictions will cover a larger time period than the x-axis limits of the graph). </p>
+<p>To do this, we will first compute the value and confidence interval as predicted by each model for different dates. We will choose dates that cover the whole studied period (1945-2013), plus a little extra on both ends (10%) to make the graph more aesthetically pleasing (<em>i.e.</em>, the models’ predictions will cover a larger time period than the x-axis limits of the graph).</p>
 
 <div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Create new dates for model predictions
 </span><span class="n">difference</span> <span class="o">&lt;-</span> <span class="n">as.Date</span><span class="p">(</span><span class="s2">"2013-12-31"</span><span class="p">)</span> <span class="o">-</span> <span class="n">as.Date</span><span class="p">(</span><span class="s2">"1945-12-31"</span><span class="p">)</span>
-<span class="n">new.data</span> <span class="o">&lt;-</span> <span class="n">data.frame</span><span class="p">(</span><span class="n">Fiscal.Year</span> <span class="o">=</span> <span class="n">seq.Date</span><span class="p">(</span><span class="n">from</span> <span class="o">=</span> <span class="n">as.Date</span><span class="p">(</span><span class="s2">"1945-12-31"</span><span class="p">)</span> <span class="o">-</span> <span class="m">0.1</span> <span class="o">*</span> <span class="n">difference</span><span class="p">,</span> 
+<span class="n">new.data</span> <span class="o">&lt;-</span> <span class="n">data.frame</span><span class="p">(</span><span class="n">Fiscal.Year</span> <span class="o">=</span> <span class="n">seq.Date</span><span class="p">(</span><span class="n">from</span> <span class="o">=</span> <span class="n">as.Date</span><span class="p">(</span><span class="s2">"1945-12-31"</span><span class="p">)</span> <span class="o">-</span> <span class="m">0.1</span> <span class="o">*</span> <span class="n">difference</span><span class="p">,</span>
                                               <span class="n">to</span> <span class="o">=</span> <span class="n">as.Date</span><span class="p">(</span><span class="s2">"2013-12-31"</span><span class="p">)</span> <span class="o">+</span> <span class="m">0.1</span> <span class="o">*</span> <span class="n">difference</span><span class="p">,</span>
                                               <span class="n">by</span> <span class="o">=</span> <span class="s2">"years"</span><span class="p">))</span>
 
 <span class="c1"># Compute model predictions (values + confidence intervals) for new dates
 # Model of individual income taxes
 </span><span class="n">predict.ind</span> <span class="o">&lt;-</span> <span class="n">within</span><span class="p">(</span><span class="n">new.data</span><span class="p">,</span> <span class="p">{</span>
-  <span class="n">Predictions</span> <span class="o">&lt;-</span> <span class="n">as.data.frame</span><span class="p">(</span><span class="n">predict</span><span class="p">(</span><span class="n">model.ind</span><span class="p">,</span> 
+  <span class="n">Predictions</span> <span class="o">&lt;-</span> <span class="n">as.data.frame</span><span class="p">(</span><span class="n">predict</span><span class="p">(</span><span class="n">model.ind</span><span class="p">,</span>
                                        <span class="n">newdata</span> <span class="o">=</span> <span class="n">new.data</span><span class="p">,</span>
                                        <span class="n">interval</span> <span class="o">=</span> <span class="s2">"confidence"</span><span class="p">))</span>
 <span class="p">})</span>
 
 <span class="c1"># Model of corporation income taxes
 </span><span class="n">predict.corp</span> <span class="o">&lt;-</span> <span class="n">within</span><span class="p">(</span><span class="n">new.data</span><span class="p">,</span> <span class="p">{</span>
-  <span class="n">Predictions</span> <span class="o">&lt;-</span> <span class="n">as.data.frame</span><span class="p">(</span><span class="n">predict</span><span class="p">(</span><span class="n">model.corp</span><span class="p">,</span> 
+  <span class="n">Predictions</span> <span class="o">&lt;-</span> <span class="n">as.data.frame</span><span class="p">(</span><span class="n">predict</span><span class="p">(</span><span class="n">model.corp</span><span class="p">,</span>
                                        <span class="n">newdata</span> <span class="o">=</span> <span class="n">new.data</span><span class="p">,</span>
                                        <span class="n">interval</span> <span class="o">=</span> <span class="s2">"confidence"</span><span class="p">))</span>
 <span class="p">})</span></code></pre></div>
@@ -420,34 +420,34 @@ R does (it converts the dates in days in this case).</p>
 
 <p>And finally, we will add to the data plot the predicted values as a line and the confidence intervals of the predicted values as a polygon.</p>
 
-<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Add predicted values for model of individual income taxes 
-</span><span class="n">graph</span> <span class="o">&lt;-</span> <span class="n">graph</span> <span class="o">+</span> <span class="n">xyplot</span><span class="p">(</span><span class="n">Predictions</span><span class="o">$</span><span class="n">fit</span> <span class="o">~</span> <span class="n">Fiscal.Year</span><span class="p">,</span> 
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Add predicted values for model of individual income taxes
+</span><span class="n">graph</span> <span class="o">&lt;-</span> <span class="n">graph</span> <span class="o">+</span> <span class="n">xyplot</span><span class="p">(</span><span class="n">Predictions</span><span class="o">$</span><span class="n">fit</span> <span class="o">~</span> <span class="n">Fiscal.Year</span><span class="p">,</span>
                         <span class="n">data</span> <span class="o">=</span> <span class="n">predict.ind</span><span class="p">,</span>
                         <span class="n">type</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="s2">"l"</span><span class="p">),</span>
                         <span class="n">col</span> <span class="o">=</span> <span class="s2">"#00526D"</span><span class="p">)</span>
 
-<span class="c1"># Add predicted values for model of corporation income taxes 
-</span><span class="n">graph</span> <span class="o">&lt;-</span> <span class="n">graph</span> <span class="o">+</span> <span class="n">xyplot</span><span class="p">(</span><span class="n">Predictions</span><span class="o">$</span><span class="n">fit</span> <span class="o">~</span> <span class="n">Fiscal.Year</span><span class="p">,</span> 
+<span class="c1"># Add predicted values for model of corporation income taxes
+</span><span class="n">graph</span> <span class="o">&lt;-</span> <span class="n">graph</span> <span class="o">+</span> <span class="n">xyplot</span><span class="p">(</span><span class="n">Predictions</span><span class="o">$</span><span class="n">fit</span> <span class="o">~</span> <span class="n">Fiscal.Year</span><span class="p">,</span>
                         <span class="n">data</span> <span class="o">=</span> <span class="n">predict.corp</span><span class="p">,</span>
                         <span class="n">type</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="s2">"l"</span><span class="p">),</span>
                         <span class="n">col</span> <span class="o">=</span> <span class="s2">"#AD3333"</span><span class="p">)</span>
 
-<span class="c1"># Add confidence polygon for model of individual income taxes 
-</span><span class="n">graph</span> <span class="o">&lt;-</span> <span class="n">graph</span> <span class="o">+</span> <span class="n">layer_</span><span class="p">(</span><span class="n">lpolygon</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="n">predict.ind</span><span class="o">$</span><span class="n">Fiscal.Year</span><span class="p">,</span> 
+<span class="c1"># Add confidence polygon for model of individual income taxes
+</span><span class="n">graph</span> <span class="o">&lt;-</span> <span class="n">graph</span> <span class="o">+</span> <span class="n">layer_</span><span class="p">(</span><span class="n">lpolygon</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="n">predict.ind</span><span class="o">$</span><span class="n">Fiscal.Year</span><span class="p">,</span>
                                        <span class="n">rev</span><span class="p">(</span><span class="n">predict.ind</span><span class="o">$</span><span class="n">Fiscal.Year</span><span class="p">)),</span>
-                                 <span class="n">y</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="n">predict.ind</span><span class="o">$</span><span class="n">Predictions</span><span class="o">$</span><span class="n">upr</span><span class="p">,</span> 
+                                 <span class="n">y</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="n">predict.ind</span><span class="o">$</span><span class="n">Predictions</span><span class="o">$</span><span class="n">upr</span><span class="p">,</span>
                                        <span class="n">rev</span><span class="p">(</span><span class="n">predict.ind</span><span class="o">$</span><span class="n">Predictions</span><span class="o">$</span><span class="n">lwr</span><span class="p">)),</span>
-                                 <span class="n">col</span> <span class="o">=</span> <span class="s2">"#00526D25"</span><span class="p">,</span> 
+                                 <span class="n">col</span> <span class="o">=</span> <span class="s2">"#00526D25"</span><span class="p">,</span>
                                  <span class="n">border</span> <span class="o">=</span> <span class="s2">"#00526D75"</span><span class="p">))</span>
 
-<span class="c1"># Add confidence polygon for model of corporation income taxes 
-</span><span class="n">graph</span> <span class="o">&lt;-</span> <span class="n">graph</span> <span class="o">+</span> <span class="n">layer_</span><span class="p">(</span><span class="n">lpolygon</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="n">predict.corp</span><span class="o">$</span><span class="n">Fiscal.Year</span><span class="p">,</span> 
+<span class="c1"># Add confidence polygon for model of corporation income taxes
+</span><span class="n">graph</span> <span class="o">&lt;-</span> <span class="n">graph</span> <span class="o">+</span> <span class="n">layer_</span><span class="p">(</span><span class="n">lpolygon</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="n">predict.corp</span><span class="o">$</span><span class="n">Fiscal.Year</span><span class="p">,</span>
                                        <span class="n">rev</span><span class="p">(</span><span class="n">predict.corp</span><span class="o">$</span><span class="n">Fiscal.Year</span><span class="p">)),</span>
-                                 <span class="n">y</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="n">predict.corp</span><span class="o">$</span><span class="n">Predictions</span><span class="o">$</span><span class="n">upr</span><span class="p">,</span> 
+                                 <span class="n">y</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="n">predict.corp</span><span class="o">$</span><span class="n">Predictions</span><span class="o">$</span><span class="n">upr</span><span class="p">,</span>
                                        <span class="n">rev</span><span class="p">(</span><span class="n">predict.corp</span><span class="o">$</span><span class="n">Predictions</span><span class="o">$</span><span class="n">lwr</span><span class="p">)),</span>
-                                 <span class="n">col</span> <span class="o">=</span> <span class="s2">"#AD333325"</span><span class="p">,</span> 
+                                 <span class="n">col</span> <span class="o">=</span> <span class="s2">"#AD333325"</span><span class="p">,</span>
                                  <span class="n">border</span> <span class="o">=</span> <span class="s2">"#AD333375"</span><span class="p">))</span>
-                                 
+
 <span class="c1"># Reprint graph object
 </span><span class="n">print</span><span class="p">(</span><span class="n">graph</span><span class="p">)</span></code></pre></div>
 
@@ -475,13 +475,13 @@ R does (it converts the dates in days in this case).</p>
 
 <p><img src="/img/posts/2014-02-05-r-vs-python-round-3/Py/graphPredictPy.png" alt="Predict + CI Python graph" class="full" /></p>
 
-<p>And that’s it for today! We hope that you enjoyed it and that you’ll come back next time to find out more about running diagnotic tests and correcting potential errors on today’s linear models. </p>
+<p>And that’s it for today! We hope that you enjoyed it and that you’ll come back next time to find out more about running diagnotic tests and correcting potential errors on today’s linear models.</p>
 
 <hr />
 
 <h4 id="source-code">3 - Source code</h4>
 
-<p>R and Python source codes are available 
+<p>R and Python source codes are available
 <a href="https://github.com/morpionZ/R-vs-Python/tree/master/Linear%20regression/code">here</a>.</p>
 
 
@@ -495,6 +495,10 @@ R does (it converts the dates in days in this case).</p>
             
                 
                     <a href="/category/rvspython/">rvspython</a> &bull;
+                
+            
+                
+                    <a href="/category/r/">r</a> &bull;
                 
             
         </p>
@@ -521,7 +525,7 @@ R does (it converts the dates in days in this case).</p>
 
 <footer class="bg-darkest-gray">
     <div class="container">
-        <span style="color: white">Subscribe <a href="/feed.xml">via RSS</a></span>
+        <span style="color: white">Subscribe <a href="http://www.theswarmlab.com/feed.xml">via RSS</a></span>
     </div>
 </footer>
 

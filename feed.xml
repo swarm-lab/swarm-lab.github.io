@@ -1,27 +1,332 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>{{ site.title | xml_escape }}</title>
-    <description>{{ site.description | xml_escape }}</description>
-    <link>{{ site.url }}{{ site.baseurl }}/</link>
-    <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml" />
-    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
-    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-    <generator>Jekyll v{{ jekyll.version }}</generator>
-    {% for post in site.posts limit:10 %}
+    <title>Swarm Lab</title>
+    <description>Welcome to the Swarm Lab where we study Swarm Intelligence in natural and artificial systems.</description>
+    <link>http://www.theswarmlab.com/</link>
+    <atom:link href="http://www.theswarmlab.com/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Fri, 18 Sep 2015 13:56:01 -0400</pubDate>
+    <lastBuildDate>Fri, 18 Sep 2015 13:56:01 -0400</lastBuildDate>
+    <generator>Jekyll v2.4.0</generator>
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.content | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
-        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
-        {% for tag in post.tags %}
-        <category>{{ tag | xml_escape }}</category>
-        {% endfor %}
-        {% for cat in post.categories %}
-        <category>{{ cat | xml_escape }}</category>
-        {% endfor %}
+        <title>videoplayR v0.3 is out!</title>
+        <description>&lt;p&gt;The people who know me a bit are very much aware of the fact that I am an avid &lt;a href=&quot;http://www.r-project.org&quot;&gt;R&lt;/a&gt; user AND proselyte. I perform all my data processing and visualization in R; I write reports and presentations in R; I even write R packages just for the pleasure of doing it (for instance, I created the &lt;a href=&quot;https://github.com/swarm-lab/editR&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;editR&lt;/code&gt;&lt;/a&gt; package essentially to see how easy it would be to build a complete web-application with R. Hint: it’s not as hard as I thought it would be).&lt;/p&gt;
+
+&lt;p&gt;While R is serving me very well, it always had one big limitation: it cannot process videos. This forced me to use Matlab (ew!) to develop computer vision scripts and applications for processing the videos from our behavioral experiments. Now, I do not have anything against Matlab in particular (besides the fact that it is ridiculously expensive), but I would rather keep my entire data processing workflow within R as much as possible, which meant that I had to either wait for someone to finally develop a computer vision library for R, or develop it myself. And so, this is how &lt;a href=&quot;https://github.com/swarm-lab/videoplayR&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;videoplayR&lt;/code&gt;&lt;/a&gt; came to be.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/2015-09-10-videoplayR-v0.3-is-out/tracks.png&quot; alt=&quot;Trajectories of three ants tracked with `videoplayR`&quot; class=&quot;wrap-around-right&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;videoplayR&lt;/code&gt; is an embryo of a computer vision library for R. It is built upon a powerful C++ image and video processing library called &lt;a href=&quot;http://opencv.org/&quot;&gt;OpenCV&lt;/a&gt;. I used the fantastic &lt;a href=&quot;http://www.rcpp.org/&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Rcpp&lt;/code&gt;&lt;/a&gt; suite of R packages to interface &lt;code class=&quot;highlighter-rouge&quot;&gt;OpenCV&lt;/code&gt; with R. And it’s working! For instance, I managed to create and run successfully a basic particle tracker on one of our ant videos. You can see the result in the screen capture on the right. The software detected and tracked the three ants in the video (technically, there are 5 ants in this video, but 2 of them never moved). It’s all done with a few lines of R code thanks to &lt;code class=&quot;highlighter-rouge&quot;&gt;videoplayR&lt;/code&gt;. If you want to see for yourself how easy it is to use &lt;code class=&quot;highlighter-rouge&quot;&gt;videoplayR&lt;/code&gt;, you can play with the different examples in the package vignette that I made available on &lt;a href=&quot;http://rpubs.com/&quot;&gt;Rpubs&lt;/a&gt; at: &lt;a href=&quot;http://rpubs.com/sjmgarnier/videoplayR&quot;&gt;http://rpubs.com/sjmgarnier/videoplayR&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;It is not perfect yet. It’s lacking a lot of basic and advanced features that are normally found in a full-fledged computer vision library. It requires the installation of OpenCV, which is fairly standardized on Mac (thanks to &lt;a href=&quot;http://brew.sh/&quot;&gt;Homebrew&lt;/a&gt; and &lt;a href=&quot;https://www.macports.org/&quot;&gt;MacPorts&lt;/a&gt;) and Linux, but not so much on Windows. Because of that, &lt;code class=&quot;highlighter-rouge&quot;&gt;videoplayR&lt;/code&gt; is not (yet) available on Windows, and is unlikely to end up on &lt;a href=&quot;https://cran.r-project.org/&quot;&gt;CRAN&lt;/a&gt; anytime soon, unless someone with a lot more experience than me can figure out how to ship OpenCV alongside &lt;code class=&quot;highlighter-rouge&quot;&gt;videoplayR&lt;/code&gt; in a way that can compile (I tried, I failed). All the functions could probably be more optimized, but that too will require the help of a C++ guru.&lt;/p&gt;
+
+&lt;p&gt;However what is currently available in the package works, and it works pretty well. I believe that it is intuitive enough for most people to get started with image and video processing with R. And it is fairly fast; I have created a basic particle detector that ran at about 21 images per second on my laptop with HD videos. This number can certainly be improved, but it is not bad at all for a first try. I will keep improving it over time following the needs of my laboratory, but I welcome comments, bug reports and feature requests - or, better, pull requests - that can be made directly on the &lt;a href=&quot;https://github.com/&quot;&gt;Github&lt;/a&gt; repository of the package at &lt;a href=&quot;https://github.com/swarm-lab/videoplayR&quot;&gt;https://github.com/swarm-lab/videoplayR&lt;/a&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;small&gt;I should mention that I am certainly not the only R user who is desperate enough to have developed a computer vision library for his favorite language. A number of packages have been created to read, process and write images with R. For instance, you can find the  &lt;a href=&quot;http://bioconductor.org/packages/release/bioc/html/EBImage.html&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;EBImage&lt;/code&gt;&lt;/a&gt; package on BioConductor, or the &lt;a href=&quot;https://cran.r-project.org/web/packages/ripa/ripa.pdf&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ripa&lt;/code&gt;&lt;/a&gt; package on CRAN. However good these two packages are at processing images (they are very good), they cannot read videos, which is deal breaker for me.&lt;/small&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;small&gt;Very recently, a new package called &lt;a href=&quot;http://dahtah.github.io/imager/&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;imager&lt;/code&gt;&lt;/a&gt; has been released that is capable of reading videos. It is a fantastic package with a lot of very well thought out functions that I recommend you try. However it has the big disadvantage of loading all the frames of a video directly in R’s memory, making it virtually unusable with the large HD videos that we are used to handle in the laboratory. The same developer also released an experimental package called &lt;a href=&quot;https://github.com/dahtah/imagerstreams&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;imagerstreams&lt;/code&gt;&lt;/a&gt; that is capable of performing “out-of-R-memory” video processing using OpenCV, like &lt;code class=&quot;highlighter-rouge&quot;&gt;videoplayR&lt;/code&gt;. But a few tests showed that it was not capable of very high processing speeds with HD videos (about 4.5 times slower than &lt;code class=&quot;highlighter-rouge&quot;&gt;videoplayR&lt;/code&gt;). However I am in contact with the developer to find a way to make &lt;code class=&quot;highlighter-rouge&quot;&gt;videoplayR&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;imager&lt;/code&gt; talk to each other in order to offer R users the best experience possible when developing computer vision software with R.&lt;/small&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 10 Sep 2015 00:00:00 -0400</pubDate>
+        <link>http://www.theswarmlab.com/blog/r/2015/09/10/videoplayR-v0.3-is-out/</link>
+        <guid isPermaLink="true">http://www.theswarmlab.com/blog/r/2015/09/10/videoplayR-v0.3-is-out/</guid>
+        
+        
+        <category>blog</category>
+        
+        <category>r</category>
+        
       </item>
-    {% endfor %}
+    
+      <item>
+        <title>Richard Feynman had a thing for ants</title>
+        <description>&lt;figure class=&quot;wrap-around-right&quot;&gt;
+    &lt;img src=&quot;https://upload.wikimedia.org/wikipedia/en/4/42/Richard_Feynman_Nobel.jpg&quot; alt=&quot;Portrait of Richard Feynman - © The Nobel Foundation, 1965.&quot; /&gt;
+    &lt;figcaption&gt;Portrait of Richard Feynman - © The Nobel Foundation, 1965&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Today is the day &lt;a href=&quot;https://twitter.com/Project_Grunt&quot;&gt;Lisa&lt;/a&gt; flies to Africa for a couple months of field work. Among 
+other things she will outfit local goats with GPS collars coupled with small microphones, that she just spent a month 
+and a half patiently building in Swansea, where the &lt;a href=&quot;https://sites.google.com/site/andrewjkingresearch/&quot;&gt;SHOAL group&lt;/a&gt; of 
+our collaborator &lt;a href=&quot;https://sites.google.com/site/andrewjkingresearch/groupmembers/CV&quot;&gt;Andrew King&lt;/a&gt; resides. &lt;/p&gt;
+
+&lt;p&gt;While in the train toward London Heathrow, she overheard a dad reading a story to his son, a story about ants. Out of 
+curiosity, I asked her to enquire about the book the story was coming from. I was expecting some sort of children book,
+but was surprised to hear that it was actually “Surely You’re Joking, Mr. Feynman!”, a collection of anecdotes told by 
+world famous physicist &lt;a href=&quot;https://en.wikipedia.org/wiki/Richard_Feynman&quot;&gt;Richard Feynman&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I immediately fired up Google and quickly found the full text on &lt;a href=&quot;https://books.google.com/books?id=7papZR4oVssC&amp;amp;lpg=PP1&quot;&gt;Google Books&lt;/a&gt;. 
+A few more clicks and here it was, the &lt;a href=&quot;https://books.google.com/books?id=7papZR4oVssC&amp;amp;lpg=PP1&amp;amp;pg=PA93#v=onepage&amp;amp;q&amp;amp;f=false&quot;&gt;story of Richard Feynman and the ants&lt;/a&gt;. &lt;/p&gt;
+
+&lt;p&gt;It turns out that Feynman loved watching bugs, and ants in particular, and that he used is free time while at Princeton,
+and later Caltech, to perform simple experiments with them, in order to understand how ants navigate their environment. 
+Isn’t it great? &lt;/p&gt;
+
+&lt;p&gt;Hereafter is one of these experiments, as told by Feynman himself. It is my favorite one, mostly because it ties in some
+work that we are currently doing in the lab. I hope you enjoy it as much as I did. &lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Many years later, when I was at Caltech and lived in a little house on Alameda Street, some ants came out around the 
+bathtub. I thought, “This is a great opportunity.” I put some sugar on the other end of the bathtub, and sat there 
+the whole afternoon until an ant finally found the sugar. It’s only a question of patience.&lt;/p&gt;
+
+  &lt;p&gt;The moment the ant found the sugar, I picked up a colored pencil that I had ready (I had previously done experiments 
+indicating that the ants don’t give a damn about pencil marks – they walk right over them – so I knew I wasn’t 
+disturbing anything), and behind where the ant went I drew a line so I could tell where his trail was. The ant 
+wandered a little bit wrong to get back to the hole, so the line was quite wiggly, unlike a typical ant trail.&lt;/p&gt;
+
+  &lt;p&gt;When the next ant to find the sugar began to go back, I marked his trail with another color. (By the way, he 
+followed the first ant’s return trail back, rather than his own incoming trail. My theory is that when an ant has 
+found some food, he leaves a much stronger trail than when he’s just wandering around.)&lt;/p&gt;
+
+  &lt;p&gt;This second ant was in a great hurry and followed, pretty much, the original trail. But because he was going so 
+fast he would go straight out, as if he were coasting, when the trail was wiggly. Often, as the ant was “coasting,” 
+he would find the trail again. Already it was apparent that the second ant’s return was slightly straighter. With 
+successive ants the same “improvement” of the trail by hurriedly and carelessly “following” it occurred.&lt;/p&gt;
+
+  &lt;p&gt;I followed eight or ten ants with my pencil until their trails became a neat line right along the bathtub. It’s 
+something like sketching: You draw a lousy line at first; then you go over it a few times and it makes a nice
+line after a while.&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Sat, 08 Aug 2015 00:00:00 -0400</pubDate>
+        <link>http://www.theswarmlab.com/blog/2015/08/08/Richard-Feynman-had-a-thing-for-ants/</link>
+        <guid isPermaLink="true">http://www.theswarmlab.com/blog/2015/08/08/Richard-Feynman-had-a-thing-for-ants/</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Postdoctoral position available</title>
+        <description>&lt;p&gt;&lt;strong&gt;We are currently seeking a postdoctoral researcher to lead:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;the development and testing of spatially explicit models of criminal activities;&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;the production of a forecasting software application to provide decision support for policing.&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/2015-07-01-postdoc-position-available/we-are-hiring.png&quot; alt=&quot;We&#39;re hiring&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This is a 1+1 year position (funding in the 2nd year will depend on progress in the 1st year) based out of Newark, New Jersey. This position is supported by a &lt;a href=&quot;http://newark.rutgers.edu/news/recipients-ru-n-initiative-multidisciplinary-research-teams-awards-announced&quot;&gt;Rutgers-Newark Initiative for Multidisciplinary Research Teams (IMRT) award&lt;/a&gt; and is expected to be extended beyond the 2 year initial period through local and federal funding. The successful candidate will report to an interdisciplinary team of researchers including &lt;a href=&quot;http://rscj.newark.rutgers.edu/faculty/member/caplan-joel/&quot;&gt;Pr. Joel Caplan&lt;/a&gt; and &lt;a href=&quot;http://rscj.newark.rutgers.edu/faculty/member/kennedy-leslie/&quot;&gt;Pr. Les Kennedy&lt;/a&gt; at the &lt;a href=&quot;http://rscj.newark.rutgers.edu/&quot;&gt;Rutgers School of Criminal Justice&lt;/a&gt;, and &lt;a href=&quot;http://www.theswarmlab.com&quot;&gt;Pr. Simon Garnier&lt;/a&gt; at the &lt;a href=&quot;http://biology.njit.edu/&quot;&gt;Biological Sciences Department&lt;/a&gt; at the &lt;a href=&quot;http://www.njit.edu&quot;&gt;New Jersey Institute of Technology&lt;/a&gt;. &lt;/p&gt;
+
+&lt;p&gt;The project will be carried in two phases of 1 year each. During Phase 1, the successful candidate will work in close collaboration with Garnier to develop and analyze data-driven agent-based (and possibly mathematical) models of daily occurrences of various criminal activities in Newark and Jersey City, New Jersey, and possibly other major urban centers as the project progresses. These models will extend the Risk Terrain Modeling approach created by Caplan and Kennedy. During Phase 2, the postdoctoral researcher will lead the development of a forecasting software application based on the best results of Phase 1. This software application is expected to be web-based and to make use of the High Performance Computing (HPC) capabilities of modern cloud-based systems. The postdoctoral researcher will also be involved directly in the team’s efforts to promote and disseminate the software application to a broad audience. &lt;/p&gt;
+
+&lt;p&gt;The ideal candidate should have a background in quantitative research and modeling, and a demonstrable knowledge of at least one high level programming language (Python and/or R preferred) and one lower level programming language (C++ and/or Java preferred). Previous experience with HPC and production-ready software development (either commercial or open-source) is desirable but not mandatory. The ideal candidate should also have a proven track record of professional presentations and publications in peer-reviewed journals. Knowledge of criminological theories and/or experience in the criminal justice practice is preferred. Post-doctoral applicants are preferred, but other degree levels and employment/collaboration options will be considered.&lt;/p&gt;
+
+&lt;p&gt;Immediate start date is desired.&lt;/p&gt;
+
+&lt;p&gt;For more information about the position, the project and the application process, please contact:&lt;/p&gt;
+
+&lt;p&gt;Pr. Joel Caplan: &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#106;&amp;#099;&amp;#097;&amp;#112;&amp;#108;&amp;#097;&amp;#110;&amp;#064;&amp;#097;&amp;#110;&amp;#100;&amp;#114;&amp;#111;&amp;#109;&amp;#101;&amp;#100;&amp;#097;&amp;#046;&amp;#114;&amp;#117;&amp;#116;&amp;#103;&amp;#101;&amp;#114;&amp;#115;&amp;#046;&amp;#101;&amp;#100;&amp;#117;&quot;&gt;&amp;#106;&amp;#099;&amp;#097;&amp;#112;&amp;#108;&amp;#097;&amp;#110;&amp;#064;&amp;#097;&amp;#110;&amp;#100;&amp;#114;&amp;#111;&amp;#109;&amp;#101;&amp;#100;&amp;#097;&amp;#046;&amp;#114;&amp;#117;&amp;#116;&amp;#103;&amp;#101;&amp;#114;&amp;#115;&amp;#046;&amp;#101;&amp;#100;&amp;#117;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Pr. Les Kennedy: &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#108;&amp;#101;&amp;#115;&amp;#046;&amp;#107;&amp;#101;&amp;#110;&amp;#110;&amp;#101;&amp;#100;&amp;#121;&amp;#064;&amp;#114;&amp;#117;&amp;#116;&amp;#103;&amp;#101;&amp;#114;&amp;#115;&amp;#046;&amp;#101;&amp;#100;&amp;#117;&quot;&gt;&amp;#108;&amp;#101;&amp;#115;&amp;#046;&amp;#107;&amp;#101;&amp;#110;&amp;#110;&amp;#101;&amp;#100;&amp;#121;&amp;#064;&amp;#114;&amp;#117;&amp;#116;&amp;#103;&amp;#101;&amp;#114;&amp;#115;&amp;#046;&amp;#101;&amp;#100;&amp;#117;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Pr. Simon Garnier: &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#103;&amp;#097;&amp;#114;&amp;#110;&amp;#105;&amp;#101;&amp;#114;&amp;#064;&amp;#110;&amp;#106;&amp;#105;&amp;#116;&amp;#046;&amp;#101;&amp;#100;&amp;#117;&quot;&gt;&amp;#103;&amp;#097;&amp;#114;&amp;#110;&amp;#105;&amp;#101;&amp;#114;&amp;#064;&amp;#110;&amp;#106;&amp;#105;&amp;#116;&amp;#046;&amp;#101;&amp;#100;&amp;#117;&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 01 Jul 2015 00:00:00 -0400</pubDate>
+        <link>http://www.theswarmlab.com/blog/2015/07/01/postdoc-position-available/</link>
+        <guid isPermaLink="true">http://www.theswarmlab.com/blog/2015/07/01/postdoc-position-available/</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>A new website!</title>
+        <description>&lt;p&gt;The Swarm Lab will be 3 year old tomorrow, July 1st, 2015. To celebrate the event, I decided to redo our website from scratch. It has now a new interface and, more importantly, a new backend. &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Goodbye &lt;a href=&quot;https://wordpress.org/&quot;&gt;Wordpress&lt;/a&gt;, and hello &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;!!!&lt;/strong&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/2015-06-30-a-new-website/wp_to_jekyll.png&quot; alt=&quot;Wordpress to Jekyll&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;I have wanted to make this move for a long time now. Wordpress has served me very well for many years but I have grown increasingly frustrated with a number of things it does and things it cannot do. And while Jekyll might not be for everyone, I quickly learned to like it because of the following reasons (among many others):&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Jekyll is fast.&lt;/strong&gt; Contrary to Wordpress that relies on &lt;a href=&quot;https://en.wikipedia.org/wiki/PHP&quot;&gt;PHP&lt;/a&gt; and &lt;a href=&quot;https://en.wikipedia.org/wiki/MySQL&quot;&gt;MySQL&lt;/a&gt; to build webpages, &lt;a href=&quot;http://jekyllrb.com/docs/home/&quot;&gt;Jekyll generates static webpages directly&lt;/a&gt;. This improves loading times and server use significantly because the webpages do not need to be generated each time they are called by users. Technically generation and loading times can be improved in Wordpress by using caching plugins (or even plugins generating static webpages). However I find that they often conflict with other plugins, in particular plugins creating dynamic content. And since dynamic content is not really necessary on a website like ours, there was no reason to stick with Wordpress any longer (or any other advanced &lt;a href=&quot;https://en.wikipedia.org/wiki/Web_content_management_system&quot;&gt;CMS&lt;/a&gt; as a matter of fact). &lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Jekyll is easy.&lt;/strong&gt; Well, this is a matter of interpretation. If you know nothing about &lt;a href=&quot;https://en.wikipedia.org/wiki/HTML&quot;&gt;HTML&lt;/a&gt;, &lt;a href=&quot;https://en.wikipedia.org/wiki/Cascading_Style_Sheets&quot;&gt;CSS&lt;/a&gt;, &lt;a href=&quot;https://en.wikipedia.org/wiki/JavaScript&quot;&gt;JavaScript&lt;/a&gt;, etc., then Wordpress and other similar CMS are probably easier for you. You install it, you click a few buttons and, there, you have your website. However if you are like me and you like to tinker with the code of your webpages because you are never happy with the way other people have designed them, then Wordpress is definitely a difficult beast to take on at times. Every change to the PHP code might break a plugin, and debugging can quickly turn into a nightmare because of the complexity of the underlying Wordpress machinery. In contrast Jekyll is a much nicer and simpler environment to work and tinker with, and while knowledge of HTML, CSS and JavaScript is still necessary, at least I will no need to deal with PHP and MySQL anymore (phew!). &lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Jekyll is better integrated into my workflow.&lt;/strong&gt; A large portion of my computer time is spent coding and writing. I use the command line a lot more that before, and most of my work is done using text/code editors, and pushed to GitHub and GitHub-like servers. In addition I use more and more often the &lt;a href=&quot;https://en.wikipedia.org/wiki/Markdown&quot;&gt;Markdown&lt;/a&gt; markup language to quickly write and format documents. And Markdown is central to Jekyll: all content is written in Markdown, and Jekyll converts it into webpages. All these new habits are perfectly compatible with the Jekyll way of developing, populating and maintaining websites. The more I improved my coding skills, the more it became obvious that Jekyll was the perfect platform for me to develop websites.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Jekyll has a lot more to offer, especially if you have some basic skills in HTML and CSS. And even if you do not, there is a growing community of users out there, and a number of tutorials on how to setup, generate and publish a Jekyll website. &lt;/p&gt;
+
+&lt;p&gt;Now I hope you will enjoy our new website! I have imported a few posts from the old websites (&lt;a href=&quot;/category/rvspython/&quot;&gt;R vs Python challenges&lt;/a&gt;, &lt;a href=&quot;/category/antsvstheworld/&quot;&gt;#AntsVsTheWorld&lt;/a&gt;, and &lt;a href=&quot;/category/slimelapsegallery/&quot;&gt;#SlimeLapseGallery&lt;/a&gt;) to get things started, and I hope to provide new content later when the summer grant writing craze dies down. &lt;/p&gt;
+
+&lt;p&gt;Comments and suggestions for improvement are very welcome!&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 30 Jun 2015 00:00:00 -0400</pubDate>
+        <link>http://www.theswarmlab.com/blog/2015/06/30/a-new-website/</link>
+        <guid isPermaLink="true">http://www.theswarmlab.com/blog/2015/06/30/a-new-website/</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>#SlimeLapseGallery - Episode 5</title>
+        <description>&lt;p&gt;&lt;em&gt;If you’ve ever watched a slime mold move, you have more patience (and spare time) than I do. If you prefer ‘real action’ over ‘real time’, then &lt;a href=&quot;/category/slimelapsegallery/&quot;&gt;#SlimeLapseGallery&lt;/a&gt; is the place for you. Brought to you by the SwarmLab, see all the best timelapse videos of slime mold, from the web and from our lab.&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;episode-5-slime-mold-in-its-natural-habitat&quot;&gt;Episode 5: Slime mold in its natural habitat&lt;/h4&gt;
+
+&lt;p&gt;Today’s &lt;a href=&quot;/category/slimelapsegallery/&quot;&gt;#SlimeLapseGallery&lt;/a&gt; video shows a slime mold - probably the &lt;a href=&quot;http://en.wikipedia.org/wiki/Fuligo_septica&quot;&gt;‘dog vomit’ slime mold, &lt;em&gt;Fuligo septica&lt;/em&gt;&lt;/a&gt; - moving up a log from the forest floor over 5 hours. The pulsating behavior that you see is not respiration, but the consequence of the oscillations occurring within the slime mold that drive locomotion and decision-making, as well as distributing cytoplasm, nutrients and wastes.&lt;/p&gt;
+
+&lt;iframe src=&quot;https://player.vimeo.com/video/371660&quot; width=&quot;100%&quot; height=&quot;450&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+</description>
+        <pubDate>Sat, 02 May 2015 00:00:00 -0400</pubDate>
+        <link>http://www.theswarmlab.com/blog/slimelapsegallery/2015/05/02/slimelapsegallery-5/</link>
+        <guid isPermaLink="true">http://www.theswarmlab.com/blog/slimelapsegallery/2015/05/02/slimelapsegallery-5/</guid>
+        
+        
+        <category>blog</category>
+        
+        <category>slimelapsegallery</category>
+        
+      </item>
+    
+      <item>
+        <title>#SlimeLapseGallery - Episode 4</title>
+        <description>&lt;p&gt;&lt;em&gt;If you’ve ever watched a slime mold move, you have more patience (and spare time) than I do. If you prefer ‘real action’ over ‘real time’, then &lt;a href=&quot;/category/slimelapsegallery/&quot;&gt;#SlimeLapseGallery&lt;/a&gt; is the place for you. Brought to you by the SwarmLab, see all the best timelapse videos of slime mold, from the web and from our lab.&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;episode-4-the-collective-slug&quot;&gt;Episode 4: The collective slug&lt;/h4&gt;
+
+&lt;p&gt;The SwarmLab’s slime mold of choice is the acellular (or plasmodial) slime mold &lt;em&gt;Physarum polycephalum&lt;/em&gt;. The ‘acellular’ indicates that this slime mold is a single cell, and the macroscopic creature you see is not composed of lots of tiny cells like a regular multicellular organism. There are other slime molds however that are called ‘cellular’ slime molds, the most famous of which is &lt;a href=&quot;https://en.wikipedia.org/wiki/Dictyostelium_discoideum&quot;&gt;&lt;em&gt;Dictyostelium discoideum&lt;/em&gt;&lt;/a&gt;. When conditions are right for sporulation, swarms of tiny &lt;em&gt;D. discoideum&lt;/em&gt; cells come together to form a ‘slug’, which undulates it’s way to an exposed area to maximize spore dispersion. The cells maintain their individual cell membranes and never fuse, meaning the slug moves by the collective coordination of many unrelated individual cells. Once in position, the slug transforms itself into a base, a stalk and a sporulating cap, with only the cells in the cap gaining the benefit of reproduction. &lt;a href=&quot;http://scholar.google.com/scholar?hl=en&amp;amp;q=jt+bonner&amp;amp;btnG=&amp;amp;as_sdt=1%2C31&amp;amp;as_sdtp=&quot;&gt;Princeton Emeritus Professor John Bonner&lt;/a&gt; championed the study of cellular slime mold to increase our understanding of evolution and development, and is the creator of the beautiful time-lapse videos featured in today’s &lt;a href=&quot;/category/slimelapsegallery/&quot;&gt;#SlimeLapseGallery&lt;/a&gt;.&lt;/p&gt;
+
+&lt;iframe width=&quot;100%&quot; height=&quot;450&quot; src=&quot;https://www.youtube.com/embed/bkVhLJLG7ug&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+</description>
+        <pubDate>Thu, 02 Apr 2015 00:00:00 -0400</pubDate>
+        <link>http://www.theswarmlab.com/blog/slimelapsegallery/2015/04/02/slimelapsegallery-4/</link>
+        <guid isPermaLink="true">http://www.theswarmlab.com/blog/slimelapsegallery/2015/04/02/slimelapsegallery-4/</guid>
+        
+        
+        <category>blog</category>
+        
+        <category>slimelapsegallery</category>
+        
+      </item>
+    
+      <item>
+        <title>#SlimeLapseGallery - Episode 3</title>
+        <description>&lt;p&gt;&lt;em&gt;If you’ve ever watched a slime mold move, you have more patience (and spare time) than I do. If you prefer ‘real action’ over ‘real time’, then &lt;a href=&quot;/category/slimelapsegallery/&quot;&gt;#SlimeLapseGallery&lt;/a&gt; is the place for you. Brought to you by the SwarmLab, see all the best timelapse videos of slime mold, from the web and from our lab.&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;episode-3-the-inner-life-of-the-slime-mold&quot;&gt;Episode 3: The inner life of the slime mold&lt;/h4&gt;
+
+&lt;p&gt;Today’s &lt;a href=&quot;/category/slimelapsegallery/&quot;&gt;#SlimeLapseGallery&lt;/a&gt; features a recent compilation of &lt;em&gt;Physarum&lt;/em&gt; timelapse microscopy that I hadn’t seen before, highlighting several features of slime mold behavior, as well as the beauty of the organism itself. The vegetative state of &lt;em&gt;Physarum polycephalum&lt;/em&gt; (known as a plasmodium) is composed of many smaller oscillating units. Each unit oscillates at a frequency dependent upon both the local environment and its interactions with neighboring oscillators. When the slime mold senses attractants such as food, the oscillation frequency in the area closest to the food increases, causing cytoplasm to flow toward the attractant. The opposite is true of repellents. The collective behavior of the oscillators, each passing on information to entrain its neighbors, drives the organism’s locomotion, and allows the slime mold to be modeled as a coupled-oscillator system. This video by &lt;a href=&quot;https://vimeo.com/annasagatov&quot;&gt;Anna Sagatov&lt;/a&gt; highlights the oscillation pattern of the slime mold, especially where you can see the organism has ingested fluorescent-labelled beads that zip around in the cytoplasm, allowing us to visualize the back-and-forth flow of information and nutrients within the organism.&lt;/p&gt;
+
+&lt;iframe src=&quot;https://player.vimeo.com/video/67686724&quot; width=&quot;100%&quot; height=&quot;450&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+</description>
+        <pubDate>Mon, 02 Mar 2015 00:00:00 -0500</pubDate>
+        <link>http://www.theswarmlab.com/blog/slimelapsegallery/2015/03/02/slimelapsegallery-3/</link>
+        <guid isPermaLink="true">http://www.theswarmlab.com/blog/slimelapsegallery/2015/03/02/slimelapsegallery-3/</guid>
+        
+        
+        <category>blog</category>
+        
+        <category>slimelapsegallery</category>
+        
+      </item>
+    
+      <item>
+        <title>#AntsVsTheWorld - Episode 3</title>
+        <description>&lt;p&gt;&lt;em&gt;Who doesn’t like ants? And who doesn’t like a good action movie? &lt;a href=&quot;/category/antsvstheworld/&quot;&gt;#AntsVsTheWorld&lt;/a&gt; brings the best of both worlds together. by featuring videos of ants fighting other creatures (including other ants).&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;episode-3-army-ants-vs-scorpion&quot;&gt;Episode 3: Army Ants vs. Scorpion&lt;/h4&gt;
+
+&lt;p&gt;For today’s episode, I present you my all time favorite ant species: the army ant &lt;em&gt;Eciton burchellii&lt;/em&gt;. These near-blind, nomadic ants offer some of the most spectacular examples of collective hunting. They live in large colonies (on average 700,000 ants), and during their moving phase they can organize large hunting raids which may contain more than 200,000 workers collecting thousands of prey, be 15m or more wide and sweep over an area of more than 1500m&lt;sup&gt;2&lt;/sup&gt; in a single day!&lt;/p&gt;
+
+&lt;p&gt;In this video, they will let a tarantula escape, but they will collectively defeat a scorpion maybe 20 times the size of an individual ant!&lt;/p&gt;
+
+&lt;iframe width=&quot;100%&quot; height=&quot;450&quot; src=&quot;https://www.youtube.com/embed/rSeRH0DPVOM&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Ants 3, the world 0.&lt;/strong&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 01 Mar 2015 00:00:00 -0500</pubDate>
+        <link>http://www.theswarmlab.com/blog/antsvstheworld/2015/03/01/antsvstheworld-3/</link>
+        <guid isPermaLink="true">http://www.theswarmlab.com/blog/antsvstheworld/2015/03/01/antsvstheworld-3/</guid>
+        
+        
+        <category>blog</category>
+        
+        <category>antsvstheworld</category>
+        
+      </item>
+    
+      <item>
+        <title>#SlimeLapseGallery - Episode 2</title>
+        <description>&lt;p&gt;&lt;em&gt;If you’ve ever watched a slime mold move, you have more patience (and spare time) than I do. If you prefer ‘real action’ over ‘real time’, then &lt;a href=&quot;/category/slimelapsegallery/&quot;&gt;#SlimeLapseGallery&lt;/a&gt; is the place for you. Brought to you by the SwarmLab, see all the best timelapse videos of slime mold, from the web and from our lab.&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;episode-2-outsmarting-engineers-since-2010&quot;&gt;Episode 2: Outsmarting engineers since 2010&lt;/h4&gt;
+
+&lt;p&gt;Today’s &lt;a href=&quot;/category/slimelapsegallery/&quot;&gt;#SlimeLapseGallery&lt;/a&gt; entry continues with another brilliant experiment from Toshi’s lab, this time the brainchild of Atsushi Tero, culminating in &lt;a href=&quot;http://www.sciencemag.org/content/327/5964/439.short&quot;&gt;an excellent Science paper&lt;/a&gt;. A sheet of agar (acting as a moist substrate only) was cut to resemble the coastline of Japan, in the Tokyo region. Oat flakes acting as food sources were placed on the agar surface, at the locations of the major railway stations in Tokyo, and a large amount of slime mould placed at Tokyo Central. As the organism spread out in search of food and contacted the ‘rail stations’, it connected them with a tubule network. The researchers then used fancy network analysis to prove that the slime mould, without a brain or even a single neuron, can build transport networks that are just as efficient as those designed by human engineers. Perhaps unsurprisingly, this paper nabbed Toshi his second &lt;a href=&quot;http://www.improbable.com/ig/&quot;&gt;IgNobel prize&lt;/a&gt;. Since this landmark paper, there have been many ‘researchers’ jumping on the bandwagon, claiming that slime mould can design better highways everywhere from Iberia to Australia, but the original is by far the best.&lt;/p&gt;
+
+&lt;iframe width=&quot;100%&quot; height=&quot;450&quot; src=&quot;https://www.youtube.com/embed/BZUQQmcR5-g&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+</description>
+        <pubDate>Mon, 02 Feb 2015 00:00:00 -0500</pubDate>
+        <link>http://www.theswarmlab.com/blog/slimelapsegallery/2015/02/02/slimelapsegallery-2/</link>
+        <guid isPermaLink="true">http://www.theswarmlab.com/blog/slimelapsegallery/2015/02/02/slimelapsegallery-2/</guid>
+        
+        
+        <category>blog</category>
+        
+        <category>slimelapsegallery</category>
+        
+      </item>
+    
+      <item>
+        <title>#AntsVsTheWorld - Episode 2</title>
+        <description>&lt;p&gt;&lt;em&gt;Who doesn’t like ants? And who doesn’t like a good action movie? &lt;a href=&quot;/category/antsvstheworld/&quot;&gt;#AntsVsTheWorld&lt;/a&gt; brings the best of both worlds together. by featuring videos of ants fighting other creatures (including other ants).&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;episode-2-matabele-ants-vs-termite-soldiers&quot;&gt;Episode 2: Matabele Ants vs. Termite Soldiers&lt;/h4&gt;
+
+&lt;p&gt;For this second episode, we present you a classic: the attack of a termite colony by an ant colony narrated by David Attenborough in the BBC series &lt;a href=&quot;http://www.bbc.co.uk/programmes/p002sfcz&quot;&gt;“Life In The Undergrowth - Supersocieties”&lt;/a&gt;. Here, the protagonists are the African mound-building termites (&lt;em&gt;Macrotermes sp.&lt;/em&gt;) and the &lt;a href=&quot;http://en.wikipedia.org/wiki/Pachycondyla_analis&quot;&gt;Matabele ants (&lt;em&gt;Pachycondyla analis&lt;/em&gt;)&lt;/a&gt;. The Matabele ants “are named after the Matabele tribe of fierce warriors who overwhelmed many other tribes during the 1800s” (source: &lt;a href=&quot;http://en.wikipedia.org/wiki/Pachycondyla_analis&quot;&gt;Wikipedia&lt;/a&gt;). They feed exclusively on termites, forming raiding columns of up to 1,000 individuals that makes it for some epic battles. More on the Matabele ants can be found &lt;a href=&quot;http://www.arkive.org/matabele-ant/pachycondyla-analis/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Now shh! Let’s listen to Sir David Attenborough :-)&lt;/p&gt;
+
+&lt;iframe src=&quot;https://player.vimeo.com/video/19520819&quot; width=&quot;100%&quot; height=&quot;450&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Ants 2, the world 0.&lt;/strong&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 01 Feb 2015 00:00:00 -0500</pubDate>
+        <link>http://www.theswarmlab.com/blog/antsvstheworld/2015/02/01/antsvstheworld-2/</link>
+        <guid isPermaLink="true">http://www.theswarmlab.com/blog/antsvstheworld/2015/02/01/antsvstheworld-2/</guid>
+        
+        
+        <category>blog</category>
+        
+        <category>antsvstheworld</category>
+        
+      </item>
+    
   </channel>
 </rss>

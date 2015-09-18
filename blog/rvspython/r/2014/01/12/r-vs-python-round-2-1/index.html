@@ -7,7 +7,7 @@
     <title>R vs Python - Round 2 (1/2)</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Welcome to the Swarm Lab where we study Swarm Intelligence in natural and artificial systems.">
-    <link rel="canonical" href="http://www.theswarmlab.com/blog/rvspython/2014/01/12/r-vs-python-round-2-1/">
+    <link rel="canonical" href="http://www.theswarmlab.com/blog/rvspython/r/2014/01/12/r-vs-python-round-2-1/">
 
     <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
     <link rel="stylesheet" href="/style.css">
@@ -179,7 +179,7 @@
 </span><span class="n">library</span><span class="p">(</span><span class="n">XML</span><span class="p">)</span>        <span class="c1"># Everything necessary to parse XML and HTML code
 </span><span class="n">library</span><span class="p">(</span><span class="n">pbapply</span><span class="p">)</span>    <span class="c1"># Progress bars!!! Just because why not :-)
 </span>
-<span class="c1"># Create curl handle which can be used for multiple HHTP requests. 
+<span class="c1"># Create curl handle which can be used for multiple HHTP requests.
 # followlocation = TRUE in case one of the URLs we want to grab is a redirection
 # link.
 </span><span class="n">curl</span> <span class="o">&lt;-</span> <span class="n">getCurlHandle</span><span class="p">(</span><span class="n">useragent</span> <span class="o">=</span> <span class="s2">"R"</span><span class="p">,</span> <span class="n">followlocation</span> <span class="o">=</span> <span class="n">TRUE</span><span class="p">)</span></code></pre></div>
@@ -201,7 +201,7 @@
 <div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Prepare URLs of the movie lists alphabetically ordered by first letter of
 # movie title (capital A to Z, except for v and y) + "numbers" list (for movies
 # which title starts with a number)
-</span><span class="n">urls.by.letter</span> <span class="o">&lt;-</span> <span class="n">paste0</span><span class="p">(</span><span class="s2">"http://www.moviebodycounts.com/movies-"</span><span class="p">,</span> 
+</span><span class="n">urls.by.letter</span> <span class="o">&lt;-</span> <span class="n">paste0</span><span class="p">(</span><span class="s2">"http://www.moviebodycounts.com/movies-"</span><span class="p">,</span>
                          <span class="n">c</span><span class="p">(</span><span class="s2">"numbers"</span><span class="p">,</span> <span class="n">LETTERS</span><span class="p">[</span><span class="m">1</span><span class="o">:</span><span class="m">21</span><span class="p">],</span> <span class="s2">"v"</span><span class="p">,</span> <span class="s2">"W"</span> <span class="p">,</span> <span class="s2">"x"</span><span class="p">,</span> <span class="s2">"Y"</span><span class="p">,</span> <span class="s2">"Z"</span><span class="p">),</span> <span class="s2">".htm"</span><span class="p">)</span></code></pre></div>
 
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="c"># Generate a list of all letters for the Movie pages (+ a "numbers" page)</span>
@@ -216,12 +216,12 @@
 
 <div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># For each movie list... For loops are frowned upon in R, let's use the classier
 # apply functions instead. Here I use the pblapply from the pbapply package.
-# It's equivalent to the regular lapply function, but it provides a neat 
-# progress bar. Unlist to get a vector. 
+# It's equivalent to the regular lapply function, but it provides a neat
+# progress bar. Unlist to get a vector.
 </span><span class="n">urls.by.movie</span> <span class="o">&lt;-</span> <span class="n">unlist</span><span class="p">(</span><span class="n">pblapply</span><span class="p">(</span><span class="n">urls.by.letter</span><span class="p">,</span> <span class="n">FUN</span> <span class="o">=</span> <span class="k">function</span><span class="p">(</span><span class="n">URL</span><span class="p">)</span> <span class="p">{</span></code></pre></div>
 
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">list_of_films</span> <span class="o">=</span> <span class="p">[]</span>
-  
+
 <span class="c"># Go through each movie list page and gather all of the movie web page URLs</span>
 <span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">letters</span><span class="p">:</span>
   <span class="k">try</span><span class="p">:</span></code></pre></div>
@@ -244,9 +244,9 @@
 
 <p>…find movie page entry, store the URL for later use and close the loop.</p>
 
-<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Extract desired links from HTML content using XPath. 
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Extract desired links from HTML content using XPath.
 </span>  <span class="c1"># The desired links are all the URLs ("a/@href") directly following
-</span>  <span class="c1"># ("/following::") the image which source file is called "graphic-movies.jpg" 
+</span>  <span class="c1"># ("/following::") the image which source file is called "graphic-movies.jpg"
 </span>  <span class="c1"># ("//img[@src='graphic-movies.jpg']").
 </span>  <span class="n">links</span> <span class="o">&lt;-</span> <span class="n">as.vector</span><span class="p">(</span><span class="n">xpathSApply</span><span class="p">(</span><span class="n">parsed.html</span><span class="p">,</span> <span class="s2">"//img[@src='graphic-movies.jpg']/following::a/@href"</span><span class="p">))</span>
 
@@ -273,7 +273,7 @@
           <span class="c"># The URL is in between parentheses (), so we can simply split the string on those</span>
           <span class="c"># Some URLs are full URLs, e.g. www.moviebodycounts.com/movie_name.html, so splitting on the / gives us only the page name</span>
           <span class="n">list_of_films</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">"("</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s">")"</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">"/"</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
-      
+
     <span class="c"># If the movie list page doesn't exist, keep going</span>
     <span class="k">except</span><span class="p">:</span>
       <span class="k">print</span> <span class="s">"</span><span class="se">\n</span><span class="s">error with "</span> <span class="o">+</span> <span class="n">letter</span> <span class="o">+</span> <span class="s">"</span><span class="se">\n</span><span class="s">"</span></code></pre></div>
@@ -282,7 +282,7 @@
 
 <p>For each movie, we will…</p>
 
-<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># For each movie... 
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># For each movie...
 # do.call(rbind, ...) to reorganize the results in a nice data frame
 </span><span class="n">data</span> <span class="o">&lt;-</span> <span class="n">do.call</span><span class="p">(</span><span class="n">rbind</span><span class="p">,</span> <span class="n">pblapply</span><span class="p">(</span><span class="n">urls.by.movie</span><span class="p">,</span> <span class="n">FUN</span> <span class="o">=</span> <span class="k">function</span><span class="p">(</span><span class="n">URL</span><span class="p">)</span> <span class="p">{</span></code></pre></div>
 
@@ -290,7 +290,7 @@
 <span class="c"># extract the movie name, kill counts, etc.</span>
 <span class="n">out_file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">"film-death-counts.csv"</span><span class="p">,</span> <span class="s">"wb"</span><span class="p">)</span>
 <span class="n">out_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">"Film,Year,Kill_Count,IMDB_url</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
-  
+
 <span class="k">for</span> <span class="n">film_page</span> <span class="ow">in</span> <span class="n">list_of_films</span><span class="p">:</span>
   <span class="k">try</span><span class="p">:</span>
       <span class="c"># The information we're looking for on the page:</span>
@@ -374,15 +374,15 @@
 </span>  <span class="c1"># Using gsub, remove everything in parenthesis and all non number characters
 </span>  <span class="n">Body_Count</span> <span class="o">&lt;-</span> <span class="n">gsub</span><span class="p">(</span><span class="s2">"\\(.*?\\)"</span><span class="p">,</span> <span class="s2">" "</span><span class="p">,</span> <span class="n">Body_Count</span><span class="p">)</span>
   <span class="n">Body_Count</span> <span class="o">&lt;-</span> <span class="n">gsub</span><span class="p">(</span><span class="s2">"[^0-9]+"</span><span class="p">,</span> <span class="s2">" "</span><span class="p">,</span> <span class="n">Body_Count</span><span class="p">)</span>
-  
+
   <span class="c1"># In case the total count has been split, we want to separate these numbers
 </span>  <span class="c1"># from each other so that we can add them up later. Using strsplit, split the
 </span>  <span class="c1"># character string at spaces
 </span>  <span class="n">Body_Count</span> <span class="o">&lt;-</span> <span class="n">unlist</span><span class="p">(</span><span class="n">strsplit</span><span class="p">(</span><span class="n">Body_Count</span><span class="p">,</span> <span class="s2">" "</span><span class="p">))</span>
-  
+
   <span class="c1"># For now, we have extracted characters. Transform them into numbers.
 </span>  <span class="n">Body_Count</span> <span class="o">&lt;-</span> <span class="n">as.numeric</span><span class="p">(</span><span class="n">Body_Count</span><span class="p">)</span>
-  
+
   <span class="c1"># Sum up the numbers (in case they have been split into separate categories.
 </span>  <span class="n">Body_Count</span> <span class="o">&lt;-</span> <span class="n">sum</span><span class="p">(</span><span class="n">Body_Count</span><span class="p">,</span> <span class="n">na.rm</span> <span class="o">=</span> <span class="n">TRUE</span><span class="p">)</span></code></pre></div>
 
@@ -422,7 +422,7 @@
 
 <h4 id="bonus-for-the-braves">4 - Bonus for the braves</h4>
 
-<p>Today’s challenge was code and text heavy. No pretty pictures to please the eye. So, for all the brave people who made it to the end, here is a cat picture :-) </p>
+<p>Today’s challenge was code and text heavy. No pretty pictures to please the eye. So, for all the brave people who made it to the end, here is a cat picture :-)</p>
 
 <p><img src="/img/posts/2014-01-12-r-vs-python-round-2-1/programming_cat.jpg" alt="Programming cat" class="full" /></p>
 
@@ -437,6 +437,10 @@
             
                 
                     <a href="/category/rvspython/">rvspython</a> &bull;
+                
+            
+                
+                    <a href="/category/r/">r</a> &bull;
                 
             
         </p>
@@ -463,7 +467,7 @@
 
 <footer class="bg-darkest-gray">
     <div class="container">
-        <span style="color: white">Subscribe <a href="/feed.xml">via RSS</a></span>
+        <span style="color: white">Subscribe <a href="http://www.theswarmlab.com/feed.xml">via RSS</a></span>
     </div>
 </footer>
 

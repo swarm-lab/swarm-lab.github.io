@@ -7,7 +7,7 @@
     <title>R vs Python - Round 1</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Welcome to the Swarm Lab where we study Swarm Intelligence in natural and artificial systems.">
-    <link rel="canonical" href="http://www.theswarmlab.com/blog/rvspython/2014/01/05/r-vs-python-round-1/">
+    <link rel="canonical" href="http://www.theswarmlab.com/blog/rvspython/r/2014/01/05/r-vs-python-round-1/">
 
     <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
     <link rel="stylesheet" href="/style.css">
@@ -164,11 +164,11 @@
 
 <h5 id="introduction">1 - Introduction</h5>
 
-<p>For this first challenge, we will use data collected by Randy for his recent post on the <a href="www.randalolson.com/2013/12/31/most-violence-packed-films/">“Top 25 most violence packed 
-films” in the history of the movie industry</a>. For his post, 
-Randy generated a simple horizontal barchart showing the top 25 more violent films ordered by number of on screen deaths 
-per minute. In the rest of this document, we will show you how to reproduce this graph using Python and how to achieve a 
-similar result with R. We will detail the different steps of the process and provide for each step the corresponding 
+<p>For this first challenge, we will use data collected by Randy for his recent post on the <a href="www.randalolson.com/2013/12/31/most-violence-packed-films/">“Top 25 most violence packed
+films” in the history of the movie industry</a>. For his post,
+Randy generated a simple horizontal barchart showing the top 25 more violent films ordered by number of on screen deaths
+per minute. In the rest of this document, we will show you how to reproduce this graph using Python and how to achieve a
+similar result with R. We will detail the different steps of the process and provide for each step the corresponding
 code. You will also find the entire codes at the end of this document.</p>
 
 <p>And now without further ado, let’s get started!</p>
@@ -186,8 +186,8 @@ code. You will also find the entire codes at the end of this document.</p>
 <span class="o">%</span><span class="n">pylab</span> <span class="n">inline</span>
 <span class="kn">from</span> <span class="nn">pandas</span> <span class="kn">import</span> <span class="o">*</span></code></pre></div>
 
-<p>Now let’s load the data for today’s job. The raw data were scraped by Randy (using Python) from 
-<a href="http://www.MovieBodyCounts.com">www.MovieBodyCounts.com</a> and he generously provided the result of his hard work on 
+<p>Now let’s load the data for today’s job. The raw data were scraped by Randy (using Python) from
+<a href="http://www.MovieBodyCounts.com">www.MovieBodyCounts.com</a> and he generously provided the result of his hard work on
 FigShare at this address: <a href="http://dx.doi.org/10.6084/m9.figshare.889719">http://dx.doi.org/10.6084/m9.figshare.889719</a>.</p>
 
 <div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Load data into a data frame
@@ -196,12 +196,12 @@ FigShare at this address: <a href="http://dx.doi.org/10.6084/m9.figshare.889719"
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="c"># Read the data into a pandas DataFrame</span>
 <span class="n">body_count_data</span> <span class="o">=</span> <span class="n">read_csv</span><span class="p">(</span><span class="s">"http://files.figshare.com/1332945/film_death_counts.csv"</span><span class="p">)</span></code></pre></div>
 
-<p>For each movie, the data frame contains a column for the total number of on screen deaths (“Body_Count”) and a column for 
-the duration (“Length_Minutes”). We will now create an extra column for the number of on screen deaths per minute of each 
+<p>For each movie, the data frame contains a column for the total number of on screen deaths (“Body_Count”) and a column for
+the duration (“Length_Minutes”). We will now create an extra column for the number of on screen deaths per minute of each
 movie (“Deaths_Per_Minute”)</p>
 
-<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Compute on screen deaths per minute for each movie. 
-</span><span class="n">body.count.data</span> <span class="o">&lt;-</span> <span class="n">within</span><span class="p">(</span><span class="n">body.count.data</span><span class="p">,</span> <span class="p">{</span> 
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Compute on screen deaths per minute for each movie.
+</span><span class="n">body.count.data</span> <span class="o">&lt;-</span> <span class="n">within</span><span class="p">(</span><span class="n">body.count.data</span><span class="p">,</span> <span class="p">{</span>
   <span class="n">Deaths_Per_Minute</span> <span class="o">&lt;-</span> <span class="n">Body_Count</span> <span class="o">/</span> <span class="n">Length_Minutes</span>
   <span class="n">ord</span> <span class="o">&lt;-</span> <span class="n">order</span><span class="p">(</span><span class="n">Deaths_Per_Minute</span><span class="p">,</span> <span class="n">decreasing</span> <span class="o">=</span> <span class="n">TRUE</span><span class="p">)</span>  <span class="c1"># useful later
 </span><span class="p">})</span></code></pre></div>
@@ -210,7 +210,7 @@ movie (“Deaths_Per_Minute”)</p>
 <span class="n">body_count_data</span><span class="p">[</span><span class="s">"Deaths_Per_Minute"</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">body_count_data</span><span class="p">[</span><span class="s">"Body_Count"</span><span class="p">]</span><span class="o">.</span><span class="nb">apply</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span><span class="o">.</span><span class="n">values</span> <span class="o">/</span>
                                           <span class="n">body_count_data</span><span class="p">[</span><span class="s">"Length_Minutes"</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">)</span></code></pre></div>
 
-<p>Now we will reorder the data frame by (descending) number of on screen deaths per minute, and select the top 25 most 
+<p>Now we will reorder the data frame by (descending) number of on screen deaths per minute, and select the top 25 most
 violent movies according to this criterion.</p>
 
 <div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Reorder "body.count.data" by (descending) number of on screen deaths per minute
@@ -225,7 +225,7 @@ violent movies according to this criterion.</p>
 <span class="c"># Change the order of the data so highest kills per minute films are on top in the plot</span>
 <span class="n">body_count_data</span> <span class="o">=</span> <span class="n">body_count_data</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="s">"Deaths_Per_Minute"</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span></code></pre></div>
 
-<p>In Randy’s graph, the “y” axis shows the film title with the release date. We will now generate the full title for each 
+<p>In Randy’s graph, the “y” axis shows the film title with the release date. We will now generate the full title for each
 movie following a “Movie name (year)” format, and append it to the data frame.</p>
 
 <div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Combine film title and release date into a new factor column with levels
@@ -246,7 +246,7 @@ movie following a “Movie name (year)” format, and append it to the data fram
 <span class="n">ax</span><span class="o">.</span><span class="n">yaxis</span><span class="o">.</span><span class="n">tick_left</span><span class="p">()</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">xaxis</span><span class="o">.</span><span class="n">tick_bottom</span><span class="p">()</span><span class="n">data</span><span class="p">[</span><span class="s">"Full_Title"</span><span class="p">]</span> <span class="o">=</span> <span class="n">array</span><span class="p">(</span><span class="n">full_title</span><span class="p">)</span></code></pre></div>
 
-<p>Now we are ready to generate the barchart. We’re going to start with the default options and then we will make this thing 
+<p>Now we are ready to generate the barchart. We’re going to start with the default options and then we will make this thing
 look pretty.</p>
 
 <div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Generate base graph
@@ -271,11 +271,11 @@ look pretty.</p>
 
 <p><img src="/img/posts/2014-01-05-r-vs-python-round-1/Py/basePy.png" alt="Base Python graph" class="full" /></p>
 
-<p>Ok, now let’s make this pretty. </p>
+<p>Ok, now let’s make this pretty.</p>
 
 <div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Create theme
 </span><span class="n">my.bloody.theme</span> <span class="o">&lt;-</span> <span class="n">within</span><span class="p">(</span><span class="n">trellis.par.get</span><span class="p">(),</span> <span class="p">{</span>    <span class="c1"># Initialize theme with default value
-</span>  <span class="n">axis.line</span><span class="o">$</span><span class="n">col</span> <span class="o">&lt;-</span> <span class="n">NA</span>                             <span class="c1"># Remove axes 
+</span>  <span class="n">axis.line</span><span class="o">$</span><span class="n">col</span> <span class="o">&lt;-</span> <span class="n">NA</span>                             <span class="c1"># Remove axes
 </span>  <span class="n">plot.polygon</span> <span class="o">&lt;-</span> <span class="n">within</span><span class="p">(</span><span class="n">plot.polygon</span><span class="p">,</span> <span class="p">{</span>
     <span class="n">col</span> <span class="o">&lt;-</span> <span class="s2">"#8A0606"</span>                              <span class="c1"># Set bar colors to a nice bloody red
 </span>    <span class="n">border</span> <span class="o">&lt;-</span> <span class="n">NA</span>                                  <span class="c1"># Remove bars' outline
@@ -290,7 +290,7 @@ look pretty.</p>
 
 <span class="c1"># Update figure with new theme + other improvements (like a title for instance)
 </span><span class="n">graph</span> <span class="o">&lt;-</span> <span class="n">update</span><span class="p">(</span>
-  <span class="n">graph</span><span class="p">,</span> 
+  <span class="n">graph</span><span class="p">,</span>
   <span class="n">main</span><span class="o">=</span><span class="s1">'25 most violence packed films by deaths per minute'</span><span class="p">,</span>    <span class="c1"># Title of the barchart
 </span>  <span class="n">par.settings</span> <span class="o">=</span> <span class="n">my.bloody.theme</span><span class="p">,</span>                               <span class="c1"># Use custom theme
 </span>  <span class="n">xlab</span> <span class="o">=</span> <span class="n">NULL</span><span class="p">,</span>                                                  <span class="c1"># Remove label of x axis
@@ -322,7 +322,7 @@ look pretty.</p>
 
 <p><img src="/img/posts/2014-01-05-r-vs-python-round-1/Py/prettyPy.png" alt="Pretty Python graph" class="full" /></p>
 
-<p>Finally, the last thing we want to add to our graph is the number of deaths per minute and the duration of each movie on 
+<p>Finally, the last thing we want to add to our graph is the number of deaths per minute and the duration of each movie on
 the right of the graph.</p>
 
 <div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Combine number of on screen death per minute and duration of the movies into a new character string column
@@ -330,8 +330,8 @@ the right of the graph.</p>
   <span class="n">Deaths_Per_Minute_With_Length</span> <span class="o">=</span> <span class="n">paste0</span><span class="p">(</span><span class="n">round</span><span class="p">(</span><span class="n">body.count.data</span><span class="o">$</span><span class="n">Deaths_Per_Minute</span><span class="p">,</span> <span class="n">digits</span><span class="o">=</span><span class="m">2</span><span class="p">),</span> <span class="s2">" ("</span><span class="p">,</span> <span class="n">body.count.data</span><span class="o">$</span><span class="n">Length_Minutes</span><span class="p">,</span> <span class="s2">" mins)"</span><span class="p">)</span>
 <span class="p">})</span>
 
-<span class="c1"># Add number of on screen deaths per minute and duration of movies at the end of each bar 
-</span><span class="n">graph</span> <span class="o">&lt;-</span> <span class="n">graph</span> <span class="o">+</span> <span class="n">layer</span><span class="p">(</span><span class="n">with</span><span class="p">(</span><span class="n">body.count.data</span><span class="p">,</span> 
+<span class="c1"># Add number of on screen deaths per minute and duration of movies at the end of each bar
+</span><span class="n">graph</span> <span class="o">&lt;-</span> <span class="n">graph</span> <span class="o">+</span> <span class="n">layer</span><span class="p">(</span><span class="n">with</span><span class="p">(</span><span class="n">body.count.data</span><span class="p">,</span>
   <span class="n">panel.text</span><span class="p">(</span>
     <span class="n">Deaths_Per_Minute</span><span class="p">,</span>                  <span class="c1"># x position of the text
 </span>    <span class="m">25</span><span class="o">:</span><span class="m">1</span><span class="p">,</span>                               <span class="c1"># y position of the text
@@ -374,7 +374,7 @@ the right of the graph.</p>
 </span>
 <span class="c1"># Download a pretty background image; mode is set to "wb" because it seems that
 # Windows needs it. I don't use Windows, I can't confirm
-</span><span class="n">download.file</span><span class="p">(</span><span class="n">url</span> <span class="o">=</span> <span class="s2">"http://www.theswarmlab.com/wp-content/uploads/2014/01/bloody_gun.jpg"</span><span class="p">,</span> 
+</span><span class="n">download.file</span><span class="p">(</span><span class="n">url</span> <span class="o">=</span> <span class="s2">"http://www.theswarmlab.com/wp-content/uploads/2014/01/bloody_gun.jpg"</span><span class="p">,</span>
               <span class="n">destfile</span> <span class="o">=</span> <span class="s2">"bloody_gun.jpg"</span><span class="p">,</span> <span class="n">quiet</span> <span class="o">=</span> <span class="n">TRUE</span><span class="p">,</span> <span class="n">mode</span> <span class="o">=</span> <span class="s2">"wb"</span><span class="p">)</span>
 
 <span class="c1"># Load gun image using "readJPEG" from the "jpeg" package
@@ -400,14 +400,13 @@ the right of the graph.</p>
 
 <p>R and Python source codes are available <a href="https://github.com/morpionZ/R-vs-Python/tree/master/Deadliest%20movies/code">here</a>.</p>
 
-<p>For F# fan, <a href="http://terjetyl.ghost.io/">Terje Tyldum</a> has written his version of the code in F# 
+<p>For F# fan, <a href="http://terjetyl.ghost.io/">Terje Tyldum</a> has written his version of the code in F#
 <a href="http://terjetyl.ghost.io/f-charting-challenge/">here</a>.</p>
 
-<p>Randy and I also recommend that you check out 
+<p>Randy and I also recommend that you check out
 <a href="http://nbviewer.ipython.org/github/yaph/ipython-notebooks/blob/master/Exploring%20Movie%20Body%20Counts.ipynb">this post</a>
-by <a href="http://ramiro.org/">Ramiro Gómez</a> (<a href="https://twitter.com/yaph">@yaph</a>) where he does a more in-depth analysis of the 
+by <a href="http://ramiro.org/">Ramiro Gómez</a> (<a href="https://twitter.com/yaph">@yaph</a>) where he does a more in-depth analysis of the
 data set we used for today’s challenge.</p>
-
 
 
         <hr>
@@ -420,6 +419,10 @@ data set we used for today’s challenge.</p>
             
                 
                     <a href="/category/rvspython/">rvspython</a> &bull;
+                
+            
+                
+                    <a href="/category/r/">r</a> &bull;
                 
             
         </p>
@@ -446,7 +449,7 @@ data set we used for today’s challenge.</p>
 
 <footer class="bg-darkest-gray">
     <div class="container">
-        <span style="color: white">Subscribe <a href="/feed.xml">via RSS</a></span>
+        <span style="color: white">Subscribe <a href="http://www.theswarmlab.com/feed.xml">via RSS</a></span>
     </div>
 </footer>
 
