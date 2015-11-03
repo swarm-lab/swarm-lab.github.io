@@ -4,10 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>A new website!</title>
+    <title>Group meetings</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Welcome to the Swarm Lab where we study Swarm Intelligence in natural and artificial systems.">
-    <link rel="canonical" href="http://www.theswarmlab.com/blog/2015/06/30/a-new-website/">
+    <link rel="canonical" href="http://www.theswarmlab.com/meetings/">
 
     <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
     <link rel="stylesheet" href="/style.css">
@@ -135,78 +135,84 @@
 </nav>
 
 
-<section class="bg-white post">
+<div class="home">
+    <section class="bg-white">
+        <div class="entry">
 
-    <div class="entry">
+            <h2>Group meetings</h2>
+            <h3></h3>
 
-        <h2>A new website!</h2>
-        <h3></h3>
+            <hr>
 
-        <p>Written by Simon Garnier on June 30, 2015</p>
+            <p>The SwarmLab holds joint group meetings with the <a href="https://sites.google.com/a/njit.edu/russell-lab/">Russell Lab</a> at NJIT. The two groups share several interests, including the use of remote sensing technology and geographic information systems (GIS) for studying animal movement, in relationship with the structure of the environment and with the social context in which the animals behave.  </p>
 
-        <hr>
+<hr />
 
-        <p>The Swarm Lab will be 3 year old tomorrow, July 1st, 2015. To celebrate the event, I decided to redo our website from scratch. It has now a new interface and, more importantly, a new backend. </p>
+<h4 id="fall-2015-schedule">Fall 2015 Schedule</h4>
 
-<p><strong>Goodbye <a href="https://wordpress.org/">Wordpress</a>, and hello <a href="http://jekyllrb.com/">Jekyll</a>!!!</strong> </p>
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Date</th>
+      <th style="text-align: left">Host</th>
+      <th style="text-align: left">Activity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><strong><s>Sep 16, 2015</s></strong></td>
+      <td style="text-align: left"><s>Simon Garnier</s></td>
+      <td style="text-align: left"><s>General information meeting</s></td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong><s>Sep 30, 2015</s></strong></td>
+      <td style="text-align: left"><s>Subash Ray</s></td>
+      <td style="text-align: left"><s>Science news discussion</s></td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong><s>Oct 14, 2015</s></strong></td>
+      <td style="text-align: left"><s>Andrew Mashintonio</s></td>
+      <td style="text-align: left"><s>Manuscript pre-submission review</s></td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong><s>Oct 28, 2015</s></strong></td>
+      <td style="text-align: left"><s>Nicole Dykstra</s></td>
+      <td style="text-align: left"><s>GIS 101: an introduction to Geographic Information Systems</s></td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong><s>Oct 30, 2015</s></strong></td>
+      <td style="text-align: left"><s>Lisa O'Bryan</s></td>
+      <td style="text-align: left"><s>Guest speaker: [Ariana Strandburg-Peshkin](https://sites.google.com/site/arianasp/)</s></td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>Nov 4, 2015</strong></td>
+      <td style="text-align: left">Lisa O’Bryan</td>
+      <td style="text-align: left">TBD</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>Nov 11, 2015</strong></td>
+      <td style="text-align: left">Gareth Russell &amp; Nidhi Dharithreesan</td>
+      <td style="text-align: left">TBD</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>Dec 2, 2015</strong></td>
+      <td style="text-align: left">Simon Garnier</td>
+      <td style="text-align: left">Guest speaker: <a href="http://www.cb.u-psud.fr/Nicolas.htm">Nicolas Mathevon</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>Dec 9, 2015</strong></td>
+      <td style="text-align: left">Maggie Wisniewska</td>
+      <td style="text-align: left">TBD</td>
+    </tr>
+  </tbody>
+</table>
 
-<p><br /></p>
-
-<p><img src="/img/posts/2015-06-30-a-new-website/wp_to_jekyll.png" alt="Wordpress to Jekyll" class="full" /></p>
-
-<p><br /></p>
-
-<p>I have wanted to make this move for a long time now. Wordpress has served me very well for many years but I have grown increasingly frustrated with a number of things it does and things it cannot do. And while Jekyll might not be for everyone, I quickly learned to like it because of the following reasons (among many others):</p>
-
-<ol>
-  <li>
-    <p><strong>Jekyll is fast.</strong> Contrary to Wordpress that relies on <a href="https://en.wikipedia.org/wiki/PHP">PHP</a> and <a href="https://en.wikipedia.org/wiki/MySQL">MySQL</a> to build webpages, <a href="http://jekyllrb.com/docs/home/">Jekyll generates static webpages directly</a>. This improves loading times and server use significantly because the webpages do not need to be generated each time they are called by users. Technically generation and loading times can be improved in Wordpress by using caching plugins (or even plugins generating static webpages). However I find that they often conflict with other plugins, in particular plugins creating dynamic content. And since dynamic content is not really necessary on a website like ours, there was no reason to stick with Wordpress any longer (or any other advanced <a href="https://en.wikipedia.org/wiki/Web_content_management_system">CMS</a> as a matter of fact). </p>
-  </li>
-  <li>
-    <p><strong>Jekyll is easy.</strong> Well, this is a matter of interpretation. If you know nothing about <a href="https://en.wikipedia.org/wiki/HTML">HTML</a>, <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets">CSS</a>, <a href="https://en.wikipedia.org/wiki/JavaScript">JavaScript</a>, etc., then Wordpress and other similar CMS are probably easier for you. You install it, you click a few buttons and, there, you have your website. However if you are like me and you like to tinker with the code of your webpages because you are never happy with the way other people have designed them, then Wordpress is definitely a difficult beast to take on at times. Every change to the PHP code might break a plugin, and debugging can quickly turn into a nightmare because of the complexity of the underlying Wordpress machinery. In contrast Jekyll is a much nicer and simpler environment to work and tinker with, and while knowledge of HTML, CSS and JavaScript is still necessary, at least I will no need to deal with PHP and MySQL anymore (phew!). </p>
-  </li>
-  <li>
-    <p><strong>Jekyll is better integrated into my workflow.</strong> A large portion of my computer time is spent coding and writing. I use the command line a lot more that before, and most of my work is done using text/code editors, and pushed to GitHub and GitHub-like servers. In addition I use more and more often the <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a> markup language to quickly write and format documents. And Markdown is central to Jekyll: all content is written in Markdown, and Jekyll converts it into webpages. All these new habits are perfectly compatible with the Jekyll way of developing, populating and maintaining websites. The more I improved my coding skills, the more it became obvious that Jekyll was the perfect platform for me to develop websites.</p>
-  </li>
-</ol>
-
-<p>Jekyll has a lot more to offer, especially if you have some basic skills in HTML and CSS. And even if you do not, there is a growing community of users out there, and a number of tutorials on how to setup, generate and publish a Jekyll website. </p>
-
-<p>Now I hope you will enjoy our new website! I have imported a few posts from the old websites (<a href="/category/rvspython/">R vs Python challenges</a>, <a href="/category/antsvstheworld/">#AntsVsTheWorld</a>, and <a href="/category/slimelapsegallery/">#SlimeLapseGallery</a>) to get things started, and I hope to provide new content later when the summer grant writing craze dies down. </p>
-
-<p>Comments and suggestions for improvement are very welcome!</p>
+<hr />
 
 
-
-        <hr>
-
-        <p>Categories:
-            
-                
-                    <a href="/blog/">blog</a> &bull;
-                
-            
-        </p>
-
-        <hr>
-
-        <div id="disqus_thread"></div>
-<script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES * * */
-    var disqus_shortname = 'theswarmlab';
-
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-
-    </div>
-
-</section>
+        </div>
+    </section>
+</div>
 
 <footer class="bg-darkest-gray">
     <div class="container">
