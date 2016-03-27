@@ -869,6 +869,11 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #ed564b;
 }
+li {
+    font-size: 14px;
+    line-height: 1.75;
+}
+
 .navbar-default .navbar-brand {
     font-family: "Ubuntu", "Montserrat","Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #ed564b;
