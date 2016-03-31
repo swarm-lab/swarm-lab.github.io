@@ -5,9 +5,40 @@
     <description>Welcome to the Swarm Lab where we study Swarm Intelligence in natural and artificial systems.</description>
     <link>http://www.theswarmlab.com/</link>
     <atom:link href="http://www.theswarmlab.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 27 Mar 2016 14:43:30 -0400</pubDate>
-    <lastBuildDate>Sun, 27 Mar 2016 14:43:30 -0400</lastBuildDate>
-    <generator>Jekyll v2.4.0</generator>
+    <pubDate>Wed, 30 Mar 2016 14:50:46 -0400</pubDate>
+    <lastBuildDate>Wed, 30 Mar 2016 14:50:46 -0400</lastBuildDate>
+    <generator>Jekyll v3.0.3</generator>
+    
+      <item>
+        <title>David Hughes&#39; lecture at NJIT</title>
+        <description>&lt;p&gt;&lt;a href=&quot;http://www.hugheslab.com/&quot;&gt;David Hughes&lt;/a&gt; from &lt;a href=&quot;http://www.psu.edu/&quot;&gt;Penn State&lt;/a&gt; will be our guest Tuesday, March 29. His lab has a fascinating research program, exploring the relationship between disease and behavior. In particular, their work focuses on understanding how and why parasites manipulate their host behavior, and on the role behavior plays in disease transmission.&lt;/p&gt;
+
+&lt;p&gt;During his visit, David will also deliver a lecture as part of the &lt;a href=&quot;http://www.ncas.rutgers.edu/colloquium-schedule-2015-2016&quot;&gt;weekly colloquium series of the Federated Department of Biology at NJIT and Rutgers-Newark&lt;/a&gt;. See below for the details on David’s talk and a video introducing the theme of his lecture.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;Title: Zombie ants: the precise manipulation of animal behavior by a microbe&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;When:&lt;/strong&gt; Tuesday, March 29th, 2016 1:00 p.m. – 2:20 p.m.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Where:&lt;/strong&gt; NJIT, CENTRAL KING BUILDING, Room 303 (map available &lt;a href=&quot;http://theswarmlab.com/contact/&quot;&gt;here&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Abstract:&lt;/strong&gt; One of the most complex examples of parasite control of animal behavior is that of fungi in the genus &lt;em&gt;Ophiocordyceps&lt;/em&gt; controlling ant behavior. In the moments before death the fungus controls the ant to bite into plant tissue providing the parasite a platform to launch spores from the cadaver of the host it will soon kill. In this talk I will discuss our research on this phenomena, examining ultimate and proximate views of why and how animal behavior is controlled by a microbe. We work from the micron scale as fungi surround and invade ant muscles to the continental scale as fungi evolve in to control ants in the context of past climatic change.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;div style=&quot;position: relative; width: 100%; height: 0; padding-bottom: 61%;&quot;&gt;
+  &lt;iframe style=&quot;position: absolute; width: 100%; height: 100%; left: 0; top: 0;&quot; src=&quot;https://www.youtube.com/embed/XuKjBIBBAL8&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Mon, 28 Mar 2016 00:00:00 -0400</pubDate>
+        <link>http://www.theswarmlab.com/blog/2016/03/28/David-Hughes-lecture/</link>
+        <guid isPermaLink="true">http://www.theswarmlab.com/blog/2016/03/28/David-Hughes-lecture/</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
     
       <item>
         <title>videoplayR v0.3 is out!</title>
@@ -50,7 +81,7 @@
 &lt;p&gt;Today is the day &lt;a href=&quot;https://twitter.com/Project_Grunt&quot;&gt;Lisa&lt;/a&gt; flies to Africa for a couple months of field work. Among 
 other things she will outfit local goats with GPS collars coupled with small microphones, that she just spent a month 
 and a half patiently building in Swansea, where the &lt;a href=&quot;https://sites.google.com/site/andrewjkingresearch/&quot;&gt;SHOAL group&lt;/a&gt; of 
-our collaborator &lt;a href=&quot;https://sites.google.com/site/andrewjkingresearch/groupmembers/CV&quot;&gt;Andrew King&lt;/a&gt; resides. &lt;/p&gt;
+our collaborator &lt;a href=&quot;https://sites.google.com/site/andrewjkingresearch/groupmembers/CV&quot;&gt;Andrew King&lt;/a&gt; resides.&lt;/p&gt;
 
 &lt;p&gt;While in the train toward London Heathrow, she overheard a dad reading a story to his son, a story about ants. Out of 
 curiosity, I asked her to enquire about the book the story was coming from. I was expecting some sort of children book,
@@ -58,14 +89,14 @@ but was surprised to hear that it was actually “Surely You’re Joking, Mr. Fe
 world famous physicist &lt;a href=&quot;https://en.wikipedia.org/wiki/Richard_Feynman&quot;&gt;Richard Feynman&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;I immediately fired up Google and quickly found the full text on &lt;a href=&quot;https://books.google.com/books?id=7papZR4oVssC&amp;amp;lpg=PP1&quot;&gt;Google Books&lt;/a&gt;. 
-A few more clicks and here it was, the &lt;a href=&quot;https://books.google.com/books?id=7papZR4oVssC&amp;amp;lpg=PP1&amp;amp;pg=PA93#v=onepage&amp;amp;q&amp;amp;f=false&quot;&gt;story of Richard Feynman and the ants&lt;/a&gt;. &lt;/p&gt;
+A few more clicks and here it was, the &lt;a href=&quot;https://books.google.com/books?id=7papZR4oVssC&amp;amp;lpg=PP1&amp;amp;pg=PA93#v=onepage&amp;amp;q&amp;amp;f=false&quot;&gt;story of Richard Feynman and the ants&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;It turns out that Feynman loved watching bugs, and ants in particular, and that he used is free time while at Princeton,
 and later Caltech, to perform simple experiments with them, in order to understand how ants navigate their environment. 
-Isn’t it great? &lt;/p&gt;
+Isn’t it great?&lt;/p&gt;
 
 &lt;p&gt;Hereafter is one of these experiments, as told by Feynman himself. It is my favorite one, mostly because it ties in some
-work that we are currently doing in the lab. I hope you enjoy it as much as I did. &lt;/p&gt;
+work that we are currently doing in the lab. I hope you enjoy it as much as I did.&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Many years later, when I was at Caltech and lived in a little house on Alameda Street, some ants came out around the 
@@ -111,9 +142,9 @@ line after a while.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/img/posts/2015-07-01-postdoc-position-available/we-are-hiring.png&quot; alt=&quot;We&#39;re hiring&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;This is a 1+1 year position (funding in the 2nd year will depend on progress in the 1st year) based out of Newark, New Jersey. This position is supported by a &lt;a href=&quot;http://newark.rutgers.edu/news/recipients-ru-n-initiative-multidisciplinary-research-teams-awards-announced&quot;&gt;Rutgers-Newark Initiative for Multidisciplinary Research Teams (IMRT) award&lt;/a&gt; and is expected to be extended beyond the 2 year initial period through local and federal funding. The successful candidate will report to an interdisciplinary team of researchers including &lt;a href=&quot;http://rscj.newark.rutgers.edu/faculty/member/caplan-joel/&quot;&gt;Pr. Joel Caplan&lt;/a&gt; and &lt;a href=&quot;http://rscj.newark.rutgers.edu/faculty/member/kennedy-leslie/&quot;&gt;Pr. Les Kennedy&lt;/a&gt; at the &lt;a href=&quot;http://rscj.newark.rutgers.edu/&quot;&gt;Rutgers School of Criminal Justice&lt;/a&gt;, and &lt;a href=&quot;http://www.theswarmlab.com&quot;&gt;Pr. Simon Garnier&lt;/a&gt; at the &lt;a href=&quot;http://biology.njit.edu/&quot;&gt;Biological Sciences Department&lt;/a&gt; at the &lt;a href=&quot;http://www.njit.edu&quot;&gt;New Jersey Institute of Technology&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;This is a 1+1 year position (funding in the 2nd year will depend on progress in the 1st year) based out of Newark, New Jersey. This position is supported by a &lt;a href=&quot;http://newark.rutgers.edu/news/recipients-ru-n-initiative-multidisciplinary-research-teams-awards-announced&quot;&gt;Rutgers-Newark Initiative for Multidisciplinary Research Teams (IMRT) award&lt;/a&gt; and is expected to be extended beyond the 2 year initial period through local and federal funding. The successful candidate will report to an interdisciplinary team of researchers including &lt;a href=&quot;http://rscj.newark.rutgers.edu/faculty/member/caplan-joel/&quot;&gt;Pr. Joel Caplan&lt;/a&gt; and &lt;a href=&quot;http://rscj.newark.rutgers.edu/faculty/member/kennedy-leslie/&quot;&gt;Pr. Les Kennedy&lt;/a&gt; at the &lt;a href=&quot;http://rscj.newark.rutgers.edu/&quot;&gt;Rutgers School of Criminal Justice&lt;/a&gt;, and &lt;a href=&quot;http://www.theswarmlab.com&quot;&gt;Pr. Simon Garnier&lt;/a&gt; at the &lt;a href=&quot;http://biology.njit.edu/&quot;&gt;Biological Sciences Department&lt;/a&gt; at the &lt;a href=&quot;http://www.njit.edu&quot;&gt;New Jersey Institute of Technology&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;The project will be carried in two phases of 1 year each. During Phase 1, the successful candidate will work in close collaboration with Garnier to develop and analyze data-driven agent-based (and possibly mathematical) models of daily occurrences of various criminal activities in Newark and Jersey City, New Jersey, and possibly other major urban centers as the project progresses. These models will extend the Risk Terrain Modeling approach created by Caplan and Kennedy. During Phase 2, the postdoctoral researcher will lead the development of a forecasting software application based on the best results of Phase 1. This software application is expected to be web-based and to make use of the High Performance Computing (HPC) capabilities of modern cloud-based systems. The postdoctoral researcher will also be involved directly in the team’s efforts to promote and disseminate the software application to a broad audience. &lt;/p&gt;
+&lt;p&gt;The project will be carried in two phases of 1 year each. During Phase 1, the successful candidate will work in close collaboration with Garnier to develop and analyze data-driven agent-based (and possibly mathematical) models of daily occurrences of various criminal activities in Newark and Jersey City, New Jersey, and possibly other major urban centers as the project progresses. These models will extend the Risk Terrain Modeling approach created by Caplan and Kennedy. During Phase 2, the postdoctoral researcher will lead the development of a forecasting software application based on the best results of Phase 1. This software application is expected to be web-based and to make use of the High Performance Computing (HPC) capabilities of modern cloud-based systems. The postdoctoral researcher will also be involved directly in the team’s efforts to promote and disseminate the software application to a broad audience.&lt;/p&gt;
 
 &lt;p&gt;The ideal candidate should have a background in quantitative research and modeling, and a demonstrable knowledge of at least one high level programming language (Python and/or R preferred) and one lower level programming language (C++ and/or Java preferred). Previous experience with HPC and production-ready software development (either commercial or open-source) is desirable but not mandatory. The ideal candidate should also have a proven track record of professional presentations and publications in peer-reviewed journals. Knowledge of criminological theories and/or experience in the criminal justice practice is preferred. Post-doctoral applicants are preferred, but other degree levels and employment/collaboration options will be considered.&lt;/p&gt;
 
@@ -138,9 +169,9 @@ line after a while.&lt;/p&gt;
     
       <item>
         <title>A new website!</title>
-        <description>&lt;p&gt;The Swarm Lab will be 3 year old tomorrow, July 1st, 2015. To celebrate the event, I decided to redo our website from scratch. It has now a new interface and, more importantly, a new backend. &lt;/p&gt;
+        <description>&lt;p&gt;The Swarm Lab will be 3 year old tomorrow, July 1st, 2015. To celebrate the event, I decided to redo our website from scratch. It has now a new interface and, more importantly, a new backend.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Goodbye &lt;a href=&quot;https://wordpress.org/&quot;&gt;Wordpress&lt;/a&gt;, and hello &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;!!!&lt;/strong&gt; &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Goodbye &lt;a href=&quot;https://wordpress.org/&quot;&gt;Wordpress&lt;/a&gt;, and hello &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;!!!&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
@@ -152,19 +183,19 @@ line after a while.&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Jekyll is fast.&lt;/strong&gt; Contrary to Wordpress that relies on &lt;a href=&quot;https://en.wikipedia.org/wiki/PHP&quot;&gt;PHP&lt;/a&gt; and &lt;a href=&quot;https://en.wikipedia.org/wiki/MySQL&quot;&gt;MySQL&lt;/a&gt; to build webpages, &lt;a href=&quot;http://jekyllrb.com/docs/home/&quot;&gt;Jekyll generates static webpages directly&lt;/a&gt;. This improves loading times and server use significantly because the webpages do not need to be generated each time they are called by users. Technically generation and loading times can be improved in Wordpress by using caching plugins (or even plugins generating static webpages). However I find that they often conflict with other plugins, in particular plugins creating dynamic content. And since dynamic content is not really necessary on a website like ours, there was no reason to stick with Wordpress any longer (or any other advanced &lt;a href=&quot;https://en.wikipedia.org/wiki/Web_content_management_system&quot;&gt;CMS&lt;/a&gt; as a matter of fact). &lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;Jekyll is fast.&lt;/strong&gt; Contrary to Wordpress that relies on &lt;a href=&quot;https://en.wikipedia.org/wiki/PHP&quot;&gt;PHP&lt;/a&gt; and &lt;a href=&quot;https://en.wikipedia.org/wiki/MySQL&quot;&gt;MySQL&lt;/a&gt; to build webpages, &lt;a href=&quot;http://jekyllrb.com/docs/home/&quot;&gt;Jekyll generates static webpages directly&lt;/a&gt;. This improves loading times and server use significantly because the webpages do not need to be generated each time they are called by users. Technically generation and loading times can be improved in Wordpress by using caching plugins (or even plugins generating static webpages). However I find that they often conflict with other plugins, in particular plugins creating dynamic content. And since dynamic content is not really necessary on a website like ours, there was no reason to stick with Wordpress any longer (or any other advanced &lt;a href=&quot;https://en.wikipedia.org/wiki/Web_content_management_system&quot;&gt;CMS&lt;/a&gt; as a matter of fact).&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Jekyll is easy.&lt;/strong&gt; Well, this is a matter of interpretation. If you know nothing about &lt;a href=&quot;https://en.wikipedia.org/wiki/HTML&quot;&gt;HTML&lt;/a&gt;, &lt;a href=&quot;https://en.wikipedia.org/wiki/Cascading_Style_Sheets&quot;&gt;CSS&lt;/a&gt;, &lt;a href=&quot;https://en.wikipedia.org/wiki/JavaScript&quot;&gt;JavaScript&lt;/a&gt;, etc., then Wordpress and other similar CMS are probably easier for you. You install it, you click a few buttons and, there, you have your website. However if you are like me and you like to tinker with the code of your webpages because you are never happy with the way other people have designed them, then Wordpress is definitely a difficult beast to take on at times. Every change to the PHP code might break a plugin, and debugging can quickly turn into a nightmare because of the complexity of the underlying Wordpress machinery. In contrast Jekyll is a much nicer and simpler environment to work and tinker with, and while knowledge of HTML, CSS and JavaScript is still necessary, at least I will no need to deal with PHP and MySQL anymore (phew!). &lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;Jekyll is easy.&lt;/strong&gt; Well, this is a matter of interpretation. If you know nothing about &lt;a href=&quot;https://en.wikipedia.org/wiki/HTML&quot;&gt;HTML&lt;/a&gt;, &lt;a href=&quot;https://en.wikipedia.org/wiki/Cascading_Style_Sheets&quot;&gt;CSS&lt;/a&gt;, &lt;a href=&quot;https://en.wikipedia.org/wiki/JavaScript&quot;&gt;JavaScript&lt;/a&gt;, etc., then Wordpress and other similar CMS are probably easier for you. You install it, you click a few buttons and, there, you have your website. However if you are like me and you like to tinker with the code of your webpages because you are never happy with the way other people have designed them, then Wordpress is definitely a difficult beast to take on at times. Every change to the PHP code might break a plugin, and debugging can quickly turn into a nightmare because of the complexity of the underlying Wordpress machinery. In contrast Jekyll is a much nicer and simpler environment to work and tinker with, and while knowledge of HTML, CSS and JavaScript is still necessary, at least I will no need to deal with PHP and MySQL anymore (phew!).&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;strong&gt;Jekyll is better integrated into my workflow.&lt;/strong&gt; A large portion of my computer time is spent coding and writing. I use the command line a lot more that before, and most of my work is done using text/code editors, and pushed to GitHub and GitHub-like servers. In addition I use more and more often the &lt;a href=&quot;https://en.wikipedia.org/wiki/Markdown&quot;&gt;Markdown&lt;/a&gt; markup language to quickly write and format documents. And Markdown is central to Jekyll: all content is written in Markdown, and Jekyll converts it into webpages. All these new habits are perfectly compatible with the Jekyll way of developing, populating and maintaining websites. The more I improved my coding skills, the more it became obvious that Jekyll was the perfect platform for me to develop websites.&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;Jekyll has a lot more to offer, especially if you have some basic skills in HTML and CSS. And even if you do not, there is a growing community of users out there, and a number of tutorials on how to setup, generate and publish a Jekyll website. &lt;/p&gt;
+&lt;p&gt;Jekyll has a lot more to offer, especially if you have some basic skills in HTML and CSS. And even if you do not, there is a growing community of users out there, and a number of tutorials on how to setup, generate and publish a Jekyll website.&lt;/p&gt;
 
-&lt;p&gt;Now I hope you will enjoy our new website! I have imported a few posts from the old websites (&lt;a href=&quot;/category/rvspython/&quot;&gt;R vs Python challenges&lt;/a&gt;, &lt;a href=&quot;/category/antsvstheworld/&quot;&gt;#AntsVsTheWorld&lt;/a&gt;, and &lt;a href=&quot;/category/slimelapsegallery/&quot;&gt;#SlimeLapseGallery&lt;/a&gt;) to get things started, and I hope to provide new content later when the summer grant writing craze dies down. &lt;/p&gt;
+&lt;p&gt;Now I hope you will enjoy our new website! I have imported a few posts from the old websites (&lt;a href=&quot;/category/rvspython/&quot;&gt;R vs Python challenges&lt;/a&gt;, &lt;a href=&quot;/category/antsvstheworld/&quot;&gt;#AntsVsTheWorld&lt;/a&gt;, and &lt;a href=&quot;/category/slimelapsegallery/&quot;&gt;#SlimeLapseGallery&lt;/a&gt;) to get things started, and I hope to provide new content later when the summer grant writing craze dies down.&lt;/p&gt;
 
 &lt;p&gt;Comments and suggestions for improvement are very welcome!&lt;/p&gt;
 
@@ -296,35 +327,6 @@ line after a while.&lt;/p&gt;
         <category>blog</category>
         
         <category>slimelapsegallery</category>
-        
-      </item>
-    
-      <item>
-        <title>#AntsVsTheWorld - Episode 2</title>
-        <description>&lt;p&gt;&lt;em&gt;Who doesn’t like ants? And who doesn’t like a good action movie? &lt;a href=&quot;/category/antsvstheworld/&quot;&gt;#AntsVsTheWorld&lt;/a&gt; brings the best of both worlds together. by featuring videos of ants fighting other creatures (including other ants).&lt;/em&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h4 id=&quot;episode-2-matabele-ants-vs-termite-soldiers&quot;&gt;Episode 2: Matabele Ants vs. Termite Soldiers&lt;/h4&gt;
-
-&lt;p&gt;For this second episode, we present you a classic: the attack of a termite colony by an ant colony narrated by David Attenborough in the BBC series &lt;a href=&quot;http://www.bbc.co.uk/programmes/p002sfcz&quot;&gt;“Life In The Undergrowth - Supersocieties”&lt;/a&gt;. Here, the protagonists are the African mound-building termites (&lt;em&gt;Macrotermes sp.&lt;/em&gt;) and the &lt;a href=&quot;http://en.wikipedia.org/wiki/Pachycondyla_analis&quot;&gt;Matabele ants (&lt;em&gt;Pachycondyla analis&lt;/em&gt;)&lt;/a&gt;. The Matabele ants “are named after the Matabele tribe of fierce warriors who overwhelmed many other tribes during the 1800s” (source: &lt;a href=&quot;http://en.wikipedia.org/wiki/Pachycondyla_analis&quot;&gt;Wikipedia&lt;/a&gt;). They feed exclusively on termites, forming raiding columns of up to 1,000 individuals that makes it for some epic battles. More on the Matabele ants can be found &lt;a href=&quot;http://www.arkive.org/matabele-ant/pachycondyla-analis/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Now shh! Let’s listen to Sir David Attenborough :-)&lt;/p&gt;
-
-&lt;iframe src=&quot;https://player.vimeo.com/video/19520819&quot; width=&quot;100%&quot; height=&quot;450&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Ants 2, the world 0.&lt;/strong&gt;&lt;/p&gt;
-</description>
-        <pubDate>Sun, 01 Feb 2015 00:00:00 -0500</pubDate>
-        <link>http://www.theswarmlab.com/blog/antsvstheworld/2015/02/01/antsvstheworld-2/</link>
-        <guid isPermaLink="true">http://www.theswarmlab.com/blog/antsvstheworld/2015/02/01/antsvstheworld-2/</guid>
-        
-        
-        <category>blog</category>
-        
-        <category>antsvstheworld</category>
         
       </item>
     
