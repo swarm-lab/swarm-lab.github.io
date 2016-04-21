@@ -180,45 +180,45 @@
 
 <p>First things first, let’s set up our working environment by loading some necessary libraries.</p>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Load libraries
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Load libraries
 </span><span class="n">require</span><span class="p">(</span><span class="s2">"Quandl"</span><span class="p">)</span>         <span class="c1"># Functions to access Quandl's database
 </span><span class="n">require</span><span class="p">(</span><span class="s2">"lattice"</span><span class="p">)</span>        <span class="c1"># Base graph functions
-</span><span class="n">require</span><span class="p">(</span><span class="s2">"latticeExtra"</span><span class="p">)</span>   <span class="err">#</span> <span class="n">Layer</span> <span class="n">graph</span> <span class="n">functions</span></code></pre></figure>
+</span><span class="n">require</span><span class="p">(</span><span class="s2">"latticeExtra"</span><span class="p">)</span>   <span class="err">#</span> <span class="n">Layer</span> <span class="n">graph</span> <span class="n">functions</span></code></pre></div>
 
-<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">Quandl</span></code></pre></figure>
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">Quandl</span></code></pre></div>
 
 <p>Now, let’s load the dataset from Quandl. You can find it on Quandl’s website <a href="http://www.quandl.com/TPC/HIST_RECEIPT-Historical-Source-of-Revenue-as-Share-of-GDP">here</a>. Among other things, this dataset contains the contributions of individuals and corporations to the income taxes, expressed as a fraction of the GDP. Its original source is the <a href="http://www.taxpolicycenter.org/">Tax Policy Center</a>. The dataset code at Quandl is “TPC/HIST_RECEIPT” and we will retrieve data from December 31, 1945, to December 31, 2013.</p>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Load data from Quandl
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Load data from Quandl
 </span><span class="n">my.data</span> <span class="o">&lt;-</span> <span class="n">Quandl</span><span class="p">(</span><span class="s2">"TPC/HIST_RECEIPT"</span><span class="p">,</span>
                   <span class="n">start_date</span> <span class="o">=</span> <span class="s2">"1945-12-31"</span><span class="p">,</span>
                   <span class="n">end_date</span> <span class="o">=</span> <span class="s2">"2013-12-31"</span><span class="p">)</span>
 
 <span class="c1"># Display first lines of the data frame
-</span><span class="n">head</span><span class="p">(</span><span class="n">my.data</span><span class="p">)</span></code></pre></figure>
+</span><span class="n">head</span><span class="p">(</span><span class="n">my.data</span><span class="p">)</span></code></pre></div>
 
-<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">quandl_data</span> <span class="o">=</span> <span class="n">Quandl</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">"TPC/HIST_RECEIPT"</span><span class="p">,</span>
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">quandl_data</span> <span class="o">=</span> <span class="n">Quandl</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">"TPC/HIST_RECEIPT"</span><span class="p">,</span>
                          <span class="n">trim_start</span><span class="o">=</span><span class="s">"1945-12-31"</span><span class="p">,</span>
                          <span class="n">trim_end</span><span class="o">=</span><span class="s">"2013-12-31"</span><span class="p">)</span>
 
-<span class="n">quandl_data</span><span class="o">.</span><span class="n">head</span><span class="p">()</span></code></pre></figure>
+<span class="n">quandl_data</span><span class="o">.</span><span class="n">head</span><span class="p">()</span></code></pre></div>
 
 <p>The column names from Quandl’s data frame contain spaces. We need to correct that before we can proceed with the rest of the analysis.</p>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># The columns' names contain spaces, make them syntactically valid
-</span><span class="n">names</span><span class="p">(</span><span class="n">my.data</span><span class="p">)</span> <span class="o">&lt;-</span> <span class="n">make.names</span><span class="p">(</span><span class="n">names</span><span class="p">(</span><span class="n">my.data</span><span class="p">))</span></code></pre></figure>
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># The columns' names contain spaces, make them syntactically valid
+</span><span class="n">names</span><span class="p">(</span><span class="n">my.data</span><span class="p">)</span> <span class="o">&lt;-</span> <span class="n">make.names</span><span class="p">(</span><span class="n">names</span><span class="p">(</span><span class="n">my.data</span><span class="p">))</span></code></pre></div>
 
-<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
 
 <span class="c"># Rename the columns we're using with underscores -- required for the linear regression</span>
 <span class="n">quandl_data</span><span class="p">[</span><span class="s">"Individual_Income_Taxes"</span><span class="p">]</span> <span class="o">=</span> <span class="n">quandl_data</span><span class="p">[</span><span class="s">"Individual Income Taxes"</span><span class="p">]</span>
 <span class="n">quandl_data</span><span class="p">[</span><span class="s">"Corporation_Income_Taxes"</span><span class="p">]</span> <span class="o">=</span> <span class="n">quandl_data</span><span class="p">[</span><span class="s">"Corporation Income Taxes"</span><span class="p">]</span>
-<span class="n">quandl_data</span><span class="p">[</span><span class="s">"Fiscal_Year"</span><span class="p">]</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">quandl_data</span><span class="o">.</span><span class="n">index</span><span class="p">))</span></code></pre></figure>
+<span class="n">quandl_data</span><span class="p">[</span><span class="s">"Fiscal_Year"</span><span class="p">]</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">quandl_data</span><span class="o">.</span><span class="n">index</span><span class="p">))</span></code></pre></div>
 
 <p>The dataset contains three columns of interest for us: individuals’ and corporations’ income taxes as a fraction of the GDP, and fiscal year. We will first plot the individuals’ and corporations’ income taxes as a function of the fiscal year to see what the data look like.</p>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Create graph object
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Create graph object
 </span><span class="n">graph</span> <span class="o">&lt;-</span> <span class="n">xyplot</span><span class="p">(</span><span class="n">Individual.Income.Taxes</span> <span class="o">~</span> <span class="n">Fiscal.Year</span><span class="p">,</span>
                 <span class="n">data</span> <span class="o">=</span> <span class="n">my.data</span><span class="p">,</span>
                 <span class="n">type</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="s2">"g"</span><span class="p">,</span> <span class="s2">"b"</span><span class="p">),</span>
@@ -277,11 +277,11 @@
                 <span class="n">auto.key</span> <span class="o">=</span> <span class="n">key</span><span class="p">)</span>
 
 <span class="c1"># Print graph object
-</span><span class="n">print</span><span class="p">(</span><span class="n">graph</span><span class="p">)</span></code></pre></figure>
+</span><span class="n">print</span><span class="p">(</span><span class="n">graph</span><span class="p">)</span></code></pre></div>
 
 <p><img src="/img/posts/2014-02-05-r-vs-python-round-3/R/graphBaseR.png" alt="Base R graph" class="full" /></p>
 
-<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">7</span><span class="p">))</span>
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">7</span><span class="p">))</span>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">quandl_data</span><span class="p">[</span><span class="s">"Fiscal_Year"</span><span class="p">],</span> <span class="n">quandl_data</span><span class="p">[</span><span class="s">"Individual_Income_Taxes"</span><span class="p">],</span> <span class="n">marker</span><span class="o">=</span><span class="s">"o"</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s">"#00526D"</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">"Individuals"</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">quandl_data</span><span class="p">[</span><span class="s">"Fiscal_Year"</span><span class="p">],</span> <span class="n">quandl_data</span><span class="p">[</span><span class="s">"Corporation_Income_Taxes"</span><span class="p">],</span> <span class="n">marker</span><span class="o">=</span><span class="s">"o"</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s">"#AD3333"</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">"Corporations"</span><span class="p">)</span>
@@ -294,7 +294,7 @@
 
 <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
 
-<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s">"upper left"</span><span class="p">);</span></code></pre></figure>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s">"upper left"</span><span class="p">);</span></code></pre></div>
 
 <p><img src="/img/posts/2014-02-05-r-vs-python-round-3/Py/graphBasePy.png" alt="Base Python graph" class="full" /></p>
 
@@ -302,17 +302,17 @@
 
 <p>First, let’s fit a linear model to the individual and corporation income taxes data.</p>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Fit individuals' income taxes data
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Fit individuals' income taxes data
 </span><span class="n">model.ind</span> <span class="o">&lt;-</span> <span class="n">lm</span><span class="p">(</span><span class="n">Individual.Income.Taxes</span> <span class="o">~</span> <span class="n">Fiscal.Year</span><span class="p">,</span> <span class="n">data</span> <span class="o">=</span> <span class="n">my.data</span><span class="p">)</span>
 
 <span class="c1"># Fit corporations' income taxes data
-</span><span class="n">model.corp</span> <span class="o">&lt;-</span> <span class="n">lm</span><span class="p">(</span><span class="n">Corporation.Income.Taxes</span> <span class="o">~</span> <span class="n">Fiscal.Year</span><span class="p">,</span> <span class="n">data</span> <span class="o">=</span> <span class="n">my.data</span><span class="p">)</span></code></pre></figure>
+</span><span class="n">model.corp</span> <span class="o">&lt;-</span> <span class="n">lm</span><span class="p">(</span><span class="n">Corporation.Income.Taxes</span> <span class="o">~</span> <span class="n">Fiscal.Year</span><span class="p">,</span> <span class="n">data</span> <span class="o">=</span> <span class="n">my.data</span><span class="p">)</span></code></pre></div>
 
-<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c"># Fit a linear regression to the individual income taxes time series</span>
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="c"># Fit a linear regression to the individual income taxes time series</span>
 <span class="n">individual_regression</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">OLS</span><span class="o">.</span><span class="n">from_formula</span><span class="p">(</span><span class="s">"Individual_Income_Taxes ~ Fiscal_Year"</span><span class="p">,</span> <span class="n">quandl_data</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
 
 <span class="c"># Fit a linear regression to the corporation income taxes time series</span>
-<span class="n">corporation_regression</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">OLS</span><span class="o">.</span><span class="n">from_formula</span><span class="p">(</span><span class="s">"Corporation_Income_Taxes ~ Fiscal_Year"</span><span class="p">,</span> <span class="n">quandl_data</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span></code></pre></figure>
+<span class="n">corporation_regression</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">OLS</span><span class="o">.</span><span class="n">from_formula</span><span class="p">(</span><span class="s">"Corporation_Income_Taxes ~ Fiscal_Year"</span><span class="p">,</span> <span class="n">quandl_data</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span></code></pre></div>
 
 <p>Now let’s have a look to the summary statistics of each fitted model. We will
 display the R output only to keep things simple. However if you decide to
@@ -323,7 +323,7 @@ R does (it converts the dates in days in this case).</p>
 
 <p>First, the model for individuals’ income taxes:</p>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Summary statistics for individual income taxes model
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Summary statistics for individual income taxes model
 </span><span class="n">summary</span><span class="p">(</span><span class="n">model.ind</span><span class="p">)</span>
 
 <span class="c1">##
@@ -344,13 +344,13 @@ R does (it converts the dates in days in this case).</p>
 ## Residual standard error: 0.806 on 67 degrees of freedom
 ## Multiple R-squared:  0.0528,	Adjusted R-squared:  0.0387
 ## F-statistic: 3.73 on 1 and 67 DF,  p-value: 0.0575
-</span><span class="err">##</span></code></pre></figure>
+</span><span class="err">##</span></code></pre></div>
 
-<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">print</span> <span class="n">individual_regression</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span></code></pre></figure>
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">print</span> <span class="n">individual_regression</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span></code></pre></div>
 
 <p>Then, the model for corporations’ income taxes:</p>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Summary statistics for corporation income taxes model
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Summary statistics for corporation income taxes model
 </span><span class="n">summary</span><span class="p">(</span><span class="n">model.corp</span><span class="p">)</span>
 
 <span class="c1">##
@@ -371,9 +371,9 @@ R does (it converts the dates in days in this case).</p>
 ## Residual standard error: 0.737 on 67 degrees of freedom
 ## Multiple R-squared:  0.711,	Adjusted R-squared:  0.706
 ## F-statistic:  164 on 1 and 67 DF,  p-value: &lt;2e-16
-</span><span class="err">##</span></code></pre></figure>
+</span><span class="err">##</span></code></pre></div>
 
-<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">print</span> <span class="n">corporation_regression</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span></code></pre></figure>
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">print</span> <span class="n">corporation_regression</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span></code></pre></div>
 
 <p>What do we see? For the individual income taxes, we see a small, positive increase of +2.579e-05% of GDP per day (R treats dates as days). Over the whole 1945 to 2013 period, this corresponds to a total increase of +0.64% of GDP, <em>i.e.</em> a +8.4% global increase in the contribution of individuals to income taxes. However this increase is only marginally significant (p = 0.0575), therefore we can consider that the contribution of individuals to the income taxes has remained fairly stable during the 7 decades since WWII.</p>
 
@@ -385,7 +385,7 @@ R does (it converts the dates in days in this case).</p>
 
 <p>To do this, we will first compute the value and confidence interval as predicted by each model for different dates. We will choose dates that cover the whole studied period (1945-2013), plus a little extra on both ends (10%) to make the graph more aesthetically pleasing (<em>i.e.</em>, the models’ predictions will cover a larger time period than the x-axis limits of the graph).</p>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Create new dates for model predictions
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Create new dates for model predictions
 </span><span class="n">difference</span> <span class="o">&lt;-</span> <span class="n">as.Date</span><span class="p">(</span><span class="s2">"2013-12-31"</span><span class="p">)</span> <span class="o">-</span> <span class="n">as.Date</span><span class="p">(</span><span class="s2">"1945-12-31"</span><span class="p">)</span>
 <span class="n">new.data</span> <span class="o">&lt;-</span> <span class="n">data.frame</span><span class="p">(</span><span class="n">Fiscal.Year</span> <span class="o">=</span> <span class="n">seq.Date</span><span class="p">(</span><span class="n">from</span> <span class="o">=</span> <span class="n">as.Date</span><span class="p">(</span><span class="s2">"1945-12-31"</span><span class="p">)</span> <span class="o">-</span> <span class="m">0.1</span> <span class="o">*</span> <span class="n">difference</span><span class="p">,</span>
                                               <span class="n">to</span> <span class="o">=</span> <span class="n">as.Date</span><span class="p">(</span><span class="s2">"2013-12-31"</span><span class="p">)</span> <span class="o">+</span> <span class="m">0.1</span> <span class="o">*</span> <span class="n">difference</span><span class="p">,</span>
@@ -404,9 +404,9 @@ R does (it converts the dates in days in this case).</p>
   <span class="n">Predictions</span> <span class="o">&lt;-</span> <span class="n">as.data.frame</span><span class="p">(</span><span class="n">predict</span><span class="p">(</span><span class="n">model.corp</span><span class="p">,</span>
                                        <span class="n">newdata</span> <span class="o">=</span> <span class="n">new.data</span><span class="p">,</span>
                                        <span class="n">interval</span> <span class="o">=</span> <span class="s2">"confidence"</span><span class="p">))</span>
-<span class="p">})</span></code></pre></figure>
+<span class="p">})</span></code></pre></div>
 
-<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c"># Predict the 95% confidence bands for the regression</span>
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="c"># Predict the 95% confidence bands for the regression</span>
 <span class="n">individual_prstd</span><span class="p">,</span> <span class="n">individual_iv_l</span><span class="p">,</span> <span class="n">individual_iv_u</span> <span class="o">=</span> <span class="n">wls_prediction_std</span><span class="p">(</span><span class="n">individual_regression</span><span class="p">)</span>
 <span class="n">individual_st</span><span class="p">,</span> <span class="n">individual_data</span><span class="p">,</span> <span class="n">individual_ss2</span> <span class="o">=</span> <span class="n">summary_table</span><span class="p">(</span><span class="n">individual_regression</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.05</span><span class="p">)</span>
 
@@ -418,11 +418,11 @@ R does (it converts the dates in days in this case).</p>
 <span class="n">corporation_st</span><span class="p">,</span> <span class="n">corporation_data</span><span class="p">,</span> <span class="n">corporation_ss2</span> <span class="o">=</span> <span class="n">summary_table</span><span class="p">(</span><span class="n">corporation_regression</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.05</span><span class="p">)</span>
 
 <span class="n">corporation_fitted_values</span> <span class="o">=</span> <span class="n">corporation_data</span><span class="p">[:,</span> <span class="mi">2</span><span class="p">]</span>
-<span class="n">corporation_predict_mean_ci_low</span><span class="p">,</span> <span class="n">corporation_predict_mean_ci_upper</span> <span class="o">=</span> <span class="n">corporation_data</span><span class="p">[:,</span> <span class="mi">4</span><span class="p">:</span><span class="mi">6</span><span class="p">]</span><span class="o">.</span><span class="n">T</span></code></pre></figure>
+<span class="n">corporation_predict_mean_ci_low</span><span class="p">,</span> <span class="n">corporation_predict_mean_ci_upper</span> <span class="o">=</span> <span class="n">corporation_data</span><span class="p">[:,</span> <span class="mi">4</span><span class="p">:</span><span class="mi">6</span><span class="p">]</span><span class="o">.</span><span class="n">T</span></code></pre></div>
 
 <p>And finally, we will add to the data plot the predicted values as a line and the confidence intervals of the predicted values as a polygon.</p>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Add predicted values for model of individual income taxes
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Add predicted values for model of individual income taxes
 </span><span class="n">graph</span> <span class="o">&lt;-</span> <span class="n">graph</span> <span class="o">+</span> <span class="n">xyplot</span><span class="p">(</span><span class="n">Predictions</span><span class="o">$</span><span class="n">fit</span> <span class="o">~</span> <span class="n">Fiscal.Year</span><span class="p">,</span>
                         <span class="n">data</span> <span class="o">=</span> <span class="n">predict.ind</span><span class="p">,</span>
                         <span class="n">type</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="s2">"l"</span><span class="p">),</span>
@@ -451,11 +451,11 @@ R does (it converts the dates in days in this case).</p>
                                  <span class="n">border</span> <span class="o">=</span> <span class="s2">"#AD333375"</span><span class="p">))</span>
 
 <span class="c1"># Reprint graph object
-</span><span class="n">print</span><span class="p">(</span><span class="n">graph</span><span class="p">)</span></code></pre></figure>
+</span><span class="n">print</span><span class="p">(</span><span class="n">graph</span><span class="p">)</span></code></pre></div>
 
 <p><img src="/img/posts/2014-02-05-r-vs-python-round-3/R/graphPredictR1.png" alt="Predict + CI R graph" class="full" /></p>
 
-<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">quandl_data</span><span class="p">[</span><span class="s">"Fiscal_Year"</span><span class="p">],</span>
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">quandl_data</span><span class="p">[</span><span class="s">"Fiscal_Year"</span><span class="p">],</span>
          <span class="n">individual_fitted_values</span><span class="p">,</span>
          <span class="n">color</span><span class="o">=</span><span class="s">"#00526D"</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
 
@@ -473,7 +473,7 @@ R does (it converts the dates in days in this case).</p>
                  <span class="n">corporation_predict_mean_ci_upper</span><span class="p">,</span>
                  <span class="n">color</span><span class="o">=</span><span class="s">"#AD3333"</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>
 
-<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s">"upper left"</span><span class="p">);</span></code></pre></figure>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s">"upper left"</span><span class="p">);</span></code></pre></div>
 
 <p><img src="/img/posts/2014-02-05-r-vs-python-round-3/Py/graphPredictPy.png" alt="Predict + CI Python graph" class="full" /></p>
 
