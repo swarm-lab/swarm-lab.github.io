@@ -177,14 +177,14 @@
 <p>First things first, let’s set up our working environment by loading some necessary libraries.</p>
 
 <div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Load libraries
-</span><span class="n">library</span><span class="p">(</span><span class="n">RCurl</span><span class="p">)</span>      <span class="c1"># Everything necessary to grab webpages on the Web
-</span><span class="n">library</span><span class="p">(</span><span class="n">XML</span><span class="p">)</span>        <span class="c1"># Everything necessary to parse XML and HTML code
-</span><span class="n">library</span><span class="p">(</span><span class="n">pbapply</span><span class="p">)</span>    <span class="c1"># Progress bars!!! Just because why not :-)
-</span>
-<span class="c1"># Create curl handle which can be used for multiple HHTP requests.
+</span><span class="n">library</span><span class="p">(</span><span class="n">RCurl</span><span class="p">)</span><span class="w">      </span><span class="c1"># Everything necessary to grab webpages on the Web
+</span><span class="n">library</span><span class="p">(</span><span class="n">XML</span><span class="p">)</span><span class="w">        </span><span class="c1"># Everything necessary to parse XML and HTML code
+</span><span class="n">library</span><span class="p">(</span><span class="n">pbapply</span><span class="p">)</span><span class="w">    </span><span class="c1"># Progress bars!!! Just because why not :-)
+</span><span class="w">
+</span><span class="c1"># Create curl handle which can be used for multiple HHTP requests.
 # followlocation = TRUE in case one of the URLs we want to grab is a redirection
 # link.
-</span><span class="n">curl</span> <span class="o">&lt;-</span> <span class="n">getCurlHandle</span><span class="p">(</span><span class="n">useragent</span> <span class="o">=</span> <span class="s2">"R"</span><span class="p">,</span> <span class="n">followlocation</span> <span class="o">=</span> <span class="n">TRUE</span><span class="p">)</span></code></pre></div>
+</span><span class="n">curl</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">getCurlHandle</span><span class="p">(</span><span class="n">useragent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"R"</span><span class="p">,</span><span class="w"> </span><span class="n">followlocation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">)</span></code></pre></div>
 
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="c"># String parsing libraries</span>
 <span class="kn">import</span> <span class="nn">string</span>
@@ -203,8 +203,8 @@
 <div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Prepare URLs of the movie lists alphabetically ordered by first letter of
 # movie title (capital A to Z, except for v and y) + "numbers" list (for movies
 # which title starts with a number)
-</span><span class="n">urls.by.letter</span> <span class="o">&lt;-</span> <span class="n">paste0</span><span class="p">(</span><span class="s2">"http://www.moviebodycounts.com/movies-"</span><span class="p">,</span>
-                         <span class="n">c</span><span class="p">(</span><span class="s2">"numbers"</span><span class="p">,</span> <span class="n">LETTERS</span><span class="p">[</span><span class="m">1</span><span class="o">:</span><span class="m">21</span><span class="p">],</span> <span class="s2">"v"</span><span class="p">,</span> <span class="s2">"W"</span> <span class="p">,</span> <span class="s2">"x"</span><span class="p">,</span> <span class="s2">"Y"</span><span class="p">,</span> <span class="s2">"Z"</span><span class="p">),</span> <span class="s2">".htm"</span><span class="p">)</span></code></pre></div>
+</span><span class="n">urls.by.letter</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">paste0</span><span class="p">(</span><span class="s2">"http://www.moviebodycounts.com/movies-"</span><span class="p">,</span><span class="w">
+                         </span><span class="nf">c</span><span class="p">(</span><span class="s2">"numbers"</span><span class="p">,</span><span class="w"> </span><span class="nb">LETTERS</span><span class="p">[</span><span class="m">1</span><span class="o">:</span><span class="m">21</span><span class="p">],</span><span class="w"> </span><span class="s2">"v"</span><span class="p">,</span><span class="w"> </span><span class="s2">"W"</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="s2">"x"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Y"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Z"</span><span class="p">),</span><span class="w"> </span><span class="s2">".htm"</span><span class="p">)</span></code></pre></div>
 
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="c"># Generate a list of all letters for the Movie pages (+ a "numbers" page)</span>
 <span class="c"># MovieBodyCount's actor pages are all with capital letters EXCEPT v and x</span>
@@ -220,7 +220,7 @@
 # apply functions instead. Here I use the pblapply from the pbapply package.
 # It's equivalent to the regular lapply function, but it provides a neat
 # progress bar. Unlist to get a vector.
-</span><span class="n">urls.by.movie</span> <span class="o">&lt;-</span> <span class="n">unlist</span><span class="p">(</span><span class="n">pblapply</span><span class="p">(</span><span class="n">urls.by.letter</span><span class="p">,</span> <span class="n">FUN</span> <span class="o">=</span> <span class="k">function</span><span class="p">(</span><span class="n">URL</span><span class="p">)</span> <span class="p">{</span></code></pre></div>
+</span><span class="n">urls.by.movie</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">unlist</span><span class="p">(</span><span class="n">pblapply</span><span class="p">(</span><span class="n">urls.by.letter</span><span class="p">,</span><span class="w"> </span><span class="n">FUN</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">function</span><span class="p">(</span><span class="n">URL</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></code></pre></div>
 
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">list_of_films</span> <span class="o">=</span> <span class="p">[]</span>
 
@@ -231,7 +231,7 @@
 <p>…download the raw HTML content of the webpage,…</p>
 
 <div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Load raw HTML
-</span>  <span class="n">raw.html</span> <span class="o">&lt;-</span> <span class="n">getURL</span><span class="p">(</span><span class="n">URL</span><span class="p">,</span> <span class="n">curl</span> <span class="o">=</span> <span class="n">curl</span><span class="p">)</span></code></pre></div>
+</span><span class="w">  </span><span class="n">raw.html</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">getURL</span><span class="p">(</span><span class="n">URL</span><span class="p">,</span><span class="w"> </span><span class="n">curl</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">curl</span><span class="p">)</span></code></pre></div>
 
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="c"># Read the raw HTML from the web page</span>
       <span class="n">page_text</span> <span class="o">=</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="s">"http://www.moviebodycounts.com/movies-"</span> <span class="o">+</span> <span class="n">letter</span> <span class="o">+</span> <span class="s">".htm"</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span></code></pre></div>
@@ -239,7 +239,7 @@
 <p>…transform raw HTML into a more convenient format to work with,…</p>
 
 <div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Parse HTML content
-</span>  <span class="n">parsed.html</span> <span class="o">&lt;-</span> <span class="n">htmlParse</span><span class="p">(</span><span class="n">raw.html</span><span class="p">)</span></code></pre></div>
+</span><span class="w">  </span><span class="n">parsed.html</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">htmlParse</span><span class="p">(</span><span class="n">raw.html</span><span class="p">)</span></code></pre></div>
 
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="c"># Convert the raw HTML into Markdown</span>
       <span class="n">page_text</span> <span class="o">=</span> <span class="n">html2text</span><span class="p">(</span><span class="n">page_text</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span></code></pre></div>
@@ -247,22 +247,22 @@
 <p>…find movie page entry, store the URL for later use and close the loop.</p>
 
 <div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Extract desired links from HTML content using XPath.
-</span>  <span class="c1"># The desired links are all the URLs ("a/@href") directly following
-</span>  <span class="c1"># ("/following::") the image which source file is called "graphic-movies.jpg"
-</span>  <span class="c1"># ("//img[@src='graphic-movies.jpg']").
-</span>  <span class="n">links</span> <span class="o">&lt;-</span> <span class="n">as.vector</span><span class="p">(</span><span class="n">xpathSApply</span><span class="p">(</span><span class="n">parsed.html</span><span class="p">,</span> <span class="s2">"//img[@src='graphic-movies.jpg']/following::a/@href"</span><span class="p">))</span>
+</span><span class="w">  </span><span class="c1"># The desired links are all the URLs ("a/@href") directly following
+</span><span class="w">  </span><span class="c1"># ("/following::") the image which source file is called "graphic-movies.jpg"
+</span><span class="w">  </span><span class="c1"># ("//img[@src='graphic-movies.jpg']").
+</span><span class="w">  </span><span class="n">links</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">as.vector</span><span class="p">(</span><span class="n">xpathSApply</span><span class="p">(</span><span class="n">parsed.html</span><span class="p">,</span><span class="w"> </span><span class="s2">"//img[@src='graphic-movies.jpg']/following::a/@href"</span><span class="p">))</span><span class="w">
 
-  <span class="c1"># Most links are relative URLs. Add root of the website to make them absolute.
-</span>  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">is.null</span><span class="p">(</span><span class="n">links</span><span class="p">))</span> <span class="p">{</span>
-    <span class="n">ix</span> <span class="o">=</span> <span class="n">grepl</span><span class="p">(</span><span class="s2">"http://www.moviebodycounts.com/"</span><span class="p">,</span> <span class="n">links</span><span class="p">)</span>                  <span class="c1"># Find relative URLs
-</span>    <span class="n">links</span><span class="p">[</span><span class="o">!</span><span class="n">ix</span><span class="p">]</span> <span class="o">&lt;-</span> <span class="n">paste0</span><span class="p">(</span><span class="s2">"http://www.moviebodycounts.com/"</span><span class="p">,</span> <span class="n">links</span><span class="p">[</span><span class="o">!</span><span class="n">ix</span><span class="p">])</span>   <span class="c1"># Add root of website to make URLs absolute
-</span>    <span class="k">return</span><span class="p">(</span><span class="n">links</span><span class="p">)</span>
-  <span class="p">}</span>
-<span class="p">}),</span> <span class="n">use.names</span> <span class="o">=</span> <span class="n">FALSE</span><span class="p">)</span> <span class="c1"># close the loop
-</span>
-<span class="c1"># One URL is actually just a symbolic link to another page. Let's get rid of it.
-</span><span class="n">ix</span> <span class="o">&lt;-</span> <span class="n">which</span><span class="p">(</span><span class="n">grepl</span><span class="p">(</span><span class="s2">"movies-C.htm"</span><span class="p">,</span> <span class="n">urls.by.movie</span><span class="p">))</span>
-<span class="n">urls.by.movie</span> <span class="o">&lt;-</span> <span class="n">urls.by.movie</span><span class="p">[</span><span class="o">-</span><span class="n">ix</span><span class="p">]</span></code></pre></div>
+  </span><span class="c1"># Most links are relative URLs. Add root of the website to make them absolute.
+</span><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="nf">is.null</span><span class="p">(</span><span class="n">links</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="n">ix</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">grepl</span><span class="p">(</span><span class="s2">"http://www.moviebodycounts.com/"</span><span class="p">,</span><span class="w"> </span><span class="n">links</span><span class="p">)</span><span class="w">                  </span><span class="c1"># Find relative URLs
+</span><span class="w">    </span><span class="n">links</span><span class="p">[</span><span class="o">!</span><span class="n">ix</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">paste0</span><span class="p">(</span><span class="s2">"http://www.moviebodycounts.com/"</span><span class="p">,</span><span class="w"> </span><span class="n">links</span><span class="p">[</span><span class="o">!</span><span class="n">ix</span><span class="p">])</span><span class="w">   </span><span class="c1"># Add root of website to make URLs absolute
+</span><span class="w">    </span><span class="nf">return</span><span class="p">(</span><span class="n">links</span><span class="p">)</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}),</span><span class="w"> </span><span class="n">use.names</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">)</span><span class="w"> </span><span class="c1"># close the loop
+</span><span class="w">
+</span><span class="c1"># One URL is actually just a symbolic link to another page. Let's get rid of it.
+</span><span class="n">ix</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">which</span><span class="p">(</span><span class="n">grepl</span><span class="p">(</span><span class="s2">"movies-C.htm"</span><span class="p">,</span><span class="w"> </span><span class="n">urls.by.movie</span><span class="p">))</span><span class="w">
+</span><span class="n">urls.by.movie</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">urls.by.movie</span><span class="p">[</span><span class="o">-</span><span class="n">ix</span><span class="p">]</span></code></pre></div>
 
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="c"># Search through the web page for movie page entries</span>
       <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">page_text</span><span class="p">:</span>
@@ -286,7 +286,7 @@
 
 <div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># For each movie...
 # do.call(rbind, ...) to reorganize the results in a nice data frame
-</span><span class="n">data</span> <span class="o">&lt;-</span> <span class="n">do.call</span><span class="p">(</span><span class="n">rbind</span><span class="p">,</span> <span class="n">pblapply</span><span class="p">(</span><span class="n">urls.by.movie</span><span class="p">,</span> <span class="n">FUN</span> <span class="o">=</span> <span class="k">function</span><span class="p">(</span><span class="n">URL</span><span class="p">)</span> <span class="p">{</span></code></pre></div>
+</span><span class="n">data</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">do.call</span><span class="p">(</span><span class="n">rbind</span><span class="p">,</span><span class="w"> </span><span class="n">pblapply</span><span class="p">(</span><span class="n">urls.by.movie</span><span class="p">,</span><span class="w"> </span><span class="n">FUN</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">function</span><span class="p">(</span><span class="n">URL</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></code></pre></div>
 
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="c"># Now that we have every movie web page URL, go through each movie page and</span>
 <span class="c"># extract the movie name, kill counts, etc.</span>
@@ -307,10 +307,10 @@
 <p>…download the raw HTML content of the webpage and transform raw HTML into a more convenient format to work with,…</p>
 
 <div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Load raw HTML
-</span>  <span class="n">raw.html</span> <span class="o">&lt;-</span> <span class="n">getURL</span><span class="p">(</span><span class="n">URL</span><span class="p">,</span> <span class="n">curl</span> <span class="o">=</span> <span class="n">curl</span><span class="p">)</span>
+</span><span class="w">  </span><span class="n">raw.html</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">getURL</span><span class="p">(</span><span class="n">URL</span><span class="p">,</span><span class="w"> </span><span class="n">curl</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">curl</span><span class="p">)</span><span class="w">
 
-  <span class="c1"># Parse HTML content
-</span>  <span class="n">parsed.html</span> <span class="o">&lt;-</span> <span class="n">htmlParse</span><span class="p">(</span><span class="n">raw.html</span><span class="p">)</span></code></pre></div>
+  </span><span class="c1"># Parse HTML content
+</span><span class="w">  </span><span class="n">parsed.html</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">htmlParse</span><span class="p">(</span><span class="n">raw.html</span><span class="p">)</span></code></pre></div>
 
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="c"># Read the page's raw HTML and convert it to Markdown (again) and go</span>
       <span class="c"># through each line</span>
@@ -319,11 +319,11 @@
 <p>…attempt to find movie title,…</p>
 
 <div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Find movie title
-</span>  <span class="c1"># Title appears inside a XML/HTML node called "title" ("//title"). In this
-</span>  <span class="c1"># node, it comes after "Movie Body Counts: ". I use gsub to get rid off "Movie
-</span>  <span class="c1"># Body Counts: " and keep only the movie title.
-</span>  <span class="n">Film</span> <span class="o">&lt;-</span> <span class="n">xpathSApply</span><span class="p">(</span><span class="n">parsed.html</span><span class="p">,</span> <span class="s2">"//title"</span><span class="p">,</span> <span class="n">xmlValue</span><span class="p">)</span>
-  <span class="n">Film</span> <span class="o">&lt;-</span> <span class="n">gsub</span><span class="p">(</span><span class="s2">"Movie Body Counts: "</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="n">Film</span><span class="p">)</span></code></pre></div>
+</span><span class="w">  </span><span class="c1"># Title appears inside a XML/HTML node called "title" ("//title"). In this
+</span><span class="w">  </span><span class="c1"># node, it comes after "Movie Body Counts: ". I use gsub to get rid off "Movie
+</span><span class="w">  </span><span class="c1"># Body Counts: " and keep only the movie title.
+</span><span class="w">  </span><span class="n">Film</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">xpathSApply</span><span class="p">(</span><span class="n">parsed.html</span><span class="p">,</span><span class="w"> </span><span class="s2">"//title"</span><span class="p">,</span><span class="w"> </span><span class="n">xmlValue</span><span class="p">)</span><span class="w">
+  </span><span class="n">Film</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">gsub</span><span class="p">(</span><span class="s2">"Movie Body Counts: "</span><span class="p">,</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"> </span><span class="n">Film</span><span class="p">)</span></code></pre></div>
 
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="c"># If we haven't found the title yet, these markers tell us we've found the movie</span>
 <span class="c"># title</span>
@@ -334,10 +334,10 @@
 <p>…attempt to find movie year,…</p>
 
 <div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Find movie year
-</span>  <span class="c1"># The year is usually a text inside ("/descendant::text()") a link node
-</span>  <span class="c1"># ("//a") which source contains the string "charts-year" ("[contains(@href,
-</span>  <span class="c1"># 'charts-year')]").
-</span>  <span class="n">Year</span> <span class="o">&lt;-</span> <span class="n">as.numeric</span><span class="p">(</span><span class="n">xpathSApply</span><span class="p">(</span><span class="n">parsed.html</span><span class="p">,</span> <span class="s2">"//a[contains(@href, 'charts-year')]/descendant::text()"</span><span class="p">,</span> <span class="n">xmlValue</span><span class="p">))</span></code></pre></div>
+</span><span class="w">  </span><span class="c1"># The year is usually a text inside ("/descendant::text()") a link node
+</span><span class="w">  </span><span class="c1"># ("//a") which source contains the string "charts-year" ("[contains(@href,
+</span><span class="w">  </span><span class="c1"># 'charts-year')]").
+</span><span class="w">  </span><span class="n">Year</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">as.numeric</span><span class="p">(</span><span class="n">xpathSApply</span><span class="p">(</span><span class="n">parsed.html</span><span class="p">,</span><span class="w"> </span><span class="s2">"//a[contains(@href, 'charts-year')]/descendant::text()"</span><span class="p">,</span><span class="w"> </span><span class="n">xmlValue</span><span class="p">))</span></code></pre></div>
 
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="c"># The year is usually on a line with "charts-year"</span>
         <span class="k">if</span> <span class="s">"charts-year"</span> <span class="ow">in</span> <span class="n">line</span><span class="p">:</span>
@@ -346,12 +346,12 @@
 <p>…attempt to find link to movie on IMDB,…</p>
 
 <div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Find IMDB link
-</span>  <span class="c1"># The IMDB link is inside a link node ("//a") which source contains "imdb"
-</span>  <span class="c1"># ("/@href[contains(.,'imdb')]")
-</span>  <span class="n">IMDB_URL</span> <span class="o">&lt;-</span> <span class="n">as.vector</span><span class="p">(</span><span class="n">xpathSApply</span><span class="p">(</span><span class="n">parsed.html</span><span class="p">,</span> <span class="s2">"//a/@href[contains(.,'imdb')]"</span><span class="p">))[</span><span class="m">1</span><span class="p">]</span>
+</span><span class="w">  </span><span class="c1"># The IMDB link is inside a link node ("//a") which source contains "imdb"
+</span><span class="w">  </span><span class="c1"># ("/@href[contains(.,'imdb')]")
+</span><span class="w">  </span><span class="n">IMDB_URL</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">as.vector</span><span class="p">(</span><span class="n">xpathSApply</span><span class="p">(</span><span class="n">parsed.html</span><span class="p">,</span><span class="w"> </span><span class="s2">"//a/@href[contains(.,'imdb')]"</span><span class="p">))[</span><span class="m">1</span><span class="p">]</span><span class="w">
 
-  <span class="c1"># Note: We select the first element of the vector because for at least one of
-</span>  <span class="err">#</span> <span class="n">the</span> <span class="n">movies</span><span class="p">,</span> <span class="n">this</span> <span class="n">command</span> <span class="n">returns</span> <span class="n">two</span> <span class="n">links.</span></code></pre></div>
+  </span><span class="c1"># Note: We select the first element of the vector because for at least one of
+</span><span class="w">  </span><span class="err">#</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">movies</span><span class="p">,</span><span class="w"> </span><span class="n">this</span><span class="w"> </span><span class="n">command</span><span class="w"> </span><span class="n">returns</span><span class="w"> </span><span class="n">two</span><span class="w"> </span><span class="n">links.</span></code></pre></div>
 
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="c"># The IMDB url is on a line with "[imdb]"</span>
         <span class="k">if</span> <span class="s">"[imdb]"</span> <span class="ow">in</span> <span class="n">line</span><span class="o">.</span><span class="n">lower</span><span class="p">():</span>
@@ -360,33 +360,33 @@
 <p>… and finally attempt to find the on-screen kill count. Here, Randy chose an approach that minimizes his coding effort, but that will potentially force him to make several manual corrections a posteriori. I chose to find a solution that works with minimal to no manual corrections, but that requires an extra coding effort. Whichever approach is best depends mostly on the size of the data you want to scrape and the time you have to do it.</p>
 
 <div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Find kill count.
-</span>  <span class="c1"># Kill count is contained in the first non-empty text node
-</span>  <span class="c1"># ("/following::text()[normalize-space()]") after the image which source file
-</span>  <span class="c1"># is called "graphic-bc.jpg" ("//img[@src='graphic-bc.jpg']")
-</span>  <span class="n">Body_Count</span> <span class="o">&lt;-</span> <span class="n">xpathSApply</span><span class="p">(</span><span class="n">parsed.html</span><span class="p">,</span> <span class="s2">"//img[@src='graphic-bc.jpg']/following::text()[normalize-space()]"</span><span class="p">,</span> <span class="n">xmlValue</span><span class="p">)[</span><span class="m">1</span><span class="p">]</span>
+</span><span class="w">  </span><span class="c1"># Kill count is contained in the first non-empty text node
+</span><span class="w">  </span><span class="c1"># ("/following::text()[normalize-space()]") after the image which source file
+</span><span class="w">  </span><span class="c1"># is called "graphic-bc.jpg" ("//img[@src='graphic-bc.jpg']")
+</span><span class="w">  </span><span class="n">Body_Count</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">xpathSApply</span><span class="p">(</span><span class="n">parsed.html</span><span class="p">,</span><span class="w"> </span><span class="s2">"//img[@src='graphic-bc.jpg']/following::text()[normalize-space()]"</span><span class="p">,</span><span class="w"> </span><span class="n">xmlValue</span><span class="p">)[</span><span class="m">1</span><span class="p">]</span><span class="w">
 
-  <span class="c1"># Now we need to clean up the text node that we just extracted because there
-</span>  <span class="c1"># are lots of inconsistencies in the way the kill counts are displayed across
-</span>  <span class="c1"># all movie pages. For instance, counts are sometimes accompanied by text, not
-</span>  <span class="c1"># always the same, and sometimes there is no text at all. Sometimes the total
-</span>  <span class="c1"># count is split in two numbers (e.g., number of dead humans and number of
-</span>  <span class="c1"># dead aliens). And sometimes the total count is displayed and accompanied by
-</span>  <span class="c1"># a split count in parenthesis. First, let's remove everything that is
-</span>  <span class="c1"># writtent in parenthesis or that is not a number.
-</span>  <span class="c1"># Using gsub, remove everything in parenthesis and all non number characters
-</span>  <span class="n">Body_Count</span> <span class="o">&lt;-</span> <span class="n">gsub</span><span class="p">(</span><span class="s2">"\\(.*?\\)"</span><span class="p">,</span> <span class="s2">" "</span><span class="p">,</span> <span class="n">Body_Count</span><span class="p">)</span>
-  <span class="n">Body_Count</span> <span class="o">&lt;-</span> <span class="n">gsub</span><span class="p">(</span><span class="s2">"[^0-9]+"</span><span class="p">,</span> <span class="s2">" "</span><span class="p">,</span> <span class="n">Body_Count</span><span class="p">)</span>
+  </span><span class="c1"># Now we need to clean up the text node that we just extracted because there
+</span><span class="w">  </span><span class="c1"># are lots of inconsistencies in the way the kill counts are displayed across
+</span><span class="w">  </span><span class="c1"># all movie pages. For instance, counts are sometimes accompanied by text, not
+</span><span class="w">  </span><span class="c1"># always the same, and sometimes there is no text at all. Sometimes the total
+</span><span class="w">  </span><span class="c1"># count is split in two numbers (e.g., number of dead humans and number of
+</span><span class="w">  </span><span class="c1"># dead aliens). And sometimes the total count is displayed and accompanied by
+</span><span class="w">  </span><span class="c1"># a split count in parenthesis. First, let's remove everything that is
+</span><span class="w">  </span><span class="c1"># writtent in parenthesis or that is not a number.
+</span><span class="w">  </span><span class="c1"># Using gsub, remove everything in parenthesis and all non number characters
+</span><span class="w">  </span><span class="n">Body_Count</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">gsub</span><span class="p">(</span><span class="s2">"\\(.*?\\)"</span><span class="p">,</span><span class="w"> </span><span class="s2">" "</span><span class="p">,</span><span class="w"> </span><span class="n">Body_Count</span><span class="p">)</span><span class="w">
+  </span><span class="n">Body_Count</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">gsub</span><span class="p">(</span><span class="s2">"[^0-9]+"</span><span class="p">,</span><span class="w"> </span><span class="s2">" "</span><span class="p">,</span><span class="w"> </span><span class="n">Body_Count</span><span class="p">)</span><span class="w">
 
-  <span class="c1"># In case the total count has been split, we want to separate these numbers
-</span>  <span class="c1"># from each other so that we can add them up later. Using strsplit, split the
-</span>  <span class="c1"># character string at spaces
-</span>  <span class="n">Body_Count</span> <span class="o">&lt;-</span> <span class="n">unlist</span><span class="p">(</span><span class="n">strsplit</span><span class="p">(</span><span class="n">Body_Count</span><span class="p">,</span> <span class="s2">" "</span><span class="p">))</span>
+  </span><span class="c1"># In case the total count has been split, we want to separate these numbers
+</span><span class="w">  </span><span class="c1"># from each other so that we can add them up later. Using strsplit, split the
+</span><span class="w">  </span><span class="c1"># character string at spaces
+</span><span class="w">  </span><span class="n">Body_Count</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">unlist</span><span class="p">(</span><span class="n">strsplit</span><span class="p">(</span><span class="n">Body_Count</span><span class="p">,</span><span class="w"> </span><span class="s2">" "</span><span class="p">))</span><span class="w">
 
-  <span class="c1"># For now, we have extracted characters. Transform them into numbers.
-</span>  <span class="n">Body_Count</span> <span class="o">&lt;-</span> <span class="n">as.numeric</span><span class="p">(</span><span class="n">Body_Count</span><span class="p">)</span>
+  </span><span class="c1"># For now, we have extracted characters. Transform them into numbers.
+</span><span class="w">  </span><span class="n">Body_Count</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">as.numeric</span><span class="p">(</span><span class="n">Body_Count</span><span class="p">)</span><span class="w">
 
-  <span class="c1"># Sum up the numbers (in case they have been split into separate categories.
-</span>  <span class="n">Body_Count</span> <span class="o">&lt;-</span> <span class="n">sum</span><span class="p">(</span><span class="n">Body_Count</span><span class="p">,</span> <span class="n">na.rm</span> <span class="o">=</span> <span class="n">TRUE</span><span class="p">)</span></code></pre></div>
+  </span><span class="c1"># Sum up the numbers (in case they have been split into separate categories.
+</span><span class="w">  </span><span class="n">Body_Count</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">sum</span><span class="p">(</span><span class="n">Body_Count</span><span class="p">,</span><span class="w"> </span><span class="n">na.rm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">)</span></code></pre></div>
 
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="c"># The kill counts are usually on a line with "Film:"</span>
         <span class="k">if</span> <span class="s">"film:"</span> <span class="ow">in</span> <span class="n">line</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="ow">or</span> <span class="s">"kills:"</span> <span class="ow">in</span> <span class="n">line</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="ow">or</span> <span class="s">"count:"</span> <span class="ow">in</span> <span class="n">line</span><span class="o">.</span><span class="n">lower</span><span class="p">():</span>
@@ -395,11 +395,11 @@
 <p>Almost done! Now we just need to close the loop and write the data frame into a .csv file</p>
 
 <div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Return scraped data into a data frame form
-</span>  <span class="k">return</span><span class="p">(</span><span class="n">data.frame</span><span class="p">(</span><span class="n">IMDB_URL</span><span class="p">,</span> <span class="n">Film</span><span class="p">,</span> <span class="n">Year</span><span class="p">,</span> <span class="n">Body_Count</span><span class="p">))</span>
-<span class="p">}))</span>
+</span><span class="w">  </span><span class="nf">return</span><span class="p">(</span><span class="n">data.frame</span><span class="p">(</span><span class="n">IMDB_URL</span><span class="p">,</span><span class="w"> </span><span class="n">Film</span><span class="p">,</span><span class="w"> </span><span class="n">Year</span><span class="p">,</span><span class="w"> </span><span class="n">Body_Count</span><span class="p">))</span><span class="w">
+</span><span class="p">}))</span><span class="w">
 
-<span class="c1"># Save scraped data in a .csv file for future use
-</span><span class="n">write.csv</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="s2">"movies-R.csv"</span><span class="p">,</span> <span class="n">row.names</span> <span class="o">=</span> <span class="n">FALSE</span><span class="p">)</span></code></pre></div>
+</span><span class="c1"># Save scraped data in a .csv file for future use
+</span><span class="n">write.csv</span><span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="s2">"movies-R.csv"</span><span class="p">,</span><span class="w"> </span><span class="n">row.names</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">)</span></code></pre></div>
 
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">out_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">film</span> <span class="o">+</span> <span class="s">","</span> <span class="o">+</span> <span class="n">year</span> <span class="o">+</span> <span class="s">","</span> <span class="o">+</span> <span class="n">kills</span> <span class="o">+</span> <span class="s">","</span> <span class="o">+</span> <span class="n">IMDB_url</span> <span class="o">+</span> <span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
 

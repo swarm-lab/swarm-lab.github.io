@@ -175,7 +175,7 @@
 <p>First things first, let’s set up our working environment by loading some necessary libraries.</p>
 
 <div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Load libraries
-</span><span class="err">#</span> <span class="n">No</span> <span class="n">additional</span> <span class="n">libraries</span> <span class="n">needed</span> <span class="n">here.</span> <span class="n">Yeah</span><span class="o">!</span></code></pre></div>
+</span><span class="err">#</span><span class="w"> </span><span class="n">No</span><span class="w"> </span><span class="n">additional</span><span class="w"> </span><span class="n">libraries</span><span class="w"> </span><span class="n">needed</span><span class="w"> </span><span class="n">here.</span><span class="w"> </span><span class="n">Yeah</span><span class="o">!</span></code></pre></div>
 
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="c"># String parsing libraries</span>
 <span class="kn">from</span> <span class="nn">imdb</span> <span class="kn">import</span> <span class="n">IMDb</span>
@@ -187,63 +187,63 @@
 <p>Since I am not easily discouraged, I decided to write my own IMDb scraping function (see below). It is not as sophisticated as the Python package Randy is using today, but it does the job until someone else decides to write a more complete R/IMDb package. As you will see, I am using the same scraping technique (XPath) as the one I used in the first part of the challenge.</p>
 
 <div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Create IMDB scraper
-</span><span class="n">IMDb</span> <span class="o">&lt;-</span> <span class="k">function</span><span class="p">(</span><span class="n">ID</span><span class="p">)</span> <span class="p">{</span>
-  <span class="c1"># Retrieve movie info from IMDb.com.
-</span>  <span class="c1">#
-</span>  <span class="c1"># Args:
-</span>  <span class="c1">#   ID: IDs of the movies.
-</span>  <span class="c1">#
-</span>  <span class="c1"># Returns:
-</span>  <span class="c1">#   A data frame containing one line per movie, and nine columns: movie ID,
-</span>  <span class="c1">#   film title, year of release, duration in minutes, MPAA rating, genre(s),
-</span>  <span class="c1">#   director(s), IMDb rating, and full cast.
-</span>
-  <span class="c1"># Load required libraries
-</span>  <span class="n">require</span><span class="p">(</span><span class="n">XML</span><span class="p">)</span>
-  <span class="n">require</span><span class="p">(</span><span class="n">pbapply</span><span class="p">)</span>    <span class="c1"># Apply functions with progress bars!!!
-</span>
-  <span class="c1"># Wrap core of the function in do.call and pblapply in order to
-</span>  <span class="c1"># pseudo-vectorize it (pblapply) and return a data frame (do.call)
-</span>  <span class="n">info</span> <span class="o">&lt;-</span> <span class="n">do.call</span><span class="p">(</span><span class="n">rbind</span><span class="p">,</span> <span class="n">pblapply</span><span class="p">(</span><span class="n">ID</span><span class="p">,</span> <span class="n">FUN</span> <span class="o">=</span> <span class="k">function</span><span class="p">(</span><span class="n">ID</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1"># Create movie URL on IMDb.com
-</span>    <span class="n">URL</span> <span class="o">&lt;-</span> <span class="n">paste0</span><span class="p">(</span><span class="s2">"http://www.imdb.com/title/tt"</span><span class="p">,</span> <span class="n">ID</span><span class="p">)</span>
+</span><span class="n">IMDb</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="k">function</span><span class="p">(</span><span class="n">ID</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+  </span><span class="c1"># Retrieve movie info from IMDb.com.
+</span><span class="w">  </span><span class="c1">#
+</span><span class="w">  </span><span class="c1"># Args:
+</span><span class="w">  </span><span class="c1">#   ID: IDs of the movies.
+</span><span class="w">  </span><span class="c1">#
+</span><span class="w">  </span><span class="c1"># Returns:
+</span><span class="w">  </span><span class="c1">#   A data frame containing one line per movie, and nine columns: movie ID,
+</span><span class="w">  </span><span class="c1">#   film title, year of release, duration in minutes, MPAA rating, genre(s),
+</span><span class="w">  </span><span class="c1">#   director(s), IMDb rating, and full cast.
+</span><span class="w">
+  </span><span class="c1"># Load required libraries
+</span><span class="w">  </span><span class="n">require</span><span class="p">(</span><span class="n">XML</span><span class="p">)</span><span class="w">
+  </span><span class="n">require</span><span class="p">(</span><span class="n">pbapply</span><span class="p">)</span><span class="w">    </span><span class="c1"># Apply functions with progress bars!!!
+</span><span class="w">
+  </span><span class="c1"># Wrap core of the function in do.call and pblapply in order to
+</span><span class="w">  </span><span class="c1"># pseudo-vectorize it (pblapply) and return a data frame (do.call)
+</span><span class="w">  </span><span class="n">info</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">do.call</span><span class="p">(</span><span class="n">rbind</span><span class="p">,</span><span class="w"> </span><span class="n">pblapply</span><span class="p">(</span><span class="n">ID</span><span class="p">,</span><span class="w"> </span><span class="n">FUN</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">function</span><span class="p">(</span><span class="n">ID</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="c1"># Create movie URL on IMDb.com
+</span><span class="w">    </span><span class="n">URL</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">paste0</span><span class="p">(</span><span class="s2">"http://www.imdb.com/title/tt"</span><span class="p">,</span><span class="w"> </span><span class="n">ID</span><span class="p">)</span><span class="w">
 
-    <span class="c1"># Download and parse HTML of IMDb page
-</span>    <span class="n">parsed.html</span> <span class="o">&lt;-</span> <span class="n">htmlParse</span><span class="p">(</span><span class="n">URL</span><span class="p">)</span>
+    </span><span class="c1"># Download and parse HTML of IMDb page
+</span><span class="w">    </span><span class="n">parsed.html</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">htmlParse</span><span class="p">(</span><span class="n">URL</span><span class="p">)</span><span class="w">
 
-    <span class="c1"># Find title
-</span>    <span class="n">Film</span> <span class="o">&lt;-</span> <span class="n">xpathSApply</span><span class="p">(</span><span class="n">parsed.html</span><span class="p">,</span> <span class="s2">"//h1[@class='header']/span[@class='itemprop']"</span><span class="p">,</span> <span class="n">xmlValue</span><span class="p">)</span>
+    </span><span class="c1"># Find title
+</span><span class="w">    </span><span class="n">Film</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">xpathSApply</span><span class="p">(</span><span class="n">parsed.html</span><span class="p">,</span><span class="w"> </span><span class="s2">"//h1[@class='header']/span[@class='itemprop']"</span><span class="p">,</span><span class="w"> </span><span class="n">xmlValue</span><span class="p">)</span><span class="w">
 
-    <span class="c1"># Find year
-</span>    <span class="n">Year</span> <span class="o">&lt;-</span> <span class="n">as.numeric</span><span class="p">(</span><span class="n">gsub</span><span class="p">(</span><span class="s2">"[^0-9]"</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="n">xpathSApply</span><span class="p">(</span><span class="n">parsed.html</span><span class="p">,</span> <span class="s2">"//h1[@class='header']/span[@class='nobr']"</span><span class="p">,</span> <span class="n">xmlValue</span><span class="p">)))</span>
+    </span><span class="c1"># Find year
+</span><span class="w">    </span><span class="n">Year</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">as.numeric</span><span class="p">(</span><span class="n">gsub</span><span class="p">(</span><span class="s2">"[^0-9]"</span><span class="p">,</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"> </span><span class="n">xpathSApply</span><span class="p">(</span><span class="n">parsed.html</span><span class="p">,</span><span class="w"> </span><span class="s2">"//h1[@class='header']/span[@class='nobr']"</span><span class="p">,</span><span class="w"> </span><span class="n">xmlValue</span><span class="p">)))</span><span class="w">
 
-    <span class="c1"># Find duration in minutes
-</span>    <span class="n">Length_Minutes</span> <span class="o">&lt;-</span> <span class="n">as.numeric</span><span class="p">(</span><span class="n">gsub</span><span class="p">(</span><span class="s2">"[^0-9]"</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="n">xpathSApply</span><span class="p">(</span><span class="n">parsed.html</span><span class="p">,</span> <span class="s2">"//div[@class='infobar']/time[@itemprop='duration']"</span><span class="p">,</span> <span class="n">xmlValue</span><span class="p">)))</span>
+    </span><span class="c1"># Find duration in minutes
+</span><span class="w">    </span><span class="n">Length_Minutes</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">as.numeric</span><span class="p">(</span><span class="n">gsub</span><span class="p">(</span><span class="s2">"[^0-9]"</span><span class="p">,</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"> </span><span class="n">xpathSApply</span><span class="p">(</span><span class="n">parsed.html</span><span class="p">,</span><span class="w"> </span><span class="s2">"//div[@class='infobar']/time[@itemprop='duration']"</span><span class="p">,</span><span class="w"> </span><span class="n">xmlValue</span><span class="p">)))</span><span class="w">
 
-    <span class="c1"># Find MPAA rating
-</span>    <span class="n">MPAA_Rating</span> <span class="o">&lt;-</span> <span class="n">unname</span><span class="p">(</span><span class="n">xpathSApply</span><span class="p">(</span><span class="n">parsed.html</span><span class="p">,</span> <span class="s2">"//div[@class='infobar']/span/@content"</span><span class="p">))</span>
-    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">is.character</span><span class="p">(</span><span class="n">MPAA_Rating</span><span class="p">))</span> <span class="p">{</span>   <span class="c1"># Some movies don't have a MPAA rating
-</span>      <span class="n">MPAA_Rating</span> <span class="o">&lt;-</span> <span class="s2">"UNRATED"</span>
-    <span class="p">}</span>
+    </span><span class="c1"># Find MPAA rating
+</span><span class="w">    </span><span class="n">MPAA_Rating</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">unname</span><span class="p">(</span><span class="n">xpathSApply</span><span class="p">(</span><span class="n">parsed.html</span><span class="p">,</span><span class="w"> </span><span class="s2">"//div[@class='infobar']/span/@content"</span><span class="p">))</span><span class="w">
+    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="nf">is.character</span><span class="p">(</span><span class="n">MPAA_Rating</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w">   </span><span class="c1"># Some movies don't have a MPAA rating
+</span><span class="w">      </span><span class="n">MPAA_Rating</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s2">"UNRATED"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
 
-    <span class="c1"># Find genre
-</span>    <span class="n">Genre</span> <span class="o">&lt;-</span> <span class="n">paste</span><span class="p">(</span><span class="n">xpathSApply</span><span class="p">(</span><span class="n">parsed.html</span><span class="p">,</span> <span class="s2">"//span[@class='itemprop' and @itemprop='genre']"</span><span class="p">,</span> <span class="n">xmlValue</span><span class="p">),</span> <span class="n">collapse</span><span class="o">=</span><span class="s1">'|'</span><span class="p">)</span>
+    </span><span class="c1"># Find genre
+</span><span class="w">    </span><span class="n">Genre</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">paste</span><span class="p">(</span><span class="n">xpathSApply</span><span class="p">(</span><span class="n">parsed.html</span><span class="p">,</span><span class="w"> </span><span class="s2">"//span[@class='itemprop' and @itemprop='genre']"</span><span class="p">,</span><span class="w"> </span><span class="n">xmlValue</span><span class="p">),</span><span class="w"> </span><span class="n">collapse</span><span class="o">=</span><span class="s1">'|'</span><span class="p">)</span><span class="w">
 
-    <span class="c1"># Find director
-</span>    <span class="n">Director</span> <span class="o">&lt;-</span> <span class="n">paste</span><span class="p">(</span><span class="n">xpathSApply</span><span class="p">(</span><span class="n">parsed.html</span><span class="p">,</span> <span class="s2">"//div[@itemprop='director']/a"</span><span class="p">,</span> <span class="n">xmlValue</span><span class="p">),</span> <span class="n">collapse</span><span class="o">=</span><span class="s1">'|'</span><span class="p">)</span>
+    </span><span class="c1"># Find director
+</span><span class="w">    </span><span class="n">Director</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">paste</span><span class="p">(</span><span class="n">xpathSApply</span><span class="p">(</span><span class="n">parsed.html</span><span class="p">,</span><span class="w"> </span><span class="s2">"//div[@itemprop='director']/a"</span><span class="p">,</span><span class="w"> </span><span class="n">xmlValue</span><span class="p">),</span><span class="w"> </span><span class="n">collapse</span><span class="o">=</span><span class="s1">'|'</span><span class="p">)</span><span class="w">
 
-    <span class="c1"># Find IMDB rating
-</span>    <span class="n">IMDB_rating</span> <span class="o">&lt;-</span> <span class="n">as.numeric</span><span class="p">(</span><span class="n">xpathSApply</span><span class="p">(</span><span class="n">parsed.html</span><span class="p">,</span> <span class="s2">"//div[@class='titlePageSprite star-box-giga-star']"</span><span class="p">,</span> <span class="n">xmlValue</span><span class="p">))</span>
+    </span><span class="c1"># Find IMDB rating
+</span><span class="w">    </span><span class="n">IMDB_rating</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">as.numeric</span><span class="p">(</span><span class="n">xpathSApply</span><span class="p">(</span><span class="n">parsed.html</span><span class="p">,</span><span class="w"> </span><span class="s2">"//div[@class='titlePageSprite star-box-giga-star']"</span><span class="p">,</span><span class="w"> </span><span class="n">xmlValue</span><span class="p">))</span><span class="w">
 
-    <span class="c1"># Extract full cast from the full credits page
-</span>    <span class="n">parsed.html</span> <span class="o">&lt;-</span> <span class="n">htmlParse</span><span class="p">(</span><span class="n">paste0</span><span class="p">(</span><span class="n">URL</span><span class="p">,</span><span class="s2">"/fullcredits"</span><span class="p">))</span>
-    <span class="n">Full_Cast</span> <span class="o">&lt;-</span> <span class="n">paste</span><span class="p">(</span><span class="n">xpathSApply</span><span class="p">(</span><span class="n">parsed.html</span><span class="p">,</span> <span class="s2">"//span[@itemprop='name']"</span><span class="p">,</span> <span class="n">xmlValue</span><span class="p">),</span> <span class="n">collapse</span><span class="o">=</span><span class="s1">'|'</span><span class="p">)</span>
+    </span><span class="c1"># Extract full cast from the full credits page
+</span><span class="w">    </span><span class="n">parsed.html</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">htmlParse</span><span class="p">(</span><span class="n">paste0</span><span class="p">(</span><span class="n">URL</span><span class="p">,</span><span class="s2">"/fullcredits"</span><span class="p">))</span><span class="w">
+    </span><span class="n">Full_Cast</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">paste</span><span class="p">(</span><span class="n">xpathSApply</span><span class="p">(</span><span class="n">parsed.html</span><span class="p">,</span><span class="w"> </span><span class="s2">"//span[@itemprop='name']"</span><span class="p">,</span><span class="w"> </span><span class="n">xmlValue</span><span class="p">),</span><span class="w"> </span><span class="n">collapse</span><span class="o">=</span><span class="s1">'|'</span><span class="p">)</span><span class="w">
 
-    <span class="n">data.frame</span><span class="p">(</span><span class="n">ID</span> <span class="o">=</span> <span class="n">ID</span><span class="p">,</span> <span class="n">Film</span> <span class="o">=</span> <span class="n">Film</span><span class="p">,</span> <span class="n">Year</span> <span class="o">=</span> <span class="n">Year</span><span class="p">,</span> <span class="n">Length_Minutes</span> <span class="o">=</span> <span class="n">Length_Minutes</span><span class="p">,</span>
-               <span class="n">MPAA_Rating</span> <span class="o">=</span> <span class="n">MPAA_Rating</span><span class="p">,</span> <span class="n">Genre</span> <span class="o">=</span> <span class="n">Genre</span><span class="p">,</span>
-               <span class="n">Director</span> <span class="o">=</span> <span class="n">Director</span><span class="p">,</span> <span class="n">IMDB_rating</span> <span class="o">=</span> <span class="n">IMDB_rating</span><span class="p">,</span> <span class="n">Full_Cast</span> <span class="o">=</span> <span class="n">Full_Cast</span><span class="p">))</span>
-  <span class="p">}))</span>
-<span class="p">}</span></code></pre></div>
+    </span><span class="n">data.frame</span><span class="p">(</span><span class="n">ID</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ID</span><span class="p">,</span><span class="w"> </span><span class="n">Film</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Film</span><span class="p">,</span><span class="w"> </span><span class="n">Year</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Year</span><span class="p">,</span><span class="w"> </span><span class="n">Length_Minutes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Length_Minutes</span><span class="p">,</span><span class="w">
+               </span><span class="n">MPAA_Rating</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">MPAA_Rating</span><span class="p">,</span><span class="w"> </span><span class="n">Genre</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Genre</span><span class="p">,</span><span class="w">
+               </span><span class="n">Director</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Director</span><span class="p">,</span><span class="w"> </span><span class="n">IMDB_rating</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">IMDB_rating</span><span class="p">,</span><span class="w"> </span><span class="n">Full_Cast</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Full_Cast</span><span class="p">))</span><span class="w">
+  </span><span class="p">}))</span><span class="w">
+</span><span class="p">}</span></code></pre></div>
 
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">imdb_access</span> <span class="o">=</span> <span class="n">IMDb</span><span class="p">()</span></code></pre></div>
 
@@ -252,16 +252,16 @@
 <p>First, let’s load the data we collected last time.</p>
 
 <div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Load data from last challenge
-</span><span class="n">data</span> <span class="o">&lt;-</span> <span class="n">read.csv</span><span class="p">(</span><span class="s2">"movies-R.csv"</span><span class="p">)</span></code></pre></div>
+</span><span class="n">data</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">read.csv</span><span class="p">(</span><span class="s2">"movies-R.csv"</span><span class="p">)</span></code></pre></div>
 
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">movie_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s">"movies.csv"</span><span class="p">)</span></code></pre></div>
 
 <p>Then, we will extract the movie IMDb ID from the IMDb URL we collected last week. It’s easy, it’s the only number in the URL.</p>
 
 <div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># For each movie, extract IMDb info and append it to the data
-</span><span class="n">data</span> <span class="o">&lt;-</span> <span class="n">within</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="p">{</span>
-  <span class="c1"># Extract ID number
-</span>  <span class="n">IMDB_ID</span> <span class="o">&lt;-</span> <span class="n">gsub</span><span class="p">(</span><span class="s2">"[^0-9]"</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="n">IMDB_URL</span><span class="p">)</span></code></pre></div>
+</span><span class="n">data</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">within</span><span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w">
+  </span><span class="c1"># Extract ID number
+</span><span class="w">  </span><span class="n">IMDB_ID</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">gsub</span><span class="p">(</span><span class="s2">"[^0-9]"</span><span class="p">,</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"> </span><span class="n">IMDB_URL</span><span class="p">)</span></code></pre></div>
 
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="c"># Grab only the movie number out of the IMDB URL</span>
 <span class="n">movie_data</span><span class="p">[</span><span class="s">"Movie_Number"</span><span class="p">]</span> <span class="o">=</span> <span class="n">movie_data</span><span class="p">[</span><span class="s">"IMDB_URL"</span><span class="p">]</span><span class="o">.</span><span class="nb">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s">"[^0-9]"</span><span class="p">,</span> <span class="s">""</span><span class="p">,</span> <span class="n">x</span><span class="p">))</span></code></pre></div>
@@ -269,29 +269,29 @@
 <p>Now that this is done, we will simply let the IMDb scraper collect the data we want and we will append it to the data from the first part of the challenge.</p>
 
 <div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Download IMDb info into a temporary variable
-</span>  <span class="n">IMDB_Info</span> <span class="o">&lt;-</span> <span class="n">IMDb</span><span class="p">(</span><span class="n">IMDB_ID</span><span class="p">)</span>
+</span><span class="w">  </span><span class="n">IMDB_Info</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">IMDb</span><span class="p">(</span><span class="n">IMDB_ID</span><span class="p">)</span><span class="w">
 
-  <span class="c1"># Save MPAA rating
-</span>  <span class="n">MPAA_Rating</span> <span class="o">&lt;-</span> <span class="n">IMDB_Info</span><span class="o">$</span><span class="n">MPAA_Rating</span>
+  </span><span class="c1"># Save MPAA rating
+</span><span class="w">  </span><span class="n">MPAA_Rating</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">IMDB_Info</span><span class="o">$</span><span class="n">MPAA_Rating</span><span class="w">
 
-  <span class="c1"># Save genre(s)
-</span>  <span class="n">Genre</span> <span class="o">&lt;-</span> <span class="n">IMDB_Info</span><span class="o">$</span><span class="n">Genre</span>
+  </span><span class="c1"># Save genre(s)
+</span><span class="w">  </span><span class="n">Genre</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">IMDB_Info</span><span class="o">$</span><span class="n">Genre</span><span class="w">
 
-  <span class="c1"># Save director(s)
-</span>  <span class="n">Director</span> <span class="o">&lt;-</span> <span class="n">IMDB_Info</span><span class="o">$</span><span class="n">Director</span>
+  </span><span class="c1"># Save director(s)
+</span><span class="w">  </span><span class="n">Director</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">IMDB_Info</span><span class="o">$</span><span class="n">Director</span><span class="w">
 
-  <span class="c1"># Save duration in minutes
-</span>  <span class="n">Length_Minutes</span> <span class="o">&lt;-</span> <span class="n">IMDB_Info</span><span class="o">$</span><span class="n">Length_Minutes</span>
+  </span><span class="c1"># Save duration in minutes
+</span><span class="w">  </span><span class="n">Length_Minutes</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">IMDB_Info</span><span class="o">$</span><span class="n">Length_Minutes</span><span class="w">
 
-  <span class="c1"># Save IMDb rating
-</span>  <span class="n">IMDB_rating</span> <span class="o">&lt;-</span> <span class="n">IMDB_Info</span><span class="o">$</span><span class="n">IMDB_rating</span>
+  </span><span class="c1"># Save IMDb rating
+</span><span class="w">  </span><span class="n">IMDB_rating</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">IMDB_Info</span><span class="o">$</span><span class="n">IMDB_rating</span><span class="w">
 
-  <span class="c1"># Save full cast
-</span>  <span class="n">Full_Cast</span> <span class="o">&lt;-</span> <span class="n">IMDB_Info</span><span class="o">$</span><span class="n">Full_Cast</span>
+  </span><span class="c1"># Save full cast
+</span><span class="w">  </span><span class="n">Full_Cast</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">IMDB_Info</span><span class="o">$</span><span class="n">Full_Cast</span><span class="w">
 
-  <span class="c1"># Delete IMDb info
-</span>  <span class="n">IMDB_Info</span> <span class="o">&lt;-</span> <span class="n">NULL</span>
-<span class="p">})</span></code></pre></div>
+  </span><span class="c1"># Delete IMDb info
+</span><span class="w">  </span><span class="n">IMDB_Info</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="kc">NULL</span><span class="w">
+</span><span class="p">})</span></code></pre></div>
 
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s">"film-death-counts-Python.csv"</span><span class="p">,</span> <span class="s">"wb"</span><span class="p">)</span> <span class="k">as</span> <span class="n">out_file</span><span class="p">:</span>
     <span class="n">out_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">"Film,Year,Body_Count,MPAA_Rating,Genre,Director,Actors,Length_Minutes,IMDB_Rating</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
@@ -323,7 +323,7 @@
 
 <p>And finally, all what is left to do is to save the complete data set into a .csv file and close the script.</p>
 
-<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">write.csv</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">file</span> <span class="o">=</span> <span class="s2">"movies-R-full.csv"</span><span class="p">)</span></code></pre></div>
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">write.csv</span><span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="n">file</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"movies-R-full.csv"</span><span class="p">)</span></code></pre></div>
 
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="c"># All entries are comma-delimited</span>
             <span class="n">out_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">","</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">movie_fields</span><span class="p">)</span> <span class="o">+</span> <span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>

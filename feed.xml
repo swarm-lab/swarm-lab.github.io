@@ -5,9 +5,28 @@
     <description>Welcome to the Swarm Lab where we study Swarm Intelligence in natural and artificial systems.</description>
     <link>http://www.theswarmlab.com/</link>
     <atom:link href="http://www.theswarmlab.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 21 Apr 2016 15:30:04 -0400</pubDate>
-    <lastBuildDate>Thu, 21 Apr 2016 15:30:04 -0400</lastBuildDate>
+    <pubDate>Sun, 12 Jun 2016 21:05:40 -0400</pubDate>
+    <lastBuildDate>Sun, 12 Jun 2016 21:05:40 -0400</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Lens of Time - Slime Lapse</title>
+        <description>&lt;p&gt;Our work on slime mold was recently featured in a mini-documentary by &lt;a href=&quot;http://www.spinefilms.com/&quot;&gt;Spine Films&lt;/a&gt; for &lt;a href=&quot;http://biographic.com/&quot;&gt;bioGraphic&lt;/a&gt;, a new multimedia magazine produced by the &lt;a href=&quot;http://www.calacademy.org/&quot;&gt;California Academy of Sciences&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;video width=&quot;100%&quot; controls=&quot;controls&quot;&gt;
+  &lt;source src=&quot;http://n2ps.storied.co/uploads/548ceb34b78402c4c1baadd636a132f4.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+&lt;/video&gt;
+</description>
+        <pubDate>Sun, 12 Jun 2016 00:00:00 -0400</pubDate>
+        <link>http://www.theswarmlab.com/blog/2016/06/12/Lens-of-Time-Slime-Lapse/</link>
+        <guid isPermaLink="true">http://www.theswarmlab.com/blog/2016/06/12/Lens-of-Time-Slime-Lapse/</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
     
       <item>
         <title>David Hughes&#39; lecture at NJIT</title>
@@ -81,7 +100,7 @@
 &lt;p&gt;Today is the day &lt;a href=&quot;https://twitter.com/Project_Grunt&quot;&gt;Lisa&lt;/a&gt; flies to Africa for a couple months of field work. Among 
 other things she will outfit local goats with GPS collars coupled with small microphones, that she just spent a month 
 and a half patiently building in Swansea, where the &lt;a href=&quot;https://sites.google.com/site/andrewjkingresearch/&quot;&gt;SHOAL group&lt;/a&gt; of 
-our collaborator &lt;a href=&quot;https://sites.google.com/site/andrewjkingresearch/groupmembers/CV&quot;&gt;Andrew King&lt;/a&gt; resides. &lt;/p&gt;
+our collaborator &lt;a href=&quot;https://sites.google.com/site/andrewjkingresearch/groupmembers/CV&quot;&gt;Andrew King&lt;/a&gt; resides.&lt;/p&gt;
 
 &lt;p&gt;While in the train toward London Heathrow, she overheard a dad reading a story to his son, a story about ants. Out of 
 curiosity, I asked her to enquire about the book the story was coming from. I was expecting some sort of children book,
@@ -89,14 +108,14 @@ but was surprised to hear that it was actually “Surely You’re Joking, Mr. Fe
 world famous physicist &lt;a href=&quot;https://en.wikipedia.org/wiki/Richard_Feynman&quot;&gt;Richard Feynman&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;I immediately fired up Google and quickly found the full text on &lt;a href=&quot;https://books.google.com/books?id=7papZR4oVssC&amp;amp;lpg=PP1&quot;&gt;Google Books&lt;/a&gt;. 
-A few more clicks and here it was, the &lt;a href=&quot;https://books.google.com/books?id=7papZR4oVssC&amp;amp;lpg=PP1&amp;amp;pg=PA93#v=onepage&amp;amp;q&amp;amp;f=false&quot;&gt;story of Richard Feynman and the ants&lt;/a&gt;. &lt;/p&gt;
+A few more clicks and here it was, the &lt;a href=&quot;https://books.google.com/books?id=7papZR4oVssC&amp;amp;lpg=PP1&amp;amp;pg=PA93#v=onepage&amp;amp;q&amp;amp;f=false&quot;&gt;story of Richard Feynman and the ants&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;It turns out that Feynman loved watching bugs, and ants in particular, and that he used is free time while at Princeton,
 and later Caltech, to perform simple experiments with them, in order to understand how ants navigate their environment. 
-Isn’t it great? &lt;/p&gt;
+Isn’t it great?&lt;/p&gt;
 
 &lt;p&gt;Hereafter is one of these experiments, as told by Feynman himself. It is my favorite one, mostly because it ties in some
-work that we are currently doing in the lab. I hope you enjoy it as much as I did. &lt;/p&gt;
+work that we are currently doing in the lab. I hope you enjoy it as much as I did.&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Many years later, when I was at Caltech and lived in a little house on Alameda Street, some ants came out around the 
@@ -142,9 +161,9 @@ line after a while.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/img/posts/2015-07-01-postdoc-position-available/we-are-hiring.png&quot; alt=&quot;We&#39;re hiring&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;This is a 1+1 year position (funding in the 2nd year will depend on progress in the 1st year) based out of Newark, New Jersey. This position is supported by a &lt;a href=&quot;http://newark.rutgers.edu/news/recipients-ru-n-initiative-multidisciplinary-research-teams-awards-announced&quot;&gt;Rutgers-Newark Initiative for Multidisciplinary Research Teams (IMRT) award&lt;/a&gt; and is expected to be extended beyond the 2 year initial period through local and federal funding. The successful candidate will report to an interdisciplinary team of researchers including &lt;a href=&quot;http://rscj.newark.rutgers.edu/faculty/member/caplan-joel/&quot;&gt;Pr. Joel Caplan&lt;/a&gt; and &lt;a href=&quot;http://rscj.newark.rutgers.edu/faculty/member/kennedy-leslie/&quot;&gt;Pr. Les Kennedy&lt;/a&gt; at the &lt;a href=&quot;http://rscj.newark.rutgers.edu/&quot;&gt;Rutgers School of Criminal Justice&lt;/a&gt;, and &lt;a href=&quot;http://www.theswarmlab.com&quot;&gt;Pr. Simon Garnier&lt;/a&gt; at the &lt;a href=&quot;http://biology.njit.edu/&quot;&gt;Biological Sciences Department&lt;/a&gt; at the &lt;a href=&quot;http://www.njit.edu&quot;&gt;New Jersey Institute of Technology&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;This is a 1+1 year position (funding in the 2nd year will depend on progress in the 1st year) based out of Newark, New Jersey. This position is supported by a &lt;a href=&quot;http://newark.rutgers.edu/news/recipients-ru-n-initiative-multidisciplinary-research-teams-awards-announced&quot;&gt;Rutgers-Newark Initiative for Multidisciplinary Research Teams (IMRT) award&lt;/a&gt; and is expected to be extended beyond the 2 year initial period through local and federal funding. The successful candidate will report to an interdisciplinary team of researchers including &lt;a href=&quot;http://rscj.newark.rutgers.edu/faculty/member/caplan-joel/&quot;&gt;Pr. Joel Caplan&lt;/a&gt; and &lt;a href=&quot;http://rscj.newark.rutgers.edu/faculty/member/kennedy-leslie/&quot;&gt;Pr. Les Kennedy&lt;/a&gt; at the &lt;a href=&quot;http://rscj.newark.rutgers.edu/&quot;&gt;Rutgers School of Criminal Justice&lt;/a&gt;, and &lt;a href=&quot;http://www.theswarmlab.com&quot;&gt;Pr. Simon Garnier&lt;/a&gt; at the &lt;a href=&quot;http://biology.njit.edu/&quot;&gt;Biological Sciences Department&lt;/a&gt; at the &lt;a href=&quot;http://www.njit.edu&quot;&gt;New Jersey Institute of Technology&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;The project will be carried in two phases of 1 year each. During Phase 1, the successful candidate will work in close collaboration with Garnier to develop and analyze data-driven agent-based (and possibly mathematical) models of daily occurrences of various criminal activities in Newark and Jersey City, New Jersey, and possibly other major urban centers as the project progresses. These models will extend the Risk Terrain Modeling approach created by Caplan and Kennedy. During Phase 2, the postdoctoral researcher will lead the development of a forecasting software application based on the best results of Phase 1. This software application is expected to be web-based and to make use of the High Performance Computing (HPC) capabilities of modern cloud-based systems. The postdoctoral researcher will also be involved directly in the team’s efforts to promote and disseminate the software application to a broad audience. &lt;/p&gt;
+&lt;p&gt;The project will be carried in two phases of 1 year each. During Phase 1, the successful candidate will work in close collaboration with Garnier to develop and analyze data-driven agent-based (and possibly mathematical) models of daily occurrences of various criminal activities in Newark and Jersey City, New Jersey, and possibly other major urban centers as the project progresses. These models will extend the Risk Terrain Modeling approach created by Caplan and Kennedy. During Phase 2, the postdoctoral researcher will lead the development of a forecasting software application based on the best results of Phase 1. This software application is expected to be web-based and to make use of the High Performance Computing (HPC) capabilities of modern cloud-based systems. The postdoctoral researcher will also be involved directly in the team’s efforts to promote and disseminate the software application to a broad audience.&lt;/p&gt;
 
 &lt;p&gt;The ideal candidate should have a background in quantitative research and modeling, and a demonstrable knowledge of at least one high level programming language (Python and/or R preferred) and one lower level programming language (C++ and/or Java preferred). Previous experience with HPC and production-ready software development (either commercial or open-source) is desirable but not mandatory. The ideal candidate should also have a proven track record of professional presentations and publications in peer-reviewed journals. Knowledge of criminological theories and/or experience in the criminal justice practice is preferred. Post-doctoral applicants are preferred, but other degree levels and employment/collaboration options will be considered.&lt;/p&gt;
 
@@ -169,9 +188,9 @@ line after a while.&lt;/p&gt;
     
       <item>
         <title>A new website!</title>
-        <description>&lt;p&gt;The Swarm Lab will be 3 year old tomorrow, July 1st, 2015. To celebrate the event, I decided to redo our website from scratch. It has now a new interface and, more importantly, a new backend. &lt;/p&gt;
+        <description>&lt;p&gt;The Swarm Lab will be 3 year old tomorrow, July 1st, 2015. To celebrate the event, I decided to redo our website from scratch. It has now a new interface and, more importantly, a new backend.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Goodbye &lt;a href=&quot;https://wordpress.org/&quot;&gt;Wordpress&lt;/a&gt;, and hello &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;!!!&lt;/strong&gt; &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Goodbye &lt;a href=&quot;https://wordpress.org/&quot;&gt;Wordpress&lt;/a&gt;, and hello &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;!!!&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
@@ -183,19 +202,19 @@ line after a while.&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Jekyll is fast.&lt;/strong&gt; Contrary to Wordpress that relies on &lt;a href=&quot;https://en.wikipedia.org/wiki/PHP&quot;&gt;PHP&lt;/a&gt; and &lt;a href=&quot;https://en.wikipedia.org/wiki/MySQL&quot;&gt;MySQL&lt;/a&gt; to build webpages, &lt;a href=&quot;http://jekyllrb.com/docs/home/&quot;&gt;Jekyll generates static webpages directly&lt;/a&gt;. This improves loading times and server use significantly because the webpages do not need to be generated each time they are called by users. Technically generation and loading times can be improved in Wordpress by using caching plugins (or even plugins generating static webpages). However I find that they often conflict with other plugins, in particular plugins creating dynamic content. And since dynamic content is not really necessary on a website like ours, there was no reason to stick with Wordpress any longer (or any other advanced &lt;a href=&quot;https://en.wikipedia.org/wiki/Web_content_management_system&quot;&gt;CMS&lt;/a&gt; as a matter of fact). &lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;Jekyll is fast.&lt;/strong&gt; Contrary to Wordpress that relies on &lt;a href=&quot;https://en.wikipedia.org/wiki/PHP&quot;&gt;PHP&lt;/a&gt; and &lt;a href=&quot;https://en.wikipedia.org/wiki/MySQL&quot;&gt;MySQL&lt;/a&gt; to build webpages, &lt;a href=&quot;http://jekyllrb.com/docs/home/&quot;&gt;Jekyll generates static webpages directly&lt;/a&gt;. This improves loading times and server use significantly because the webpages do not need to be generated each time they are called by users. Technically generation and loading times can be improved in Wordpress by using caching plugins (or even plugins generating static webpages). However I find that they often conflict with other plugins, in particular plugins creating dynamic content. And since dynamic content is not really necessary on a website like ours, there was no reason to stick with Wordpress any longer (or any other advanced &lt;a href=&quot;https://en.wikipedia.org/wiki/Web_content_management_system&quot;&gt;CMS&lt;/a&gt; as a matter of fact).&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Jekyll is easy.&lt;/strong&gt; Well, this is a matter of interpretation. If you know nothing about &lt;a href=&quot;https://en.wikipedia.org/wiki/HTML&quot;&gt;HTML&lt;/a&gt;, &lt;a href=&quot;https://en.wikipedia.org/wiki/Cascading_Style_Sheets&quot;&gt;CSS&lt;/a&gt;, &lt;a href=&quot;https://en.wikipedia.org/wiki/JavaScript&quot;&gt;JavaScript&lt;/a&gt;, etc., then Wordpress and other similar CMS are probably easier for you. You install it, you click a few buttons and, there, you have your website. However if you are like me and you like to tinker with the code of your webpages because you are never happy with the way other people have designed them, then Wordpress is definitely a difficult beast to take on at times. Every change to the PHP code might break a plugin, and debugging can quickly turn into a nightmare because of the complexity of the underlying Wordpress machinery. In contrast Jekyll is a much nicer and simpler environment to work and tinker with, and while knowledge of HTML, CSS and JavaScript is still necessary, at least I will no need to deal with PHP and MySQL anymore (phew!). &lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;Jekyll is easy.&lt;/strong&gt; Well, this is a matter of interpretation. If you know nothing about &lt;a href=&quot;https://en.wikipedia.org/wiki/HTML&quot;&gt;HTML&lt;/a&gt;, &lt;a href=&quot;https://en.wikipedia.org/wiki/Cascading_Style_Sheets&quot;&gt;CSS&lt;/a&gt;, &lt;a href=&quot;https://en.wikipedia.org/wiki/JavaScript&quot;&gt;JavaScript&lt;/a&gt;, etc., then Wordpress and other similar CMS are probably easier for you. You install it, you click a few buttons and, there, you have your website. However if you are like me and you like to tinker with the code of your webpages because you are never happy with the way other people have designed them, then Wordpress is definitely a difficult beast to take on at times. Every change to the PHP code might break a plugin, and debugging can quickly turn into a nightmare because of the complexity of the underlying Wordpress machinery. In contrast Jekyll is a much nicer and simpler environment to work and tinker with, and while knowledge of HTML, CSS and JavaScript is still necessary, at least I will no need to deal with PHP and MySQL anymore (phew!).&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;strong&gt;Jekyll is better integrated into my workflow.&lt;/strong&gt; A large portion of my computer time is spent coding and writing. I use the command line a lot more that before, and most of my work is done using text/code editors, and pushed to GitHub and GitHub-like servers. In addition I use more and more often the &lt;a href=&quot;https://en.wikipedia.org/wiki/Markdown&quot;&gt;Markdown&lt;/a&gt; markup language to quickly write and format documents. And Markdown is central to Jekyll: all content is written in Markdown, and Jekyll converts it into webpages. All these new habits are perfectly compatible with the Jekyll way of developing, populating and maintaining websites. The more I improved my coding skills, the more it became obvious that Jekyll was the perfect platform for me to develop websites.&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;Jekyll has a lot more to offer, especially if you have some basic skills in HTML and CSS. And even if you do not, there is a growing community of users out there, and a number of tutorials on how to setup, generate and publish a Jekyll website. &lt;/p&gt;
+&lt;p&gt;Jekyll has a lot more to offer, especially if you have some basic skills in HTML and CSS. And even if you do not, there is a growing community of users out there, and a number of tutorials on how to setup, generate and publish a Jekyll website.&lt;/p&gt;
 
-&lt;p&gt;Now I hope you will enjoy our new website! I have imported a few posts from the old websites (&lt;a href=&quot;/category/rvspython/&quot;&gt;R vs Python challenges&lt;/a&gt;, &lt;a href=&quot;/category/antsvstheworld/&quot;&gt;#AntsVsTheWorld&lt;/a&gt;, and &lt;a href=&quot;/category/slimelapsegallery/&quot;&gt;#SlimeLapseGallery&lt;/a&gt;) to get things started, and I hope to provide new content later when the summer grant writing craze dies down. &lt;/p&gt;
+&lt;p&gt;Now I hope you will enjoy our new website! I have imported a few posts from the old websites (&lt;a href=&quot;/category/rvspython/&quot;&gt;R vs Python challenges&lt;/a&gt;, &lt;a href=&quot;/category/antsvstheworld/&quot;&gt;#AntsVsTheWorld&lt;/a&gt;, and &lt;a href=&quot;/category/slimelapsegallery/&quot;&gt;#SlimeLapseGallery&lt;/a&gt;) to get things started, and I hope to provide new content later when the summer grant writing craze dies down.&lt;/p&gt;
 
 &lt;p&gt;Comments and suggestions for improvement are very welcome!&lt;/p&gt;
 
@@ -304,29 +323,6 @@ line after a while.&lt;/p&gt;
         <category>blog</category>
         
         <category>antsvstheworld</category>
-        
-      </item>
-    
-      <item>
-        <title>#SlimeLapseGallery - Episode 2</title>
-        <description>&lt;p&gt;&lt;em&gt;If you’ve ever watched a slime mold move, you have more patience (and spare time) than I do. If you prefer ‘real action’ over ‘real time’, then &lt;a href=&quot;/category/slimelapsegallery/&quot;&gt;#SlimeLapseGallery&lt;/a&gt; is the place for you. Brought to you by the SwarmLab, see all the best timelapse videos of slime mold, from the web and from our lab.&lt;/em&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h4 id=&quot;episode-2-outsmarting-engineers-since-2010&quot;&gt;Episode 2: Outsmarting engineers since 2010&lt;/h4&gt;
-
-&lt;p&gt;Today’s &lt;a href=&quot;/category/slimelapsegallery/&quot;&gt;#SlimeLapseGallery&lt;/a&gt; entry continues with another brilliant experiment from Toshi’s lab, this time the brainchild of Atsushi Tero, culminating in &lt;a href=&quot;http://www.sciencemag.org/content/327/5964/439.short&quot;&gt;an excellent Science paper&lt;/a&gt;. A sheet of agar (acting as a moist substrate only) was cut to resemble the coastline of Japan, in the Tokyo region. Oat flakes acting as food sources were placed on the agar surface, at the locations of the major railway stations in Tokyo, and a large amount of slime mould placed at Tokyo Central. As the organism spread out in search of food and contacted the ‘rail stations’, it connected them with a tubule network. The researchers then used fancy network analysis to prove that the slime mould, without a brain or even a single neuron, can build transport networks that are just as efficient as those designed by human engineers. Perhaps unsurprisingly, this paper nabbed Toshi his second &lt;a href=&quot;http://www.improbable.com/ig/&quot;&gt;IgNobel prize&lt;/a&gt;. Since this landmark paper, there have been many ‘researchers’ jumping on the bandwagon, claiming that slime mould can design better highways everywhere from Iberia to Australia, but the original is by far the best.&lt;/p&gt;
-
-&lt;iframe width=&quot;100%&quot; height=&quot;450&quot; src=&quot;https://www.youtube.com/embed/BZUQQmcR5-g&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-</description>
-        <pubDate>Mon, 02 Feb 2015 00:00:00 -0500</pubDate>
-        <link>http://www.theswarmlab.com/blog/slimelapsegallery/2015/02/02/slimelapsegallery-2/</link>
-        <guid isPermaLink="true">http://www.theswarmlab.com/blog/slimelapsegallery/2015/02/02/slimelapsegallery-2/</guid>
-        
-        
-        <category>blog</category>
-        
-        <category>slimelapsegallery</category>
         
       </item>
     
