@@ -1247,6 +1247,15 @@ table tr:hover td {
 	background: -moz-linear-gradient(top,  #f2f2f2,  #f0f0f0);
 }
 
+ul.share-buttons{
+  list-style: none;
+  padding: 0;
+}
+
+ul.share-buttons li{
+  display: inline;
+}
+
 .highlight table td { padding: 5px; }
 .highlight table pre { margin: 0; }
 .highlight .cm {

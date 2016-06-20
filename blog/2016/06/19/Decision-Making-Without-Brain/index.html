@@ -4,10 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>#SlimeLapseGallery - Episode 4</title>
+    <title>Decision-making without a brain - Our new paper in Interface</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Welcome to the Swarm Lab where we study Swarm Intelligence in natural and artificial systems.">
-    <link rel="canonical" href="http://www.theswarmlab.com/blog/slimelapsegallery/2015/04/02/slimelapsegallery-4/">
+    <link rel="canonical" href="http://www.theswarmlab.com/blog/2016/06/19/Decision-Making-Without-Brain/">
 
     <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
     <link rel="stylesheet" href="/style.css">
@@ -139,22 +139,26 @@
 
     <div class="entry">
 
-        <h2>#SlimeLapseGallery - Episode 4</h2>
+        <h2>Decision-making without a brain - Our new paper in Interface</h2>
         <h3></h3>
 
-        <p>Written by Chris Reid on April 2, 2015</p>
+        <p>Written by Simon Garnier on June 19, 2016</p>
 
         <hr>
 
-        <p><em>If you’ve ever watched a slime mold move, you have more patience (and spare time) than I do. If you prefer ‘real action’ over ‘real time’, then <a href="/category/slimelapsegallery/">#SlimeLapseGallery</a> is the place for you. Brought to you by the SwarmLab, see all the best timelapse videos of slime mold, from the web and from our lab.</em></p>
+        <p>How do organisms without brains make decisions? Most of life is brainless and the vast majority of organisms on Earth lack neurons altogether. Plants, fungi and bacteria must all cope with the same problem as humans – to make the best choices in a complex and ever-changing world or risk dying – without the help of a simple nervous system in many cases.</p>
 
-<hr />
+<p>Our lab in collaboration with <a href="http://www.richardpmann.com/">Richard Mann</a> (<a href="https://www.leeds.ac.uk/">University of Leeds</a>), <a href="http://staffwww.dcs.shef.ac.uk/people/J.Marshall/james.html">James Marshall</a> (<a href="http://www.sheffield.ac.uk/">University of Sheffield</a>) and <a href="http://www.tanyalatty.com/">Tanya Latty</a> (<a href="http://sydney.edu.au/">University of Sydney</a>) recently studied this problem in the unicellular slime mold, <a href="https://en.wikipedia.org/wiki/Physarum_polycephalum"><em>Physarum polycephalum</em></a>, a single-cell organism that can grow to several square meters in size. This giant cell, which typically lives in shady, cool and moist areas of temperate forests, spreads out to search its environment like an amoeba, extending oozy tendrils along the forest floor in search of its prey of fungi, bacteria and decaying vegetable matter.</p>
 
-<h4 id="episode-4-the-collective-slug">Episode 4: The collective slug</h4>
+<p>Neither plant, animal nor fungus, <em>P. polycephalum</em> has become an unlikely candidate for studies of cognition, due to its spectacular problem-solving abilities. In recent studies, <em>Physarum</em> has been shown to solve labyrinth mazes, make complicated trade-offs, anticipate periodic events, remember where it has been, construct transport networks that have similar efficiency to those designed by human engineers and even make irrational decisions – a capability that has long been viewed as a by-product of brain circuitry.</p>
 
-<p>The SwarmLab’s slime mold of choice is the acellular (or plasmodial) slime mold <em>Physarum polycephalum</em>. The ‘acellular’ indicates that this slime mold is a single cell, and the macroscopic creature you see is not composed of lots of tiny cells like a regular multicellular organism. There are other slime molds however that are called ‘cellular’ slime molds, the most famous of which is <a href="https://en.wikipedia.org/wiki/Dictyostelium_discoideum"><em>Dictyostelium discoideum</em></a>. When conditions are right for sporulation, swarms of tiny <em>D. discoideum</em> cells come together to form a ‘slug’, which undulates it’s way to an exposed area to maximize spore dispersion. The cells maintain their individual cell membranes and never fuse, meaning the slug moves by the collective coordination of many unrelated individual cells. Once in position, the slug transforms itself into a base, a stalk and a sporulating cap, with only the cells in the cap gaining the benefit of reproduction. <a href="http://scholar.google.com/scholar?hl=en&amp;q=jt+bonner&amp;btnG=&amp;as_sdt=1%2C31&amp;as_sdtp=">Princeton Emeritus Professor John Bonner</a> championed the study of cellular slime mold to increase our understanding of evolution and development, and is the creator of the beautiful time-lapse videos featured in today’s <a href="/category/slimelapsegallery/">#SlimeLapseGallery</a>.</p>
+<p>In this study, we examined the decision-making ability of slime mold using a test classically used in humans, birds and other brained organisms: the two-armed bandit problem, named for the infamous slot machine, or one-armed bandit. In a two-armed bandit problem, the subject has two levers to pull, each of which delivers a certain, randomly determined reward. One of the levers is more likely to deliver a higher reward overall, so the challenge for participants is to decide at what point to stop exploring both options and decide to exclusively exploit just the one option in order to maximize their payoff. The phenomenon is called the exploration-exploitation tradeoff and is relevant to more than just slot machines, applying to many situations, including investors picking start-up companies to back or drivers choosing a parking space. As such, it has become a classical tool for testing the decision-making abilities of humans and other animals, but it has never before been used on an organism without a brain.</p>
 
-<iframe width="100%" height="450" src="https://www.youtube.com/embed/bkVhLJLG7ug" frameborder="0" allowfullscreen=""></iframe>
+<p>We adapted the two-armed bandit test for slime mold by giving the organism the choice to explore two opposite directions. In each direction, the slime mold encountered discrete patches of food, more or less regularly distributed. One direction would contain more of these patches than the other. They then observed how far in each direction the slime mold would explore before switching to the exploitation of one of the two directions only. The results of these experiments demonstrate that slime mold compares the relative qualities of multiple options, most often choosing the direction with the higher overall concentration of food. It was able to sum up the number of food patches encountered in each direction, as well as the quantity of food present at each patch to make correct and adaptive decisions as to the direction it should move next.</p>
+
+<p>The slime mold’s decision-making algorithm can be mathematically described as a tendency to exploit environments in proportion to their reward experienced through past sampling. The algorithm is intermediate in computational complexity between simple, reactionary heuristics and calculation-intensive optimal performance algorithms, yet it has very good relative performance. While the biological substrate of the algorithm remains to be identified, this study provides insight into ancestral mechanisms of decision making and suggests that fundamental principles of decision making, information processing and even cognition are shared among diverse biological systems.</p>
+
+<p>Our study has appeared in the <a href="http://rsif.royalsocietypublishing.org/content/13/119">June edition</a> of the <a href="http://rsif.royalsocietypublishing.org/">Journal of The Royal Society Interface</a> and can be found <a href="http://rsif.royalsocietypublishing.org/content/13/119/20160030"><strong>in open access</strong> here</a>.</p>
 
 
         <hr>
@@ -180,10 +184,6 @@
             
                 
                     <a href="/blog/">blog</a> &bull;
-                
-            
-                
-                    <a href="/category/slimelapsegallery/">slimelapsegallery</a> &bull;
                 
             
         </p>

@@ -5,9 +5,34 @@
     <description>Welcome to the Swarm Lab where we study Swarm Intelligence in natural and artificial systems.</description>
     <link>http://www.theswarmlab.com/</link>
     <atom:link href="http://www.theswarmlab.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 12 Jun 2016 21:05:40 -0400</pubDate>
-    <lastBuildDate>Sun, 12 Jun 2016 21:05:40 -0400</lastBuildDate>
+    <pubDate>Sun, 19 Jun 2016 14:26:08 -0400</pubDate>
+    <lastBuildDate>Sun, 19 Jun 2016 14:26:08 -0400</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Decision-making without a brain - Our new paper in Interface</title>
+        <description>&lt;p&gt;How do organisms without brains make decisions? Most of life is brainless and the vast majority of organisms on Earth lack neurons altogether. Plants, fungi and bacteria must all cope with the same problem as humans – to make the best choices in a complex and ever-changing world or risk dying – without the help of a simple nervous system in many cases.&lt;/p&gt;
+
+&lt;p&gt;Our lab in collaboration with &lt;a href=&quot;http://www.richardpmann.com/&quot;&gt;Richard Mann&lt;/a&gt; (&lt;a href=&quot;https://www.leeds.ac.uk/&quot;&gt;University of Leeds&lt;/a&gt;), &lt;a href=&quot;http://staffwww.dcs.shef.ac.uk/people/J.Marshall/james.html&quot;&gt;James Marshall&lt;/a&gt; (&lt;a href=&quot;http://www.sheffield.ac.uk/&quot;&gt;University of Sheffield&lt;/a&gt;) and &lt;a href=&quot;http://www.tanyalatty.com/&quot;&gt;Tanya Latty&lt;/a&gt; (&lt;a href=&quot;http://sydney.edu.au/&quot;&gt;University of Sydney&lt;/a&gt;) recently studied this problem in the unicellular slime mold, &lt;a href=&quot;https://en.wikipedia.org/wiki/Physarum_polycephalum&quot;&gt;&lt;em&gt;Physarum polycephalum&lt;/em&gt;&lt;/a&gt;, a single-cell organism that can grow to several square meters in size. This giant cell, which typically lives in shady, cool and moist areas of temperate forests, spreads out to search its environment like an amoeba, extending oozy tendrils along the forest floor in search of its prey of fungi, bacteria and decaying vegetable matter.&lt;/p&gt;
+
+&lt;p&gt;Neither plant, animal nor fungus, &lt;em&gt;P. polycephalum&lt;/em&gt; has become an unlikely candidate for studies of cognition, due to its spectacular problem-solving abilities. In recent studies, &lt;em&gt;Physarum&lt;/em&gt; has been shown to solve labyrinth mazes, make complicated trade-offs, anticipate periodic events, remember where it has been, construct transport networks that have similar efficiency to those designed by human engineers and even make irrational decisions – a capability that has long been viewed as a by-product of brain circuitry.&lt;/p&gt;
+
+&lt;p&gt;In this study, we examined the decision-making ability of slime mold using a test classically used in humans, birds and other brained organisms: the two-armed bandit problem, named for the infamous slot machine, or one-armed bandit. In a two-armed bandit problem, the subject has two levers to pull, each of which delivers a certain, randomly determined reward. One of the levers is more likely to deliver a higher reward overall, so the challenge for participants is to decide at what point to stop exploring both options and decide to exclusively exploit just the one option in order to maximize their payoff. The phenomenon is called the exploration-exploitation tradeoff and is relevant to more than just slot machines, applying to many situations, including investors picking start-up companies to back or drivers choosing a parking space. As such, it has become a classical tool for testing the decision-making abilities of humans and other animals, but it has never before been used on an organism without a brain.&lt;/p&gt;
+
+&lt;p&gt;We adapted the two-armed bandit test for slime mold by giving the organism the choice to explore two opposite directions. In each direction, the slime mold encountered discrete patches of food, more or less regularly distributed. One direction would contain more of these patches than the other. They then observed how far in each direction the slime mold would explore before switching to the exploitation of one of the two directions only. The results of these experiments demonstrate that slime mold compares the relative qualities of multiple options, most often choosing the direction with the higher overall concentration of food. It was able to sum up the number of food patches encountered in each direction, as well as the quantity of food present at each patch to make correct and adaptive decisions as to the direction it should move next.&lt;/p&gt;
+
+&lt;p&gt;The slime mold’s decision-making algorithm can be mathematically described as a tendency to exploit environments in proportion to their reward experienced through past sampling. The algorithm is intermediate in computational complexity between simple, reactionary heuristics and calculation-intensive optimal performance algorithms, yet it has very good relative performance. While the biological substrate of the algorithm remains to be identified, this study provides insight into ancestral mechanisms of decision making and suggests that fundamental principles of decision making, information processing and even cognition are shared among diverse biological systems.&lt;/p&gt;
+
+&lt;p&gt;Our study has appeared in the &lt;a href=&quot;http://rsif.royalsocietypublishing.org/content/13/119&quot;&gt;June edition&lt;/a&gt; of the &lt;a href=&quot;http://rsif.royalsocietypublishing.org/&quot;&gt;Journal of The Royal Society Interface&lt;/a&gt; and can be found &lt;a href=&quot;http://rsif.royalsocietypublishing.org/content/13/119/20160030&quot;&gt;&lt;strong&gt;in open access&lt;/strong&gt; here&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 19 Jun 2016 00:00:00 -0400</pubDate>
+        <link>http://www.theswarmlab.com/blog/2016/06/19/Decision-Making-Without-Brain/</link>
+        <guid isPermaLink="true">http://www.theswarmlab.com/blog/2016/06/19/Decision-Making-Without-Brain/</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
     
       <item>
         <title>Lens of Time - Slime Lapse</title>
@@ -294,35 +319,6 @@ line after a while.&lt;/p&gt;
         <category>blog</category>
         
         <category>slimelapsegallery</category>
-        
-      </item>
-    
-      <item>
-        <title>#AntsVsTheWorld - Episode 3</title>
-        <description>&lt;p&gt;&lt;em&gt;Who doesn’t like ants? And who doesn’t like a good action movie? &lt;a href=&quot;/category/antsvstheworld/&quot;&gt;#AntsVsTheWorld&lt;/a&gt; brings the best of both worlds together. by featuring videos of ants fighting other creatures (including other ants).&lt;/em&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h4 id=&quot;episode-3-army-ants-vs-scorpion&quot;&gt;Episode 3: Army Ants vs. Scorpion&lt;/h4&gt;
-
-&lt;p&gt;For today’s episode, I present you my all time favorite ant species: the army ant &lt;em&gt;Eciton burchellii&lt;/em&gt;. These near-blind, nomadic ants offer some of the most spectacular examples of collective hunting. They live in large colonies (on average 700,000 ants), and during their moving phase they can organize large hunting raids which may contain more than 200,000 workers collecting thousands of prey, be 15m or more wide and sweep over an area of more than 1500m&lt;sup&gt;2&lt;/sup&gt; in a single day!&lt;/p&gt;
-
-&lt;p&gt;In this video, they will let a tarantula escape, but they will collectively defeat a scorpion maybe 20 times the size of an individual ant!&lt;/p&gt;
-
-&lt;iframe width=&quot;100%&quot; height=&quot;450&quot; src=&quot;https://www.youtube.com/embed/rSeRH0DPVOM&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Ants 3, the world 0.&lt;/strong&gt;&lt;/p&gt;
-</description>
-        <pubDate>Sun, 01 Mar 2015 00:00:00 -0500</pubDate>
-        <link>http://www.theswarmlab.com/blog/antsvstheworld/2015/03/01/antsvstheworld-3/</link>
-        <guid isPermaLink="true">http://www.theswarmlab.com/blog/antsvstheworld/2015/03/01/antsvstheworld-3/</guid>
-        
-        
-        <category>blog</category>
-        
-        <category>antsvstheworld</category>
         
       </item>
     
