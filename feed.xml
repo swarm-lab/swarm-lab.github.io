@@ -5,9 +5,55 @@
     <description>Welcome to the Swarm Lab where we study Swarm Intelligence in natural and artificial systems.</description>
     <link>http://www.theswarmlab.com/</link>
     <atom:link href="http://www.theswarmlab.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 31 Oct 2016 10:31:47 -0400</pubDate>
-    <lastBuildDate>Mon, 31 Oct 2016 10:31:47 -0400</lastBuildDate>
+    <pubDate>Wed, 14 Dec 2016 13:50:59 -0500</pubDate>
+    <lastBuildDate>Wed, 14 Dec 2016 13:50:59 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Data-Driven Modeling of Collective Behavior and Emergent Phenomena in Biology (DDM-Bio) - June 5-7, 2017</title>
+        <description>&lt;p&gt;&lt;strong&gt;The SwarmLab is happy to announce the workshop on “Data-Driven Modeling of Collective Behavior and Emergent Phenomena in Biology” (&lt;a href=&quot;https://twitter.com/search?q=%23DDMBio&amp;amp;src=typd&quot;&gt;#DDMBio&lt;/a&gt;) to be held at &lt;a href=&quot;https://www.samsi.info/&quot;&gt;SAMSI&lt;/a&gt; (Research Triangle Park, NC), June 5-7, 2017.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;description&quot;&gt;Description&lt;/h4&gt;
+
+&lt;p&gt;Collective behavior and emergent phenomena often arise in complex adaptive systems. Understanding the mechanisms that underlie such processes is simultaneously challenging and important to developments in engineering, technology, and advancing basic knowledge in the science of biological systems.&lt;/p&gt;
+
+&lt;p&gt;This collaborative workshop is targeted for researchers and students with research interests in collective behavior and emergent phenomena in biology and its applications. The participants will be organized into interdisciplinary teams according to their interests and complementary skills. Each team will be tasked with exploring, analyzing and modeling original data sets provided by biologist attendees. The event will be similar in spirit to a hackathon in computer science, with the goal of finding new ways to understand the provided biological data.&lt;/p&gt;
+
+&lt;p&gt;We emphasize that the workshop is meant to involve active participation with attendees working together across disciplines to solve problems in current research. In addition, regular debriefing sessions will be organized throughout the 3 days of the workshop in order for each team to provide updates to and receive feedback from the rest of the participants on their progress.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Organizing Committee:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://theswarmlab.com/&quot;&gt;Simon Garnier&lt;/a&gt;, Dept. of Biological Sciences, New Jersey Institute of Technology&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://sites.google.com/site/jasonmgrahamus/&quot;&gt;Jason M. Graham&lt;/a&gt;, Dept. of Mathematics, University of Scranton**&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;application-information&quot;&gt;Application information&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://duke.qualtrics.com/SE/?SID=SV_eyaNrivpvY48fv7&quot; target=&quot;_blank&quot; class=&quot;btn btn-info&quot; role=&quot;button&quot;&gt;Apply Here&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Application Deadline is April 17, 2017.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The workshop will be limited to about 40 participants and funding support priority will be given to U.S. based researchers.&lt;/p&gt;
+
+&lt;p&gt;Questions: &lt;a href=&quot;ddm-bio@samsi.info&quot;&gt;ddm-bio@samsi.info&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 14 Dec 2016 00:00:00 -0500</pubDate>
+        <link>http://www.theswarmlab.com/blog/2016/12/14/DDM-Bio/</link>
+        <guid isPermaLink="true">http://www.theswarmlab.com/blog/2016/12/14/DDM-Bio/</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
     
       <item>
         <title>We&#39;re Hiring! Tenure track position in &quot;Cell Biology, Physiology, Systems or Organismic Function​&quot;</title>
@@ -292,29 +338,6 @@ line after a while.&lt;/p&gt;
         
         
         <category>blog</category>
-        
-      </item>
-    
-      <item>
-        <title>#SlimeLapseGallery - Episode 5</title>
-        <description>&lt;p&gt;&lt;em&gt;If you’ve ever watched a slime mold move, you have more patience (and spare time) than I do. If you prefer ‘real action’ over ‘real time’, then &lt;a href=&quot;/category/slimelapsegallery/&quot;&gt;#SlimeLapseGallery&lt;/a&gt; is the place for you. Brought to you by the SwarmLab, see all the best timelapse videos of slime mold, from the web and from our lab.&lt;/em&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h4 id=&quot;episode-5-slime-mold-in-its-natural-habitat&quot;&gt;Episode 5: Slime mold in its natural habitat&lt;/h4&gt;
-
-&lt;p&gt;Today’s &lt;a href=&quot;/category/slimelapsegallery/&quot;&gt;#SlimeLapseGallery&lt;/a&gt; video shows a slime mold - probably the &lt;a href=&quot;http://en.wikipedia.org/wiki/Fuligo_septica&quot;&gt;‘dog vomit’ slime mold, &lt;em&gt;Fuligo septica&lt;/em&gt;&lt;/a&gt; - moving up a log from the forest floor over 5 hours. The pulsating behavior that you see is not respiration, but the consequence of the oscillations occurring within the slime mold that drive locomotion and decision-making, as well as distributing cytoplasm, nutrients and wastes.&lt;/p&gt;
-
-&lt;iframe src=&quot;https://player.vimeo.com/video/371660&quot; width=&quot;100%&quot; height=&quot;450&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-</description>
-        <pubDate>Sat, 02 May 2015 00:00:00 -0400</pubDate>
-        <link>http://www.theswarmlab.com/blog/slimelapsegallery/2015/05/02/slimelapsegallery-5/</link>
-        <guid isPermaLink="true">http://www.theswarmlab.com/blog/slimelapsegallery/2015/05/02/slimelapsegallery-5/</guid>
-        
-        
-        <category>blog</category>
-        
-        <category>slimelapsegallery</category>
         
       </item>
     

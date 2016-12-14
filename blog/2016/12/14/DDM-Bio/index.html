@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Data-Driven Modeling of Collective Behavior and Emergent Phenomena in Biology (DDM-Bio) - June 5-7, 2017</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Welcome to the Swarm Lab where we study Swarm Intelligence in natural and artificial systems.">
+    <link rel="canonical" href="http://www.theswarmlab.com/blog/2016/12/14/DDM-Bio/">
+
+    <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Google Analytics -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-2260031-8', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/img/favicon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/img/favicon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/img/favicon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/favicon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/img/favicon/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/img/favicon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/img/favicon/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/img/favicon/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="/img/favicon/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="/img/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="/img/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/img/favicon/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="/img/favicon/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="/img/favicon/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="/img/favicon/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="/img/favicon/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="/img/favicon/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="/img/favicon/mstile-310x310.png" />
+
+</head>
+
+
+<body id="nofront" class="index">
+
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!--<a class="navbar-brand page-scroll" href="#page-top">Swarm Lab</a>-->
+            <a class="navbar-brand page-scroll" href="/">
+                <img src="/img/logos/swarmlab.png" alt=Swarm Lab style="height:250%; position: relative; top: -75%;">
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="/#about">About</a>
+                </li>
+                <!--<li>
+                    <a class="page-scroll" href="#research">Research</a>
+                </li>-->
+
+                <li class="dropdown">
+                    <a class="dropdown-toggle keep-open" data-toggle="dropdown" data-hover="dropdown" href="/#research">
+                        Research<i class="fa fa-angle-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="page-scroll" href="/#research">Current research</a></li>
+                        <li><a href="/publications/">Publication list</a></li>
+                        <li><a href="/media/">In the media</a></li>
+                        <li><a href="/meetings/">Group meetings</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a class="page-scroll" href="/#teaching">Teaching</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="/#dev">Dev</a>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle keep-open" data-toggle="dropdown" data-hover="dropdown" href="/#team">
+                        Team<i class="fa fa-angle-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/#team">Current members</a></li>
+                        <li><a href="/previous_members/">Previous members</a></li>
+                        <li><a href="/join/">Join the lab</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="page-scroll" href="/#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+
+<section class="bg-white post">
+
+    <div class="entry">
+
+        <h2>Data-Driven Modeling of Collective Behavior and Emergent Phenomena in Biology (DDM-Bio) - June 5-7, 2017</h2>
+        <h3></h3>
+
+        <p>Written by Simon Garnier on December 14, 2016</p>
+
+        <hr>
+
+        <p><strong>The SwarmLab is happy to announce the workshop on “Data-Driven Modeling of Collective Behavior and Emergent Phenomena in Biology” (<a href="https://twitter.com/search?q=%23DDMBio&amp;src=typd">#DDMBio</a>) to be held at <a href="https://www.samsi.info/">SAMSI</a> (Research Triangle Park, NC), June 5-7, 2017.</strong></p>
+
+<hr />
+
+<h4 id="description">Description</h4>
+
+<p>Collective behavior and emergent phenomena often arise in complex adaptive systems. Understanding the mechanisms that underlie such processes is simultaneously challenging and important to developments in engineering, technology, and advancing basic knowledge in the science of biological systems.</p>
+
+<p>This collaborative workshop is targeted for researchers and students with research interests in collective behavior and emergent phenomena in biology and its applications. The participants will be organized into interdisciplinary teams according to their interests and complementary skills. Each team will be tasked with exploring, analyzing and modeling original data sets provided by biologist attendees. The event will be similar in spirit to a hackathon in computer science, with the goal of finding new ways to understand the provided biological data.</p>
+
+<p>We emphasize that the workshop is meant to involve active participation with attendees working together across disciplines to solve problems in current research. In addition, regular debriefing sessions will be organized throughout the 3 days of the workshop in order for each team to provide updates to and receive feedback from the rest of the participants on their progress.</p>
+
+<p><strong>Organizing Committee:</strong></p>
+
+<ol>
+  <li>
+    <p><a href="http://theswarmlab.com/">Simon Garnier</a>, Dept. of Biological Sciences, New Jersey Institute of Technology</p>
+  </li>
+  <li>
+    <p><a href="https://sites.google.com/site/jasonmgrahamus/">Jason M. Graham</a>, Dept. of Mathematics, University of Scranton**</p>
+  </li>
+</ol>
+
+<hr />
+
+<h4 id="application-information">Application information</h4>
+
+<p><a href="https://duke.qualtrics.com/SE/?SID=SV_eyaNrivpvY48fv7" target="_blank" class="btn btn-info" role="button">Apply Here</a></p>
+
+<p><strong>Application Deadline is April 17, 2017.</strong></p>
+
+<p>The workshop will be limited to about 40 participants and funding support priority will be given to U.S. based researchers.</p>
+
+<p>Questions: <a href="ddm-bio@samsi.info">ddm-bio@samsi.info</a></p>
+
+
+        <hr>
+
+        <ul class="share-buttons">
+          <li>Like it? Share it on: </li>
+          <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.theswarmlab.com&t=The%20SwarmLab%20%40%20NJIT" title="Share on Facebook" target="_blank" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.URL)); return false;"><img src="/img/share_buttons/Facebook.png"></a></li>
+          <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fwww.theswarmlab.com&text=The%20SwarmLab%20%40%20NJIT:%20http%3A%2F%2Fwww.theswarmlab.com&via=sjmgarnier" target="_blank" title="Tweet" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20'  + encodeURIComponent(document.URL)); return false;"><img src="/img/share_buttons/Twitter.png"></a></li>
+          <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fwww.theswarmlab.com" target="_blank" title="Share on Google+" onclick="window.open('https://plus.google.com/share?url=' + encodeURIComponent(document.URL)); return false;"><img src="/img/share_buttons/Google+.png"></a></li>
+          <li><a href="http://www.tumblr.com/share?v=3&u=http%3A%2F%2Fwww.theswarmlab.com&t=The%20SwarmLab%20%40%20NJIT&s=" target="_blank" title="Post to Tumblr" onclick="window.open('http://www.tumblr.com/share?v=3&u=' + encodeURIComponent(document.URL) + '&t=' +  encodeURIComponent(document.title)); return false;"><img src="/img/share_buttons/Tumblr.png"></a></li>
+          <li><a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.theswarmlab.com&description=We%20are%20an%20interdisciplinary%20research%20lab%20that%20studies%20the%20mechanisms%20underlying%20the%20coordination%20of%20large%20animal%20groups%2C%20such%20as%20ant%20colonies%20or%20human%20crowds%2C%20and%20their%20applications%20to%20complex%20problems%20such%20the%20organization%20of%20pedestrian%20traffic%20or%20the%20control%20of%20robotic%20swarms." target="_blank" title="Pin it" onclick="window.open('http://pinterest.com/pin/create/button/?url=' + encodeURIComponent(document.URL) + '&description=' +  encodeURIComponent(document.title)); return false;"><img src="/img/share_buttons/Pinterest.png"></a></li>
+          <li><a href="https://getpocket.com/save?url=http%3A%2F%2Fwww.theswarmlab.com&title=The%20SwarmLab%20%40%20NJIT" target="_blank" title="Add to Pocket" onclick="window.open('https://getpocket.com/save?url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;"><img src="/img/share_buttons/Pocket.png"></a></li>
+          <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fwww.theswarmlab.com&title=The%20SwarmLab%20%40%20NJIT" target="_blank" title="Submit to Reddit" onclick="window.open('http://www.reddit.com/submit?url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;"><img src="/img/share_buttons/Reddit.png"></a></li>
+          <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fwww.theswarmlab.com&title=The%20SwarmLab%20%40%20NJIT&summary=We%20are%20an%20interdisciplinary%20research%20lab%20that%20studies%20the%20mechanisms%20underlying%20the%20coordination%20of%20large%20animal%20groups%2C%20such%20as%20ant%20colonies%20or%20human%20crowds%2C%20and%20their%20applications%20to%20complex%20problems%20such%20the%20organization%20of%20pedestrian%20traffic%20or%20the%20control%20of%20robotic%20swarms.&source=http%3A%2F%2Fwww.theswarmlab.com" target="_blank" title="Share on LinkedIn" onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;"><img src="/img/share_buttons/LinkedIn.png"></a></li>
+          <li><a href="http://wordpress.com/press-this.php?u=http%3A%2F%2Fwww.theswarmlab.com&t=The%20SwarmLab%20%40%20NJIT&s=We%20are%20an%20interdisciplinary%20research%20lab%20that%20studies%20the%20mechanisms%20underlying%20the%20coordination%20of%20large%20animal%20groups%2C%20such%20as%20ant%20colonies%20or%20human%20crowds%2C%20and%20their%20applications%20to%20complex%20problems%20such%20the%20organization%20of%20pedestrian%20traffic%20or%20the%20control%20of%20robotic%20swarms." target="_blank" title="Publish on WordPress" onclick="window.open('http://wordpress.com/press-this.php?u=' + encodeURIComponent(document.URL) + '&t=' +  encodeURIComponent(document.title)); return false;"><img src="/img/share_buttons/Wordpress.png"></a></li>
+          <li><a href="https://pinboard.in/popup_login/?url=http%3A%2F%2Fwww.theswarmlab.com&title=The%20SwarmLab%20%40%20NJIT&description=We%20are%20an%20interdisciplinary%20research%20lab%20that%20studies%20the%20mechanisms%20underlying%20the%20coordination%20of%20large%20animal%20groups%2C%20such%20as%20ant%20colonies%20or%20human%20crowds%2C%20and%20their%20applications%20to%20complex%20problems%20such%20the%20organization%20of%20pedestrian%20traffic%20or%20the%20control%20of%20robotic%20swarms." target="_blank" title="Save to Pinboard" onclick="window.open('https://pinboard.in/popup_login/?url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;"><img src="/img/share_buttons/Pinboard.png"></a></li>
+          <li><a href="mailto:?subject=The%20SwarmLab%20%40%20NJIT&body=We%20are%20an%20interdisciplinary%20research%20lab%20that%20studies%20the%20mechanisms%20underlying%20the%20coordination%20of%20large%20animal%20groups%2C%20such%20as%20ant%20colonies%20or%20human%20crowds%2C%20and%20their%20applications%20to%20complex%20problems%20such%20the%20organization%20of%20pedestrian%20traffic%20or%20the%20control%20of%20robotic%20swarms.:%20http%3A%2F%2Fwww.theswarmlab.com" target="_blank" title="Email" onclick="window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&body=' +  encodeURIComponent(document.URL)); return false;"><img src="/img/share_buttons/Email.png"></a></li>
+        </ul>
+
+        <hr>
+
+        <p>Categories:
+            
+                
+                    <a href="/blog/">blog</a> &bull;
+                
+            
+        </p>
+
+        <hr>
+
+        <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'theswarmlab';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+    </div>
+
+</section>
+
+<footer class="bg-darkest-gray">
+    <div class="container">
+        <span style="color: white">Subscribe <a href="http://www.theswarmlab.com/feed.xml">via RSS</a></span>
+    </div>
+</footer>
+
+  <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; Swarm Lab 2015</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        
+                        <li><a href="https://twitter.com/sjmgarnier"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        
+                        <li><a href="https://plus.google.com/u/0/+SimonGarnier"><i class="fa fa-google-plus"></i></a>
+                        </li>
+                        
+                        <li><a href="https://github.com/swarm-lab"><i class="fa fa-github"></i></a>
+                        </li>
+                        
+                        <li><a href="https://www.linkedin.com/in/simongarnier"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <!--<li><a href="#">Privacy Policy</a>
+                        </li>
+                        <li><a href="#">Terms of Use</a>
+                        </li>-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+ <!-- jQuery Version 1.11.0 -->
+    <script src="/js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="/js/jquery.easing.min.js"></script>
+    <script src="/js/classie.js"></script>
+    <script src="/js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="/js/jqBootstrapValidation.js"></script>
+    <script src="/js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="/js/agency.js"></script>
+
+
+</body>
+</html>
