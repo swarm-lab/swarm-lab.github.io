@@ -164,7 +164,7 @@
 
 <h4 id="todays-challenge-where-we-learn-that-hollywoods-cemetery-is-full">Today’s challenge: where we learn that Hollywood’s cemetery is full</h4>
 
-<h5 id="introduction">1 - Introduction</h5>
+<h5 id="1---introduction">1 - Introduction</h5>
 
 <p>For this first challenge, we will use data collected by Randy for his recent post on the <a href="www.randalolson.com/2013/12/31/most-violence-packed-films/">“Top 25 most violence packed
 films” in the history of the movie industry</a>. For his post,
@@ -175,13 +175,13 @@ code. You will also find the entire codes at the end of this document.</p>
 
 <p>And now without further ado, let’s get started!</p>
 
-<h5 id="step-by-step-process">2 - Step by step process</h5>
+<h5 id="2---step-by-step-process">2 - Step by step process</h5>
 
 <p>First thing first, let’s set up our working environment by loading some necessary libraries.</p>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Load libraries
-</span><span class="n">library</span><span class="p">(</span><span class="n">lattice</span><span class="p">)</span><span class="w">        </span><span class="c1"># Very versatile graphics package
-</span><span class="n">library</span><span class="p">(</span><span class="n">latticeExtra</span><span class="p">)</span><span class="w">   </span><span class="err">#</span><span class="w"> </span><span class="n">Addition</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">lattice</span><span class="w"> </span><span class="n">that</span><span class="w"> </span><span class="n">makes</span><span class="w"> </span><span class="n">layering</span><span class="w"> </span><span class="n">graphs</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">breathe</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Load libraries</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">lattice</span><span class="p">)</span><span class="w">        </span><span class="c1"># Very versatile graphics package</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">latticeExtra</span><span class="p">)</span><span class="w">   </span><span class="c1"># Addition to lattice that makes layering graphs a breathe</span></code></pre></figure>
 
 <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c"># This starts the IPython Notebook pylab module, useful for plotting and</span>
 <span class="c"># interactive scientific computing</span>
@@ -192,7 +192,7 @@ code. You will also find the entire codes at the end of this document.</p>
 <a href="http://www.MovieBodyCounts.com">www.MovieBodyCounts.com</a> and he generously provided the result of his hard work on
 FigShare at this address: <a href="http://dx.doi.org/10.6084/m9.figshare.889719">http://dx.doi.org/10.6084/m9.figshare.889719</a>.</p>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Load data into a data frame
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Load data into a data frame</span><span class="w">
 </span><span class="n">body.count.data</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">read.csv</span><span class="p">(</span><span class="s2">"http://files.figshare.com/1332945/film_death_counts.csv"</span><span class="p">)</span></code></pre></figure>
 
 <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c"># Read the data into a pandas DataFrame</span>
@@ -202,10 +202,10 @@ FigShare at this address: <a href="http://dx.doi.org/10.6084/m9.figshare.889719"
 the duration (“Length_Minutes”). We will now create an extra column for the number of on screen deaths per minute of each
 movie (“Deaths_Per_Minute”)</p>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Compute on screen deaths per minute for each movie.
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Compute on screen deaths per minute for each movie.</span><span class="w">
 </span><span class="n">body.count.data</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">within</span><span class="p">(</span><span class="n">body.count.data</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w">
   </span><span class="n">Deaths_Per_Minute</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">Body_Count</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">Length_Minutes</span><span class="w">
-  </span><span class="n">ord</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">order</span><span class="p">(</span><span class="n">Deaths_Per_Minute</span><span class="p">,</span><span class="w"> </span><span class="n">decreasing</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">)</span><span class="w">  </span><span class="c1"># useful later
+  </span><span class="n">ord</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">order</span><span class="p">(</span><span class="n">Deaths_Per_Minute</span><span class="p">,</span><span class="w"> </span><span class="n">decreasing</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">)</span><span class="w">  </span><span class="c1"># useful later</span><span class="w">
 </span><span class="p">})</span></code></pre></figure>
 
 <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c"># Divide the body counts by the length of the film</span>
@@ -215,10 +215,10 @@ movie (“Deaths_Per_Minute”)</p>
 <p>Now we will reorder the data frame by (descending) number of on screen deaths per minute, and select the top 25 most
 violent movies according to this criterion.</p>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Reorder "body.count.data" by (descending) number of on screen deaths per minute
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Reorder "body.count.data" by (descending) number of on screen deaths per minute</span><span class="w">
 </span><span class="n">body.count.data</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">body.count.data</span><span class="p">[</span><span class="n">body.count.data</span><span class="o">$</span><span class="n">ord</span><span class="p">,</span><span class="w"> </span><span class="p">]</span><span class="w">
 
-</span><span class="c1"># Select top 25 most violent movies by number of on screen deaths per minute
+</span><span class="c1"># Select top 25 most violent movies by number of on screen deaths per minute</span><span class="w">
 </span><span class="n">body.count.data</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">body.count.data</span><span class="p">[</span><span class="m">1</span><span class="o">:</span><span class="m">25</span><span class="p">,]</span></code></pre></figure>
 
 <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c"># Only keep the top 25 highest kills per minute films</span>
@@ -230,12 +230,12 @@ violent movies according to this criterion.</p>
 <p>In Randy’s graph, the “y” axis shows the film title with the release date. We will now generate the full title for each
 movie following a “Movie name (year)” format, and append it to the data frame.</p>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Combine film title and release date into a new factor column with levels
-# ordered by ascending violence
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Combine film title and release date into a new factor column with levels</span><span class="w">
+</span><span class="c1"># ordered by ascending violence</span><span class="w">
 </span><span class="n">body.count.data</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">within</span><span class="p">(</span><span class="n">body.count.data</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w">
   </span><span class="n">Full_Title</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">paste0</span><span class="p">(</span><span class="n">Film</span><span class="p">,</span><span class="w"> </span><span class="s2">" ("</span><span class="p">,</span><span class="w"> </span><span class="n">Year</span><span class="p">,</span><span class="w"> </span><span class="s2">")"</span><span class="p">)</span><span class="w">
   </span><span class="n">ord</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">order</span><span class="p">(</span><span class="n">Deaths_Per_Minute</span><span class="p">,</span><span class="w"> </span><span class="n">decreasing</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">)</span><span class="w">
-  </span><span class="n">Full_Title</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">ordered</span><span class="p">(</span><span class="n">Full_Title</span><span class="p">,</span><span class="w"> </span><span class="n">levels</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rev</span><span class="p">(</span><span class="n">unique</span><span class="p">(</span><span class="n">Full_Title</span><span class="p">[</span><span class="n">ord</span><span class="p">])))</span><span class="w">  </span><span class="c1"># some films are duplicated! Bad Randy!
+  </span><span class="n">Full_Title</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">ordered</span><span class="p">(</span><span class="n">Full_Title</span><span class="p">,</span><span class="w"> </span><span class="n">levels</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rev</span><span class="p">(</span><span class="n">unique</span><span class="p">(</span><span class="n">Full_Title</span><span class="p">[</span><span class="n">ord</span><span class="p">])))</span><span class="w">  </span><span class="c1"># some films are duplicated! Bad Randy!</span><span class="w">
 </span><span class="p">})</span></code></pre></figure>
 
 <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c"># Generate the full titles for the movies: movie name (year)</span>
@@ -251,7 +251,7 @@ movie following a “Movie name (year)” format, and append it to the data fram
 <p>Now we are ready to generate the barchart. We’re going to start with the default options and then we will make this thing
 look pretty.</p>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Generate base graph
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Generate base graph</span><span class="w">
 </span><span class="n">graph</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">barchart</span><span class="p">(</span><span class="n">Full_Title</span><span class="w"> </span><span class="o">~</span><span class="w"> </span><span class="n">Deaths_Per_Minute</span><span class="p">,</span><span class="w"> </span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">body.count.data</span><span class="p">)</span><span class="w">
 </span><span class="n">print</span><span class="p">(</span><span class="n">graph</span><span class="p">)</span></code></pre></figure>
 
@@ -275,31 +275,31 @@ look pretty.</p>
 
 <p>Ok, now let’s make this pretty.</p>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Create theme
-</span><span class="n">my.bloody.theme</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">within</span><span class="p">(</span><span class="n">trellis.par.get</span><span class="p">(),</span><span class="w"> </span><span class="p">{</span><span class="w">    </span><span class="c1"># Initialize theme with default value
-</span><span class="w">  </span><span class="n">axis.line</span><span class="o">$</span><span class="n">col</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="kc">NA</span><span class="w">                             </span><span class="c1"># Remove axes
-</span><span class="w">  </span><span class="n">plot.polygon</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">within</span><span class="p">(</span><span class="n">plot.polygon</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="n">col</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s2">"#8A0606"</span><span class="w">                              </span><span class="c1"># Set bar colors to a nice bloody red
-</span><span class="w">    </span><span class="n">border</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="kc">NA</span><span class="w">                                  </span><span class="c1"># Remove bars' outline
-</span><span class="w">  </span><span class="p">})</span><span class="w">
-  </span><span class="n">axis.text</span><span class="o">$</span><span class="n">cex</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">1</span><span class="w">                              </span><span class="c1"># Default axis text size is a bit small. Make it bigger
-</span><span class="w">  </span><span class="n">layout.heights</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">within</span><span class="p">(</span><span class="n">layout.heights</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="n">bottom.padding</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">0</span><span class="w">                           </span><span class="c1"># Remove bottom padding
-</span><span class="w">    </span><span class="n">axis.bottom</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">0</span><span class="w">                              </span><span class="c1"># Remove axis padding at the bottom of the graph
-</span><span class="w">    </span><span class="n">axis.top</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">0</span><span class="w">                                 </span><span class="c1"># Remove axis padding at the top of the graph
-</span><span class="w">  </span><span class="p">})</span><span class="w">
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Create theme</span><span class="w">
+</span><span class="n">my.bloody.theme</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">within</span><span class="p">(</span><span class="n">trellis.par.get</span><span class="p">(),</span><span class="w"> </span><span class="p">{</span><span class="w">    </span><span class="c1"># Initialize theme with default value</span><span class="w">
+  </span><span class="n">axis.line</span><span class="o">$</span><span class="n">col</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="kc">NA</span><span class="w">                             </span><span class="c1"># Remove axes</span><span class="w">
+  </span><span class="n">plot.polygon</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">within</span><span class="p">(</span><span class="n">plot.polygon</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="n">col</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s2">"#8A0606"</span><span class="w">                              </span><span class="c1"># Set bar colors to a nice bloody red</span><span class="w">
+    </span><span class="n">border</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="kc">NA</span><span class="w">                                  </span><span class="c1"># Remove bars' outline</span><span class="w">
+  </span><span class="p">})</span><span class="w">
+  </span><span class="n">axis.text</span><span class="o">$</span><span class="n">cex</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">1</span><span class="w">                              </span><span class="c1"># Default axis text size is a bit small. Make it bigger</span><span class="w">
+  </span><span class="n">layout.heights</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">within</span><span class="p">(</span><span class="n">layout.heights</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="n">bottom.padding</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">0</span><span class="w">                           </span><span class="c1"># Remove bottom padding</span><span class="w">
+    </span><span class="n">axis.bottom</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">0</span><span class="w">                              </span><span class="c1"># Remove axis padding at the bottom of the graph</span><span class="w">
+    </span><span class="n">axis.top</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">0</span><span class="w">                                 </span><span class="c1"># Remove axis padding at the top of the graph</span><span class="w">
+  </span><span class="p">})</span><span class="w">
 </span><span class="p">})</span><span class="w">
 
-</span><span class="c1"># Update figure with new theme + other improvements (like a title for instance)
+</span><span class="c1"># Update figure with new theme + other improvements (like a title for instance)</span><span class="w">
 </span><span class="n">graph</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">update</span><span class="p">(</span><span class="w">
   </span><span class="n">graph</span><span class="p">,</span><span class="w">
-  </span><span class="n">main</span><span class="o">=</span><span class="s1">'25 most violence packed films by deaths per minute'</span><span class="p">,</span><span class="w">    </span><span class="c1"># Title of the barchart
-</span><span class="w">  </span><span class="n">par.settings</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">my.bloody.theme</span><span class="p">,</span><span class="w">                               </span><span class="c1"># Use custom theme
-</span><span class="w">  </span><span class="n">xlab</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">NULL</span><span class="p">,</span><span class="w">                                                  </span><span class="c1"># Remove label of x axis
-</span><span class="w">  </span><span class="n">scales</span><span class="o">=</span><span class="nf">list</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="nf">list</span><span class="p">(</span><span class="n">at</span><span class="o">=</span><span class="kc">NULL</span><span class="p">)),</span><span class="w">                                 </span><span class="c1"># Remove rest of x axis
-</span><span class="w">  </span><span class="n">xlim</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="m">6.7</span><span class="p">),</span><span class="w">                                             </span><span class="c1"># Set graph limits along x axis to accomodate the additional text (requires some trial and error)
-</span><span class="w">  </span><span class="n">box.width</span><span class="o">=</span><span class="m">0.75</span><span class="p">)</span><span class="w">                                               </span><span class="c1"># Default bar width is a bit small. Make it bigger)
-</span><span class="w">
+  </span><span class="n">main</span><span class="o">=</span><span class="s1">'25 most violence packed films by deaths per minute'</span><span class="p">,</span><span class="w">    </span><span class="c1"># Title of the barchart</span><span class="w">
+  </span><span class="n">par.settings</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">my.bloody.theme</span><span class="p">,</span><span class="w">                               </span><span class="c1"># Use custom theme</span><span class="w">
+  </span><span class="n">xlab</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">NULL</span><span class="p">,</span><span class="w">                                                  </span><span class="c1"># Remove label of x axis</span><span class="w">
+  </span><span class="n">scales</span><span class="o">=</span><span class="nf">list</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="nf">list</span><span class="p">(</span><span class="n">at</span><span class="o">=</span><span class="kc">NULL</span><span class="p">)),</span><span class="w">                                 </span><span class="c1"># Remove rest of x axis</span><span class="w">
+  </span><span class="n">xlim</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="m">6.7</span><span class="p">),</span><span class="w">                                             </span><span class="c1"># Set graph limits along x axis to accomodate the additional text (requires some trial and error)</span><span class="w">
+  </span><span class="n">box.width</span><span class="o">=</span><span class="m">0.75</span><span class="p">)</span><span class="w">                                               </span><span class="c1"># Default bar width is a bit small. Make it bigger)</span><span class="w">
+
 </span><span class="n">print</span><span class="p">(</span><span class="n">graph</span><span class="p">)</span></code></pre></figure>
 
 <p><img src="/img/posts/2014-01-05-r-vs-python-round-1/R/prettyR.png" alt="Pretty R graph" class="full" /></p>
@@ -327,20 +327,20 @@ look pretty.</p>
 <p>Finally, the last thing we want to add to our graph is the number of deaths per minute and the duration of each movie on
 the right of the graph.</p>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Combine number of on screen death per minute and duration of the movies into a new character string column
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Combine number of on screen death per minute and duration of the movies into a new character string column</span><span class="w">
 </span><span class="n">body.count.data</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">within</span><span class="p">(</span><span class="n">body.count.data</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w">
   </span><span class="n">Deaths_Per_Minute_With_Length</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">paste0</span><span class="p">(</span><span class="nf">round</span><span class="p">(</span><span class="n">body.count.data</span><span class="o">$</span><span class="n">Deaths_Per_Minute</span><span class="p">,</span><span class="w"> </span><span class="n">digits</span><span class="o">=</span><span class="m">2</span><span class="p">),</span><span class="w"> </span><span class="s2">" ("</span><span class="p">,</span><span class="w"> </span><span class="n">body.count.data</span><span class="o">$</span><span class="n">Length_Minutes</span><span class="p">,</span><span class="w"> </span><span class="s2">" mins)"</span><span class="p">)</span><span class="w">
 </span><span class="p">})</span><span class="w">
 
-</span><span class="c1"># Add number of on screen deaths per minute and duration of movies at the end of each bar
+</span><span class="c1"># Add number of on screen deaths per minute and duration of movies at the end of each bar</span><span class="w">
 </span><span class="n">graph</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">graph</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">layer</span><span class="p">(</span><span class="n">with</span><span class="p">(</span><span class="n">body.count.data</span><span class="p">,</span><span class="w">
   </span><span class="n">panel.text</span><span class="p">(</span><span class="w">
-    </span><span class="n">Deaths_Per_Minute</span><span class="p">,</span><span class="w">                  </span><span class="c1"># x position of the text
-</span><span class="w">    </span><span class="m">25</span><span class="o">:</span><span class="m">1</span><span class="p">,</span><span class="w">                               </span><span class="c1"># y position of the text
-</span><span class="w">    </span><span class="n">pos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">4</span><span class="p">,</span><span class="w">                            </span><span class="c1"># Position of the text relative to the x and y position (4 = to the right)
-</span><span class="w">    </span><span class="n">Deaths_Per_Minute_With_Length</span><span class="p">)))</span><span class="w">    </span><span class="c1"># Text to display                                     
-</span><span class="w">
-</span><span class="c1"># Print graph
+    </span><span class="n">Deaths_Per_Minute</span><span class="p">,</span><span class="w">                  </span><span class="c1"># x position of the text</span><span class="w">
+    </span><span class="m">25</span><span class="o">:</span><span class="m">1</span><span class="p">,</span><span class="w">                               </span><span class="c1"># y position of the text</span><span class="w">
+    </span><span class="n">pos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">4</span><span class="p">,</span><span class="w">                            </span><span class="c1"># Position of the text relative to the x and y position (4 = to the right)</span><span class="w">
+    </span><span class="n">Deaths_Per_Minute_With_Length</span><span class="p">)))</span><span class="w">    </span><span class="c1"># Text to display                                     </span><span class="w">
+
+</span><span class="c1"># Print graph</span><span class="w">
 </span><span class="n">print</span><span class="p">(</span><span class="n">graph</span><span class="p">)</span></code></pre></figure>
 
 <p><img src="/img/posts/2014-01-05-r-vs-python-round-1/R/rightLabelsR.png" alt="Right labels R graph" class="full" /></p>
@@ -366,39 +366,39 @@ the right of the graph.</p>
 
 <hr />
 
-<h4 id="r-bonus">3 - R bonus</h4>
+<h4 id="3---r-bonus">3 - R bonus</h4>
 
 <p>Just for fun, I decided to add to the R graph a little accessory in relation with the general theme of this data set.</p>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Load additional libraries
-</span><span class="n">library</span><span class="p">(</span><span class="n">jpeg</span><span class="p">)</span><span class="w">  </span><span class="c1"># To read JPG images
-</span><span class="n">library</span><span class="p">(</span><span class="n">grid</span><span class="p">)</span><span class="w">  </span><span class="c1"># Graphics library with better image plotting capabilities
-</span><span class="w">
-</span><span class="c1"># Download a pretty background image; mode is set to "wb" because it seems that
-# Windows needs it. I don't use Windows, I can't confirm
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Load additional libraries</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">jpeg</span><span class="p">)</span><span class="w">  </span><span class="c1"># To read JPG images</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">grid</span><span class="p">)</span><span class="w">  </span><span class="c1"># Graphics library with better image plotting capabilities</span><span class="w">
+
+</span><span class="c1"># Download a pretty background image; mode is set to "wb" because it seems that</span><span class="w">
+</span><span class="c1"># Windows needs it. I don't use Windows, I can't confirm</span><span class="w">
 </span><span class="n">download.file</span><span class="p">(</span><span class="n">url</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"http://www.theswarmlab.com/wp-content/uploads/2014/01/bloody_gun.jpg"</span><span class="p">,</span><span class="w">
               </span><span class="n">destfile</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"bloody_gun.jpg"</span><span class="p">,</span><span class="w"> </span><span class="n">quiet</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">,</span><span class="w"> </span><span class="n">mode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"wb"</span><span class="p">)</span><span class="w">
 
-</span><span class="c1"># Load gun image using "readJPEG" from the "jpeg" package
+</span><span class="c1"># Load gun image using "readJPEG" from the "jpeg" package</span><span class="w">
 </span><span class="n">img</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">readJPEG</span><span class="p">(</span><span class="s2">"bloody_gun.jpg"</span><span class="p">)</span><span class="w">
 
-</span><span class="c1"># Add image to graph using "grid.raster" from the "grid" package
+</span><span class="c1"># Add image to graph using "grid.raster" from the "grid" package</span><span class="w">
 </span><span class="n">graph</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">graph</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">layer_</span><span class="p">(</span><span class="w">
   </span><span class="n">grid.raster</span><span class="p">(</span><span class="w">
-    </span><span class="n">as.raster</span><span class="p">(</span><span class="n">img</span><span class="p">),</span><span class="w">                 </span><span class="c1"># Image as a raster
-</span><span class="w">    </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">,</span><span class="w">                          </span><span class="c1"># x location of image "Normalised Parent Coordinates"
-</span><span class="w">    </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">,</span><span class="w">                          </span><span class="c1"># y location of image "Normalised Parent Coordinates"
-</span><span class="w">    </span><span class="n">height</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.7</span><span class="p">,</span><span class="w">                   </span><span class="c1"># Height of the image. 1 indicates that the image height is equal to the graph height
-</span><span class="w">    </span><span class="n">just</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"right"</span><span class="p">,</span><span class="w"> </span><span class="s2">"bottom"</span><span class="p">)))</span><span class="w">   </span><span class="c1"># Justification of the image relative to its x and y locations
-</span><span class="w">
-</span><span class="c1"># Print graph
+    </span><span class="n">as.raster</span><span class="p">(</span><span class="n">img</span><span class="p">),</span><span class="w">                 </span><span class="c1"># Image as a raster</span><span class="w">
+    </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">,</span><span class="w">                          </span><span class="c1"># x location of image "Normalised Parent Coordinates"</span><span class="w">
+    </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">,</span><span class="w">                          </span><span class="c1"># y location of image "Normalised Parent Coordinates"</span><span class="w">
+    </span><span class="n">height</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.7</span><span class="p">,</span><span class="w">                   </span><span class="c1"># Height of the image. 1 indicates that the image height is equal to the graph height</span><span class="w">
+    </span><span class="n">just</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"right"</span><span class="p">,</span><span class="w"> </span><span class="s2">"bottom"</span><span class="p">)))</span><span class="w">   </span><span class="c1"># Justification of the image relative to its x and y locations</span><span class="w">
+
+</span><span class="c1"># Print graph</span><span class="w">
 </span><span class="n">print</span><span class="p">(</span><span class="n">graph</span><span class="p">)</span></code></pre></figure>
 
 <p><img src="/img/posts/2014-01-05-r-vs-python-round-1/R/gunR.png" alt="Gun R graph" class="full" /></p>
 
 <hr />
 
-<h4 id="source-code">4 - Source code</h4>
+<h4 id="4---source-code">4 - Source code</h4>
 
 <p>R and Python source codes are available <a href="https://github.com/morpionZ/R-vs-Python/tree/master/Deadliest%20movies/code">here</a>.</p>
 
