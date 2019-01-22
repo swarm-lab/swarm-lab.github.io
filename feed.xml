@@ -3,11 +3,11 @@
   <channel>
     <title>Swarm Lab</title>
     <description>Welcome to the Swarm Lab where we study Swarm Intelligence in natural and artificial systems.</description>
-    <link>http://www.theswarmlab.com/</link>
-    <atom:link href="http://www.theswarmlab.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 22 Jan 2019 16:12:24 -0500</pubDate>
-    <lastBuildDate>Tue, 22 Jan 2019 16:12:24 -0500</lastBuildDate>
-    <generator>Jekyll v2.4.0</generator>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Tue, 22 Jan 2019 16:27:19 -0500</pubDate>
+    <lastBuildDate>Tue, 22 Jan 2019 16:27:19 -0500</lastBuildDate>
+    <generator>Jekyll v3.7.4</generator>
     
       <item>
         <title>Data-Driven Modeling of Collective Behavior and Emergent Phenomena in Biology (DDM-Bio) - June 5-7, 2017</title>
@@ -47,8 +47,8 @@
 &lt;p&gt;Questions: &lt;a href=&quot;ddm-bio@samsi.info&quot;&gt;ddm-bio@samsi.info&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 14 Dec 2016 00:00:00 -0500</pubDate>
-        <link>http://www.theswarmlab.com/blog/2016/12/14/DDM-Bio/</link>
-        <guid isPermaLink="true">http://www.theswarmlab.com/blog/2016/12/14/DDM-Bio/</guid>
+        <link>http://localhost:4000/blog/2016/12/14/DDM-Bio/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2016/12/14/DDM-Bio/</guid>
         
         
         <category>blog</category>
@@ -56,41 +56,41 @@
       </item>
     
       <item>
-        <title>We&#39;re Hiring! Tenure track position in &quot;Cell Biology, Physiology, Systems or Organismic Function​&quot;</title>
-        <description>&lt;p&gt;As part of an ongoing expansion, the &lt;a href=&quot;https://biology.njit.edu/&quot;&gt;Department of Biological Sciences&lt;/a&gt; at the &lt;a href=&quot;https://www.njit.edu&quot;&gt;New Jersey Institute of Technology (NJIT)&lt;/a&gt; is looking to fill one or two new tenure-track faculty positions at the Assistant Professor level, beginning in 2017. We seek applicants with an interest and established record in bridging levels from cell biology or physiology, to systems or organismic function. Research areas can include - but are not limited to - neurobiology, ethology, evolution, or development. Candidates will be expected to maintain an active, funded research program, supervise graduate students, and contribute to the overall success of the Department.&lt;/p&gt;
-
-&lt;p&gt;NJIT is a tier-one public research university located in Newark, NJ, with an emphasis on STEM subjects. The Department of Biological Sciences at NJIT currently consists of ten research faculty with expertise in neurobiology, sensory and motor systems, locomotion, collective behavior, and functional and spatial ecology. The Department is also Federated with neighboring &lt;a href=&quot;http://www.ncas.rutgers.edu/biology&quot;&gt;Rutgers-University Newark&lt;/a&gt;, adding colleagues in cellular neurobiology, cell signaling, genetics, systematics, evolution and ecology. The successful applicant will occupy customizable space in a newly renovated research facility. Duties will also include teaching introductory and upper-level undergraduate and graduate courses, depending on expertise.&lt;/p&gt;
-
-&lt;p&gt;NJIT is an equal-opportunity employer. Applications from minorities and women are especially welcome.&lt;/p&gt;
-
-&lt;p&gt;Applicants should upload a CV, a cover letter, and a statement of research interest at the following address: &lt;a href=&quot;http://njit.jobs/applicants/Central?quickFind=55732&quot;&gt;njit.jobs/applicants/Central?quickFind=55732&lt;/a&gt;. In addition, they should arrange for at least three references to send letters directly to Ms. Shamay Carty at &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#099;&amp;#097;&amp;#114;&amp;#116;&amp;#121;&amp;#064;&amp;#110;&amp;#106;&amp;#105;&amp;#116;&amp;#046;&amp;#101;&amp;#100;&amp;#117;&quot;&gt;&amp;#099;&amp;#097;&amp;#114;&amp;#116;&amp;#121;&amp;#064;&amp;#110;&amp;#106;&amp;#105;&amp;#116;&amp;#046;&amp;#101;&amp;#100;&amp;#117;&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;All inquiries should be directed to Dr. Farzan Nadim, at &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#102;&amp;#097;&amp;#114;&amp;#122;&amp;#097;&amp;#110;&amp;#064;&amp;#110;&amp;#106;&amp;#105;&amp;#116;&amp;#046;&amp;#101;&amp;#100;&amp;#117;&quot;&gt;&amp;#102;&amp;#097;&amp;#114;&amp;#122;&amp;#097;&amp;#110;&amp;#064;&amp;#110;&amp;#106;&amp;#105;&amp;#116;&amp;#046;&amp;#101;&amp;#100;&amp;#117;&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 05 Oct 2016 00:00:00 -0400</pubDate>
-        <link>http://www.theswarmlab.com/blog/2016/10/05/We-re-hiring-2/</link>
-        <guid isPermaLink="true">http://www.theswarmlab.com/blog/2016/10/05/We-re-hiring-2/</guid>
-        
-        
-        <category>blog</category>
-        
-      </item>
-    
-      <item>
-        <title>We&#39;re Hiring! Tenure track position in &quot;Organismic Function, from Behavior to Ecology​&quot;</title>
+        <title>We're Hiring! Tenure track position in &quot;Organismic Function, from Behavior to Ecology​&quot;</title>
         <description>&lt;p&gt;As part of an ongoing expansion, the &lt;a href=&quot;https://biology.njit.edu/&quot;&gt;Department of Biological Sciences&lt;/a&gt; at the &lt;a href=&quot;https://www.njit.edu&quot;&gt;New Jersey Institute of Technology (NJIT)&lt;/a&gt; is looking to fill one or two new tenure-track faculty positions at the Assistant Professor level, beginning in 2017. We seek applicants with an interest and established record in bridging levels from systems or organismic function to behavior or ecology. Research areas can include - but are not limited to - ethology, microbiology, functional ecology, or evolution. Candidates will be expected to maintain an active, funded research program, supervise graduate students, and contribute to the overall success of the Department.&lt;/p&gt;
 
 &lt;p&gt;NJIT is a tier-one public research university located in Newark, NJ, with an emphasis on STEM subjects. The Department of Biological Sciences at NJIT currently consists of ten research faculty with expertise in neurobiology, sensory and motor systems, locomotion, collective behavior, and functional and spatial ecology. The Department is also Federated with neighboring &lt;a href=&quot;http://www.ncas.rutgers.edu/biology&quot;&gt;Rutgers-University Newark&lt;/a&gt;, adding colleagues in cellular neurobiology, cell signaling, genetics, systematics, evolution and ecology. The successful applicant will occupy customizable space in a newly renovated research facility. Duties will also include teaching introductory and upper-level undergraduate and graduate courses, depending on expertise.&lt;/p&gt;
 
 &lt;p&gt;NJIT is an equal-opportunity employer. Applications from minorities and women are especially welcome.&lt;/p&gt;
 
-&lt;p&gt;Applicants should upload a CV, a cover letter, and a statement of research interest at the following address: &lt;a href=&quot;http://njit.jobs/applicants/Central?quickFind=55733&quot;&gt;njit.jobs/applicants/Central?quickFind=55733&lt;/a&gt;. In addition, they should arrange for at least three references to send letters directly to Ms. Shamay Carty at &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#099;&amp;#097;&amp;#114;&amp;#116;&amp;#121;&amp;#064;&amp;#110;&amp;#106;&amp;#105;&amp;#116;&amp;#046;&amp;#101;&amp;#100;&amp;#117;&quot;&gt;&amp;#099;&amp;#097;&amp;#114;&amp;#116;&amp;#121;&amp;#064;&amp;#110;&amp;#106;&amp;#105;&amp;#116;&amp;#046;&amp;#101;&amp;#100;&amp;#117;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Applicants should upload a CV, a cover letter, and a statement of research interest at the following address: &lt;a href=&quot;http://njit.jobs/applicants/Central?quickFind=55733&quot;&gt;njit.jobs/applicants/Central?quickFind=55733&lt;/a&gt;. In addition, they should arrange for at least three references to send letters directly to Ms. Shamay Carty at &lt;a href=&quot;mailto:carty@njit.edu&quot;&gt;carty@njit.edu&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;All inquiries should be directed to Dr. Simon Garnier, at &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#103;&amp;#097;&amp;#114;&amp;#110;&amp;#105;&amp;#101;&amp;#114;&amp;#064;&amp;#110;&amp;#106;&amp;#105;&amp;#116;&amp;#046;&amp;#101;&amp;#100;&amp;#117;&quot;&gt;&amp;#103;&amp;#097;&amp;#114;&amp;#110;&amp;#105;&amp;#101;&amp;#114;&amp;#064;&amp;#110;&amp;#106;&amp;#105;&amp;#116;&amp;#046;&amp;#101;&amp;#100;&amp;#117;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;All inquiries should be directed to Dr. Simon Garnier, at &lt;a href=&quot;mailto:garnier@njit.edu&quot;&gt;garnier@njit.edu&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Wed, 05 Oct 2016 00:00:00 -0400</pubDate>
-        <link>http://www.theswarmlab.com/blog/2016/10/05/We-re-hiring/</link>
-        <guid isPermaLink="true">http://www.theswarmlab.com/blog/2016/10/05/We-re-hiring/</guid>
+        <link>http://localhost:4000/blog/2016/10/05/We-re-hiring/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2016/10/05/We-re-hiring/</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>We're Hiring! Tenure track position in &quot;Cell Biology, Physiology, Systems or Organismic Function​&quot;</title>
+        <description>&lt;p&gt;As part of an ongoing expansion, the &lt;a href=&quot;https://biology.njit.edu/&quot;&gt;Department of Biological Sciences&lt;/a&gt; at the &lt;a href=&quot;https://www.njit.edu&quot;&gt;New Jersey Institute of Technology (NJIT)&lt;/a&gt; is looking to fill one or two new tenure-track faculty positions at the Assistant Professor level, beginning in 2017. We seek applicants with an interest and established record in bridging levels from cell biology or physiology, to systems or organismic function. Research areas can include - but are not limited to - neurobiology, ethology, evolution, or development. Candidates will be expected to maintain an active, funded research program, supervise graduate students, and contribute to the overall success of the Department.&lt;/p&gt;
+
+&lt;p&gt;NJIT is a tier-one public research university located in Newark, NJ, with an emphasis on STEM subjects. The Department of Biological Sciences at NJIT currently consists of ten research faculty with expertise in neurobiology, sensory and motor systems, locomotion, collective behavior, and functional and spatial ecology. The Department is also Federated with neighboring &lt;a href=&quot;http://www.ncas.rutgers.edu/biology&quot;&gt;Rutgers-University Newark&lt;/a&gt;, adding colleagues in cellular neurobiology, cell signaling, genetics, systematics, evolution and ecology. The successful applicant will occupy customizable space in a newly renovated research facility. Duties will also include teaching introductory and upper-level undergraduate and graduate courses, depending on expertise.&lt;/p&gt;
+
+&lt;p&gt;NJIT is an equal-opportunity employer. Applications from minorities and women are especially welcome.&lt;/p&gt;
+
+&lt;p&gt;Applicants should upload a CV, a cover letter, and a statement of research interest at the following address: &lt;a href=&quot;http://njit.jobs/applicants/Central?quickFind=55732&quot;&gt;njit.jobs/applicants/Central?quickFind=55732&lt;/a&gt;. In addition, they should arrange for at least three references to send letters directly to Ms. Shamay Carty at &lt;a href=&quot;mailto:carty@njit.edu&quot;&gt;carty@njit.edu&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;All inquiries should be directed to Dr. Farzan Nadim, at &lt;a href=&quot;mailto:farzan@njit.edu&quot;&gt;farzan@njit.edu&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 05 Oct 2016 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/blog/2016/10/05/We-re-hiring-2/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2016/10/05/We-re-hiring-2/</guid>
         
         
         <category>blog</category>
@@ -114,8 +114,8 @@
 &lt;p&gt;Our study has appeared in the &lt;a href=&quot;http://rsif.royalsocietypublishing.org/content/13/119&quot;&gt;June edition&lt;/a&gt; of the &lt;a href=&quot;http://rsif.royalsocietypublishing.org/&quot;&gt;Journal of The Royal Society Interface&lt;/a&gt; and can be found &lt;a href=&quot;http://rsif.royalsocietypublishing.org/content/13/119/20160030&quot;&gt;&lt;strong&gt;in open access&lt;/strong&gt; here&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Sun, 19 Jun 2016 00:00:00 -0400</pubDate>
-        <link>http://www.theswarmlab.com/blog/2016/06/19/Decision-Making-Without-Brain/</link>
-        <guid isPermaLink="true">http://www.theswarmlab.com/blog/2016/06/19/Decision-Making-Without-Brain/</guid>
+        <link>http://localhost:4000/blog/2016/06/19/Decision-Making-Without-Brain/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2016/06/19/Decision-Making-Without-Brain/</guid>
         
         
         <category>blog</category>
@@ -133,8 +133,8 @@
 &lt;/video&gt;
 </description>
         <pubDate>Sun, 12 Jun 2016 00:00:00 -0400</pubDate>
-        <link>http://www.theswarmlab.com/blog/2016/06/12/Lens-of-Time-Slime-Lapse/</link>
-        <guid isPermaLink="true">http://www.theswarmlab.com/blog/2016/06/12/Lens-of-Time-Slime-Lapse/</guid>
+        <link>http://localhost:4000/blog/2016/06/12/Lens-of-Time-Slime-Lapse/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2016/06/12/Lens-of-Time-Slime-Lapse/</guid>
         
         
         <category>blog</category>
@@ -142,7 +142,7 @@
       </item>
     
       <item>
-        <title>David Hughes&#39; lecture at NJIT</title>
+        <title>David Hughes' lecture at NJIT</title>
         <description>&lt;p&gt;&lt;a href=&quot;http://www.hugheslab.com/&quot;&gt;David Hughes&lt;/a&gt; from &lt;a href=&quot;http://www.psu.edu/&quot;&gt;Penn State&lt;/a&gt; will be our guest Tuesday, March 29. His lab has a fascinating research program, exploring the relationship between disease and behavior. In particular, their work focuses on understanding how and why parasites manipulate their host behavior, and on the role behavior plays in disease transmission.&lt;/p&gt;
 
 &lt;p&gt;During his visit, David will also deliver a lecture as part of the &lt;a href=&quot;http://www.ncas.rutgers.edu/colloquium-schedule-2015-2016&quot;&gt;weekly colloquium series of the Federated Department of Biology at NJIT and Rutgers-Newark&lt;/a&gt;. See below for the details on David’s talk and a video introducing the theme of his lecture.&lt;/p&gt;
@@ -164,8 +164,8 @@
 &lt;/div&gt;
 </description>
         <pubDate>Mon, 28 Mar 2016 00:00:00 -0400</pubDate>
-        <link>http://www.theswarmlab.com/blog/2016/03/28/David-Hughes-lecture/</link>
-        <guid isPermaLink="true">http://www.theswarmlab.com/blog/2016/03/28/David-Hughes-lecture/</guid>
+        <link>http://localhost:4000/blog/2016/03/28/David-Hughes-lecture/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2016/03/28/David-Hughes-lecture/</guid>
         
         
         <category>blog</category>
@@ -193,8 +193,8 @@
 &lt;p&gt;&lt;small&gt;Very recently, a new package called &lt;a href=&quot;http://dahtah.github.io/imager/&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;imager&lt;/code&gt;&lt;/a&gt; has been released that is capable of reading videos. It is a fantastic package with a lot of very well thought out functions that I recommend you try. However it has the big disadvantage of loading all the frames of a video directly in R’s memory, making it virtually unusable with the large HD videos that we are used to handle in the laboratory. The same developer also released an experimental package called &lt;a href=&quot;https://github.com/dahtah/imagerstreams&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;imagerstreams&lt;/code&gt;&lt;/a&gt; that is capable of performing “out-of-R-memory” video processing using OpenCV, like &lt;code class=&quot;highlighter-rouge&quot;&gt;videoplayR&lt;/code&gt;. But a few tests showed that it was not capable of very high processing speeds with HD videos (about 4.5 times slower than &lt;code class=&quot;highlighter-rouge&quot;&gt;videoplayR&lt;/code&gt;). However I am in contact with the developer to find a way to make &lt;code class=&quot;highlighter-rouge&quot;&gt;videoplayR&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;imager&lt;/code&gt; talk to each other in order to offer R users the best experience possible when developing computer vision software with R.&lt;/small&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 10 Sep 2015 00:00:00 -0400</pubDate>
-        <link>http://www.theswarmlab.com/blog/r/2015/09/10/videoplayR-v0.3-is-out/</link>
-        <guid isPermaLink="true">http://www.theswarmlab.com/blog/r/2015/09/10/videoplayR-v0.3-is-out/</guid>
+        <link>http://localhost:4000/blog/r/2015/09/10/videoplayR-v0.3-is-out/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/r/2015/09/10/videoplayR-v0.3-is-out/</guid>
         
         
         <category>blog</category>
@@ -255,8 +255,8 @@ line after a while.&lt;/p&gt;
 &lt;/blockquote&gt;
 </description>
         <pubDate>Sat, 08 Aug 2015 00:00:00 -0400</pubDate>
-        <link>http://www.theswarmlab.com/blog/2015/08/08/Richard-Feynman-had-a-thing-for-ants/</link>
-        <guid isPermaLink="true">http://www.theswarmlab.com/blog/2015/08/08/Richard-Feynman-had-a-thing-for-ants/</guid>
+        <link>http://localhost:4000/blog/2015/08/08/Richard-Feynman-had-a-thing-for-ants/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2015/08/08/Richard-Feynman-had-a-thing-for-ants/</guid>
         
         
         <category>blog</category>
@@ -272,7 +272,7 @@ line after a while.&lt;/p&gt;
   &lt;li&gt;&lt;strong&gt;the production of a forecasting software application to provide decision support for policing.&lt;/strong&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;img src=&quot;/img/posts/2015-07-01-postdoc-position-available/we-are-hiring.png&quot; alt=&quot;We&#39;re hiring&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/img/posts/2015-07-01-postdoc-position-available/we-are-hiring.png&quot; alt=&quot;We're hiring&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;This is a 1+1 year position (funding in the 2nd year will depend on progress in the 1st year) based out of Newark, New Jersey. This position is supported by a &lt;a href=&quot;http://newark.rutgers.edu/news/recipients-ru-n-initiative-multidisciplinary-research-teams-awards-announced&quot;&gt;Rutgers-Newark Initiative for Multidisciplinary Research Teams (IMRT) award&lt;/a&gt; and is expected to be extended beyond the 2 year initial period through local and federal funding. The successful candidate will report to an interdisciplinary team of researchers including &lt;a href=&quot;http://rscj.newark.rutgers.edu/faculty/member/caplan-joel/&quot;&gt;Pr. Joel Caplan&lt;/a&gt; and &lt;a href=&quot;http://rscj.newark.rutgers.edu/faculty/member/kennedy-leslie/&quot;&gt;Pr. Les Kennedy&lt;/a&gt; at the &lt;a href=&quot;http://rscj.newark.rutgers.edu/&quot;&gt;Rutgers School of Criminal Justice&lt;/a&gt;, and &lt;a href=&quot;http://www.theswarmlab.com&quot;&gt;Pr. Simon Garnier&lt;/a&gt; at the &lt;a href=&quot;http://biology.njit.edu/&quot;&gt;Biological Sciences Department&lt;/a&gt; at the &lt;a href=&quot;http://www.njit.edu&quot;&gt;New Jersey Institute of Technology&lt;/a&gt;.&lt;/p&gt;
 
@@ -284,15 +284,15 @@ line after a while.&lt;/p&gt;
 
 &lt;p&gt;For more information about the position, the project and the application process, please contact:&lt;/p&gt;
 
-&lt;p&gt;Pr. Joel Caplan: &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#106;&amp;#099;&amp;#097;&amp;#112;&amp;#108;&amp;#097;&amp;#110;&amp;#064;&amp;#097;&amp;#110;&amp;#100;&amp;#114;&amp;#111;&amp;#109;&amp;#101;&amp;#100;&amp;#097;&amp;#046;&amp;#114;&amp;#117;&amp;#116;&amp;#103;&amp;#101;&amp;#114;&amp;#115;&amp;#046;&amp;#101;&amp;#100;&amp;#117;&quot;&gt;&amp;#106;&amp;#099;&amp;#097;&amp;#112;&amp;#108;&amp;#097;&amp;#110;&amp;#064;&amp;#097;&amp;#110;&amp;#100;&amp;#114;&amp;#111;&amp;#109;&amp;#101;&amp;#100;&amp;#097;&amp;#046;&amp;#114;&amp;#117;&amp;#116;&amp;#103;&amp;#101;&amp;#114;&amp;#115;&amp;#046;&amp;#101;&amp;#100;&amp;#117;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Pr. Joel Caplan: &lt;a href=&quot;mailto:jcaplan@andromeda.rutgers.edu&quot;&gt;jcaplan@andromeda.rutgers.edu&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Pr. Les Kennedy: &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#108;&amp;#101;&amp;#115;&amp;#046;&amp;#107;&amp;#101;&amp;#110;&amp;#110;&amp;#101;&amp;#100;&amp;#121;&amp;#064;&amp;#114;&amp;#117;&amp;#116;&amp;#103;&amp;#101;&amp;#114;&amp;#115;&amp;#046;&amp;#101;&amp;#100;&amp;#117;&quot;&gt;&amp;#108;&amp;#101;&amp;#115;&amp;#046;&amp;#107;&amp;#101;&amp;#110;&amp;#110;&amp;#101;&amp;#100;&amp;#121;&amp;#064;&amp;#114;&amp;#117;&amp;#116;&amp;#103;&amp;#101;&amp;#114;&amp;#115;&amp;#046;&amp;#101;&amp;#100;&amp;#117;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Pr. Les Kennedy: &lt;a href=&quot;mailto:les.kennedy@rutgers.edu&quot;&gt;les.kennedy@rutgers.edu&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Pr. Simon Garnier: &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#103;&amp;#097;&amp;#114;&amp;#110;&amp;#105;&amp;#101;&amp;#114;&amp;#064;&amp;#110;&amp;#106;&amp;#105;&amp;#116;&amp;#046;&amp;#101;&amp;#100;&amp;#117;&quot;&gt;&amp;#103;&amp;#097;&amp;#114;&amp;#110;&amp;#105;&amp;#101;&amp;#114;&amp;#064;&amp;#110;&amp;#106;&amp;#105;&amp;#116;&amp;#046;&amp;#101;&amp;#100;&amp;#117;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Pr. Simon Garnier: &lt;a href=&quot;mailto:garnier@njit.edu&quot;&gt;garnier@njit.edu&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 01 Jul 2015 00:00:00 -0400</pubDate>
-        <link>http://www.theswarmlab.com/blog/2015/07/01/postdoc-position-available/</link>
-        <guid isPermaLink="true">http://www.theswarmlab.com/blog/2015/07/01/postdoc-position-available/</guid>
+        <link>http://localhost:4000/blog/2015/07/01/postdoc-position-available/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2015/07/01/postdoc-position-available/</guid>
         
         
         <category>blog</category>
@@ -333,8 +333,8 @@ line after a while.&lt;/p&gt;
 
 </description>
         <pubDate>Tue, 30 Jun 2015 00:00:00 -0400</pubDate>
-        <link>http://www.theswarmlab.com/blog/2015/06/30/a-new-website/</link>
-        <guid isPermaLink="true">http://www.theswarmlab.com/blog/2015/06/30/a-new-website/</guid>
+        <link>http://localhost:4000/blog/2015/06/30/a-new-website/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2015/06/30/a-new-website/</guid>
         
         
         <category>blog</category>
