@@ -5,9 +5,43 @@
     <description>Welcome to the Swarm Lab where we study Swarm Intelligence in natural and artificial systems.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 23 Jan 2019 14:13:05 -0500</pubDate>
-    <lastBuildDate>Wed, 23 Jan 2019 14:13:05 -0500</lastBuildDate>
+    <pubDate>Fri, 15 Mar 2019 15:15:55 +0100</pubDate>
+    <lastBuildDate>Fri, 15 Mar 2019 15:15:55 +0100</lastBuildDate>
     <generator>Jekyll v3.7.4</generator>
+    
+      <item>
+        <title>New publication - &quot;Temporal and spatial pattern of trail clearing in the Australian meat ant, &lt;i&gt;Iridomyrmex purpureus&lt;/i&gt;&quot;</title>
+        <description>&lt;p&gt;The SwarmLab is happy to announce the publication of: &lt;a href=&quot;https://doi.org/10.1016/j.anbehav.2019.02.006&quot;&gt;Middleton, E. J. T., Garnier, S., Latty, T., and Reid, C. R. (2019). Temporal and spatial pattern of trail clearing in the Australian meat ant, &lt;em&gt;Iridomyrmex purpureus&lt;/em&gt;. Anim. Behav. 150, 97–111. doi:10.1016/j.anbehav.2019.02.006&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;Abstract:&lt;/strong&gt; Many ant species use trails to connect important resources. In addition, some ants actively clear obstacles from their trails. Although trail clearing is thought to be beneficial in decreasing travel time, the physical process of clearing requires an investment of time and energy. Given that trail clearing is a decentralized process, how do colonies decide when to invest in clearing? In this study, we examined trail clearing in the Australian meat ant, using artificial semipermeable barriers mimicking grass. We tested the hypothesis that investment in clearing was influenced by the abundance and physical toughness of obstacles and that the selection of which grass blade to cut was a nonrandom process that decreases travel distance. We found that low abundance/low toughness treatments experienced the greatest amount of clearing and high abundance/high toughness the least. Although ants did not clear an optimally efficient trail, the results of our percolation analysis support the inference that the ants strategically deployed clearing, taking multiple factors into account when deciding to invest in this strategy. The resultant clearing patterns provided shorter travel routes for foraging ants than would be expected by the random removal of obstacles.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 09 Mar 2019 00:00:00 +0100</pubDate>
+        <link>http://localhost:4000/blog/2019/03/09/new-publication/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2019/03/09/new-publication/</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Announcing the 4th Collaborative Workshop on Modeling Collective Behavior</title>
+        <description>&lt;p&gt;The SwarmLab is pleased to announce the 4th Collaborative Workshop on Modeling Collective Behavior, funded by the NSF OAC Public Access Initiative &lt;a href=&quot;https://www.nsf.gov/awardsearch/showAward?AWD_ID=1838955&quot;&gt;grant #1838955&lt;/a&gt;. The goal of this workshop is to provide researchers coming from mathematics, physics, engineering and biology with experience in working collaboratively to model and analyze data produced by research in collective behavior. This year we are also including an interdisciplinary art/science project (see Project 4 below) that will use virtual reality to explore and interact with data and models of collective behaviors.&lt;/p&gt;
+
+&lt;p&gt;All information about the workshop, including application instructions and deadline, can be found &lt;a href=&quot;/meetings/data_model_2019/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/data_model_2019/banner.png&quot; alt=&quot;banner&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 01 Mar 2019 00:00:00 +0100</pubDate>
+        <link>http://localhost:4000/blog/2019/03/01/data-model-2019/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2019/03/01/data-model-2019/</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
     
       <item>
         <title>Data-Driven Modeling of Collective Behavior and Emergent Phenomena in Biology (DDM-Bio) - June 5-7, 2017</title>
@@ -46,7 +80,7 @@
 
 &lt;p&gt;Questions: &lt;a href=&quot;ddm-bio@samsi.info&quot;&gt;ddm-bio@samsi.info&lt;/a&gt;&lt;/p&gt;
 </description>
-        <pubDate>Wed, 14 Dec 2016 00:00:00 -0500</pubDate>
+        <pubDate>Wed, 14 Dec 2016 00:00:00 +0100</pubDate>
         <link>http://localhost:4000/blog/2016/12/14/DDM-Bio/</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2016/12/14/DDM-Bio/</guid>
         
@@ -67,7 +101,7 @@
 
 &lt;p&gt;All inquiries should be directed to Dr. Simon Garnier, at &lt;a href=&quot;mailto:garnier@njit.edu&quot;&gt;garnier@njit.edu&lt;/a&gt;.&lt;/p&gt;
 </description>
-        <pubDate>Wed, 05 Oct 2016 00:00:00 -0400</pubDate>
+        <pubDate>Wed, 05 Oct 2016 00:00:00 +0200</pubDate>
         <link>http://localhost:4000/blog/2016/10/05/We-re-hiring/</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2016/10/05/We-re-hiring/</guid>
         
@@ -88,7 +122,7 @@
 
 &lt;p&gt;All inquiries should be directed to Dr. Farzan Nadim, at &lt;a href=&quot;mailto:farzan@njit.edu&quot;&gt;farzan@njit.edu&lt;/a&gt;.&lt;/p&gt;
 </description>
-        <pubDate>Wed, 05 Oct 2016 00:00:00 -0400</pubDate>
+        <pubDate>Wed, 05 Oct 2016 00:00:00 +0200</pubDate>
         <link>http://localhost:4000/blog/2016/10/05/We-re-hiring-2/</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2016/10/05/We-re-hiring-2/</guid>
         
@@ -113,7 +147,7 @@
 
 &lt;p&gt;Our study has appeared in the &lt;a href=&quot;http://rsif.royalsocietypublishing.org/content/13/119&quot;&gt;June edition&lt;/a&gt; of the &lt;a href=&quot;http://rsif.royalsocietypublishing.org/&quot;&gt;Journal of The Royal Society Interface&lt;/a&gt; and can be found &lt;a href=&quot;http://rsif.royalsocietypublishing.org/content/13/119/20160030&quot;&gt;&lt;strong&gt;in open access&lt;/strong&gt; here&lt;/a&gt;.&lt;/p&gt;
 </description>
-        <pubDate>Sun, 19 Jun 2016 00:00:00 -0400</pubDate>
+        <pubDate>Sun, 19 Jun 2016 00:00:00 +0200</pubDate>
         <link>http://localhost:4000/blog/2016/06/19/Decision-Making-Without-Brain/</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2016/06/19/Decision-Making-Without-Brain/</guid>
         
@@ -132,7 +166,7 @@
   &lt;source src=&quot;http://n2ps.storied.co/uploads/548ceb34b78402c4c1baadd636a132f4.mp4&quot; type=&quot;video/mp4&quot; /&gt;
 &lt;/video&gt;
 </description>
-        <pubDate>Sun, 12 Jun 2016 00:00:00 -0400</pubDate>
+        <pubDate>Sun, 12 Jun 2016 00:00:00 +0200</pubDate>
         <link>http://localhost:4000/blog/2016/06/12/Lens-of-Time-Slime-Lapse/</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2016/06/12/Lens-of-Time-Slime-Lapse/</guid>
         
@@ -163,7 +197,7 @@
   &lt;iframe style=&quot;position: absolute; width: 100%; height: 100%; left: 0; top: 0;&quot; src=&quot;https://www.youtube.com/embed/XuKjBIBBAL8&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 </description>
-        <pubDate>Mon, 28 Mar 2016 00:00:00 -0400</pubDate>
+        <pubDate>Mon, 28 Mar 2016 00:00:00 +0200</pubDate>
         <link>http://localhost:4000/blog/2016/03/28/David-Hughes-lecture/</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2016/03/28/David-Hughes-lecture/</guid>
         
@@ -192,7 +226,7 @@
 
 &lt;p&gt;&lt;small&gt;Very recently, a new package called &lt;a href=&quot;http://dahtah.github.io/imager/&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;imager&lt;/code&gt;&lt;/a&gt; has been released that is capable of reading videos. It is a fantastic package with a lot of very well thought out functions that I recommend you try. However it has the big disadvantage of loading all the frames of a video directly in R’s memory, making it virtually unusable with the large HD videos that we are used to handle in the laboratory. The same developer also released an experimental package called &lt;a href=&quot;https://github.com/dahtah/imagerstreams&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;imagerstreams&lt;/code&gt;&lt;/a&gt; that is capable of performing “out-of-R-memory” video processing using OpenCV, like &lt;code class=&quot;highlighter-rouge&quot;&gt;videoplayR&lt;/code&gt;. But a few tests showed that it was not capable of very high processing speeds with HD videos (about 4.5 times slower than &lt;code class=&quot;highlighter-rouge&quot;&gt;videoplayR&lt;/code&gt;). However I am in contact with the developer to find a way to make &lt;code class=&quot;highlighter-rouge&quot;&gt;videoplayR&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;imager&lt;/code&gt; talk to each other in order to offer R users the best experience possible when developing computer vision software with R.&lt;/small&gt;&lt;/p&gt;
 </description>
-        <pubDate>Thu, 10 Sep 2015 00:00:00 -0400</pubDate>
+        <pubDate>Thu, 10 Sep 2015 00:00:00 +0200</pubDate>
         <link>http://localhost:4000/blog/r/2015/09/10/videoplayR-v0.3-is-out/</link>
         <guid isPermaLink="true">http://localhost:4000/blog/r/2015/09/10/videoplayR-v0.3-is-out/</guid>
         
@@ -254,87 +288,9 @@ something like sketching: You draw a lousy line at first; then you go over it a 
 line after a while.&lt;/p&gt;
 &lt;/blockquote&gt;
 </description>
-        <pubDate>Sat, 08 Aug 2015 00:00:00 -0400</pubDate>
+        <pubDate>Sat, 08 Aug 2015 00:00:00 +0200</pubDate>
         <link>http://localhost:4000/blog/2015/08/08/Richard-Feynman-had-a-thing-for-ants/</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2015/08/08/Richard-Feynman-had-a-thing-for-ants/</guid>
-        
-        
-        <category>blog</category>
-        
-      </item>
-    
-      <item>
-        <title>Postdoctoral position available</title>
-        <description>&lt;p&gt;&lt;strong&gt;We are currently seeking a postdoctoral researcher to lead:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;the development and testing of spatially explicit models of criminal activities;&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;the production of a forecasting software application to provide decision support for policing.&lt;/strong&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/posts/2015-07-01-postdoc-position-available/we-are-hiring.png&quot; alt=&quot;We're hiring&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;This is a 1+1 year position (funding in the 2nd year will depend on progress in the 1st year) based out of Newark, New Jersey. This position is supported by a &lt;a href=&quot;http://newark.rutgers.edu/news/recipients-ru-n-initiative-multidisciplinary-research-teams-awards-announced&quot;&gt;Rutgers-Newark Initiative for Multidisciplinary Research Teams (IMRT) award&lt;/a&gt; and is expected to be extended beyond the 2 year initial period through local and federal funding. The successful candidate will report to an interdisciplinary team of researchers including &lt;a href=&quot;http://rscj.newark.rutgers.edu/faculty/member/caplan-joel/&quot;&gt;Pr. Joel Caplan&lt;/a&gt; and &lt;a href=&quot;http://rscj.newark.rutgers.edu/faculty/member/kennedy-leslie/&quot;&gt;Pr. Les Kennedy&lt;/a&gt; at the &lt;a href=&quot;http://rscj.newark.rutgers.edu/&quot;&gt;Rutgers School of Criminal Justice&lt;/a&gt;, and &lt;a href=&quot;http://www.theswarmlab.com&quot;&gt;Pr. Simon Garnier&lt;/a&gt; at the &lt;a href=&quot;http://biology.njit.edu/&quot;&gt;Biological Sciences Department&lt;/a&gt; at the &lt;a href=&quot;http://www.njit.edu&quot;&gt;New Jersey Institute of Technology&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The project will be carried in two phases of 1 year each. During Phase 1, the successful candidate will work in close collaboration with Garnier to develop and analyze data-driven agent-based (and possibly mathematical) models of daily occurrences of various criminal activities in Newark and Jersey City, New Jersey, and possibly other major urban centers as the project progresses. These models will extend the Risk Terrain Modeling approach created by Caplan and Kennedy. During Phase 2, the postdoctoral researcher will lead the development of a forecasting software application based on the best results of Phase 1. This software application is expected to be web-based and to make use of the High Performance Computing (HPC) capabilities of modern cloud-based systems. The postdoctoral researcher will also be involved directly in the team’s efforts to promote and disseminate the software application to a broad audience.&lt;/p&gt;
-
-&lt;p&gt;The ideal candidate should have a background in quantitative research and modeling, and a demonstrable knowledge of at least one high level programming language (Python and/or R preferred) and one lower level programming language (C++ and/or Java preferred). Previous experience with HPC and production-ready software development (either commercial or open-source) is desirable but not mandatory. The ideal candidate should also have a proven track record of professional presentations and publications in peer-reviewed journals. Knowledge of criminological theories and/or experience in the criminal justice practice is preferred. Post-doctoral applicants are preferred, but other degree levels and employment/collaboration options will be considered.&lt;/p&gt;
-
-&lt;p&gt;Immediate start date is desired.&lt;/p&gt;
-
-&lt;p&gt;For more information about the position, the project and the application process, please contact:&lt;/p&gt;
-
-&lt;p&gt;Pr. Joel Caplan: &lt;a href=&quot;mailto:jcaplan@andromeda.rutgers.edu&quot;&gt;jcaplan@andromeda.rutgers.edu&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Pr. Les Kennedy: &lt;a href=&quot;mailto:les.kennedy@rutgers.edu&quot;&gt;les.kennedy@rutgers.edu&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Pr. Simon Garnier: &lt;a href=&quot;mailto:garnier@njit.edu&quot;&gt;garnier@njit.edu&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Wed, 01 Jul 2015 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/blog/2015/07/01/postdoc-position-available/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2015/07/01/postdoc-position-available/</guid>
-        
-        
-        <category>blog</category>
-        
-      </item>
-    
-      <item>
-        <title>A new website!</title>
-        <description>&lt;p&gt;The Swarm Lab will be 3 year old tomorrow, July 1st, 2015. To celebrate the event, I decided to redo our website from scratch. It has now a new interface and, more importantly, a new backend.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Goodbye &lt;a href=&quot;https://wordpress.org/&quot;&gt;Wordpress&lt;/a&gt;, and hello &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;!!!&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/posts/2015-06-30-a-new-website/wp_to_jekyll.png&quot; alt=&quot;Wordpress to Jekyll&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;I have wanted to make this move for a long time now. Wordpress has served me very well for many years but I have grown increasingly frustrated with a number of things it does and things it cannot do. And while Jekyll might not be for everyone, I quickly learned to like it because of the following reasons (among many others):&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Jekyll is fast.&lt;/strong&gt; Contrary to Wordpress that relies on &lt;a href=&quot;https://en.wikipedia.org/wiki/PHP&quot;&gt;PHP&lt;/a&gt; and &lt;a href=&quot;https://en.wikipedia.org/wiki/MySQL&quot;&gt;MySQL&lt;/a&gt; to build webpages, &lt;a href=&quot;http://jekyllrb.com/docs/home/&quot;&gt;Jekyll generates static webpages directly&lt;/a&gt;. This improves loading times and server use significantly because the webpages do not need to be generated each time they are called by users. Technically generation and loading times can be improved in Wordpress by using caching plugins (or even plugins generating static webpages). However I find that they often conflict with other plugins, in particular plugins creating dynamic content. And since dynamic content is not really necessary on a website like ours, there was no reason to stick with Wordpress any longer (or any other advanced &lt;a href=&quot;https://en.wikipedia.org/wiki/Web_content_management_system&quot;&gt;CMS&lt;/a&gt; as a matter of fact).&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Jekyll is easy.&lt;/strong&gt; Well, this is a matter of interpretation. If you know nothing about &lt;a href=&quot;https://en.wikipedia.org/wiki/HTML&quot;&gt;HTML&lt;/a&gt;, &lt;a href=&quot;https://en.wikipedia.org/wiki/Cascading_Style_Sheets&quot;&gt;CSS&lt;/a&gt;, &lt;a href=&quot;https://en.wikipedia.org/wiki/JavaScript&quot;&gt;JavaScript&lt;/a&gt;, etc., then Wordpress and other similar CMS are probably easier for you. You install it, you click a few buttons and, there, you have your website. However if you are like me and you like to tinker with the code of your webpages because you are never happy with the way other people have designed them, then Wordpress is definitely a difficult beast to take on at times. Every change to the PHP code might break a plugin, and debugging can quickly turn into a nightmare because of the complexity of the underlying Wordpress machinery. In contrast Jekyll is a much nicer and simpler environment to work and tinker with, and while knowledge of HTML, CSS and JavaScript is still necessary, at least I will no need to deal with PHP and MySQL anymore (phew!).&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Jekyll is better integrated into my workflow.&lt;/strong&gt; A large portion of my computer time is spent coding and writing. I use the command line a lot more that before, and most of my work is done using text/code editors, and pushed to GitHub and GitHub-like servers. In addition I use more and more often the &lt;a href=&quot;https://en.wikipedia.org/wiki/Markdown&quot;&gt;Markdown&lt;/a&gt; markup language to quickly write and format documents. And Markdown is central to Jekyll: all content is written in Markdown, and Jekyll converts it into webpages. All these new habits are perfectly compatible with the Jekyll way of developing, populating and maintaining websites. The more I improved my coding skills, the more it became obvious that Jekyll was the perfect platform for me to develop websites.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Jekyll has a lot more to offer, especially if you have some basic skills in HTML and CSS. And even if you do not, there is a growing community of users out there, and a number of tutorials on how to setup, generate and publish a Jekyll website.&lt;/p&gt;
-
-&lt;p&gt;Now I hope you will enjoy our new website! I have imported a few posts from the old websites (&lt;a href=&quot;/category/rvspython/&quot;&gt;R vs Python challenges&lt;/a&gt;, &lt;a href=&quot;/category/antsvstheworld/&quot;&gt;#AntsVsTheWorld&lt;/a&gt;, and &lt;a href=&quot;/category/slimelapsegallery/&quot;&gt;#SlimeLapseGallery&lt;/a&gt;) to get things started, and I hope to provide new content later when the summer grant writing craze dies down.&lt;/p&gt;
-
-&lt;p&gt;Comments and suggestions for improvement are very welcome!&lt;/p&gt;
-
-</description>
-        <pubDate>Tue, 30 Jun 2015 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/blog/2015/06/30/a-new-website/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2015/06/30/a-new-website/</guid>
         
         
         <category>blog</category>
