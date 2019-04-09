@@ -5,9 +5,49 @@
     <description>Welcome to the Swarm Lab where we study Swarm Intelligence in natural and artificial systems.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 15 Mar 2019 15:15:55 +0100</pubDate>
-    <lastBuildDate>Fri, 15 Mar 2019 15:15:55 +0100</lastBuildDate>
+    <pubDate>Tue, 09 Apr 2019 16:09:25 -0400</pubDate>
+    <lastBuildDate>Tue, 09 Apr 2019 16:09:25 -0400</lastBuildDate>
     <generator>Jekyll v3.7.4</generator>
+    
+      <item>
+        <title>New publication - &quot;Contact Calls Facilitate Group Contraction in Free-ranging Goats (&lt;i&gt;Capra aegagrus hircus&lt;/i&gt;)&quot;</title>
+        <description>&lt;p&gt;The SwarmLab is happy to announce the publication of: &lt;a href=&quot;https://www.frontiersin.org/articles/10.3389/fevo.2019.00073/&quot;&gt;O’Bryan, L., Abaid, N., Nakayama, S., Dey, T., King, A., Cowlishaw, G., et al. (2019). Contact Calls Facilitate Group Contraction in Free-ranging Goats (Capra aegagrus hircus). Frontiers in Ecology and Evolution 7, 73. doi:10.3389/fevo.2019.00073&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;Abstract:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Many social animal species produce vocalizations believed to facilitate group contraction when one or more group members have become distant. However, the mechanisms underlying this function remain unclear for many species. We examined this question with data on a semi-free ranging group of 16 adult domesticated goats (&lt;em&gt;Capra aegagrus hircus&lt;/em&gt;) inhabiting Tsaobis Nature Park, Namibia. All goats wore dataloggers consisting of a GPS and audio recorder for 5-6 hours per day for 10 days, providing continuous data on their geolocations and vocal communication. We found that callers were farther from the group centroid than expected by chance and that call production was associated with the cessation of group expansion and subsequent group contraction. We did not find strong evidence for antiphonal call exchange between distant and core group members. Rather, we found that (i) call production by distant group members is associated with a significant reduction of group movement away from the caller, and (ii) call production by core group members is associated with greater, though not significantly greater, group movement towards the caller. These findings suggest that calls may be used by distant, and potentially core, group members to facilitate the contraction of group spread. Results from our study clarify the mechanisms through which social animals can regulate collective movement behavior and the specific role that vocalizations play in this process.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 19 Mar 2019 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/blog/2019/03/19/new-publication/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2019/03/19/new-publication/</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>New publication - &quot;Information Transfer During Food Choice in the Slime Mold &lt;i&gt;Physarum polycephalum&lt;/i&gt;&quot;</title>
+        <description>&lt;p&gt;The SwarmLab is happy to announce the publication of: &lt;a href=&quot;https://www.frontiersin.org/articles/10.3389/fevo.2019.00067/&quot;&gt;Ray, S., Valentini, G., Shah, P., Haque, A., Reid, C., Weber, G., et al. (2019). Information Transfer During Food Choice in the Slime Mold Physarum polycephalum. Frontiers in Ecology and Evolution 7, 67. doi:10.3389/fevo.2019.00067&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This paper is a first publication for Subash, Purva and Abid. Many congratulations to them!&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;Abstract:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Throughout evolution, living systems have developed mechanisms to make adaptive decisions in the face of complex and changing environmental conditions. Most organisms make such decisions despite lacking a neural architecture. This is the case of the acellular slime mold &lt;em&gt;Physarum polycephalum&lt;/em&gt; that has demonstrated remarkable information processing and problem-solving abilities. Previous studies suggest that the membrane of &lt;em&gt;P. polycephalum&lt;/em&gt; plays an important role in integrating and processing information leading to the selection of a resource to exploit. The cyclical contraction-relaxation pattern of the membrane changes with the local quality of the environment, and individual contractile regions within a &lt;em&gt;P. polycephalum&lt;/em&gt; can entrain neighboring regions, providing a potential mechanism for information processing and propagation. In this study, we use an information-theoretic tool, transfer entropy, to study the flow of information in single tubule segments of &lt;em&gt;P. polycephalum&lt;/em&gt; in a binary choice between two food sources. We test &lt;em&gt;P. polycephalum&lt;/em&gt; tubules in two food choice conditions, where the two available options are either symmetric in their nutrient concentrations or with one more concentrated in nutrients than the other (i.e., asymmetric). We measure the contractile pattern of the &lt;em&gt;P. polycephalum&lt;/em&gt; membrane and use these data to explore the direction and amount of information transfer along the tubule as a function of the cell’s final decision. We find that the direction of information transfer is different in the two experimental conditions, and the amount of information transferred is inversely proportional to the distance between different contractile regions. Our results show that regions playing a leading role in information transfer changes with the decision-making challenges faced by &lt;em&gt;P. polycephalum&lt;/em&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 14 Mar 2019 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/blog/2019/03/14/new-publication2/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2019/03/14/new-publication2/</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
     
       <item>
         <title>New publication - &quot;Temporal and spatial pattern of trail clearing in the Australian meat ant, &lt;i&gt;Iridomyrmex purpureus&lt;/i&gt;&quot;</title>
@@ -17,7 +57,7 @@
 
 &lt;p&gt;&lt;strong&gt;Abstract:&lt;/strong&gt; Many ant species use trails to connect important resources. In addition, some ants actively clear obstacles from their trails. Although trail clearing is thought to be beneficial in decreasing travel time, the physical process of clearing requires an investment of time and energy. Given that trail clearing is a decentralized process, how do colonies decide when to invest in clearing? In this study, we examined trail clearing in the Australian meat ant, using artificial semipermeable barriers mimicking grass. We tested the hypothesis that investment in clearing was influenced by the abundance and physical toughness of obstacles and that the selection of which grass blade to cut was a nonrandom process that decreases travel distance. We found that low abundance/low toughness treatments experienced the greatest amount of clearing and high abundance/high toughness the least. Although ants did not clear an optimally efficient trail, the results of our percolation analysis support the inference that the ants strategically deployed clearing, taking multiple factors into account when deciding to invest in this strategy. The resultant clearing patterns provided shorter travel routes for foraging ants than would be expected by the random removal of obstacles.&lt;/p&gt;
 </description>
-        <pubDate>Sat, 09 Mar 2019 00:00:00 +0100</pubDate>
+        <pubDate>Sat, 09 Mar 2019 00:00:00 -0500</pubDate>
         <link>http://localhost:4000/blog/2019/03/09/new-publication/</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2019/03/09/new-publication/</guid>
         
@@ -34,7 +74,7 @@
 
 &lt;p&gt;&lt;img src=&quot;/img/posts/data_model_2019/banner.png&quot; alt=&quot;banner&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
 </description>
-        <pubDate>Fri, 01 Mar 2019 00:00:00 +0100</pubDate>
+        <pubDate>Fri, 01 Mar 2019 00:00:00 -0500</pubDate>
         <link>http://localhost:4000/blog/2019/03/01/data-model-2019/</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2019/03/01/data-model-2019/</guid>
         
@@ -80,7 +120,7 @@
 
 &lt;p&gt;Questions: &lt;a href=&quot;ddm-bio@samsi.info&quot;&gt;ddm-bio@samsi.info&lt;/a&gt;&lt;/p&gt;
 </description>
-        <pubDate>Wed, 14 Dec 2016 00:00:00 +0100</pubDate>
+        <pubDate>Wed, 14 Dec 2016 00:00:00 -0500</pubDate>
         <link>http://localhost:4000/blog/2016/12/14/DDM-Bio/</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2016/12/14/DDM-Bio/</guid>
         
@@ -101,7 +141,7 @@
 
 &lt;p&gt;All inquiries should be directed to Dr. Simon Garnier, at &lt;a href=&quot;mailto:garnier@njit.edu&quot;&gt;garnier@njit.edu&lt;/a&gt;.&lt;/p&gt;
 </description>
-        <pubDate>Wed, 05 Oct 2016 00:00:00 +0200</pubDate>
+        <pubDate>Wed, 05 Oct 2016 00:00:00 -0400</pubDate>
         <link>http://localhost:4000/blog/2016/10/05/We-re-hiring/</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2016/10/05/We-re-hiring/</guid>
         
@@ -122,7 +162,7 @@
 
 &lt;p&gt;All inquiries should be directed to Dr. Farzan Nadim, at &lt;a href=&quot;mailto:farzan@njit.edu&quot;&gt;farzan@njit.edu&lt;/a&gt;.&lt;/p&gt;
 </description>
-        <pubDate>Wed, 05 Oct 2016 00:00:00 +0200</pubDate>
+        <pubDate>Wed, 05 Oct 2016 00:00:00 -0400</pubDate>
         <link>http://localhost:4000/blog/2016/10/05/We-re-hiring-2/</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2016/10/05/We-re-hiring-2/</guid>
         
@@ -147,7 +187,7 @@
 
 &lt;p&gt;Our study has appeared in the &lt;a href=&quot;http://rsif.royalsocietypublishing.org/content/13/119&quot;&gt;June edition&lt;/a&gt; of the &lt;a href=&quot;http://rsif.royalsocietypublishing.org/&quot;&gt;Journal of The Royal Society Interface&lt;/a&gt; and can be found &lt;a href=&quot;http://rsif.royalsocietypublishing.org/content/13/119/20160030&quot;&gt;&lt;strong&gt;in open access&lt;/strong&gt; here&lt;/a&gt;.&lt;/p&gt;
 </description>
-        <pubDate>Sun, 19 Jun 2016 00:00:00 +0200</pubDate>
+        <pubDate>Sun, 19 Jun 2016 00:00:00 -0400</pubDate>
         <link>http://localhost:4000/blog/2016/06/19/Decision-Making-Without-Brain/</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2016/06/19/Decision-Making-Without-Brain/</guid>
         
@@ -166,7 +206,7 @@
   &lt;source src=&quot;http://n2ps.storied.co/uploads/548ceb34b78402c4c1baadd636a132f4.mp4&quot; type=&quot;video/mp4&quot; /&gt;
 &lt;/video&gt;
 </description>
-        <pubDate>Sun, 12 Jun 2016 00:00:00 +0200</pubDate>
+        <pubDate>Sun, 12 Jun 2016 00:00:00 -0400</pubDate>
         <link>http://localhost:4000/blog/2016/06/12/Lens-of-Time-Slime-Lapse/</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2016/06/12/Lens-of-Time-Slime-Lapse/</guid>
         
@@ -197,100 +237,9 @@
   &lt;iframe style=&quot;position: absolute; width: 100%; height: 100%; left: 0; top: 0;&quot; src=&quot;https://www.youtube.com/embed/XuKjBIBBAL8&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 </description>
-        <pubDate>Mon, 28 Mar 2016 00:00:00 +0200</pubDate>
+        <pubDate>Mon, 28 Mar 2016 00:00:00 -0400</pubDate>
         <link>http://localhost:4000/blog/2016/03/28/David-Hughes-lecture/</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2016/03/28/David-Hughes-lecture/</guid>
-        
-        
-        <category>blog</category>
-        
-      </item>
-    
-      <item>
-        <title>videoplayR v0.3 is out!</title>
-        <description>&lt;p&gt;The people who know me a bit are very much aware of the fact that I am an avid &lt;a href=&quot;http://www.r-project.org&quot;&gt;R&lt;/a&gt; user AND proselyte. I perform all my data processing and visualization in R; I write reports and presentations in R; I even write R packages just for the pleasure of doing it (for instance, I created the &lt;a href=&quot;https://github.com/swarm-lab/editR&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;editR&lt;/code&gt;&lt;/a&gt; package essentially to see how easy it would be to build a complete web-application with R. Hint: it’s not as hard as I thought it would be).&lt;/p&gt;
-
-&lt;p&gt;While R is serving me very well, it always had one big limitation: it cannot process videos. This forced me to use Matlab (ew!) to develop computer vision scripts and applications for processing the videos from our behavioral experiments. Now, I do not have anything against Matlab in particular (besides the fact that it is ridiculously expensive), but I would rather keep my entire data processing workflow within R as much as possible, which meant that I had to either wait for someone to finally develop a computer vision library for R, or develop it myself. And so, this is how &lt;a href=&quot;https://github.com/swarm-lab/videoplayR&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;videoplayR&lt;/code&gt;&lt;/a&gt; came to be.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/posts/2015-09-10-videoplayR-v0.3-is-out/tracks.png&quot; alt=&quot;Trajectories of three ants tracked with `videoplayR`&quot; class=&quot;wrap-around-right&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;videoplayR&lt;/code&gt; is an embryo of a computer vision library for R. It is built upon a powerful C++ image and video processing library called &lt;a href=&quot;http://opencv.org/&quot;&gt;OpenCV&lt;/a&gt;. I used the fantastic &lt;a href=&quot;http://www.rcpp.org/&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Rcpp&lt;/code&gt;&lt;/a&gt; suite of R packages to interface &lt;code class=&quot;highlighter-rouge&quot;&gt;OpenCV&lt;/code&gt; with R. And it’s working! For instance, I managed to create and run successfully a basic particle tracker on one of our ant videos. You can see the result in the screen capture on the right. The software detected and tracked the three ants in the video (technically, there are 5 ants in this video, but 2 of them never moved). It’s all done with a few lines of R code thanks to &lt;code class=&quot;highlighter-rouge&quot;&gt;videoplayR&lt;/code&gt;. If you want to see for yourself how easy it is to use &lt;code class=&quot;highlighter-rouge&quot;&gt;videoplayR&lt;/code&gt;, you can play with the different examples in the package vignette that I made available on &lt;a href=&quot;http://rpubs.com/&quot;&gt;Rpubs&lt;/a&gt; at: &lt;a href=&quot;http://rpubs.com/sjmgarnier/videoplayR&quot;&gt;http://rpubs.com/sjmgarnier/videoplayR&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;It is not perfect yet. It’s lacking a lot of basic and advanced features that are normally found in a full-fledged computer vision library. It requires the installation of OpenCV, which is fairly standardized on Mac (thanks to &lt;a href=&quot;http://brew.sh/&quot;&gt;Homebrew&lt;/a&gt; and &lt;a href=&quot;https://www.macports.org/&quot;&gt;MacPorts&lt;/a&gt;) and Linux, but not so much on Windows. Because of that, &lt;code class=&quot;highlighter-rouge&quot;&gt;videoplayR&lt;/code&gt; is not (yet) available on Windows, and is unlikely to end up on &lt;a href=&quot;https://cran.r-project.org/&quot;&gt;CRAN&lt;/a&gt; anytime soon, unless someone with a lot more experience than me can figure out how to ship OpenCV alongside &lt;code class=&quot;highlighter-rouge&quot;&gt;videoplayR&lt;/code&gt; in a way that can compile (I tried, I failed). All the functions could probably be more optimized, but that too will require the help of a C++ guru.&lt;/p&gt;
-
-&lt;p&gt;However what is currently available in the package works, and it works pretty well. I believe that it is intuitive enough for most people to get started with image and video processing with R. And it is fairly fast; I have created a basic particle detector that ran at about 21 images per second on my laptop with HD videos. This number can certainly be improved, but it is not bad at all for a first try. I will keep improving it over time following the needs of my laboratory, but I welcome comments, bug reports and feature requests - or, better, pull requests - that can be made directly on the &lt;a href=&quot;https://github.com/&quot;&gt;Github&lt;/a&gt; repository of the package at &lt;a href=&quot;https://github.com/swarm-lab/videoplayR&quot;&gt;https://github.com/swarm-lab/videoplayR&lt;/a&gt;.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;small&gt;I should mention that I am certainly not the only R user who is desperate enough to have developed a computer vision library for his favorite language. A number of packages have been created to read, process and write images with R. For instance, you can find the  &lt;a href=&quot;http://bioconductor.org/packages/release/bioc/html/EBImage.html&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;EBImage&lt;/code&gt;&lt;/a&gt; package on BioConductor, or the &lt;a href=&quot;https://cran.r-project.org/web/packages/ripa/ripa.pdf&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ripa&lt;/code&gt;&lt;/a&gt; package on CRAN. However good these two packages are at processing images (they are very good), they cannot read videos, which is deal breaker for me.&lt;/small&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;small&gt;Very recently, a new package called &lt;a href=&quot;http://dahtah.github.io/imager/&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;imager&lt;/code&gt;&lt;/a&gt; has been released that is capable of reading videos. It is a fantastic package with a lot of very well thought out functions that I recommend you try. However it has the big disadvantage of loading all the frames of a video directly in R’s memory, making it virtually unusable with the large HD videos that we are used to handle in the laboratory. The same developer also released an experimental package called &lt;a href=&quot;https://github.com/dahtah/imagerstreams&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;imagerstreams&lt;/code&gt;&lt;/a&gt; that is capable of performing “out-of-R-memory” video processing using OpenCV, like &lt;code class=&quot;highlighter-rouge&quot;&gt;videoplayR&lt;/code&gt;. But a few tests showed that it was not capable of very high processing speeds with HD videos (about 4.5 times slower than &lt;code class=&quot;highlighter-rouge&quot;&gt;videoplayR&lt;/code&gt;). However I am in contact with the developer to find a way to make &lt;code class=&quot;highlighter-rouge&quot;&gt;videoplayR&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;imager&lt;/code&gt; talk to each other in order to offer R users the best experience possible when developing computer vision software with R.&lt;/small&gt;&lt;/p&gt;
-</description>
-        <pubDate>Thu, 10 Sep 2015 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/blog/r/2015/09/10/videoplayR-v0.3-is-out/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/r/2015/09/10/videoplayR-v0.3-is-out/</guid>
-        
-        
-        <category>blog</category>
-        
-        <category>r</category>
-        
-      </item>
-    
-      <item>
-        <title>Richard Feynman had a thing for ants</title>
-        <description>&lt;figure class=&quot;wrap-around-right&quot;&gt;
-    &lt;img src=&quot;https://upload.wikimedia.org/wikipedia/en/4/42/Richard_Feynman_Nobel.jpg&quot; alt=&quot;Portrait of Richard Feynman - © The Nobel Foundation, 1965.&quot; /&gt;
-    &lt;figcaption&gt;Portrait of Richard Feynman - © The Nobel Foundation, 1965&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Today is the day &lt;a href=&quot;https://twitter.com/Project_Grunt&quot;&gt;Lisa&lt;/a&gt; flies to Africa for a couple months of field work. Among 
-other things she will outfit local goats with GPS collars coupled with small microphones, that she just spent a month 
-and a half patiently building in Swansea, where the &lt;a href=&quot;https://sites.google.com/site/andrewjkingresearch/&quot;&gt;SHOAL group&lt;/a&gt; of 
-our collaborator &lt;a href=&quot;https://sites.google.com/site/andrewjkingresearch/groupmembers/CV&quot;&gt;Andrew King&lt;/a&gt; resides.&lt;/p&gt;
-
-&lt;p&gt;While in the train toward London Heathrow, she overheard a dad reading a story to his son, a story about ants. Out of 
-curiosity, I asked her to enquire about the book the story was coming from. I was expecting some sort of children book,
-but was surprised to hear that it was actually “Surely You’re Joking, Mr. Feynman!”, a collection of anecdotes told by 
-world famous physicist &lt;a href=&quot;https://en.wikipedia.org/wiki/Richard_Feynman&quot;&gt;Richard Feynman&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;I immediately fired up Google and quickly found the full text on &lt;a href=&quot;https://books.google.com/books?id=7papZR4oVssC&amp;amp;lpg=PP1&quot;&gt;Google Books&lt;/a&gt;. 
-A few more clicks and here it was, the &lt;a href=&quot;https://books.google.com/books?id=7papZR4oVssC&amp;amp;lpg=PP1&amp;amp;pg=PA93#v=onepage&amp;amp;q&amp;amp;f=false&quot;&gt;story of Richard Feynman and the ants&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;It turns out that Feynman loved watching bugs, and ants in particular, and that he used is free time while at Princeton,
-and later Caltech, to perform simple experiments with them, in order to understand how ants navigate their environment. 
-Isn’t it great?&lt;/p&gt;
-
-&lt;p&gt;Hereafter is one of these experiments, as told by Feynman himself. It is my favorite one, mostly because it ties in some
-work that we are currently doing in the lab. I hope you enjoy it as much as I did.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Many years later, when I was at Caltech and lived in a little house on Alameda Street, some ants came out around the 
-bathtub. I thought, “This is a great opportunity.” I put some sugar on the other end of the bathtub, and sat there 
-the whole afternoon until an ant finally found the sugar. It’s only a question of patience.&lt;/p&gt;
-
-  &lt;p&gt;The moment the ant found the sugar, I picked up a colored pencil that I had ready (I had previously done experiments 
-indicating that the ants don’t give a damn about pencil marks – they walk right over them – so I knew I wasn’t 
-disturbing anything), and behind where the ant went I drew a line so I could tell where his trail was. The ant 
-wandered a little bit wrong to get back to the hole, so the line was quite wiggly, unlike a typical ant trail.&lt;/p&gt;
-
-  &lt;p&gt;When the next ant to find the sugar began to go back, I marked his trail with another color. (By the way, he 
-followed the first ant’s return trail back, rather than his own incoming trail. My theory is that when an ant has 
-found some food, he leaves a much stronger trail than when he’s just wandering around.)&lt;/p&gt;
-
-  &lt;p&gt;This second ant was in a great hurry and followed, pretty much, the original trail. But because he was going so 
-fast he would go straight out, as if he were coasting, when the trail was wiggly. Often, as the ant was “coasting,” 
-he would find the trail again. Already it was apparent that the second ant’s return was slightly straighter. With 
-successive ants the same “improvement” of the trail by hurriedly and carelessly “following” it occurred.&lt;/p&gt;
-
-  &lt;p&gt;I followed eight or ten ants with my pencil until their trails became a neat line right along the bathtub. It’s 
-something like sketching: You draw a lousy line at first; then you go over it a few times and it makes a nice
-line after a while.&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
-        <pubDate>Sat, 08 Aug 2015 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/blog/2015/08/08/Richard-Feynman-had-a-thing-for-ants/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2015/08/08/Richard-Feynman-had-a-thing-for-ants/</guid>
         
         
         <category>blog</category>

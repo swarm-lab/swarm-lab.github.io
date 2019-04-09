@@ -1256,6 +1256,15 @@ ul.share-buttons li{
   display: inline;
 }
 
+.scholar {
+    line-height: 0px;
+    font-size: small;
+}
+
+.scholar td {
+    padding-right: 25px;
+}
+
 .highlight table td { padding: 5px; }
 .highlight table pre { margin: 0; }
 .highlight .cm {
