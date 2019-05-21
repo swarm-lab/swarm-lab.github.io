@@ -5,9 +5,22 @@
     <description>Welcome to the Swarm Lab where we study Swarm Intelligence in natural and artificial systems.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 06 May 2019 13:32:05 -0400</pubDate>
-    <lastBuildDate>Mon, 06 May 2019 13:32:05 -0400</lastBuildDate>
+    <pubDate>Tue, 21 May 2019 18:08:20 -0400</pubDate>
+    <lastBuildDate>Tue, 21 May 2019 18:08:20 -0400</lastBuildDate>
     <generator>Jekyll v3.7.4</generator>
+    
+      <item>
+        <title>Feature in The New York Times</title>
+        <description>&lt;p&gt;The SwarmLab was featured today in a New York Times article by &lt;a href=&quot;https://joshuasokol.com/&quot;&gt;Joshua Sokol&lt;/a&gt; discussing the science fiction myth that disabling the “queen” of a swarm will immediately lead its collapse (it doesn’t!). You can read it all in &lt;a href=&quot;https://www.nytimes.com/2019/05/14/science/hives-queens-science-fiction.html&quot;&gt;“Striking Down the Queen Won’t Save You From the Swarm”&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 14 May 2019 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/blog/2019/05/14/new-york-times/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2019/05/14/new-york-times/</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
     
       <item>
         <title>New publication - &quot;Contact Calls Facilitate Group Contraction in Free-ranging Goats (&lt;i&gt;Capra aegagrus hircus&lt;/i&gt;)&quot;</title>
@@ -209,37 +222,6 @@
         <pubDate>Sun, 12 Jun 2016 00:00:00 -0400</pubDate>
         <link>http://localhost:4000/blog/2016/06/12/Lens-of-Time-Slime-Lapse/</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2016/06/12/Lens-of-Time-Slime-Lapse/</guid>
-        
-        
-        <category>blog</category>
-        
-      </item>
-    
-      <item>
-        <title>David Hughes' lecture at NJIT</title>
-        <description>&lt;p&gt;&lt;a href=&quot;http://www.hugheslab.com/&quot;&gt;David Hughes&lt;/a&gt; from &lt;a href=&quot;http://www.psu.edu/&quot;&gt;Penn State&lt;/a&gt; will be our guest Tuesday, March 29. His lab has a fascinating research program, exploring the relationship between disease and behavior. In particular, their work focuses on understanding how and why parasites manipulate their host behavior, and on the role behavior plays in disease transmission.&lt;/p&gt;
-
-&lt;p&gt;During his visit, David will also deliver a lecture as part of the &lt;a href=&quot;http://www.ncas.rutgers.edu/colloquium-schedule-2015-2016&quot;&gt;weekly colloquium series of the Federated Department of Biology at NJIT and Rutgers-Newark&lt;/a&gt;. See below for the details on David’s talk and a video introducing the theme of his lecture.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;strong&gt;Title: Zombie ants: the precise manipulation of animal behavior by a microbe&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;When:&lt;/strong&gt; Tuesday, March 29th, 2016 1:00 p.m. – 2:20 p.m.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Where:&lt;/strong&gt; NJIT, CENTRAL KING BUILDING, Room 303 (map available &lt;a href=&quot;http://theswarmlab.com/contact/&quot;&gt;here&lt;/a&gt;)&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Abstract:&lt;/strong&gt; One of the most complex examples of parasite control of animal behavior is that of fungi in the genus &lt;em&gt;Ophiocordyceps&lt;/em&gt; controlling ant behavior. In the moments before death the fungus controls the ant to bite into plant tissue providing the parasite a platform to launch spores from the cadaver of the host it will soon kill. In this talk I will discuss our research on this phenomena, examining ultimate and proximate views of why and how animal behavior is controlled by a microbe. We work from the micron scale as fungi surround and invade ant muscles to the continental scale as fungi evolve in to control ants in the context of past climatic change.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;div style=&quot;position: relative; width: 100%; height: 0; padding-bottom: 61%;&quot;&gt;
-  &lt;iframe style=&quot;position: absolute; width: 100%; height: 100%; left: 0; top: 0;&quot; src=&quot;https://www.youtube.com/embed/XuKjBIBBAL8&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Mon, 28 Mar 2016 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/blog/2016/03/28/David-Hughes-lecture/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2016/03/28/David-Hughes-lecture/</guid>
         
         
         <category>blog</category>
