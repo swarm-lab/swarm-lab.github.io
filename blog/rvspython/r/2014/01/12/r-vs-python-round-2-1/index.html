@@ -14,12 +14,12 @@
 
     <!-- Custom Fonts -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link href="http://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -197,15 +197,15 @@
 </span><span class="c1"># link.</span><span class="w">
 </span><span class="n">curl</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">getCurlHandle</span><span class="p">(</span><span class="n">useragent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"R"</span><span class="p">,</span><span class="w"> </span><span class="n">followlocation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">)</span></code></pre></figure>
 
-<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c"># String parsing libraries</span>
-<span class="kn">import</span> <span class="nn">string</span>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1"># String parsing libraries
+</span><span class="kn">import</span> <span class="nn">string</span>
 <span class="kn">import</span> <span class="nn">re</span>
 
-<span class="c"># urllib2 reads web pages if you provide it an URL</span>
-<span class="kn">import</span> <span class="nn">urllib2</span>
+<span class="c1"># urllib2 reads web pages if you provide it an URL
+</span><span class="kn">import</span> <span class="nn">urllib2</span>
 
-<span class="c"># html2text converts HTML to Markdown, which is much easier to parse</span>
-<span class="kn">from</span> <span class="nn">html2text</span> <span class="kn">import</span> <span class="n">html2text</span></code></pre></figure>
+<span class="c1"># html2text converts HTML to Markdown, which is much easier to parse
+</span><span class="kn">from</span> <span class="nn">html2text</span> <span class="kn">import</span> <span class="n">html2text</span></code></pre></figure>
 
 <p>Now a word about the organization of <a href="http://www.moviebodycounts.com">www.MovieBodyCounts.com</a>. To be perfectly honest, it is a bit messy :-) Movies are organized in a series of alphabetically ordered lists (by the first letter of each movie’s title), each letter having its own page (http://www.moviebodycounts.com/movies-[A-Z].htm). There is also a list for movies which title starts with a number (http://www.moviebodycounts.com/movies-numbers.htm). Finally, all category letters are capitalized in the lists’ URLs, except for letters v and x. Annoying, right? This is just one of the many little problems one can encounter when dealing with messy databases :-)</p>
 
@@ -217,9 +217,9 @@
 </span><span class="n">urls.by.letter</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">paste0</span><span class="p">(</span><span class="s2">"http://www.moviebodycounts.com/movies-"</span><span class="p">,</span><span class="w">
                          </span><span class="nf">c</span><span class="p">(</span><span class="s2">"numbers"</span><span class="p">,</span><span class="w"> </span><span class="nb">LETTERS</span><span class="p">[</span><span class="m">1</span><span class="o">:</span><span class="m">21</span><span class="p">],</span><span class="w"> </span><span class="s2">"v"</span><span class="p">,</span><span class="w"> </span><span class="s2">"W"</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="s2">"x"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Y"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Z"</span><span class="p">),</span><span class="w"> </span><span class="s2">".htm"</span><span class="p">)</span></code></pre></figure>
 
-<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c"># Generate a list of all letters for the Movie pages (+ a "numbers" page)</span>
-<span class="c"># MovieBodyCount's actor pages are all with capital letters EXCEPT v and x</span>
-<span class="n">letters</span> <span class="o">=</span> <span class="p">[</span><span class="s">"numbers"</span><span class="p">]</span> <span class="o">+</span> <span class="nb">list</span><span class="p">(</span><span class="n">string</span><span class="o">.</span><span class="n">letters</span><span class="p">[</span><span class="mi">26</span><span class="p">:</span><span class="mi">52</span><span class="p">]</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">"V"</span><span class="p">,</span> <span class="s">"v"</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">"X"</span><span class="p">,</span> <span class="s">"x"</span><span class="p">))</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1"># Generate a list of all letters for the Movie pages (+ a "numbers" page)
+# MovieBodyCount's actor pages are all with capital letters EXCEPT v and x
+</span><span class="n">letters</span> <span class="o">=</span> <span class="p">[</span><span class="s">"numbers"</span><span class="p">]</span> <span class="o">+</span> <span class="nb">list</span><span class="p">(</span><span class="n">string</span><span class="p">.</span><span class="n">letters</span><span class="p">[</span><span class="mi">26</span><span class="p">:</span><span class="mi">52</span><span class="p">].</span><span class="n">upper</span><span class="p">().</span><span class="n">replace</span><span class="p">(</span><span class="s">"V"</span><span class="p">,</span> <span class="s">"v"</span><span class="p">).</span><span class="n">replace</span><span class="p">(</span><span class="s">"X"</span><span class="p">,</span> <span class="s">"x"</span><span class="p">))</span></code></pre></figure>
 
 <p>Our next task is to go through the HTML code of all these lists and gather the URLs of all the movie webpages. This is where the data scraping really starts.</p>
 
@@ -235,8 +235,8 @@
 
 <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">list_of_films</span> <span class="o">=</span> <span class="p">[]</span>
 
-<span class="c"># Go through each movie list page and gather all of the movie web page URLs</span>
-<span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">letters</span><span class="p">:</span>
+<span class="c1"># Go through each movie list page and gather all of the movie web page URLs
+</span><span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">letters</span><span class="p">:</span>
   <span class="k">try</span><span class="p">:</span></code></pre></figure>
 
 <p>…download the raw HTML content of the webpage,…</p>
@@ -244,16 +244,16 @@
 <figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="w">  </span><span class="c1"># Load raw HTML</span><span class="w">
   </span><span class="n">raw.html</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">getURL</span><span class="p">(</span><span class="n">URL</span><span class="p">,</span><span class="w"> </span><span class="n">curl</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">curl</span><span class="p">)</span></code></pre></figure>
 
-<figure class="highlight"><pre><code class="language-python" data-lang="python">      <span class="c"># Read the raw HTML from the web page</span>
-      <span class="n">page_text</span> <span class="o">=</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="s">"http://www.moviebodycounts.com/movies-"</span> <span class="o">+</span> <span class="n">letter</span> <span class="o">+</span> <span class="s">".htm"</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-python" data-lang="python">      <span class="c1"># Read the raw HTML from the web page
+</span>      <span class="n">page_text</span> <span class="o">=</span> <span class="n">urllib2</span><span class="p">.</span><span class="n">urlopen</span><span class="p">(</span><span class="s">"http://www.moviebodycounts.com/movies-"</span> <span class="o">+</span> <span class="n">letter</span> <span class="o">+</span> <span class="s">".htm"</span><span class="p">).</span><span class="n">read</span><span class="p">()</span></code></pre></figure>
 
 <p>…transform raw HTML into a more convenient format to work with,…</p>
 
 <figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="w">  </span><span class="c1"># Parse HTML content</span><span class="w">
   </span><span class="n">parsed.html</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">htmlParse</span><span class="p">(</span><span class="n">raw.html</span><span class="p">)</span></code></pre></figure>
 
-<figure class="highlight"><pre><code class="language-python" data-lang="python">      <span class="c"># Convert the raw HTML into Markdown</span>
-      <span class="n">page_text</span> <span class="o">=</span> <span class="n">html2text</span><span class="p">(</span><span class="n">page_text</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-python" data-lang="python">      <span class="c1"># Convert the raw HTML into Markdown
+</span>      <span class="n">page_text</span> <span class="o">=</span> <span class="n">html2text</span><span class="p">(</span><span class="n">page_text</span><span class="p">).</span><span class="n">split</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span></code></pre></figure>
 
 <p>…find movie page entry, store the URL for later use and close the loop.</p>
 
@@ -275,20 +275,20 @@
 </span><span class="n">ix</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">which</span><span class="p">(</span><span class="n">grepl</span><span class="p">(</span><span class="s2">"movies-C.htm"</span><span class="p">,</span><span class="w"> </span><span class="n">urls.by.movie</span><span class="p">))</span><span class="w">
 </span><span class="n">urls.by.movie</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">urls.by.movie</span><span class="p">[</span><span class="o">-</span><span class="n">ix</span><span class="p">]</span></code></pre></figure>
 
-<figure class="highlight"><pre><code class="language-python" data-lang="python">      <span class="c"># Search through the web page for movie page entries</span>
-      <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">page_text</span><span class="p">:</span>
-        <span class="c"># We know it's a movie page entry when it has ".htm" in it, but not ".jpg", "contact.htm", and "movies.htm"</span>
-        <span class="c"># .jpg means it's a line with an image -- none of the movie entries have an image</span>
-        <span class="c"># contact.htm and movies.htm means it's a link to the Contact or Movies page -- not what we want</span>
-        <span class="c"># movies- means it's a redirect link to another page -- just skip over it</span>
-        <span class="k">if</span> <span class="s">".htm"</span> <span class="ow">in</span> <span class="n">line</span> <span class="ow">and</span> <span class="s">".jpg"</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">line</span> <span class="ow">and</span> <span class="s">"contact.htm"</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">line</span> <span class="ow">and</span> <span class="s">"movies.htm"</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">line</span> <span class="ow">and</span> <span class="s">"movies-"</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">line</span><span class="p">:</span>
-          <span class="c">#print line</span>
-          <span class="c"># The URL is in between parentheses (), so we can simply split the string on those</span>
-          <span class="c"># Some URLs are full URLs, e.g. www.moviebodycounts.com/movie_name.html, so splitting on the / gives us only the page name</span>
-          <span class="n">list_of_films</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">"("</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s">")"</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">"/"</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+<figure class="highlight"><pre><code class="language-python" data-lang="python">      <span class="c1"># Search through the web page for movie page entries
+</span>      <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">page_text</span><span class="p">:</span>
+        <span class="c1"># We know it's a movie page entry when it has ".htm" in it, but not ".jpg", "contact.htm", and "movies.htm"
+</span>        <span class="c1"># .jpg means it's a line with an image -- none of the movie entries have an image
+</span>        <span class="c1"># contact.htm and movies.htm means it's a link to the Contact or Movies page -- not what we want
+</span>        <span class="c1"># movies- means it's a redirect link to another page -- just skip over it
+</span>        <span class="k">if</span> <span class="s">".htm"</span> <span class="ow">in</span> <span class="n">line</span> <span class="ow">and</span> <span class="s">".jpg"</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">line</span> <span class="ow">and</span> <span class="s">"contact.htm"</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">line</span> <span class="ow">and</span> <span class="s">"movies.htm"</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">line</span> <span class="ow">and</span> <span class="s">"movies-"</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">line</span><span class="p">:</span>
+          <span class="c1">#print line
+</span>          <span class="c1"># The URL is in between parentheses (), so we can simply split the string on those
+</span>          <span class="c1"># Some URLs are full URLs, e.g. www.moviebodycounts.com/movie_name.html, so splitting on the / gives us only the page name
+</span>          <span class="n">list_of_films</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">line</span><span class="p">.</span><span class="n">split</span><span class="p">(</span><span class="s">"("</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">].</span><span class="n">strip</span><span class="p">(</span><span class="s">")"</span><span class="p">).</span><span class="n">split</span><span class="p">(</span><span class="s">"/"</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
 
-    <span class="c"># If the movie list page doesn't exist, keep going</span>
-    <span class="k">except</span><span class="p">:</span>
+    <span class="c1"># If the movie list page doesn't exist, keep going
+</span>    <span class="k">except</span><span class="p">:</span>
       <span class="k">print</span> <span class="s">"</span><span class="se">\n</span><span class="s">error with "</span> <span class="o">+</span> <span class="n">letter</span> <span class="o">+</span> <span class="s">"</span><span class="se">\n</span><span class="s">"</span></code></pre></figure>
 
 <p>Now that we know where to find each movie, we can start the hard part of this challenge. We will go through each movie webpage and attempt to find its title, release year, count of on-screen deaths and link to its page on <a href="http://www.imdb.com">www.imdb.com</a>. We will save all this information in a .csv file.</p>
@@ -299,21 +299,21 @@
 </span><span class="c1"># do.call(rbind, ...) to reorganize the results in a nice data frame</span><span class="w">
 </span><span class="n">data</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">do.call</span><span class="p">(</span><span class="n">rbind</span><span class="p">,</span><span class="w"> </span><span class="n">pblapply</span><span class="p">(</span><span class="n">urls.by.movie</span><span class="p">,</span><span class="w"> </span><span class="n">FUN</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">function</span><span class="p">(</span><span class="n">URL</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></code></pre></figure>
 
-<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c"># Now that we have every movie web page URL, go through each movie page and</span>
-<span class="c"># extract the movie name, kill counts, etc.</span>
-<span class="n">out_file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">"film-death-counts.csv"</span><span class="p">,</span> <span class="s">"wb"</span><span class="p">)</span>
-<span class="n">out_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">"Film,Year,Kill_Count,IMDB_url</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1"># Now that we have every movie web page URL, go through each movie page and
+# extract the movie name, kill counts, etc.
+</span><span class="n">out_file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">"film-death-counts.csv"</span><span class="p">,</span> <span class="s">"wb"</span><span class="p">)</span>
+<span class="n">out_file</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="s">"Film,Year,Kill_Count,IMDB_url</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
 
 <span class="k">for</span> <span class="n">film_page</span> <span class="ow">in</span> <span class="n">list_of_films</span><span class="p">:</span>
   <span class="k">try</span><span class="p">:</span>
-      <span class="c"># The information we're looking for on the page:</span>
-      <span class="n">film</span> <span class="o">=</span> <span class="s">""</span>
+      <span class="c1"># The information we're looking for on the page:
+</span>      <span class="n">film</span> <span class="o">=</span> <span class="s">""</span>
       <span class="n">kills</span> <span class="o">=</span> <span class="s">""</span>
       <span class="n">year</span> <span class="o">=</span> <span class="s">""</span>
       <span class="n">IMDB_url</span> <span class="o">=</span> <span class="s">""</span>
 
-      <span class="c"># A flag indicating that we've found the film title on the page</span>
-      <span class="n">found_title</span> <span class="o">=</span> <span class="bp">False</span></code></pre></figure>
+      <span class="c1"># A flag indicating that we've found the film title on the page
+</span>      <span class="n">found_title</span> <span class="o">=</span> <span class="bp">False</span></code></pre></figure>
 
 <p>…download the raw HTML content of the webpage and transform raw HTML into a more convenient format to work with,…</p>
 
@@ -323,9 +323,9 @@
   </span><span class="c1"># Parse HTML content</span><span class="w">
   </span><span class="n">parsed.html</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">htmlParse</span><span class="p">(</span><span class="n">raw.html</span><span class="p">)</span></code></pre></figure>
 
-<figure class="highlight"><pre><code class="language-python" data-lang="python">      <span class="c"># Read the page's raw HTML and convert it to Markdown (again) and go</span>
-      <span class="c"># through each line</span>
-      <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">html2text</span><span class="p">(</span><span class="n">urllib2</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="s">"http://www.moviebodycounts.com/"</span> <span class="o">+</span> <span class="n">film_page</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">())</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">):</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-python" data-lang="python">      <span class="c1"># Read the page's raw HTML and convert it to Markdown (again) and go
+</span>      <span class="c1"># through each line
+</span>      <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">html2text</span><span class="p">(</span><span class="n">urllib2</span><span class="p">.</span><span class="n">urlopen</span><span class="p">(</span><span class="s">"http://www.moviebodycounts.com/"</span> <span class="o">+</span> <span class="n">film_page</span><span class="p">).</span><span class="n">read</span><span class="p">()).</span><span class="n">split</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">):</span></code></pre></figure>
 
 <p>…attempt to find movie title,…</p>
 
@@ -336,10 +336,10 @@
   </span><span class="n">Film</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">xpathSApply</span><span class="p">(</span><span class="n">parsed.html</span><span class="p">,</span><span class="w"> </span><span class="s2">"//title"</span><span class="p">,</span><span class="w"> </span><span class="n">xmlValue</span><span class="p">)</span><span class="w">
   </span><span class="n">Film</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">gsub</span><span class="p">(</span><span class="s2">"Movie Body Counts: "</span><span class="p">,</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"> </span><span class="n">Film</span><span class="p">)</span></code></pre></figure>
 
-<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c"># If we haven't found the title yet, these markers tell us we've found the movie</span>
-<span class="c"># title</span>
-        <span class="k">if</span> <span class="ow">not</span> <span class="n">found_title</span> <span class="ow">and</span> <span class="s">"!"</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">line</span> <span class="ow">and</span> <span class="s">"("</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">line</span> <span class="ow">and</span> <span class="s">"["</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">line</span> <span class="ow">and</span> <span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="o">!=</span> <span class="s">""</span><span class="p">:</span>
-          <span class="n">film</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">","</span><span class="p">,</span> <span class="s">""</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s">":"</span><span class="p">)</span>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1"># If we haven't found the title yet, these markers tell us we've found the movie
+# title
+</span>        <span class="k">if</span> <span class="ow">not</span> <span class="n">found_title</span> <span class="ow">and</span> <span class="s">"!"</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">line</span> <span class="ow">and</span> <span class="s">"("</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">line</span> <span class="ow">and</span> <span class="s">"["</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">line</span> <span class="ow">and</span> <span class="n">line</span><span class="p">.</span><span class="n">strip</span><span class="p">()</span> <span class="o">!=</span> <span class="s">""</span><span class="p">:</span>
+          <span class="n">film</span> <span class="o">=</span> <span class="n">line</span><span class="p">.</span><span class="n">replace</span><span class="p">(</span><span class="s">","</span><span class="p">,</span> <span class="s">""</span><span class="p">).</span><span class="n">strip</span><span class="p">(</span><span class="s">":"</span><span class="p">)</span>
           <span class="n">found_title</span> <span class="o">=</span> <span class="bp">True</span></code></pre></figure>
 
 <p>…attempt to find movie year,…</p>
@@ -350,9 +350,9 @@
   </span><span class="c1"># 'charts-year')]").</span><span class="w">
   </span><span class="n">Year</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">as.numeric</span><span class="p">(</span><span class="n">xpathSApply</span><span class="p">(</span><span class="n">parsed.html</span><span class="p">,</span><span class="w"> </span><span class="s2">"//a[contains(@href, 'charts-year')]/descendant::text()"</span><span class="p">,</span><span class="w"> </span><span class="n">xmlValue</span><span class="p">))</span></code></pre></figure>
 
-<figure class="highlight"><pre><code class="language-python" data-lang="python">        <span class="c"># The year is usually on a line with "charts-year"</span>
-        <span class="k">if</span> <span class="s">"charts-year"</span> <span class="ow">in</span> <span class="n">line</span><span class="p">:</span>
-          <span class="n">year</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">"["</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">"]"</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-python" data-lang="python">        <span class="c1"># The year is usually on a line with "charts-year"
+</span>        <span class="k">if</span> <span class="s">"charts-year"</span> <span class="ow">in</span> <span class="n">line</span><span class="p">:</span>
+          <span class="n">year</span> <span class="o">=</span> <span class="n">line</span><span class="p">.</span><span class="n">split</span><span class="p">(</span><span class="s">"["</span><span class="p">)[</span><span class="mi">1</span><span class="p">].</span><span class="n">split</span><span class="p">(</span><span class="s">"]"</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span></code></pre></figure>
 
 <p>…attempt to find link to movie on IMDB,…</p>
 
@@ -364,9 +364,9 @@
   </span><span class="c1"># Note: We select the first element of the vector because for at least one of</span><span class="w">
   </span><span class="c1"># the movies, this command returns two links.</span></code></pre></figure>
 
-<figure class="highlight"><pre><code class="language-python" data-lang="python">        <span class="c"># The IMDB url is on a line with "[imdb]"</span>
-        <span class="k">if</span> <span class="s">"[imdb]"</span> <span class="ow">in</span> <span class="n">line</span><span class="o">.</span><span class="n">lower</span><span class="p">():</span>
-          <span class="n">IMDB_url</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">"[imdb]("</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">")"</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-python" data-lang="python">        <span class="c1"># The IMDB url is on a line with "[imdb]"
+</span>        <span class="k">if</span> <span class="s">"[imdb]"</span> <span class="ow">in</span> <span class="n">line</span><span class="p">.</span><span class="n">lower</span><span class="p">():</span>
+          <span class="n">IMDB_url</span> <span class="o">=</span> <span class="n">line</span><span class="p">.</span><span class="n">lower</span><span class="p">().</span><span class="n">split</span><span class="p">(</span><span class="s">"[imdb]("</span><span class="p">)[</span><span class="mi">1</span><span class="p">].</span><span class="n">split</span><span class="p">(</span><span class="s">")"</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span></code></pre></figure>
 
 <p>… and finally attempt to find the on-screen kill count. Here, Randy chose an approach that minimizes his coding effort, but that will potentially force him to make several manual corrections a posteriori. I chose to find a solution that works with minimal to no manual corrections, but that requires an extra coding effort. Whichever approach is best depends mostly on the size of the data you want to scrape and the time you have to do it.</p>
 
@@ -399,9 +399,9 @@
   </span><span class="c1"># Sum up the numbers (in case they have been split into separate categories.</span><span class="w">
   </span><span class="n">Body_Count</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">sum</span><span class="p">(</span><span class="n">Body_Count</span><span class="p">,</span><span class="w"> </span><span class="n">na.rm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">)</span></code></pre></figure>
 
-<figure class="highlight"><pre><code class="language-python" data-lang="python">        <span class="c"># The kill counts are usually on a line with "Film:"</span>
-        <span class="k">if</span> <span class="s">"film:"</span> <span class="ow">in</span> <span class="n">line</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="ow">or</span> <span class="s">"kills:"</span> <span class="ow">in</span> <span class="n">line</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="ow">or</span> <span class="s">"count:"</span> <span class="ow">in</span> <span class="n">line</span><span class="o">.</span><span class="n">lower</span><span class="p">():</span>
-          <span class="n">kills</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s">"[^0-9]"</span><span class="p">,</span> <span class="s">""</span><span class="p">,</span> <span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">":"</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">"("</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-python" data-lang="python">        <span class="c1"># The kill counts are usually on a line with "Film:"
+</span>        <span class="k">if</span> <span class="s">"film:"</span> <span class="ow">in</span> <span class="n">line</span><span class="p">.</span><span class="n">lower</span><span class="p">()</span> <span class="ow">or</span> <span class="s">"kills:"</span> <span class="ow">in</span> <span class="n">line</span><span class="p">.</span><span class="n">lower</span><span class="p">()</span> <span class="ow">or</span> <span class="s">"count:"</span> <span class="ow">in</span> <span class="n">line</span><span class="p">.</span><span class="n">lower</span><span class="p">():</span>
+          <span class="n">kills</span> <span class="o">=</span> <span class="n">re</span><span class="p">.</span><span class="n">sub</span><span class="p">(</span><span class="s">"[^0-9]"</span><span class="p">,</span> <span class="s">""</span><span class="p">,</span> <span class="n">line</span><span class="p">.</span><span class="n">split</span><span class="p">(</span><span class="s">":"</span><span class="p">)[</span><span class="mi">1</span><span class="p">].</span><span class="n">split</span><span class="p">(</span><span class="s">"("</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span></code></pre></figure>
 
 <p>Almost done! Now we just need to close the loop and write the data frame into a .csv file</p>
 
@@ -412,14 +412,14 @@
 </span><span class="c1"># Save scraped data in a .csv file for future use</span><span class="w">
 </span><span class="n">write.csv</span><span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="s2">"movies-R.csv"</span><span class="p">,</span><span class="w"> </span><span class="n">row.names</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">)</span></code></pre></figure>
 
-<figure class="highlight"><pre><code class="language-python" data-lang="python">      <span class="n">out_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">film</span> <span class="o">+</span> <span class="s">","</span> <span class="o">+</span> <span class="n">year</span> <span class="o">+</span> <span class="s">","</span> <span class="o">+</span> <span class="n">kills</span> <span class="o">+</span> <span class="s">","</span> <span class="o">+</span> <span class="n">IMDB_url</span> <span class="o">+</span> <span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
+<figure class="highlight"><pre><code class="language-python" data-lang="python">      <span class="n">out_file</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="n">film</span> <span class="o">+</span> <span class="s">","</span> <span class="o">+</span> <span class="n">year</span> <span class="o">+</span> <span class="s">","</span> <span class="o">+</span> <span class="n">kills</span> <span class="o">+</span> <span class="s">","</span> <span class="o">+</span> <span class="n">IMDB_url</span> <span class="o">+</span> <span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
 
-    <span class="c"># If a movie page fails to open, print out the error and move on to the next movie</span>
-    <span class="k">except</span> <span class="nb">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="c1"># If a movie page fails to open, print out the error and move on to the next movie
+</span>    <span class="k">except</span> <span class="nb">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
       <span class="k">print</span> <span class="n">film_page</span>
     <span class="k">print</span> <span class="n">e</span>
 
-<span class="n">out_file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span></code></pre></figure>
+<span class="n">out_file</span><span class="p">.</span><span class="n">close</span><span class="p">()</span></code></pre></figure>
 
 <p>And voilà! You should now have a .csv file somewhere on your computer containing all the information we just scraped from the website. Not too hard, right?</p>
 

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>5th Collaborative Workshop on Modeling Collective Behavior</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Welcome to the Swarm Lab where we study Swarm Intelligence in natural and artificial systems.">
+    <link rel="canonical" href="http://localhost:4000/meetings/data_model_2020/">
+
+    <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Google Analytics -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-2260031-8', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/img/favicon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/img/favicon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/img/favicon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/favicon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/img/favicon/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/img/favicon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/img/favicon/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/img/favicon/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="/img/favicon/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="/img/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="/img/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/img/favicon/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="/img/favicon/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="/img/favicon/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="/img/favicon/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="/img/favicon/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="/img/favicon/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="/img/favicon/mstile-310x310.png" />
+
+</head>
+
+
+<body id="nofront" class="index">
+
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!--<a class="navbar-brand page-scroll" href="#page-top">Swarm Lab</a>-->
+            <a class="navbar-brand page-scroll" href="/">
+                <img src="/img/logos/swarmlab.png" alt=Swarm Lab style="height:250%; position: relative; top: -75%;">
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="/#about">About</a>
+                </li>
+                <!--<li>
+                    <a class="page-scroll" href="#research">Research</a>
+                </li>-->
+
+                <li class="dropdown">
+                    <a class="dropdown-toggle keep-open" data-toggle="dropdown" data-hover="dropdown" href="/#research">
+                        Research<i class="fa fa-angle-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="page-scroll" href="/#research">Current research</a></li>
+                        <li><a href="/publications/">Publication list</a></li>
+                        <li><a href="/funding/">Funding sources</a></li>
+                        <li><a href="/media/">In the media</a></li>
+                        <!--<li><a href="/meetings/">Group meetings</a></li>-->
+                    </ul>
+                </li>
+
+                <li>
+                    <a class="page-scroll" href="/#teaching">Teaching</a>
+                </li>
+                <!--<li>
+                    <a class="page-scroll" href="#dev">Dev</a>
+                </li>-->
+
+                <li class="dropdown">
+                    <a class="dropdown-toggle keep-open" data-toggle="dropdown" data-hover="dropdown" href="#dev">
+                        Dev<i class="fa fa-angle-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="page-scroll" href="#dev">Overview</a></li>
+                        <li><a href="/R/">R portfolio</a></li>
+                        <li><a href="/shiny/">Shiny portfolio</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle keep-open" data-toggle="dropdown" data-hover="dropdown" href="/#team">
+                        Team<i class="fa fa-angle-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/#team">Current members</a></li>
+                        <li><a href="/previous_members/">Previous members</a></li>
+                        <li><a href="/join/">Join the lab</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="page-scroll" href="/#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+
+<div class="home">
+    <section class="bg-white">
+        <div class="entry">
+
+            <h2>5th Collaborative Workshop on Modeling Collective Behavior</h2>
+            <h3></h3>
+
+            <hr>
+
+            <h6 id="where-the-university-of-texas-at-austin-austin-tx">Where: <a href="https://www.utexas.edu">The University of Texas at Austin</a>, Austin, TX</h6>
+
+<h6 id="when-june-9-11-2020">When: June 9-11, 2020</h6>
+
+<h6 id="organizers-james-curley-ut-austin-jason-graham-scranton-university--simon-garnier-njit">Organizers: <a href="https://labs.la.utexas.edu/curley/">James Curley</a> (UT Austin), <a href="https://sites.google.com/site/jasonmgrahamus/">Jason Graham</a> (Scranton University) &amp; <a href="http://www.theswarmlab.com">Simon Garnier</a> (NJIT)</h6>
+
+<h6 id="funding-nsf-oac-public-access-initiative-grant-1838955">Funding: NSF OAC Public Access Initiative <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1838955">grant #1838955</a></h6>
+
+<h6 id="application-deadline-april-15-2020-apply-here">Application deadline: April 15, 2020 (<a href="https://forms.gle/MNLTd87nR8eK1bPZ6">Apply here</a>)</h6>
+
+<hr />
+
+<p><img src="/img/posts/data_model_2019/banner.png" alt="banner" class="full" /></p>
+
+<p>The goal of this workshop is to provide researchers coming from mathematics, physics, engineering and biology with experience in working collaboratively to model and analyze data produced by research in collective behavior.</p>
+
+<p>During the workshop, interdisciplinary teams will work toward constructing mathematical and/or computational models of biological data. Each team will be tasked with exploring, analyzing and modeling original data sets provided by biologist attendees. The event will be similar in spirit to a hackathon in computer science, with the goal of finding new ways to understand the provided biological data. Regular debriefing sessions will be organized throughout the 3 days of the workshop in order for each team to provide updates to and receive feedback from the rest of the participants on their progress.</p>
+
+<p>This should provide valuable training and experience for researchers coming from all fields, as well as an opportunity to create new collaborations beyond the workshop itself. Ultimately, we hope this workshop to impact research on collective animal and human behavior by promoting close collaboration between scientists working on understanding the organization and functioning of animal and human societies.</p>
+
+<hr />
+
+<h4 id="if-you-are-interested-in-participating-please-read-the-list-of-available-research-projects-below-and-apply-here-to-join-one-of-them">If you are interested in participating, please read the list of available research projects below and <a href="https://forms.gle/MNLTd87nR8eK1bPZ6">apply here</a> to join one of them.</h4>
+
+<h4 id="application-deadline-april-15-2020"><em>Application deadline: April 15, 2020</em></h4>
+
+<p>Space is limited. In addition to the project leaders below, we will recruits between 10 and 15 participants. <strong>Funding for travel and housing is available courtesy of the NSF OAC Public Access Initiative <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1838955">grant #1838955</a></strong>; the amount will be determined based on the number of participants and the cost of traveling to Austin for each of them.</p>
+
+<p>Information about travel and housing will be soon indicated at the bottom of this page.</p>
+
+<hr />
+
+<h4 id="project-list">Project list:</h4>
+
+<h6 id="project-1-modeling-conversation-dynamics-leaders-lisa-obryan">Project 1: Modeling conversation dynamics (leaders: <a href="https://riceacademy.rice.edu/node/301">Lisa O’Bryan</a>)</h6>
+
+<p>The goal of this project is to develop a model of conversation dynamics within small groups. The data for this project will come from audio recordings of interactions between undergraduates while working on a group task. We plan to have coded speaking turn data (turn start time, turn end time, identity of speaker) from 40 3-person teams at the time of the workshop. In addition to conversation data, we also have self-report data on the personality traits of team members (e.g. Big 5), their academic majors, their SAT scores, race/ethnicity and gender. The aim is to estimate the effect of personality (or other traits) on key speaking behaviors (e.g. turn duration, time between turns, turn initiation delay, likelihood of interruption), develop a model of turn-taking dynamics between team members, and use the model to predict conversation dynamics in teams with specific combinations of individual traits. This project will enhance understanding of social dynamics within small teams which may have functional consequences in terms of leadership emergence, team performance and team satisfaction.</p>
+
+<p>–</p>
+
+<h6 id="project-2-mesoscopic-collective-behavior-in-moving-animal-groups-under-threat-leaders-daniel-strömbom">Project 2: Mesoscopic collective behavior in moving animal groups under threat (leaders: <a href="https://biology.lafayette.edu/people/daniel-strombom/">Daniel Strömbom</a>)</h6>
+
+<p>Collective behavior of moving animal groups under threat is a fascinating phenomena that is often hard to study directly in the wild. Therefore, researchers have resorted to performing experiments with more manageable systems that exhibit similar behaviors, in particular, sheepdogs herding sheep. High resolution trajectory data of sheep and sheepdogs throughout herding trials have been collected and used to quantify sheep and sheepdog behaviors during events of this type and models based on simple heuristic rules has been shown to produce collective behavior consistent with the experimental observations. The heuristic rules for the sheepdog has also recently been implemented in robots and shown capable of autonomously collecting objects. So robust and useful models for sheep aggregation and collective dynamics, and sheepdog dynamics are available to explain certain aspects of this system. However, previous data analysis and modeling work has focused on the microscopic individual level, the macroscopic collective level, and connecting these two. Leaving the mesoscopic level behavior in the sheep-sheepdog system largely unexplored, both with respect to data analysis and modeling. We believe that acquiring a more thorough understanding of the mesoscopic level behavior in this system will help us understand collective motion in certain predator-prey systems in the wild better and allow us to refine current shepherding algorithms to expand their applicability. To this end we propose bringing the experimental data to the workshop and invite interested researchers from any and all disciplines to join us in exploring the data in search of insights and potentially fruitful approaches to understand the mesoscopic level behavior in this, and similar, systems.</p>
+
+<p>–</p>
+
+<h6 id="project-3-modeling-the-ecological-implications-of-collective-behaviour-leaders-andrea-perna">Project 3: Modeling the ecological implications of collective behaviour (leaders: <a href="http://www.perna.fr/">Andrea Perna</a>)</h6>
+
+<p>Collective behaviour brings costs and benefits to individuals, and shapes the way how they acquire resources and avoid predation. In some species, the selective pressure experienced by individual members of a group has led to the evolution of the complex forms of collective coordination that we observe for instance in flocking and schooling. Yet, while important for the survival of each individual member of a group, these collective phenomena do not necessarily have a big -or even a predictable- impact on ecological and evolutionary dynamics. In fact, at the level of entire populations, the total abundance of organisms of a species is often limited by energetic factors (energy available at a given level of the trophic chain) and by complex predator-prey dynamics (captured by Volterra-Lotka type models). The main idea of this workshop is to play with some of the simulation models of flocking and schooling that are common in the collective behaviour community, and to characterise the collective outcomes in terms of ecologically relevant quantities such as functional responses and trophic networks, for which various analysis and modeling tools already exist in the ecological community (as well as some compiled data sets, although information on collective behaviour may be missing). We hope that this workshop group will generate ideas and predictions about the impact of collective behaviour on ecological and evolutionary scales beyond those usually considered by the original flocking models.</p>
+
+<p>–</p>
+
+<h6 id="project-4-modeling-collective-behavior-in-the-presence-of-fluid-flow-leaders-hungtang-ko">Project 4: Modeling collective behavior in the presence of fluid flow (leaders: <a href="http://hu2.me.gatech.edu/Ko/">Hungtang Ko</a>)</h6>
+
+<p>Swarms in nature encounter realistic physical disturbances that are rarely modeled in the literature. However, the emergent response of the active systems is critical for the long-term survival of the swarm. For example, fire ant raft deforms in the presence of flow. Instead of maintaining their original circular shape, ant rafts elongate in the direction of flow and adopt a more streamlined shape. The deformation of the raft benefits the swarm as the stress distribution around the edge of the raft becomes more uniform. However, the deformation doesn’t necessarily arise from the higher-level decision of the individuals. Flow over raft’s original circular shape naturally creates a suction force at the back of the raft, which may be sufficient to drive elongation. More research is awaiting to model the interaction between the swarm and the fluid flow to uncover the mechanism behind the collective response. As a simplified approach, we will model the fluid force as body force, which act on all the agents with the same intensity. This is also analogous to studying the effect of gravity on the deformation of swarms. We will model swarms in 2D with the original shape being: 1 circular around a supporting rod and 2. Rectangular bridging across two rods. We will study the deformation once the body force is applied, in addition to the attraction and repulsion mechanism among swarm agents.</p>
+
+<p>–</p>
+
+<h6 id="project-5-acquaintance-and-group-dynamics-in-virtual-reality-leaders-roni-barak-ventura-mert-karakaya">Project 5: Acquaintance and group dynamics in virtual reality (leaders: <a href="https://www.linkedin.com/in/roni-barak-ventura-782b0b99/">Roni Barak Ventura</a>, <a href="https://www.linkedin.com/in/mert-karakaya-7361997b/">Mert Karakaya</a>)</h6>
+
+<p>In collaborative efforts, group performance is highly dependent upon its dynamics. The level of acquaintance between individuals within a group may impact performance in a dichotomous manner. On the one hand, knowing the qualities and deficiencies of members in the group may inform allocation of resources, thereby improving group performance. On the other hand, a bias may be created within the group where members choose to interact more (or less) with their acquaintances, at the expense of group performance. Arbitrarily imposing channels of communication on the group such that members are able to communicate with a subset of the groups may enhance or curtail these effects. Virtual reality (VR) is the most immersive medium currently available, offering a unique framework for studying human behavior in a controlled dynamic environment. To study group dynamics, we have recently created a collaborative three-player game in VR, which affords fine control of experimental conditions. In the game, the players are represented by red, green, and blue whale avatars, which have to explore the deep ocean for collecting tokens of their respective colors. Navigating through the dark VR environment requires a flashlight, whose luminosity, however, can decay over time. In order to regain vision, players can assign a token to themselves or wait for others to share their own tokens, if they can. The group’s objective is to collect 80 tokens, as fast as possible. In the current setting, the players are blinded to the identity of their teammates and do not know who can help them. We have collected data on 30 groups who played the game under different experimental conditions, but more data can be collected, especially where players know who their teammates are. Not only can we collect a lot of data through the VR platform, but also a survey can be administered at the end of the experiment. Many questions can be asked, such as quantitatively investigating whether group members impartially share resources with others. In the event that they do, we could explore strategies that restrict resource allocation in certain directions and identify the intervention which optimizes group performance.</p>
+
+<hr />
+
+<h4 id="confirmed-participants-so-far">Confirmed participants (so far):</h4>
+
+<ul>
+  <li><a href="https://www.linkedin.com/in/roni-barak-ventura-782b0b99/">Roni Barak Ventura</a></li>
+  <li><a href="https://labs.la.utexas.edu/curley/">James Curley</a></li>
+  <li><a href="http://www.theswarmlab.com">Simon Garnier</a></li>
+  <li><a href="https://sites.google.com/site/jasonmgrahamus/">Jason Graham</a></li>
+  <li><a href="https://www.linkedin.com/in/mert-karakaya-7361997b/">Mert Karakaya</a></li>
+  <li><a href="http://hu2.me.gatech.edu/Ko/">Hungtang Ko</a></li>
+  <li><a href="https://riceacademy.rice.edu/node/301">Lisa O’Bryan</a></li>
+  <li><a href="http://www.perna.fr/">Andrea Perna</a></li>
+  <li><a href="https://scholar.google.se/citations?user=B9DUCHYAAAAJ&amp;hl=sv">Daniel Strömbom</a></li>
+</ul>
+
+<hr />
+
+<h4 id="general-schedule-of-the-workshop">General schedule of the workshop:</h4>
+
+<p>TBD</p>
+
+<hr />
+
+<h4 id="workshop-location-parking-and-travel-information-">Workshop location, parking and travel information <a name="map"></a></h4>
+
+<p>More information to come later.</p>
+
+<section id="map" class="map">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3445.3211253949903!2d-97.73624538478728!3d30.284918481795543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b59b2584cfb7%3A0x8131ee4f174a21de!2sThe%20University%20of%20Texas%20at%20Austin!5e0!3m2!1sen!2sus!4v1583253687696!5m2!1sen!2sus" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+</section>
+
+<hr />
+
+
+        </div>
+    </section>
+</div>
+
+<footer class="bg-darkest-gray">
+    <div class="container">
+        <span style="color: white">Subscribe <a href="http://localhost:4000/feed.xml">via RSS</a></span>
+    </div>
+</footer>
+
+  <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; Swarm Lab 2015</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        
+                        <li><a href="https://twitter.com/sjmgarnier"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        
+                        <li><a href="https://plus.google.com/u/0/+SimonGarnier"><i class="fa fa-google-plus"></i></a>
+                        </li>
+                        
+                        <li><a href="https://github.com/swarm-lab"><i class="fa fa-github"></i></a>
+                        </li>
+                        
+                        <li><a href="https://www.linkedin.com/in/simongarnier"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <!--<li><a href="#">Privacy Policy</a>
+                        </li>
+                        <li><a href="#">Terms of Use</a>
+                        </li>-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+ <!-- jQuery Version 1.11.0 -->
+    <script src="/js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="/js/jquery.easing.min.js"></script>
+    <script src="/js/classie.js"></script>
+    <script src="/js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="/js/jqBootstrapValidation.js"></script>
+    <script src="/js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="/js/agency.js"></script>
+
+
+</body>
+</html>

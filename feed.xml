@@ -5,9 +5,266 @@
     <description>Welcome to the Swarm Lab where we study Swarm Intelligence in natural and artificial systems.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 21 May 2019 18:08:20 -0400</pubDate>
-    <lastBuildDate>Tue, 21 May 2019 18:08:20 -0400</lastBuildDate>
-    <generator>Jekyll v3.7.4</generator>
+    <pubDate>Tue, 31 Aug 2021 15:49:36 -0400</pubDate>
+    <lastBuildDate>Tue, 31 Aug 2021 15:49:36 -0400</lastBuildDate>
+    <generator>Jekyll v3.9.0</generator>
+    
+      <item>
+        <title>Postdoctoral position available on NSF-funded project</title>
+        <description>&lt;p&gt;The SwarmLab at the &lt;a href=&quot;http://www.njit.edu/&quot;&gt;New Jersey Institute of Technology&lt;/a&gt; (NJIT) is seeking a postdoctoral researcher with expertise in animal behavior and field experimentation to join an NSF-funded research project led by Dr. Simon Garnier (NJIT) and &lt;a href=&quot;http://users.eecs.northwestern.edu/~mrubenst/&quot;&gt;Dr. Mike Rubenstein&lt;/a&gt; (Northwestern University). This project brings together biologists and engineers to achieve two goals: (1) understand the principles of self-assembling construction in army ants, and (2) adapt these principles to create a new generation of robots capable of self-assembling in unpredictable environments.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/2015-07-01-postdoc-position-available/we-are-hiring.png&quot; alt=&quot;We&apos;re hiring&quot; class=&quot;sixty center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The postdoctoral researcher will work mainly on achieving the first goal by studying the construction by army ants of living structures such as bridges (see video below from previous experiments) and bivouacs. To achieve this goal, the postdoctoral researcher will perform field experiments making use, among other things, of a custom field CT-scanner, developed and tested during a previous field season in order to measure the 3D dynamics of the construction process. However, the postdoctoral researcher will also be given ample opportunity to participate in activities linked to the second goal, in particular, the creation and analysis of dynamical models of collective self-assemblage and their application to swarm robotics.&lt;/p&gt;
+
+&lt;p style=&quot;text-align:center&quot;&gt; &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/TLu5CxAw40A&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt; &lt;/p&gt;
+
+&lt;p&gt;The position is starting as early as March 1st, 2021, and is expected to be filled no later than June 1, 2021, in order to perform a first field season during the summer of 2021. The position is for 2.5 years but may be extended if additional funding is secured during the course of the project. In addition, the two PIs will work with the postdoctoral researcher toward securing independent funds for their future career.&lt;/p&gt;
+
+&lt;p&gt;Potential candidates are strongly encouraged to contact Simon Garnier (&lt;a href=&quot;mailto:garnier@njit.edu&quot;&gt;garnier@njit.edu&lt;/a&gt;) to discuss the details of the project and learn more about the position. Applications will be reviewed as they are received. The application period will remain open until filled.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;profile&quot;&gt;Profile&lt;/h3&gt;
+
+&lt;p&gt;We are seeking candidates with the following profile:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;A strong interest in conducting collaborative research. In particular, candidates should be willing to engage in collaborative activities outside of their primary discipline.&lt;/li&gt;
+  &lt;li&gt;Experience with and/or strong desire for working in an interdisciplinary environment&lt;/li&gt;
+  &lt;li&gt;Knowledge and experience in field experimentation, animal behavior, and/or social insect biology. Experience in all these areas at once is not required but the candidates should at least demonstrate an interest in engaging in all of them.&lt;/li&gt;
+  &lt;li&gt;A willingness to spend several months every year (typically, 2 months per year) working at a tropical research station to perform the field experiments required for the project. Travel,  board, and room will be covered by the project during these periods. Funds are also available to hire field assistants and the two PIs will also come to the station each year to help set up the experiments.&lt;/li&gt;
+  &lt;li&gt;While not essential for the position, knowledge and experience in using modern statistical tools (e.g. GLMMs), and/or machine learning techniques (e.g. ANNs, classifiers), and/or agent-based modeling methods, and/or mathematical modeling approaches is a plus.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;essential-functions&quot;&gt;Essential functions&lt;/h3&gt;
+
+&lt;p&gt;The successful candidate will be expected to fulfill the following essential functions:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Lead the preparation, execution, and analysis of the experimental portion of the project in collaboration with the two PIs.&lt;/li&gt;
+  &lt;li&gt;Contribute to or lead lab publications, conference submissions, as well as grant proposals.&lt;/li&gt;
+  &lt;li&gt;Act as a mentor to diverse and ambitious students in the lab and at the field station, as well as collaborate effectively with colleagues and support staff.&lt;/li&gt;
+  &lt;li&gt;Through mentorship and strategic planning with the PI, develop additional skills and experience valuable to long-term career goals.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;While the functions of the successful candidate will be primarily focused on the goals of the NSF-funded research project, there will be opportunities to develop independent projects as well as participate in other ongoing lab initiatives.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;mentoring&quot;&gt;Mentoring&lt;/h3&gt;
+
+&lt;p&gt;The successful candidate will receive direct guidance in mentoring students, the development of new scientific skillsets, and career planning. In addition, funding is available to attend development workshops and conferences. Part of the project planning will include a roadmap for generating products that correspond with the candidate’s long-term career goals.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;the-lab&quot;&gt;The lab&lt;/h3&gt;
+
+&lt;p&gt;The SwarmLab is an interdisciplinary research lab that studies the mechanisms underlying the coordination of large animal groups, such as ant colonies or human crowds, and their applications to complex problems such the organization of pedestrian traffic or the control of robotic swarms. We study how information is exchanged and transformed during interactions between the members of a group, and how this can lead to the emergence of successful or catastrophic group behaviors.&lt;/p&gt;
+
+&lt;p&gt;In this project, the SwarmLab is associated with the collective robotics lab of Dr. Mike Rubenstein at Northwestern University. The Rubenstein lab seeks to advance the control and design of multi-robot systems, enabling their use instead of traditional single robots and to solve problems for which traditional robots are not suitable.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;the-department&quot;&gt;The department&lt;/h3&gt;
+
+&lt;p&gt;The lab is part of the Federated Department of Biological Sciences, which spans Rutgers University–Newark and NJIT. Located in NJIT’s urban campus in Newark, the lab is part of a vibrant and active research department, with strengths in ecology, systematics, animal behavior, functional morphology, as well as cellular and neurobiology. In addition, NJIT has strong research groups in engineering, computer science, and mathematics, and is situated in the very academically-dense New York City metro area, with universities like Columbia, NYU, CUNY, Rockefeller, Princeton, and more within an hour range.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;application-material&quot;&gt;Application material&lt;/h3&gt;
+
+&lt;p&gt;Please send a cover letter motivating your application for the position (2 pages max), a CV including contact information for 3 references (the references will be contacted directly by us if necessary), and the link to your Google Scholar page. All material should be addressed to &lt;a href=&quot;jobs@theswarmlab.com&quot;&gt;jobs@theswarmlab.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 07 Jan 2021 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/blog/2021/01/07/postdoc-position/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2021/01/07/postdoc-position/</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Editorial - Novel Technological and Methodological Tools for the Understanding of Collective Behaviors</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/img/posts/editorial/trajs.jpg&quot; alt=&quot;Logo&quot; class=&quot;center full&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://directory.unamur.be/staff/etuci&quot;&gt;Elio Tuci&lt;/a&gt;, &lt;a href=&quot;http://laral.istc.cnr.it/trianni/&quot;&gt;Vito Trianni&lt;/a&gt;,
+&lt;a href=&quot;https://www.shoalgroup.org/&quot;&gt;Andrew King&lt;/a&gt;, and Simon recently wrapped up a
+Research Topic (special edition) for &lt;a href=&quot;https://www.frontiersin.org/journals/robotics-and-ai&quot;&gt;Frontiers in Robotics and AI&lt;/a&gt;.
+This Research Topic brings together a collection of studies that focus on
+technological and methodological tools that can support the understanding of
+collective behaviors. The contributions included within the Research Topic can
+be broadly categorized as: (i) Review Articles, (ii) Tools and Technologies, and
+(iii) Empirical Studies.&lt;/p&gt;
+
+&lt;p&gt;The editorial for this Research Topic can be found at:
+&lt;a href=&quot;https://www.frontiersin.org/articles/10.3389/frobt.2019.00139/full&quot;&gt;https://www.frontiersin.org/articles/10.3389/frobt.2019.00139/full&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The full list of articles published in this Research Topic can be found at: &lt;a href=&quot;https://www.frontiersin.org/research-topics/5669/novel-technological-and-methodological-tools-for-the-understanding-of-collective-behaviors&quot;&gt;https://www.frontiersin.org/research-topics/5669/novel-technological-and-methodological-tools-for-the-understanding-of-collective-behaviors&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 10 Dec 2019 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/blog/2019/12/10/editorial/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2019/12/10/editorial/</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Slime mold on Science Friday</title>
+        <description>&lt;p&gt;Our very own slime mold (&lt;em&gt;Physarum polycephalum&lt;/em&gt;) was the first organism featured
+on the new &lt;a href=&quot;https://www.sciencefriday.com/&quot;&gt;Science Friday&lt;/a&gt; segment “Charismatic
+Creature”. Simon was live with &lt;a href=&quot;https://www.sciencefriday.com/person/elah-feder/&quot;&gt;Elah Feder&lt;/a&gt;
+and  &lt;a href=&quot;https://www.sciencefriday.com/person/ira-flatow/&quot;&gt;Ira Flatow&lt;/a&gt; to discuss
+the weird intelligence of our favorite blob.&lt;/p&gt;
+
+&lt;p&gt;You can find out more about this new Science Friday segment at
+&lt;a href=&quot;https://www.sciencefriday.com/slimemold/&quot;&gt;https://www.sciencefriday.com/slimemold/&lt;/a&gt;
+and listen to it below:&lt;/p&gt;
+
+&lt;iframe width=&quot;100%&quot; height=&quot;300&quot; scrolling=&quot;no&quot; frameborder=&quot;no&quot; allow=&quot;autoplay&quot; src=&quot;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/723833902&amp;amp;color=%23ff5500&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&amp;amp;show_teaser=true&amp;amp;visual=true&quot;&gt;&lt;/iframe&gt;
+</description>
+        <pubDate>Fri, 06 Dec 2019 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/blog/2019/12/06/scifri/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2019/12/06/scifri/</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>SINNERS 2020 - Call for abstracts</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/img/posts/sinners/SINNERS_logo.jpg&quot; alt=&quot;Logo&quot; class=&quot;forty wrap-around-right&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Mark your calendar! The 10th Social Insects iN the North-East RegionS meeting,
+or &lt;a href=&quot;https://twitter.com/hashtag/SINNERS2020&quot;&gt;#SINNERS2020&lt;/a&gt;, will be held on
+March 7-8 at &lt;a href=&quot;https://pioneerworks.org/&quot;&gt;Pioneer Works&lt;/a&gt; in Brooklyn, NY. It is
+co-organized by the &lt;a href=&quot;https://bardenlab.org/&quot;&gt;Barden lab&lt;/a&gt;, the
+&lt;a href=&quot;https://sites.google.com/site/jessicalwarelab/&quot;&gt;Ware Lab&lt;/a&gt; and the SwarmLab.&lt;/p&gt;
+
+&lt;p&gt;A call for abstracts is now open and will close of January 25, 2020. You can
+submit your abstracts &lt;a href=&quot;https://docs.google.com/forms/d/e/1FAIpQLSei-kCWx1uwRqiqpKABzYUSy5wt3YmA3Sn0xRlVV_Qpcbv52A/viewform&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;More information about registration and getting there will follow soon.&lt;/p&gt;
+
+&lt;p&gt;SINNERS is a more or less annual gathering of scientists working on social insects
+and located more or less in the north eastern part of the US. Since 2012, it has
+brought together a diverse, creative group of students and scientists to share
+the remarkable advances of social insect science. Presentations are all centered
+on social insect systems, but cover a wide range of topics, including: behavioral
+ecology, microbiomes and symbiosis, pollination, agricultural applications,
+neuroanatomy, and much more. This conference builds lasting research relationships
+between scientists at all stages of their careers. In addition, it provides an
+excellent opportunity for students and postdocs to receive feedback on their
+work from knowledgeable senior level researchers and peers.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 04 Dec 2019 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/blog/2019/12/04/sinners/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2019/12/04/sinners/</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Postdoctoral position available on DARPA-funded project</title>
+        <description>&lt;p&gt;The SwarmLab at the &lt;a href=&quot;http://www.njit.edu/&quot;&gt;New Jersey Institute of Technology&lt;/a&gt; (NJIT) is seeking a postdoctoral researcher with expertise in the modeling and analysis of collective behaviors and complex systems. The successful candidate will join a &lt;a href=&quot;https://www.darpa.mil/&quot;&gt;DARPA&lt;/a&gt;-funded research project aimed at testing and validating modeling methods for detecting the onset of migrations and predicting their final destinations using ant colonies as a model system.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/2015-07-01-postdoc-position-available/we-are-hiring.png&quot; alt=&quot;We&apos;re hiring&quot; class=&quot;sixty center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The position is starting as early as August 1st, 2019, and is expected to be filled no later than October 1, 2019. The position is initially for 2 years, with the possibility of being extended for 1 additional year following an evaluation of the project’s progress by the funding agency.&lt;/p&gt;
+
+&lt;p&gt;Potential candidates are strongly encouraged to contact Simon Garnier (&lt;a href=&quot;mailto:garnier@njit.edu&quot;&gt;garnier@njit.edu&lt;/a&gt;) to discuss the details of the project and learn more about the position. Applications will be reviewed as they are received. The application period will be open until filled.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;profile&quot;&gt;Profile&lt;/h3&gt;
+
+&lt;p&gt;We are seeking candidates with the following profile:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;A strong interest in conducting collaborative research on the topic described above. Previous research experience on this topic is not required.&lt;/li&gt;
+  &lt;li&gt;Experience with and/or strong desire for working in an interdisciplinary environment.&lt;/li&gt;
+  &lt;li&gt;Knowledge and experience in the modeling and analysis of collective behaviors and/or complex systems.&lt;/li&gt;
+  &lt;li&gt;Knowledge and experience in using modern statistical tools (e.g. GLMMs), and/or machine learning techniques (e.g. ANNs, classifiers), and/or agent-based modeling methods, and/or mathematical modeling approaches.&lt;/li&gt;
+  &lt;li&gt;Knowledge and experience in programming (typical languages used in the lab are R, C++, Python, Julia, Matlab, Mathematica).&lt;/li&gt;
+  &lt;li&gt;Knowledge and experience in working with ant colonies or other social species are not required, but an interest in participating in the experimental portion of the project is preferred.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;essential-functions&quot;&gt;Essential functions&lt;/h3&gt;
+
+&lt;p&gt;The successful candidate will be expected to fulfill the following essential functions:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Lead with the PI the analysis and modeling portion of the project, in collaboration with other lab members who will focus on the experimental portion.&lt;/li&gt;
+  &lt;li&gt;Contribute to or lead lab publications, conference submissions, as well as grant proposals.&lt;/li&gt;
+  &lt;li&gt;Act as a mentor to diverse and ambitious students in the lab, as well as collaborate effectively with colleagues and support staff.&lt;/li&gt;
+  &lt;li&gt;Through mentorship and strategic planning with the PI, develop additional skills and experience valuable to long-term career goals.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;While the functions of the successful candidate will be primarily focused on the goals of the DARPA-funded research project, there will be opportunities to develop independent projects as well as participate in other ongoing lab initiatives.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;mentoring&quot;&gt;Mentoring&lt;/h3&gt;
+
+&lt;p&gt;The successful candidate will receive direct guidance in mentoring students, the development of new scientific skillsets, and career planning. In addition, funding is available to attend development workshops and conferences. Part of the project planning will include a roadmap for generating products that correspond with the candidate’s long-term career goals.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;the-lab&quot;&gt;The lab&lt;/h3&gt;
+
+&lt;p&gt;The SwarmLab is an interdisciplinary research lab that studies the mechanisms underlying the coordination of large animal groups, such as ant colonies or human crowds, and their applications to complex problems such the organization of pedestrian traffic or the control of robotic swarms. We study how information is exchanged and transformed during interactions between the members of a group, and how this can lead to the emergence of successful or catastrophic group behaviors.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;the-department&quot;&gt;The department&lt;/h3&gt;
+
+&lt;p&gt;The lab is part of the Federated Department of Biological Sciences, which spans Rutgers University–Newark and NJIT. Located in NJIT’s urban campus in Newark, the lab is part of a vibrant and active research department, with strengths in ecology, systematics, animal behavior, functional morphology, as well as cellular and neurobiology. In addition, NJIT has strong research groups in engineering, computer science, and mathematics, and is situated in the very academically-dense New York City metro area, with universities like Columbia, NYU, CUNY, Rockefeller, Princeton, and more within an hour range.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;application-material&quot;&gt;Application material&lt;/h3&gt;
+
+&lt;p&gt;Please send a cover letter, a CV including contact information for 3 references (the references will be contacted directly by us if necessary), and the link to your Google Scholar page. All material should be addressed to &lt;a href=&quot;jobs@theswarmlab.com&quot;&gt;jobs@theswarmlab.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 06 Jun 2019 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/blog/2019/06/06/postdoc-position/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2019/06/06/postdoc-position/</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>The SwarmLab at the World Science Festival</title>
+        <description>&lt;p&gt;On June 1, Simon Garnier will take part in the following 3 events at the &lt;a href=&quot;https://www.worldsciencefestival.com&quot;&gt;World Science Festival&lt;/a&gt; held in New York City.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Cool Jobs -&lt;/strong&gt; “Meet the coolest group of scientists with the most fascinating jobs on the planet. You’ll hear from an engineer who studies geckos to find an adhesive that can hold tons of material to the wall, a biologist who figured out why tiny brained ants travel efficiently while big-brained humans get stuck in traffic jams, and a concert-trained pianist who became a scientist to learn why some music makes you dance and other music makes you cry. They’ll tell you first hand about their spectacular journeys to figure out how the world works and much more. Join us to start your own quest to find a Cool Science Job.” &lt;em&gt;Saturday, June 1, 12:00 PM - 1:00 PM, NYU Skirball Center.&lt;/em&gt; Info and tickets at &lt;a href=&quot;https://www.worldsciencefestival.com/programs/cool-jobs-4/&quot;&gt;https://www.worldsciencefestival.com/programs/cool-jobs-4/&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Rethinking Thinking: How Intelligent Are Other Animals? -&lt;/strong&gt; “Intelligence was once thought to be uniquely human. But researchers have discovered astonishing cognitive abilities in many other species—not just our close cousins like chimps, or fellow mammals like dolphins—but also crows, parrots, and even octopuses. If we consider the intelligence of swarms, we must add bees, termites, and ants to the list of super smart creatures. Join the scientists who study smarts as we ask: What is intelligence? Why do some species get an extra dose? And just how special are humans, really?” &lt;em&gt;Saturday, June 1, 4:00 PM - 5:30 PM, NYU Skirball Center.&lt;/em&gt; Info and tickets at &lt;a href=&quot;https://www.worldsciencefestival.com/programs/rethinking-thinking-how-intelligent-are-other-animals/&quot;&gt;https://www.worldsciencefestival.com/programs/rethinking-thinking-how-intelligent-are-other-animals/&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Intelligence Without Brains -&lt;/strong&gt; “How much brain do you need to be smart? Bees and ants perform marvels as colonies, though each insect has barely any brain. And plants—with no brain at all—exhibit behaviors that, by any definition, count as intelligent. Brace yourself for a mind-bending exploration of plants that learn new behaviors and warn their brainless fellows of danger; vines that compete with each other; molds that solve puzzles; and trees that communicate and cooperate through a ‘wood-wide web’ of microscopic mycological fibers. Perhaps the real question is, are we smart enough to appreciate the vast range of intelligence that surrounds us?” &lt;em&gt;Saturday, June 1, 8:00 PM - 9:30 PM, NYU Global Center, Grand Hall.&lt;/em&gt; Info and tickets at &lt;a href=&quot;https://www.worldsciencefestival.com/programs/intelligence-without-brains/&quot;&gt;https://www.worldsciencefestival.com/programs/intelligence-without-brains/&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Wed, 29 May 2019 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/blog/2019/05/29/world-science-festival/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2019/05/29/world-science-festival/</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
     
       <item>
         <title>Feature in The New York Times</title>
@@ -73,155 +330,6 @@
         <pubDate>Sat, 09 Mar 2019 00:00:00 -0500</pubDate>
         <link>http://localhost:4000/blog/2019/03/09/new-publication/</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2019/03/09/new-publication/</guid>
-        
-        
-        <category>blog</category>
-        
-      </item>
-    
-      <item>
-        <title>Announcing the 4th Collaborative Workshop on Modeling Collective Behavior</title>
-        <description>&lt;p&gt;The SwarmLab is pleased to announce the 4th Collaborative Workshop on Modeling Collective Behavior, funded by the NSF OAC Public Access Initiative &lt;a href=&quot;https://www.nsf.gov/awardsearch/showAward?AWD_ID=1838955&quot;&gt;grant #1838955&lt;/a&gt;. The goal of this workshop is to provide researchers coming from mathematics, physics, engineering and biology with experience in working collaboratively to model and analyze data produced by research in collective behavior. This year we are also including an interdisciplinary art/science project (see Project 4 below) that will use virtual reality to explore and interact with data and models of collective behaviors.&lt;/p&gt;
-
-&lt;p&gt;All information about the workshop, including application instructions and deadline, can be found &lt;a href=&quot;/meetings/data_model_2019/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/posts/data_model_2019/banner.png&quot; alt=&quot;banner&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Fri, 01 Mar 2019 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/blog/2019/03/01/data-model-2019/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2019/03/01/data-model-2019/</guid>
-        
-        
-        <category>blog</category>
-        
-      </item>
-    
-      <item>
-        <title>Data-Driven Modeling of Collective Behavior and Emergent Phenomena in Biology (DDM-Bio) - June 5-7, 2017</title>
-        <description>&lt;p&gt;&lt;strong&gt;The SwarmLab is happy to announce the workshop on “Data-Driven Modeling of Collective Behavior and Emergent Phenomena in Biology” (&lt;a href=&quot;https://twitter.com/search?q=%23DDMBio&amp;amp;src=typd&quot;&gt;#DDMBio&lt;/a&gt;) to be held at &lt;a href=&quot;https://www.samsi.info/&quot;&gt;SAMSI&lt;/a&gt; (Research Triangle Park, NC), June 5-7, 2017.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h4 id=&quot;description&quot;&gt;Description&lt;/h4&gt;
-
-&lt;p&gt;Collective behavior and emergent phenomena often arise in complex adaptive systems. Understanding the mechanisms that underlie such processes is simultaneously challenging and important to developments in engineering, technology, and advancing basic knowledge in the science of biological systems.&lt;/p&gt;
-
-&lt;p&gt;This collaborative workshop is targeted for researchers and students with research interests in collective behavior and emergent phenomena in biology and its applications. The participants will be organized into interdisciplinary teams according to their interests and complementary skills. Each team will be tasked with exploring, analyzing and modeling original data sets provided by biologist attendees. The event will be similar in spirit to a hackathon in computer science, with the goal of finding new ways to understand the provided biological data.&lt;/p&gt;
-
-&lt;p&gt;We emphasize that the workshop is meant to involve active participation with attendees working together across disciplines to solve problems in current research. In addition, regular debriefing sessions will be organized throughout the 3 days of the workshop in order for each team to provide updates to and receive feedback from the rest of the participants on their progress.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Organizing Committee:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;http://theswarmlab.com/&quot;&gt;Simon Garnier&lt;/a&gt;, Dept. of Biological Sciences, New Jersey Institute of Technology&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://sites.google.com/site/jasonmgrahamus/&quot;&gt;Jason M. Graham&lt;/a&gt;, Dept. of Mathematics, University of Scranton**&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;hr /&gt;
-
-&lt;h4 id=&quot;application-information&quot;&gt;Application information&lt;/h4&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://duke.qualtrics.com/SE/?SID=SV_eyaNrivpvY48fv7&quot; target=&quot;_blank&quot; class=&quot;btn btn-info&quot; role=&quot;button&quot;&gt;Apply Here&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Application Deadline is April 17, 2017.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;The workshop will be limited to about 40 participants and funding support priority will be given to U.S. based researchers.&lt;/p&gt;
-
-&lt;p&gt;Questions: &lt;a href=&quot;ddm-bio@samsi.info&quot;&gt;ddm-bio@samsi.info&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Wed, 14 Dec 2016 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/blog/2016/12/14/DDM-Bio/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2016/12/14/DDM-Bio/</guid>
-        
-        
-        <category>blog</category>
-        
-      </item>
-    
-      <item>
-        <title>We're Hiring! Tenure track position in &quot;Organismic Function, from Behavior to Ecology​&quot;</title>
-        <description>&lt;p&gt;As part of an ongoing expansion, the &lt;a href=&quot;https://biology.njit.edu/&quot;&gt;Department of Biological Sciences&lt;/a&gt; at the &lt;a href=&quot;https://www.njit.edu&quot;&gt;New Jersey Institute of Technology (NJIT)&lt;/a&gt; is looking to fill one or two new tenure-track faculty positions at the Assistant Professor level, beginning in 2017. We seek applicants with an interest and established record in bridging levels from systems or organismic function to behavior or ecology. Research areas can include - but are not limited to - ethology, microbiology, functional ecology, or evolution. Candidates will be expected to maintain an active, funded research program, supervise graduate students, and contribute to the overall success of the Department.&lt;/p&gt;
-
-&lt;p&gt;NJIT is a tier-one public research university located in Newark, NJ, with an emphasis on STEM subjects. The Department of Biological Sciences at NJIT currently consists of ten research faculty with expertise in neurobiology, sensory and motor systems, locomotion, collective behavior, and functional and spatial ecology. The Department is also Federated with neighboring &lt;a href=&quot;http://www.ncas.rutgers.edu/biology&quot;&gt;Rutgers-University Newark&lt;/a&gt;, adding colleagues in cellular neurobiology, cell signaling, genetics, systematics, evolution and ecology. The successful applicant will occupy customizable space in a newly renovated research facility. Duties will also include teaching introductory and upper-level undergraduate and graduate courses, depending on expertise.&lt;/p&gt;
-
-&lt;p&gt;NJIT is an equal-opportunity employer. Applications from minorities and women are especially welcome.&lt;/p&gt;
-
-&lt;p&gt;Applicants should upload a CV, a cover letter, and a statement of research interest at the following address: &lt;a href=&quot;http://njit.jobs/applicants/Central?quickFind=55733&quot;&gt;njit.jobs/applicants/Central?quickFind=55733&lt;/a&gt;. In addition, they should arrange for at least three references to send letters directly to Ms. Shamay Carty at &lt;a href=&quot;mailto:carty@njit.edu&quot;&gt;carty@njit.edu&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;All inquiries should be directed to Dr. Simon Garnier, at &lt;a href=&quot;mailto:garnier@njit.edu&quot;&gt;garnier@njit.edu&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 05 Oct 2016 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/blog/2016/10/05/We-re-hiring/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2016/10/05/We-re-hiring/</guid>
-        
-        
-        <category>blog</category>
-        
-      </item>
-    
-      <item>
-        <title>We're Hiring! Tenure track position in &quot;Cell Biology, Physiology, Systems or Organismic Function​&quot;</title>
-        <description>&lt;p&gt;As part of an ongoing expansion, the &lt;a href=&quot;https://biology.njit.edu/&quot;&gt;Department of Biological Sciences&lt;/a&gt; at the &lt;a href=&quot;https://www.njit.edu&quot;&gt;New Jersey Institute of Technology (NJIT)&lt;/a&gt; is looking to fill one or two new tenure-track faculty positions at the Assistant Professor level, beginning in 2017. We seek applicants with an interest and established record in bridging levels from cell biology or physiology, to systems or organismic function. Research areas can include - but are not limited to - neurobiology, ethology, evolution, or development. Candidates will be expected to maintain an active, funded research program, supervise graduate students, and contribute to the overall success of the Department.&lt;/p&gt;
-
-&lt;p&gt;NJIT is a tier-one public research university located in Newark, NJ, with an emphasis on STEM subjects. The Department of Biological Sciences at NJIT currently consists of ten research faculty with expertise in neurobiology, sensory and motor systems, locomotion, collective behavior, and functional and spatial ecology. The Department is also Federated with neighboring &lt;a href=&quot;http://www.ncas.rutgers.edu/biology&quot;&gt;Rutgers-University Newark&lt;/a&gt;, adding colleagues in cellular neurobiology, cell signaling, genetics, systematics, evolution and ecology. The successful applicant will occupy customizable space in a newly renovated research facility. Duties will also include teaching introductory and upper-level undergraduate and graduate courses, depending on expertise.&lt;/p&gt;
-
-&lt;p&gt;NJIT is an equal-opportunity employer. Applications from minorities and women are especially welcome.&lt;/p&gt;
-
-&lt;p&gt;Applicants should upload a CV, a cover letter, and a statement of research interest at the following address: &lt;a href=&quot;http://njit.jobs/applicants/Central?quickFind=55732&quot;&gt;njit.jobs/applicants/Central?quickFind=55732&lt;/a&gt;. In addition, they should arrange for at least three references to send letters directly to Ms. Shamay Carty at &lt;a href=&quot;mailto:carty@njit.edu&quot;&gt;carty@njit.edu&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;All inquiries should be directed to Dr. Farzan Nadim, at &lt;a href=&quot;mailto:farzan@njit.edu&quot;&gt;farzan@njit.edu&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 05 Oct 2016 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/blog/2016/10/05/We-re-hiring-2/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2016/10/05/We-re-hiring-2/</guid>
-        
-        
-        <category>blog</category>
-        
-      </item>
-    
-      <item>
-        <title>Decision-making without a brain - Our new paper in Interface</title>
-        <description>&lt;p&gt;How do organisms without brains make decisions? Most of life is brainless and the vast majority of organisms on Earth lack neurons altogether. Plants, fungi and bacteria must all cope with the same problem as humans – to make the best choices in a complex and ever-changing world or risk dying – without the help of a simple nervous system in many cases.&lt;/p&gt;
-
-&lt;p&gt;Our lab in collaboration with &lt;a href=&quot;http://www.richardpmann.com/&quot;&gt;Richard Mann&lt;/a&gt; (&lt;a href=&quot;https://www.leeds.ac.uk/&quot;&gt;University of Leeds&lt;/a&gt;), &lt;a href=&quot;http://staffwww.dcs.shef.ac.uk/people/J.Marshall/james.html&quot;&gt;James Marshall&lt;/a&gt; (&lt;a href=&quot;http://www.sheffield.ac.uk/&quot;&gt;University of Sheffield&lt;/a&gt;) and &lt;a href=&quot;http://www.tanyalatty.com/&quot;&gt;Tanya Latty&lt;/a&gt; (&lt;a href=&quot;http://sydney.edu.au/&quot;&gt;University of Sydney&lt;/a&gt;) recently studied this problem in the unicellular slime mold, &lt;a href=&quot;https://en.wikipedia.org/wiki/Physarum_polycephalum&quot;&gt;&lt;em&gt;Physarum polycephalum&lt;/em&gt;&lt;/a&gt;, a single-cell organism that can grow to several square meters in size. This giant cell, which typically lives in shady, cool and moist areas of temperate forests, spreads out to search its environment like an amoeba, extending oozy tendrils along the forest floor in search of its prey of fungi, bacteria and decaying vegetable matter.&lt;/p&gt;
-
-&lt;p&gt;Neither plant, animal nor fungus, &lt;em&gt;P. polycephalum&lt;/em&gt; has become an unlikely candidate for studies of cognition, due to its spectacular problem-solving abilities. In recent studies, &lt;em&gt;Physarum&lt;/em&gt; has been shown to solve labyrinth mazes, make complicated trade-offs, anticipate periodic events, remember where it has been, construct transport networks that have similar efficiency to those designed by human engineers and even make irrational decisions – a capability that has long been viewed as a by-product of brain circuitry.&lt;/p&gt;
-
-&lt;p&gt;In this study, we examined the decision-making ability of slime mold using a test classically used in humans, birds and other brained organisms: the two-armed bandit problem, named for the infamous slot machine, or one-armed bandit. In a two-armed bandit problem, the subject has two levers to pull, each of which delivers a certain, randomly determined reward. One of the levers is more likely to deliver a higher reward overall, so the challenge for participants is to decide at what point to stop exploring both options and decide to exclusively exploit just the one option in order to maximize their payoff. The phenomenon is called the exploration-exploitation tradeoff and is relevant to more than just slot machines, applying to many situations, including investors picking start-up companies to back or drivers choosing a parking space. As such, it has become a classical tool for testing the decision-making abilities of humans and other animals, but it has never before been used on an organism without a brain.&lt;/p&gt;
-
-&lt;p&gt;We adapted the two-armed bandit test for slime mold by giving the organism the choice to explore two opposite directions. In each direction, the slime mold encountered discrete patches of food, more or less regularly distributed. One direction would contain more of these patches than the other. They then observed how far in each direction the slime mold would explore before switching to the exploitation of one of the two directions only. The results of these experiments demonstrate that slime mold compares the relative qualities of multiple options, most often choosing the direction with the higher overall concentration of food. It was able to sum up the number of food patches encountered in each direction, as well as the quantity of food present at each patch to make correct and adaptive decisions as to the direction it should move next.&lt;/p&gt;
-
-&lt;p&gt;The slime mold’s decision-making algorithm can be mathematically described as a tendency to exploit environments in proportion to their reward experienced through past sampling. The algorithm is intermediate in computational complexity between simple, reactionary heuristics and calculation-intensive optimal performance algorithms, yet it has very good relative performance. While the biological substrate of the algorithm remains to be identified, this study provides insight into ancestral mechanisms of decision making and suggests that fundamental principles of decision making, information processing and even cognition are shared among diverse biological systems.&lt;/p&gt;
-
-&lt;p&gt;Our study has appeared in the &lt;a href=&quot;http://rsif.royalsocietypublishing.org/content/13/119&quot;&gt;June edition&lt;/a&gt; of the &lt;a href=&quot;http://rsif.royalsocietypublishing.org/&quot;&gt;Journal of The Royal Society Interface&lt;/a&gt; and can be found &lt;a href=&quot;http://rsif.royalsocietypublishing.org/content/13/119/20160030&quot;&gt;&lt;strong&gt;in open access&lt;/strong&gt; here&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Sun, 19 Jun 2016 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/blog/2016/06/19/Decision-Making-Without-Brain/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2016/06/19/Decision-Making-Without-Brain/</guid>
-        
-        
-        <category>blog</category>
-        
-      </item>
-    
-      <item>
-        <title>Lens of Time - Slime Lapse</title>
-        <description>&lt;p&gt;Our work on slime mold was recently featured in a mini-documentary by &lt;a href=&quot;http://www.spinefilms.com/&quot;&gt;Spine Films&lt;/a&gt; for &lt;a href=&quot;http://biographic.com/&quot;&gt;bioGraphic&lt;/a&gt;, a new multimedia magazine produced by the &lt;a href=&quot;http://www.calacademy.org/&quot;&gt;California Academy of Sciences&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;video width=&quot;100%&quot; controls=&quot;controls&quot;&gt;
-  &lt;source src=&quot;http://n2ps.storied.co/uploads/548ceb34b78402c4c1baadd636a132f4.mp4&quot; type=&quot;video/mp4&quot; /&gt;
-&lt;/video&gt;
-</description>
-        <pubDate>Sun, 12 Jun 2016 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/blog/2016/06/12/Lens-of-Time-Slime-Lapse/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2016/06/12/Lens-of-Time-Slime-Lapse/</guid>
         
         
         <category>blog</category>

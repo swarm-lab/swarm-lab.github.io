@@ -14,12 +14,12 @@
 
     <!-- Custom Fonts -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link href="http://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -188,8 +188,8 @@
 <figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Load libraries</span><span class="w">
 </span><span class="c1"># No additional libraries needed here. Yeah!</span></code></pre></figure>
 
-<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c"># String parsing libraries</span>
-<span class="kn">from</span> <span class="nn">imdb</span> <span class="kn">import</span> <span class="n">IMDb</span>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1"># String parsing libraries
+</span><span class="kn">from</span> <span class="nn">imdb</span> <span class="kn">import</span> <span class="n">IMDb</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
 <span class="kn">import</span> <span class="nn">re</span></code></pre></figure>
 
@@ -265,7 +265,7 @@
 <figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Load data from last challenge</span><span class="w">
 </span><span class="n">data</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">read.csv</span><span class="p">(</span><span class="s2">"movies-R.csv"</span><span class="p">)</span></code></pre></figure>
 
-<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">movie_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s">"movies.csv"</span><span class="p">)</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">movie_data</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s">"movies.csv"</span><span class="p">)</span></code></pre></figure>
 
 <p>Then, we will extract the movie IMDb ID from the IMDb URL we collected last week. It’s easy, it’s the only number in the URL.</p>
 
@@ -274,8 +274,8 @@
   </span><span class="c1"># Extract ID number</span><span class="w">
   </span><span class="n">IMDB_ID</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">gsub</span><span class="p">(</span><span class="s2">"[^0-9]"</span><span class="p">,</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"> </span><span class="n">IMDB_URL</span><span class="p">)</span></code></pre></figure>
 
-<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c"># Grab only the movie number out of the IMDB URL</span>
-<span class="n">movie_data</span><span class="p">[</span><span class="s">"Movie_Number"</span><span class="p">]</span> <span class="o">=</span> <span class="n">movie_data</span><span class="p">[</span><span class="s">"IMDB_URL"</span><span class="p">]</span><span class="o">.</span><span class="nb">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s">"[^0-9]"</span><span class="p">,</span> <span class="s">""</span><span class="p">,</span> <span class="n">x</span><span class="p">))</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1"># Grab only the movie number out of the IMDB URL
+</span><span class="n">movie_data</span><span class="p">[</span><span class="s">"Movie_Number"</span><span class="p">]</span> <span class="o">=</span> <span class="n">movie_data</span><span class="p">[</span><span class="s">"IMDB_URL"</span><span class="p">].</span><span class="nb">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">re</span><span class="p">.</span><span class="n">sub</span><span class="p">(</span><span class="s">"[^0-9]"</span><span class="p">,</span> <span class="s">""</span><span class="p">,</span> <span class="n">x</span><span class="p">))</span></code></pre></figure>
 
 <p>Now that this is done, we will simply let the IMDb scraper collect the data we want and we will append it to the data from the first part of the challenge.</p>
 
@@ -305,39 +305,39 @@
 </span><span class="p">})</span></code></pre></figure>
 
 <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s">"film-death-counts-Python.csv"</span><span class="p">,</span> <span class="s">"wb"</span><span class="p">)</span> <span class="k">as</span> <span class="n">out_file</span><span class="p">:</span>
-    <span class="n">out_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">"Film,Year,Body_Count,MPAA_Rating,Genre,Director,Actors,Length_Minutes,IMDB_Rating</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
+    <span class="n">out_file</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="s">"Film,Year,Body_Count,MPAA_Rating,Genre,Director,Actors,Length_Minutes,IMDB_Rating</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
 
-    <span class="k">for</span> <span class="n">movie_entry</span> <span class="ow">in</span> <span class="n">movie_data</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
-        <span class="c"># Use a try-catch on the loop to prevent temporary connection-related issues from stopping the scrape</span>
-        <span class="k">try</span><span class="p">:</span>
-            <span class="n">movie</span> <span class="o">=</span> <span class="n">imdb_access</span><span class="o">.</span><span class="n">get_movie</span><span class="p">(</span><span class="n">movie_entry</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="s">"Movie_Number"</span><span class="p">])</span>
+    <span class="k">for</span> <span class="n">movie_entry</span> <span class="ow">in</span> <span class="n">movie_data</span><span class="p">.</span><span class="n">iterrows</span><span class="p">():</span>
+        <span class="c1"># Use a try-catch on the loop to prevent temporary connection-related issues from stopping the scrape
+</span>        <span class="k">try</span><span class="p">:</span>
+            <span class="n">movie</span> <span class="o">=</span> <span class="n">imdb_access</span><span class="p">.</span><span class="n">get_movie</span><span class="p">(</span><span class="n">movie_entry</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="s">"Movie_Number"</span><span class="p">])</span>
             <span class="n">movie_fields</span> <span class="o">=</span> <span class="p">[]</span>
 
-            <span class="c"># Remove non-ASCII character encodings and commas from movie titles</span>
-            <span class="n">movie_fields</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">movie</span><span class="p">[</span><span class="s">"title"</span><span class="p">]</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">"ascii"</span><span class="p">,</span> <span class="s">"replace"</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">","</span><span class="p">,</span> <span class="s">""</span><span class="p">))</span>
-            <span class="n">movie_fields</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">movie</span><span class="p">[</span><span class="s">"year"</span><span class="p">]))</span>
-            <span class="n">movie_fields</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">movie_entry</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="s">"Body_Count"</span><span class="p">]))</span>
+            <span class="c1"># Remove non-ASCII character encodings and commas from movie titles
+</span>            <span class="n">movie_fields</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">movie</span><span class="p">[</span><span class="s">"title"</span><span class="p">].</span><span class="n">encode</span><span class="p">(</span><span class="s">"ascii"</span><span class="p">,</span> <span class="s">"replace"</span><span class="p">).</span><span class="n">replace</span><span class="p">(</span><span class="s">","</span><span class="p">,</span> <span class="s">""</span><span class="p">))</span>
+            <span class="n">movie_fields</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">movie</span><span class="p">[</span><span class="s">"year"</span><span class="p">]))</span>
+            <span class="n">movie_fields</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">movie_entry</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="s">"Body_Count"</span><span class="p">]))</span>
 
-            <span class="c"># Some movies don't have MPAA Ratings on IMDB</span>
-            <span class="k">try</span><span class="p">:</span>
-              <span class="n">movie_fields</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">movie</span><span class="p">[</span><span class="s">"mpaa"</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">" "</span><span class="p">)[</span><span class="mi">1</span><span class="p">]))</span>
+            <span class="c1"># Some movies don't have MPAA Ratings on IMDB
+</span>            <span class="k">try</span><span class="p">:</span>
+              <span class="n">movie_fields</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">movie</span><span class="p">[</span><span class="s">"mpaa"</span><span class="p">].</span><span class="n">split</span><span class="p">(</span><span class="s">" "</span><span class="p">)[</span><span class="mi">1</span><span class="p">]))</span>
             <span class="k">except</span><span class="p">:</span>
-              <span class="n">movie_fields</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s">""</span><span class="p">)</span>
+              <span class="n">movie_fields</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="s">""</span><span class="p">)</span>
 
-            <span class="c"># For movies with multiple genres/directors/actors, join them with bars |</span>
-            <span class="n">movie_fields</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="s">"|"</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">movie</span><span class="p">[</span><span class="s">"genres"</span><span class="p">])))</span>
-            <span class="n">movie_fields</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="s">"|"</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">movie</span><span class="p">[</span><span class="s">"director"</span><span class="p">]])))</span>
-            <span class="n">movie_fields</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="s">"|"</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">movie</span><span class="p">[</span><span class="s">"cast"</span><span class="p">]])))</span>
+            <span class="c1"># For movies with multiple genres/directors/actors, join them with bars |
+</span>            <span class="n">movie_fields</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="s">"|"</span><span class="p">.</span><span class="n">join</span><span class="p">(</span><span class="n">movie</span><span class="p">[</span><span class="s">"genres"</span><span class="p">])))</span>
+            <span class="n">movie_fields</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="s">"|"</span><span class="p">.</span><span class="n">join</span><span class="p">([</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">movie</span><span class="p">[</span><span class="s">"director"</span><span class="p">]])))</span>
+            <span class="n">movie_fields</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="s">"|"</span><span class="p">.</span><span class="n">join</span><span class="p">([</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">movie</span><span class="p">[</span><span class="s">"cast"</span><span class="p">]])))</span>
 
-            <span class="n">movie_fields</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">movie</span><span class="p">[</span><span class="s">"runtime"</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">":"</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">])))</span>
-            <span class="n">movie_fields</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">movie</span><span class="p">[</span><span class="s">"rating"</span><span class="p">])))</span></code></pre></figure>
+            <span class="n">movie_fields</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">movie</span><span class="p">[</span><span class="s">"runtime"</span><span class="p">][</span><span class="mi">0</span><span class="p">].</span><span class="n">split</span><span class="p">(</span><span class="s">":"</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">])))</span>
+            <span class="n">movie_fields</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">movie</span><span class="p">[</span><span class="s">"rating"</span><span class="p">])))</span></code></pre></figure>
 
 <p>And finally, all what is left to do is to save the complete data set into a .csv file and close the script.</p>
 
 <figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">write.csv</span><span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="n">file</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"movies-R-full.csv"</span><span class="p">)</span></code></pre></figure>
 
-<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c"># All entries are comma-delimited</span>
-            <span class="n">out_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">","</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">movie_fields</span><span class="p">)</span> <span class="o">+</span> <span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1"># All entries are comma-delimited
+</span>            <span class="n">out_file</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="s">","</span><span class="p">.</span><span class="n">join</span><span class="p">(</span><span class="n">movie_fields</span><span class="p">)</span> <span class="o">+</span> <span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
 
         <span class="k">except</span> <span class="nb">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
             <span class="k">print</span> <span class="s">"Error with"</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">movie</span><span class="p">)</span></code></pre></figure>
