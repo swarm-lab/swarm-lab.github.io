@@ -5,9 +5,91 @@
     <description>Welcome to the Swarm Lab where we study Swarm Intelligence in natural and artificial systems.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 24 Jul 2022 11:04:44 -0400</pubDate>
-    <lastBuildDate>Sun, 24 Jul 2022 11:04:44 -0400</lastBuildDate>
-    <generator>Jekyll v3.9.2</generator>
+    <pubDate>Thu, 20 Apr 2023 13:57:03 -0400</pubDate>
+    <lastBuildDate>Thu, 20 Apr 2023 13:57:03 -0400</lastBuildDate>
+    <generator>Jekyll v3.9.3</generator>
+    
+      <item>
+        <title>Postdoctoral position - Emergent energetic regulation in social systems</title>
+        <description>&lt;p&gt;The SwarmLab at the &lt;a href=&quot;http://www.njit.edu/&quot;&gt;New Jersey Institute of Technology&lt;/a&gt; (NJIT) is seeking a postdoctoral researcher with expertise in animal behavior and lab experimentation to join an NSF-funded research project led by Dr. Simon Garnier (NJIT), in collaboration with &lt;a href=&quot;https://wp.nyu.edu/dsl/&quot;&gt;Prof. Maurizio Porfiri&lt;/a&gt; (NYU), &lt;a href=&quot;https://math.vt.edu/people/faculty/abaid-nicole.html&quot;&gt;Dr. Nicole Abaid&lt;/a&gt; (Virginia Tech), &lt;a href=&quot;http://users.eecs.northwestern.edu/~mrubenst/&quot;&gt;Dr. Mike Rubenstein&lt;/a&gt; (Northwestern University), and &lt;a href=&quot;https://www.lovetheants.org/lab/&quot;&gt;Dr. James Waters&lt;/a&gt; (Providence College). This project brings together biologists, theoreticians, and engineers to study distributed energetic regulation in ant colonies. The objectives of the project are (1) to increase the overall understanding of emergent regulation networks in social systems and (2) to derive general principles for applications such as autonomous robotic swarms.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/2015-07-01-postdoc-position-available/we-are-hiring.png&quot; alt=&quot;We&apos;re hiring&quot; class=&quot;sixty center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;More specifically, the postdoctoral researcher will investigate whether biological collectives exhibit energetic regulation in response to both weak and strong variations in energy demand and availability, and how this impacts their biological productivity. To this end, the postdoctoral researcher will mainly perform behavioral experimentation and physiological measurements with colonies of clonal raider ants, &lt;em&gt;Ooceraea biroi&lt;/em&gt;, to determine:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;the physiological correlates of the activity of ant colonies as their size, energetic demand, and environmental conditions are experimentally manipulated;&lt;/li&gt;
+  &lt;li&gt;the individual and collective behaviors of ants as the size, energetic demand, and environmental conditions of the colony are modified.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The postdoctoral researcher will also be given ample opportunity to participate in collaborative activities with the other teams involved in the project. In particular, the postdoctoral researcher may participate in the creation and analysis of dynamical models of collective energetic regulation and their application to swarm robotics.&lt;/p&gt;
+
+&lt;p&gt;The position can start as early as September 1st, 2022, and is expected to be filled no later than January 1, 2023, to respect the terms of the NSF URoL grant. The position is for 3 years but may be extended if additional funding is secured during the project. In addition, the PI and the other senior researchers involved in the project will work with the postdoctoral researcher toward securing independent funds for their future career.&lt;/p&gt;
+
+&lt;p&gt;Potential candidates are strongly encouraged to contact Simon Garnier (&lt;a href=&quot;mailto:garnier@njit.edu&quot;&gt;garnier@njit.edu&lt;/a&gt;) to discuss the details of the project and learn more about the position. Applications will be reviewed as they are received. The application period will remain open until filled.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;1-profile&quot;&gt;1. Profile&lt;/h3&gt;
+
+&lt;p&gt;We are seeking candidates with the following profile:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;A strong interest in conducting collaborative research. In particular, candidates should be willing to engage in collaborative activities outside their primary discipline.&lt;/li&gt;
+  &lt;li&gt;Experience with and/or strong desire for working in an interdisciplinary environment.&lt;/li&gt;
+  &lt;li&gt;Knowledge and experience in lab experimentation, animal behavior, and/or social insect biology. Experience in all these areas at once is not required, but the candidates should at least demonstrate an interest in engaging in all of them.&lt;/li&gt;
+  &lt;li&gt;A willingness to travel regularly (typically 3-4 times a year) to the laboratories of the other teams involved in the project (in particular, the group of Dr. James Waters) to coordinate the research activity.&lt;/li&gt;
+  &lt;li&gt;While not essential for the position, knowledge and experience in using modern statistical tools (e.g. GLMMs), and/or machine learning techniques (e.g. ANNs, classifiers), and/or agent-based modeling methods, and/or mathematical modeling approaches is a plus.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;2-essential-functions&quot;&gt;2. Essential functions&lt;/h3&gt;
+
+&lt;p&gt;The successful candidate will be expected to fulfill the following essential functions:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Lead the preparation, execution, and analysis of the experimental portion of the project in collaboration with the research group of Dr. James Waters.&lt;/li&gt;
+  &lt;li&gt;Contribute to or lead lab publications, conference submissions, as well as grant proposals.&lt;/li&gt;
+  &lt;li&gt;Act as a mentor to diverse and ambitious students in the SwarmLab and the laboratories of the other teams involved in the project, as well as collaborate effectively with colleagues and support staff.&lt;/li&gt;
+  &lt;li&gt;Through mentorship and strategic planning with the PI, develop additional skills and experience valuable to long-term career goals.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;While the functions of the successful candidate will be primarily focused on the goals of the NSF-funded research project, there will be opportunities to develop independent projects as well as participate in other ongoing lab initiatives.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;3-mentoring&quot;&gt;3. Mentoring&lt;/h3&gt;
+
+&lt;p&gt;The successful candidate will receive direct guidance in mentoring students, the development of new scientific skill sets, and career planning. In addition, funding is available to attend development workshops and conferences. Part of the project planning will include a roadmap for generating products that correspond with the candidate’s long-term career goals.&lt;/p&gt;
+
+&lt;p&gt;The full postdoctoral mentoring plan associated with this research project is available upon request.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;4-the-lab&quot;&gt;4. The lab&lt;/h3&gt;
+
+&lt;p&gt;The SwarmLab is an interdisciplinary research lab that studies the mechanisms underlying the coordination of large animal groups, such as ant colonies or human crowds, and their applications to complex problems such as the organization of pedestrian traffic or the control of robotic swarms. We study how information is exchanged and transformed during interactions between the members of a group, and how this can lead to the emergence of successful or catastrophic group behaviors.&lt;/p&gt;
+
+&lt;p&gt;In this project, the SwarmLab is associated with the research groups of &lt;a href=&quot;https://wp.nyu.edu/dsl/&quot;&gt;Prof. Maurizio Porfiri&lt;/a&gt; (NYU), &lt;a href=&quot;https://math.vt.edu/people/faculty/abaid-nicole.html&quot;&gt;Dr. Nicole Abaid&lt;/a&gt; (Virginia Tech), &lt;a href=&quot;http://users.eecs.northwestern.edu/~mrubenst/&quot;&gt;Dr. Mike Rubenstein&lt;/a&gt; (Northwestern University), and &lt;a href=&quot;https://www.lovetheants.org/lab/&quot;&gt;Dr. James Waters&lt;/a&gt; (Providence College). Details on the research interests and activities of these research groups can be found in the provided links.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;5-the-department&quot;&gt;5. The department&lt;/h3&gt;
+
+&lt;p&gt;The SwarmLab is part of the Department of Biological Sciences at NJIT. Located in NJIT’s urban campus in Newark, the lab is part of a vibrant and active research department, with strengths in ecology, systematics, animal behavior, functional morphology, as well as cellular and neurobiology. In addition, NJIT has strong research groups in engineering, computer science, and mathematics, and is situated in the very academically-dense New York City metro area, with universities like Columbia, NYU, CUNY, Rockefeller, Princeton, Rutgers, and more within an hour range.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;6-application-material&quot;&gt;6. Application material&lt;/h3&gt;
+
+&lt;p&gt;Please send a cover letter motivating your application for the position (2 pages max), a CV including contact information for 3 references (the references will be contacted directly by us if necessary), and the link to your Google Scholar page. All material should be addressed to &lt;a href=&quot;mailto:jobs@theswarmlab.com&quot;&gt;jobs@theswarmlab.com&lt;/a&gt;. Alternatively, you can submit your application material directly at &lt;a href=&quot;https://njit.csod.com/ux/ats/careersite/1/home/requisition/4480?c=njit&quot;&gt;https://njit.csod.com/ux/ats/careersite/1/home/requisition/4480?c=njit&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 27 Sep 2022 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/blog/2022/09/27/postdoc-position/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2022/09/27/postdoc-position/</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
     
       <item>
         <title>Postdoctoral position available on NSF-funded project</title>
@@ -313,23 +395,6 @@ work from knowledgeable senior level researchers and peers.&lt;/p&gt;
         <pubDate>Thu, 14 Mar 2019 00:00:00 -0400</pubDate>
         <link>http://localhost:4000/blog/2019/03/14/new-publication2/</link>
         <guid isPermaLink="true">http://localhost:4000/blog/2019/03/14/new-publication2/</guid>
-        
-        
-        <category>blog</category>
-        
-      </item>
-    
-      <item>
-        <title>New publication - &quot;Temporal and spatial pattern of trail clearing in the Australian meat ant, &lt;i&gt;Iridomyrmex purpureus&lt;/i&gt;&quot;</title>
-        <description>&lt;p&gt;The SwarmLab is happy to announce the publication of: &lt;a href=&quot;https://doi.org/10.1016/j.anbehav.2019.02.006&quot;&gt;Middleton, E. J. T., Garnier, S., Latty, T., and Reid, C. R. (2019). Temporal and spatial pattern of trail clearing in the Australian meat ant, &lt;em&gt;Iridomyrmex purpureus&lt;/em&gt;. Anim. Behav. 150, 97–111. doi:10.1016/j.anbehav.2019.02.006&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;strong&gt;Abstract:&lt;/strong&gt; Many ant species use trails to connect important resources. In addition, some ants actively clear obstacles from their trails. Although trail clearing is thought to be beneficial in decreasing travel time, the physical process of clearing requires an investment of time and energy. Given that trail clearing is a decentralized process, how do colonies decide when to invest in clearing? In this study, we examined trail clearing in the Australian meat ant, using artificial semipermeable barriers mimicking grass. We tested the hypothesis that investment in clearing was influenced by the abundance and physical toughness of obstacles and that the selection of which grass blade to cut was a nonrandom process that decreases travel distance. We found that low abundance/low toughness treatments experienced the greatest amount of clearing and high abundance/high toughness the least. Although ants did not clear an optimally efficient trail, the results of our percolation analysis support the inference that the ants strategically deployed clearing, taking multiple factors into account when deciding to invest in this strategy. The resultant clearing patterns provided shorter travel routes for foraging ants than would be expected by the random removal of obstacles.&lt;/p&gt;
-</description>
-        <pubDate>Sat, 09 Mar 2019 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/blog/2019/03/09/new-publication/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2019/03/09/new-publication/</guid>
         
         
         <category>blog</category>
