@@ -379,7 +379,7 @@ section h3.section-subheading {
     -moz-transition: all ease .5s;
     transition: all ease .5s;
     background: rgba(254,209,54,.9); /* Fallback when no plugin support */
-    background: rgba(237,86,75, .9);
+    background: rgba(ed564b, .9);
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
@@ -904,6 +904,14 @@ li {
     text-align: justify;
 }
 
+.project_entry {
+    width: 90%;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+}
+
 .lab-name {
     font-family: "Ubuntu", "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-style: normal;
@@ -1025,7 +1033,7 @@ header .cat-heading {
     -moz-transition: all ease .5s;
     transition: all ease .5s;
     background: rgba(254,209,54,.9); /* Fallback when no plugin support */
-    background: rgba(237,86,75, .9);
+    background: rgba(ed564b, .9);
 }
 
 .portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {

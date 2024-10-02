@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Emergent Energetic Regulation in Dynamic Networks</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Welcome to the Swarm Lab where we study Swarm Intelligence in natural and artificial systems.">
+    <link rel="canonical" href="http://localhost:4000/energy/">
+
+    <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
+    <!-- <link rel="stylesheet" href="/assets/css/fontawesome.all.min.css"> -->
+    <script src="https://kit.fontawesome.com/a3932b31c9.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Google Analytics 
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-2260031-8', 'auto');
+        ga('send', 'pageview');
+
+    </script> -->
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/img/favicon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/img/favicon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/img/favicon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/favicon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/img/favicon/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/img/favicon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/img/favicon/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/img/favicon/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="/img/favicon/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="/img/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="/img/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/img/favicon/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="/img/favicon/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="/img/favicon/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="/img/favicon/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="/img/favicon/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="/img/favicon/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="/img/favicon/mstile-310x310.png" />
+
+</head>
+
+
+<body id="nofront" class="index">
+
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!--<a class="navbar-brand page-scroll" href="#page-top">Swarm Lab</a>-->
+            <a class="navbar-brand page-scroll" href="/">
+                <img src="/img/logos/swarmlab.png" alt=Swarm Lab style="height:250%; position: relative; top: -75%;">
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="/#about">About</a>
+                </li>
+                <!--<li>
+                    <a class="page-scroll" href="#research">Research</a>
+                </li>-->
+
+                <li class="dropdown">
+                    <a class="dropdown-toggle keep-open" data-toggle="dropdown" data-hover="dropdown" href="/#research">
+                        Research<i class="fa fa-angle-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="page-scroll" href="/#research">Current research</a></li>
+                        <li><a href="/publications/">Publication list</a></li>
+                        <li><a href="/funding/">Funding sources</a></li>
+                        <li><a href="/media/">In the media</a></li>
+                        <!--<li><a href="/meetings/">Group meetings</a></li>-->
+                    </ul>
+                </li>
+
+                <li>
+                    <a class="page-scroll" href="/#teaching">Teaching</a>
+                </li>
+                <!--<li>
+                    <a class="page-scroll" href="#dev">Dev</a>
+                </li>-->
+
+                <li class="dropdown">
+                    <a class="dropdown-toggle keep-open" data-toggle="dropdown" data-hover="dropdown" href="#dev">
+                        Dev<i class="fa fa-angle-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="page-scroll" href="#dev">Overview</a></li>
+                        <li><a href="/R/">R portfolio</a></li>
+                        <li><a href="/shiny/">Shiny portfolio</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle keep-open" data-toggle="dropdown" data-hover="dropdown" href="/#team">
+                        Team<i class="fa fa-angle-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/#team">Current members</a></li>
+                        <li><a href="/previous_members/">Previous members</a></li>
+                        <li><a href="/join/">Join the lab</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="page-scroll" href="/#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+
+<div class="home">
+    <section class="bg-white">
+        <div class="project_entry">
+
+            <h2>Emergent Energetic Regulation in Dynamic Networks</h2>
+            <h3>A project funded by the NSF</h3>
+
+            <hr>
+
+            <p><img src="/img/posts/energy/banner.jpg" alt="banner" class="full center" /></p>
+
+<h3 id="project-overview">Project overview</h3>
+
+<p>Regulation mechanisms are crucial for keeping systems working properly. For 
+example, human body temperature is controlled by neurons and hormones that 
+manage heat production and loss to prevent dangerous conditions. Typically, 
+regulation involves circuits connecting sensors to actions, like a thermostat in 
+an air conditioner. However, systems made up of many mobile units, like ant 
+colonies or robot fleets, don’t have these stable connections.</p>
+
+<p>This research unites biologists, theorists, and engineers to achieve two main 
+goals: understanding how flexible systems like ant colonies regulate themselves, 
+and developing principles to create artificial systems that can self-regulate in 
+changing environments. The project also offers educational opportunities for 
+students from K-12 to Ph.D. levels to learn about self-regulation in social 
+systems and its applications in technology.</p>
+
+<p>The project has three main components:</p>
+
+<ol>
+  <li>
+    <p><strong>Ant Experiments:</strong> we will study ants in the lab to see how they manage 
+their activities when faced with different levels of energy demand and 
+availability. We’ll use computer vision to observe the ants’ behaviors and 
+respirometry to measure their energy levels.</p>
+  </li>
+  <li>
+    <p><strong>Theoretical Framework:</strong> Using the results from the ant experiments, we 
+will create a theoretical model to understand and design energy regulation in 
+groups of self-organizing units. This model will help identify the behaviors 
+that lead to successful or failed collective energy management.</p>
+  </li>
+  <li>
+    <p><strong>Robotic Swarms:</strong> finally, we will develop and test ways to manage energy 
+in groups of robots. We’ll run simulations and real-world experiments to see how 
+well these robots can balance energy supply and demand in changing environments.</p>
+  </li>
+</ol>
+
+<p>Overall, this project aims to understand how biological groups maintain 
+stability and function, even when their energy needs and resources change, and 
+to apply our findings to artificial systems, liks swarm of autonomous robots and
+fleets of self-driving vehicles.</p>
+
+<p><br /></p>
+
+<table class="sixty">
+  <tbody>
+    <tr>
+      <td>Funded by: <a href="https://new.nsf.gov/funding/opportunities/understanding-rules-life-emergent-networks-urolen/505871/nsf22-532">NSF URoL:EN</a></td>
+      <td>Project ID: <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2222418">2222418</a></td>
+    </tr>
+    <tr>
+      <td>Funding period: September 1, 2022, to August 31, 2027</td>
+      <td>Total budget: $2,999,187</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+
+<hr />
+
+<h3 id="project-team">Project team</h3>
+
+<div class="container">
+<div class="row">
+
+<div class="col-sm-4">
+<div class="team-member">
+    <a href="https://www.theswarmlab.com"><img src="/img/team/simon.jpg" class="img-responsive img-circle" alt="" /></a>
+<h4>Simon Garnier</h4>
+<p class="text-muted">Lead PI, NJIT</p>
+</div>
+</div>
+
+<div class="col-sm-4">
+<div class="team-member">
+    <a href="https://engineering.nyu.edu/faculty/maurizio-porfiri"><img src="/img/team/mau.jpg" class="img-responsive img-circle" alt="" /></a>
+<h4>Maurizio Porfiri</h4>
+<p class="text-muted">Co-PI, NYU</p>
+</div>
+</div>
+
+<div class="col-sm-4">
+<div class="team-member">
+    <a href="https://math.vt.edu/people/faculty/abaid-nicole.html"><img src="/img/team/nabaid.jpg" class="img-responsive img-circle" alt="" /></a>
+<h4>Nicole Abaid</h4>
+<p class="text-muted">Co-PI, Virginia Tech</p>
+</div>
+</div>
+
+<div class="col-sm-2">
+</div>
+
+<div class="col-sm-4">
+<div class="team-member">
+    <a href="https://www.lovetheants.org/lab/"><img src="/img/team/jane.jpg" class="img-responsive img-circle" alt="" /></a>
+<h4>Jane Waters</h4>
+<p class="text-muted">Co-PI, Providence College</p>
+</div>
+</div>
+
+<div class="col-sm-4">
+<div class="team-member">
+    <a href="https://users.cs.northwestern.edu/~mrubenst/"><img src="/img/team/mike.jpg" class="img-responsive img-circle" alt="" /></a>
+<h4>Mike Rubenstein</h4>
+<p class="text-muted">Co-PI, Northwestern University</p>
+</div>
+</div>
+
+</div>
+</div>
+
+<hr />
+
+<h3 id="project-outcomes">Project outcomes</h3>
+
+<p><br /></p>
+
+<h4 id="publications">Publications</h4>
+
+<ol>
+  <li>
+    <p>Porfiri M, De Lellis P, Aung E, Meneses S, Abaid N, Waters JS, et al. Reverse social contagion as a mechanism for regulating mass behaviors in highly integrated social systems. PNAS Nexus. 2024; gae246. doi:<a href="https://academic.oup.com/pnasnexus/article/3/7/pgae246/7699677">10.1093/pnasnexus/pgae246</a></p>
+  </li>
+  <li>
+    <p>Carlesso D, Stewardson M, McLean DJ, Mazué GPF, Garnier S, Feinerman O, et al. Leaderless consensus decision-making determines cooperative transport direction in weaver ants. Proc Biol Sci. 2024;291: 20232367. doi:<a href="https://royalsocietypublishing.org/doi/10.1098/rspb.2023.2367">10.1098/rspb.2023.2367</a></p>
+  </li>
+  <li>
+    <p>Porfiri M, Abaid N, Garnier S. Socially driven negative feedback regulates activity and energy use in ant colonies. bioRxiv. 2024. p. 2024.08.01.606164. doi:<a href="https://www.biorxiv.org/content/10.1101/2024.08.01.606164v1">10.1101/2024.08.01.606164</a></p>
+  </li>
+</ol>
+
+<p><br /></p>
+
+<h4 id="presentations">Presentations</h4>
+
+<ol>
+  <li>
+    <p>Meneses, S., Abaid, N., Porfiri, M., Waters, J., &amp; Garnier, S. (2023). Emergent Energetic Regulation in Dynamic Biological Networks. Behaviour 2023. Bielefeld, Germany</p>
+  </li>
+  <li>
+    <p>Russell A, Mulligan K, Dancause C, Bespalova I, Waters J (2023). Ant Diversity and Behaviors. Sigma Xi Research Poster Session. Providence College, Providence, RI.</p>
+  </li>
+  <li>
+    <p>Mulligan K, Bespalova I, Waters J, Colangelo M (2024). Ant Colony Q10 and Social Energetic Demand. Summer Undergrad Research Fellowship (SURF) Statewide Symposium. University of Rhode Island, Kingston, RI.</p>
+  </li>
+  <li>
+    <p>Colangelo M, Mulligan K, Bormes M, Bespalova I, Waters J (2024). Brachyponera: Kinematics of an Ultra-fast Antennal Interaction Between Needle Ants. Summer Undergrad Research Fellowship (SURF) Statewide Symposium. University of Rhode Island, Kingston, RI.</p>
+  </li>
+</ol>
+
+<hr />
+
+
+        </div>
+    </section>
+</div>
+
+<footer class="bg-darkest-gray">
+    <div class="container">
+        <span style="color: white">Subscribe <a href="http://localhost:4000/feed.xml">via RSS</a></span>
+    </div>
+</footer>
+
+  <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; Swarm Lab 2012-2023</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        
+                        <li><a href="https://twitter.com/sjmgarnier"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        
+                        <li><a href="https://github.com/swarm-lab"><i class="fa fa-github"></i></a>
+                        </li>
+                        
+                        <li><a href="https://www.linkedin.com/in/simongarnier"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <!--<li><a href="#">Privacy Policy</a>
+                        </li>
+                        <li><a href="#">Terms of Use</a>
+                        </li>-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+ <!-- jQuery Version 1.11.0 -->
+    <script src="/js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="/js/jquery.easing.min.js"></script>
+    <script src="/js/classie.js"></script>
+    <script src="/js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="/js/jqBootstrapValidation.js"></script>
+    <script src="/js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="/js/agency.js"></script>
+
+
+</body>
+</html>
