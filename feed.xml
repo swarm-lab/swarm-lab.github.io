@@ -3,10 +3,10 @@
   <channel>
     <title>Swarm Lab</title>
     <description>Welcome to the Swarm Lab where we study Swarm Intelligence in natural and artificial systems.</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 02 Apr 2026 13:33:07 -0400</pubDate>
-    <lastBuildDate>Thu, 02 Apr 2026 13:33:07 -0400</lastBuildDate>
+    <link>http://www.theswarmlab.com/</link>
+    <atom:link href="http://www.theswarmlab.com/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Mon, 26 Oct 2026 07:36:49 -0400</pubDate>
+    <lastBuildDate>Mon, 26 Oct 2026 07:36:49 -0400</lastBuildDate>
     <generator>Jekyll v3.10.0</generator>
     
       <item>
@@ -87,8 +87,8 @@
 &lt;p&gt;Please send a cover letter motivating your application for the position (2 pages max), a CV including contact information for 3 references (the references will be contacted directly by us if necessary), and the link to your Google Scholar page. All material should be addressed to &lt;a href=&quot;mailto:jobs@theswarmlab.com&quot;&gt;jobs@theswarmlab.com&lt;/a&gt;. Alternatively, you can submit your application material directly at &lt;a href=&quot;https://njit.csod.com/ux/ats/careersite/1/home/requisition/4480?c=njit&quot;&gt;https://njit.csod.com/ux/ats/careersite/1/home/requisition/4480?c=njit&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Tue, 27 Sep 2022 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/blog/2022/09/27/postdoc-position/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2022/09/27/postdoc-position/</guid>
+        <link>http://www.theswarmlab.com/blog/2022/09/27/postdoc-position/</link>
+        <guid isPermaLink="true">http://www.theswarmlab.com/blog/2022/09/27/postdoc-position/</guid>
         
         
         <category>blog</category>
@@ -166,8 +166,8 @@
 &lt;p&gt;Please send a cover letter motivating your application for the position (2 pages max), a CV including contact information for 3 references (the references will be contacted directly by us if necessary), and the link to your Google Scholar page. All material should be addressed to &lt;a href=&quot;jobs@theswarmlab.com&quot;&gt;jobs@theswarmlab.com&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Thu, 07 Jan 2021 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/blog/2021/01/07/postdoc-position/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2021/01/07/postdoc-position/</guid>
+        <link>http://www.theswarmlab.com/blog/2021/01/07/postdoc-position/</link>
+        <guid isPermaLink="true">http://www.theswarmlab.com/blog/2021/01/07/postdoc-position/</guid>
         
         
         <category>blog</category>
@@ -193,8 +193,8 @@ be broadly categorized as: (i) Review Articles, (ii) Tools and Technologies, and
 &lt;p&gt;The full list of articles published in this Research Topic can be found at: &lt;a href=&quot;https://www.frontiersin.org/research-topics/5669/novel-technological-and-methodological-tools-for-the-understanding-of-collective-behaviors&quot;&gt;https://www.frontiersin.org/research-topics/5669/novel-technological-and-methodological-tools-for-the-understanding-of-collective-behaviors&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 10 Dec 2019 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/blog/2019/12/10/editorial/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2019/12/10/editorial/</guid>
+        <link>http://www.theswarmlab.com/blog/2019/12/10/editorial/</link>
+        <guid isPermaLink="true">http://www.theswarmlab.com/blog/2019/12/10/editorial/</guid>
         
         
         <category>blog</category>
@@ -216,8 +216,8 @@ and listen to it below:&lt;/p&gt;
 &lt;iframe width=&quot;100%&quot; height=&quot;300&quot; scrolling=&quot;no&quot; frameborder=&quot;no&quot; allow=&quot;autoplay&quot; src=&quot;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/723833902&amp;amp;color=%23ff5500&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&amp;amp;show_teaser=true&amp;amp;visual=true&quot;&gt;&lt;/iframe&gt;
 </description>
         <pubDate>Fri, 06 Dec 2019 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/blog/2019/12/06/scifri/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2019/12/06/scifri/</guid>
+        <link>http://www.theswarmlab.com/blog/2019/12/06/scifri/</link>
+        <guid isPermaLink="true">http://www.theswarmlab.com/blog/2019/12/06/scifri/</guid>
         
         
         <category>blog</category>
@@ -251,8 +251,8 @@ excellent opportunity for students and postdocs to receive feedback on their
 work from knowledgeable senior level researchers and peers.&lt;/p&gt;
 </description>
         <pubDate>Wed, 04 Dec 2019 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/blog/2019/12/04/sinners/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2019/12/04/sinners/</guid>
+        <link>http://www.theswarmlab.com/blog/2019/12/04/sinners/</link>
+        <guid isPermaLink="true">http://www.theswarmlab.com/blog/2019/12/04/sinners/</guid>
         
         
         <category>blog</category>
@@ -326,8 +326,8 @@ work from knowledgeable senior level researchers and peers.&lt;/p&gt;
 &lt;p&gt;Please send a cover letter, a CV including contact information for 3 references (the references will be contacted directly by us if necessary), and the link to your Google Scholar page. All material should be addressed to &lt;a href=&quot;jobs@theswarmlab.com&quot;&gt;jobs@theswarmlab.com&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Thu, 06 Jun 2019 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/blog/2019/06/06/postdoc-position/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2019/06/06/postdoc-position/</guid>
+        <link>http://www.theswarmlab.com/blog/2019/06/06/postdoc-position/</link>
+        <guid isPermaLink="true">http://www.theswarmlab.com/blog/2019/06/06/postdoc-position/</guid>
         
         
         <category>blog</category>
@@ -351,8 +351,8 @@ work from knowledgeable senior level researchers and peers.&lt;/p&gt;
 &lt;/ol&gt;
 </description>
         <pubDate>Wed, 29 May 2019 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/blog/2019/05/29/world-science-festival/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2019/05/29/world-science-festival/</guid>
+        <link>http://www.theswarmlab.com/blog/2019/05/29/world-science-festival/</link>
+        <guid isPermaLink="true">http://www.theswarmlab.com/blog/2019/05/29/world-science-festival/</guid>
         
         
         <category>blog</category>
@@ -364,8 +364,8 @@ work from knowledgeable senior level researchers and peers.&lt;/p&gt;
         <description>&lt;p&gt;The SwarmLab was featured today in a New York Times article by &lt;a href=&quot;https://joshuasokol.com/&quot;&gt;Joshua Sokol&lt;/a&gt; discussing the science fiction myth that disabling the “queen” of a swarm will immediately lead its collapse (it doesn’t!). You can read it all in &lt;a href=&quot;https://www.nytimes.com/2019/05/14/science/hives-queens-science-fiction.html&quot;&gt;“Striking Down the Queen Won’t Save You From the Swarm”&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Tue, 14 May 2019 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/blog/2019/05/14/new-york-times/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2019/05/14/new-york-times/</guid>
+        <link>http://www.theswarmlab.com/blog/2019/05/14/new-york-times/</link>
+        <guid isPermaLink="true">http://www.theswarmlab.com/blog/2019/05/14/new-york-times/</guid>
         
         
         <category>blog</category>
@@ -383,8 +383,8 @@ work from knowledgeable senior level researchers and peers.&lt;/p&gt;
 &lt;p&gt;Many social animal species produce vocalizations believed to facilitate group contraction when one or more group members have become distant. However, the mechanisms underlying this function remain unclear for many species. We examined this question with data on a semi-free ranging group of 16 adult domesticated goats (&lt;em&gt;Capra aegagrus hircus&lt;/em&gt;) inhabiting Tsaobis Nature Park, Namibia. All goats wore dataloggers consisting of a GPS and audio recorder for 5-6 hours per day for 10 days, providing continuous data on their geolocations and vocal communication. We found that callers were farther from the group centroid than expected by chance and that call production was associated with the cessation of group expansion and subsequent group contraction. We did not find strong evidence for antiphonal call exchange between distant and core group members. Rather, we found that (i) call production by distant group members is associated with a significant reduction of group movement away from the caller, and (ii) call production by core group members is associated with greater, though not significantly greater, group movement towards the caller. These findings suggest that calls may be used by distant, and potentially core, group members to facilitate the contraction of group spread. Results from our study clarify the mechanisms through which social animals can regulate collective movement behavior and the specific role that vocalizations play in this process.&lt;/p&gt;
 </description>
         <pubDate>Tue, 19 Mar 2019 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/blog/2019/03/19/new-publication/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2019/03/19/new-publication/</guid>
+        <link>http://www.theswarmlab.com/blog/2019/03/19/new-publication/</link>
+        <guid isPermaLink="true">http://www.theswarmlab.com/blog/2019/03/19/new-publication/</guid>
         
         
         <category>blog</category>
@@ -404,8 +404,8 @@ work from knowledgeable senior level researchers and peers.&lt;/p&gt;
 &lt;p&gt;Throughout evolution, living systems have developed mechanisms to make adaptive decisions in the face of complex and changing environmental conditions. Most organisms make such decisions despite lacking a neural architecture. This is the case of the acellular slime mold &lt;em&gt;Physarum polycephalum&lt;/em&gt; that has demonstrated remarkable information processing and problem-solving abilities. Previous studies suggest that the membrane of &lt;em&gt;P. polycephalum&lt;/em&gt; plays an important role in integrating and processing information leading to the selection of a resource to exploit. The cyclical contraction-relaxation pattern of the membrane changes with the local quality of the environment, and individual contractile regions within a &lt;em&gt;P. polycephalum&lt;/em&gt; can entrain neighboring regions, providing a potential mechanism for information processing and propagation. In this study, we use an information-theoretic tool, transfer entropy, to study the flow of information in single tubule segments of &lt;em&gt;P. polycephalum&lt;/em&gt; in a binary choice between two food sources. We test &lt;em&gt;P. polycephalum&lt;/em&gt; tubules in two food choice conditions, where the two available options are either symmetric in their nutrient concentrations or with one more concentrated in nutrients than the other (i.e., asymmetric). We measure the contractile pattern of the &lt;em&gt;P. polycephalum&lt;/em&gt; membrane and use these data to explore the direction and amount of information transfer along the tubule as a function of the cell’s final decision. We find that the direction of information transfer is different in the two experimental conditions, and the amount of information transferred is inversely proportional to the distance between different contractile regions. Our results show that regions playing a leading role in information transfer changes with the decision-making challenges faced by &lt;em&gt;P. polycephalum&lt;/em&gt;.&lt;/p&gt;
 </description>
         <pubDate>Thu, 14 Mar 2019 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/blog/2019/03/14/new-publication2/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2019/03/14/new-publication2/</guid>
+        <link>http://www.theswarmlab.com/blog/2019/03/14/new-publication2/</link>
+        <guid isPermaLink="true">http://www.theswarmlab.com/blog/2019/03/14/new-publication2/</guid>
         
         
         <category>blog</category>
